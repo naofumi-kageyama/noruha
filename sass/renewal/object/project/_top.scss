@@ -1,0 +1,42 @@
+@use "../../foundation/mixin" as mix;
+@use "../../foundation/variable" as var;
+@use "../../foundation/breakpoint" as br;
+.renewal {
+    .p-top {        
+        display: flex;
+        justify-content: space-between;
+        padding-top: var.$header_height;
+        @include br.mq(tab) {
+            display: block;
+        }
+        &__section {
+            height: calc(100vh - var.$header_height);
+            overflow-y: scroll;
+            /* IE, Edge 対応 */
+            -ms-overflow-style: none;
+            /* Firefox 対応 */
+            scrollbar-width: none;
+            /* Chrome, Safari 対応 */
+            &::-webkit-scrollbar {
+                display:none;
+            }
+            @include br.mq(tab) {
+                overflow-y: visible;
+                height: auto;
+            }
+        }
+        &__left {            
+            width: 480px;
+            border-right: var.$black 1px solid;
+            @include br.mq(tab) {
+                width: 100%;
+            }
+        }
+        &__right {
+            width: calc(100vw - 480px);
+            @include br.mq(tab) {
+                width: 100%;
+            }
+        }
+    }
+}

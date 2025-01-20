@@ -847,11 +847,11 @@ form.sent p {
         -ms-overflow-style: none;
         /* Firefox 対応 */
         scrollbar-width: none;
-        }
+    }
     
-        /* Chrome, Safari 対応 */
-        #top-left::-webkit-scrollbar {
-            display:none;
+    /* Chrome, Safari 対応 */
+    #top-left::-webkit-scrollbar {
+        display:none;
     }
 
     .top-next-button {

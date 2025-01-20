@@ -2,10 +2,11 @@
 @use "../foundation/variable" as var;
 @use "../foundation/breakpoint" as br;
 
-.renewal {   
+.renewal {
 .l-main {
     width: 95%;
     max-width: var.$content_width_main;
     margin: 0 auto;
+    padding: var.$header_height 0 20px;
 }
 }

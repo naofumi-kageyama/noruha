@@ -399,6 +399,7 @@
   width: 95%;
   max-width: 900px;
   margin: 0 auto;
+  padding: 120px 0 20px;
 }
 
 .renewal .l-project {
@@ -508,6 +509,70 @@
   color: #d6d6d6;
   font-size: 20px;
   text-decoration: none;
+}
+
+.renewal .p-top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 120px;
+}
+@media screen and (max-width: 768px) {
+  .renewal .p-top {
+    display: block;
+  }
+}
+.renewal .p-top__section {
+  height: calc(100vh - 120px);
+  overflow-y: scroll;
+  /* IE, Edge 対応 */
+  -ms-overflow-style: none;
+  /* Firefox 対応 */
+  scrollbar-width: none;
+  /* Chrome, Safari 対応 */
+}
+.renewal .p-top__section::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .renewal .p-top__section {
+    overflow-y: visible;
+    height: auto;
+  }
+}
+.renewal .p-top__left {
+  width: 480px;
+  border-right: #000 1px solid;
+}
+@media screen and (max-width: 768px) {
+  .renewal .p-top__left {
+    width: 100%;
+  }
+}
+.renewal .p-top__right {
+  width: calc(100vw - 480px);
+}
+@media screen and (max-width: 768px) {
+  .renewal .p-top__right {
+    width: 100%;
+  }
+}
+
+.renewal .p-top-next-section {
+  background-color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .renewal .p-top-next-section {
+    padding-bottom: 58px;
+  }
+}
+
+.renewal .p-top-main-section {
+  padding-bottom: 200px;
+}
+@media screen and (max-width: 768px) {
+  .renewal .p-top-main-section {
+    padding-bottom: 58px;
+  }
 }
 
 .renewal .p-24kasou-description {

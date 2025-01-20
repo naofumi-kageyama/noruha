@@ -1,0 +1,11 @@
+@use "../../foundation/mixin" as mix;
+@use "../../foundation/variable" as var;
+@use "../../foundation/breakpoint" as br;
+.renewal {
+    .p-top-main-section {
+        padding-bottom: 200px;
+        @include br.mq(tab) {
+            padding-bottom: 58px;
+        }
+    }
+}
