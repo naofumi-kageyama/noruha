@@ -51,26 +51,30 @@ Template Name: top
                             </p>
                         </div>
                     </div>
-                    <div class="top-next-people-wrapper">
-                        <p class="top-next-detail-title">人々</p>
-                        <div class="top-next-detail-contents">
-                            <?php
-                                $fields = cfs()->get('people');
-                                foreach ($fields as $field) :
-                            ?>
-                                <div class="top-next-people">
-                                    <div class="top-next-role">
-                                        <p><?php echo $field['role']; ?></p>
+                    <?php
+                        $fields = cfs()->get('people');
+                        if(!empty($fields)) :
+                    ?>
+                        <div class="top-next-people-wrapper">
+                            <p class="top-next-detail-title">人々</p>
+                            <div class="top-next-detail-contents">
+                                <?php
+                                    foreach ($fields as $field) :
+                                ?>
+                                    <div class="top-next-people">
+                                        <div class="top-next-role">
+                                            <p><?php echo $field['role']; ?></p>
+                                        </div>
+                                        <div class="top-next-name">
+                                            <p>
+                                                <?php echo $field['name']; ?>
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="top-next-name">
-                                        <p>
-                                            <?php echo $field['name']; ?>
-                                        </p>
-                                    </div>
-                                </div>
-                            <?php endforeach; ?>
+                                <?php endforeach; ?>
+                            </div>
                         </div>
-                    </div>
+                    <?php endif ; ?>
                 </div>
 
                 <div class="top-next-copy hide">
