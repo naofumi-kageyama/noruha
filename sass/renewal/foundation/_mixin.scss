@@ -1,0 +1,20 @@
+@use "variable" as var;
+@use "breakpoint" as br;
+@mixin margin_1em {
+    margin: 1em 0;
+    &:first-child {
+        margin-top: 0;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+@mixin white_area {
+    padding: 30px 50px;
+    background-color: var.$white;
+    border-radius: 10px;
+    border: 1px solid;
+    @include br.mq(tab) {
+        padding: 30px 20px;
+    }
+}

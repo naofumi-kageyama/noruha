@@ -1,0 +1,36 @@
+@use "../../foundation/mixin" as mix;
+@use "../../foundation/variable" as var;
+@use "../../foundation/breakpoint" as br;
+.renewal {
+.p-24kasou-kansou {
+    @include mix.white_area;
+    &__subheading {
+        font-size: var.$font_size_m;
+    }
+    &__heading {
+        font-weight: bold;
+        margin-bottom: 1em;
+    }
+    &__main {
+        font-size: var.$font_size_m;
+    }
+    &__section {
+        @include mix.margin_1em;
+    }
+    &__section-heading {
+        &::before {
+            content: "◆";
+        }
+    }
+    &__text {
+        @include mix.margin_1em;
+    }
+    &__list-item {
+        list-style-type: disc;
+        list-style-position: inside;
+        &:last-of-type {
+            list-style: none;
+        }
+    }
+}
+}

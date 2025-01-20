@@ -1,0 +1,44 @@
+@use "../../foundation/mixin" as mix;
+@use "../../foundation/variable" as var;
+@use "../../foundation/breakpoint" as br;
+.renewal {
+.p-24kasou-child-article {
+    &__thumbnail {
+        margin-bottom: 80px;
+    }
+    &__heading {
+        font-size: var.$font_size_lll;
+        margin-bottom: 50px;
+        @include br.mq(tab) {
+            font-size: var.$font_size_ll;
+        }
+    }
+    &__content {
+        margin-bottom: 80px;
+    }
+    &__profile-container {
+        display: flex;
+        gap: 30px;
+        @include br.mq(tab) {
+            flex-direction: column;
+            gap: 1em;
+        }
+    }
+    &__profile-image {
+        flex-shrink: 0;
+        width: 300px;
+        @include br.mq(sp) {
+            width: 100%;
+        }
+    }
+    &__profile-name {
+        margin-bottom: 1em;
+    }
+    &__profile-text {
+        p {
+            @include mix.margin_1em;
+        }
+    }
+
+}   
+}

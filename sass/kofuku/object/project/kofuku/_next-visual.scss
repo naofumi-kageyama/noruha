@@ -1,0 +1,16 @@
+@use "../../../foundation/variable" as var;
+@use "../../../foundation/mixin" as mixin;
+
+.kofuku{
+    .next-visual{
+        &--sp{
+            display: none;
+        }
+        @include mixin.mq(sp){
+            display: none;
+            &--sp{
+                display: block;
+            }
+        }
+    }
+}

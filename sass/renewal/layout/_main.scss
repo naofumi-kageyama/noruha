@@ -1,0 +1,11 @@
+@use "../foundation/mixin" as mix;
+@use "../foundation/variable" as var;
+@use "../foundation/breakpoint" as br;
+
+.renewal {   
+.l-main {
+    width: 95%;
+    max-width: var.$content_width_main;
+    margin: 0 auto;
+}
+}

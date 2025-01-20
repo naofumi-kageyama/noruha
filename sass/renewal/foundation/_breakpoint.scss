@@ -1,0 +1,12 @@
+@use "variable" as var;
+
+$breakpoint: (
+  sp: var.$breakpoint_sp,
+  tab: var.$breakpoint_tab
+);
+
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+    @content;
+  }
+}

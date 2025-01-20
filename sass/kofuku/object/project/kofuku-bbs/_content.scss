@@ -1,0 +1,16 @@
+@use "../../../foundation/variable" as var;
+@use "../../../foundation/mixin" as mixin;
+
+.kofuku-bbs{
+    .p-content{
+        &__post{
+            margin-bottom: 50px;
+        }
+        &__no{
+            margin-bottom: 1em;
+        }
+        &__author{
+            margin-bottom: 1em;
+        }
+    }
+}
