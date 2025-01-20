@@ -30,9 +30,9 @@ function enqueue_style(){
   wp_enqueue_style('style', get_stylesheet_directory_uri(). '/css/common.css', array(), '1.0.0');
   wp_enqueue_style('lightbox', get_stylesheet_directory_uri(). 'https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css');  
   wp_enqueue_style('renewal', get_stylesheet_directory_uri(). '/css/renewal.css', array(), '1.0.0');
-  // if( is_page_template('page-23kofuku.php') || is_page_template('page-23kofuku-bbs.php') ) {
-  //   wp_enqueue_style('style', get_stylesheet_directory_uri(). '/css/kofuku.css', array(), '1.0.0');
-  // }
+  if( is_page_template('page-23kofuku.php') || is_page_template('page-23kofuku-bbs.php') ) {
+    wp_enqueue_style('kofuku', get_stylesheet_directory_uri(). '/css/kofuku.css', array(), '1.0.0');
+  }
 }
 add_action('wp_enqueue_scripts','enqueue_style');
 
