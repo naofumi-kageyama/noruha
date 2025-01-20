@@ -32,45 +32,49 @@ Template Name: top
                         <p class="next-subtitle"><?php echo $cfs->get('subtitle'); ?></p>
                     </div>
 
-                    <div class="top-next-wrapper">
-                        <div class="top-next-detail">
-                            <div class="top-next-date-wrapper">
-                                <p class="top-next-detail-title">会期</p>
-                                <div class="top-next-detail-contents">
-                                    <p><?php echo $cfs->get('date'); ?></p>
-                                </div>
-                            </div>
-                            <div class="top-next-venue-wrapper">
-                                <p class="top-next-detail-title">会場</p>
-                                <div class="top-next-detail-contents">
-                                    <p class="top-next-venue-name"><?php echo $cfs->get('venue'); ?></p>
-                                    <p>
-                                        <?php echo $cfs->get('venue-detail'); ?><br>
-                                        <a href="<?php $venueUrl = $cfs->get('venue-url'); echo esc_url($venueUrl); ?>" target="blank"><?php $venueUrl = $cfs->get('venue-url'); echo esc_url($venueUrl); ?></a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="top-next-people-wrapper">
-                                <p class="top-next-detail-title">人々</p>
-                                <div class="top-next-detail-contents">
-                                    <?php
-                                        $fields = cfs()->get('people');
-                                        foreach ($fields as $field) :
-                                    ?>
-                                        <div class="top-next-people">
-                                            <div class="top-next-role">
-                                                <p><?php echo $field['role']; ?></p>
-                                            </div>
-                                            <div class="top-next-name">
-                                                <p>
-                                                    <?php echo $field['name']; ?>
-                                                </p>
-                                            </div>
+            <div class="top-next-wrapper">
+                <div class="top-next-detail">
+                    <div class="top-next-date-wrapper">
+                        <p class="top-next-detail-title">会期</p>
+                        <div class="top-next-detail-contents">
+                            <p><?php echo $cfs->get('date'); ?></p>
+                        </div>
+                    </div>
+                    <div class="top-next-venue-wrapper">
+                        <p class="top-next-detail-title">会場</p>
+                        <div class="top-next-detail-contents">
+                            <p class="top-next-venue-name"><?php echo $cfs->get('venue'); ?></p>
+                            <p>
+                                <?php echo $cfs->get('venue-detail'); ?><br>
+                                <a href="<?php $venueUrl = $cfs->get('venue-url'); echo esc_url($venueUrl); ?>" target="blank"><?php $venueUrl = $cfs->get('venue-url'); echo esc_url($venueUrl); ?></a>
+                            </p>
+                        </div>
+                    </div>
+                    <?php
+                        $fields = cfs()->get('people');
+                        if(!empty($fields)) :
+                    ?>
+                        <div class="top-next-people-wrapper">
+                            <p class="top-next-detail-title">人々</p>
+                            <div class="top-next-detail-contents">
+                                <?php
+                                    foreach ($fields as $field) :
+                                ?>
+                                    <div class="top-next-people">
+                                        <div class="top-next-role">
+                                            <p><?php echo $field['role']; ?></p>
                                         </div>
-                                    <?php endforeach; ?>
-                                </div>
+                                        <div class="top-next-name">
+                                            <p>
+                                                <?php echo $field['name']; ?>
+                                            </p>
+                                        </div>
+                                    </div>
+                                <?php endforeach; ?>
                             </div>
                         </div>
+                    <?php endif ; ?>
+                </div>
 
                         <div class="top-next-copy hide">
                             <p>地下室に指示を待つ殺し屋が二人。傍には料理昇降機（ダム・ウェイター）。 不条理演劇の金字塔に《円盤に乗る派》が挑む！</p>
