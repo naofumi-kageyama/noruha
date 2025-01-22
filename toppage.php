@@ -96,7 +96,7 @@ Template Name: top
                                 $fields = cfs()->get('members-column'); //親ループ
                                 foreach ($fields as $field) :
                             ?>
-                                <div class="p-top-main-section__members-column">
+                                <div class="p-top-main-section__members-column js-member-open-column">
                                     <?php
                                         $fields = $field['member-wrapper']; //子ループ
                                         foreach ((array)$fields as $field):
@@ -115,7 +115,7 @@ Template Name: top
                                 </div>
                             <?php endforeach; ?>
                         </div>
-                        <p class="p-top-main-section__members-image-credit">Photography by Arata Mino</p>
+                        <p class="p-top-main-section__members-image-credit js-member-open-next-element">Photography by Arata Mino</p>
                     </div>
                 </div>
             </div>

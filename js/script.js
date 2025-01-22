@@ -131,51 +131,38 @@ $(function(){
         const description = $(this).closest('.js-member-open-container').find('.js-member-open-target');
         const height = description.height()
         const moveTo = height + gap
-        const nextChild = $(this).parent().next();
-        const nextParent = $(this).parent().parent().next();
-        const parentIndex = $(this).parent().parent().index();
-        const childIndex = $(this).parent().index();
+        const nextMember = $(this).closest('.js-member-open-container').next();
+        const nextColumn = $(this).closest('.js-member-open-column').next();
+        const memberIndex = $(this).closest('.js-member-open-container').index();
+        const columnIndex = $(this).closest('.js-member-open-column').index();
 
-    	if (window.matchMedia('(min-width: 1280px)').matches) {
-            if (childIndex == 0){
-                target = [nextChild];
-            } else {
-                target = "";
-            }
-        
+        let moveTarget = "";
+    	if (window.matchMedia('(max-width: 1280px)').matches) {
+            if (memberIndex == 0){
+                moveTarget = [nextMember];
+            } else if (memberIndex == 1 && columnIndex == 0){
+                moveTarget = [nextColumn];
+            } else if (memberIndex == 1 && columnIndex == 1){
+                moveTarget = $('.js-member-open-next-element');
+            }     
         } else {
-
-            if (childIndex == 0){
-                target = [nextChild];
-            } else if (childIndex == 1 && parentIndex == 0){
-                target = [nextParent];
-            } else if (childIndex == 1 && parentIndex == 1){
-                target = $('.js-member-open-target');
-            }        
-        }
-
-        function close(target){
-            description.removeClass("opened");
-            description.stop().animate({"opacity":"0"}, fadeSpeed, function() {
-                if (target !== ""){
-                    $.each(target, function(){
-                        $(this).animate({"marginTop" : originalGap}, moveSpeed);
-                    })
-                }
-                description.css("display","none");
-            });
-        }
-
-        function open(target){
-            function openAnimation() {
-                description.addClass("opened");
-                description.stop().animate({"opacity":"1"}, fadeSpeed);
-                description.css("display","block");
+            if (memberIndex == 0){
+                moveTarget = [nextMember];
+            } else {
+                moveTarget = "";
             }
-            if (target !== ""){
-                $.each(target, function(){
+        }
+        
+        function openAnimation() {
+            description.addClass("is_opened");
+            description.stop().animate({"opacity":"1"}, fadeSpeed);
+        }
+
+        function open(moveTarget){
+            if (moveTarget !== ""){
+                $.each(moveTarget, function(){
                     $(this).stop().animate({"marginTop" : moveTo}, moveSpeed, function(){
-                            openAnimation();
+                        openAnimation();
                     });
                 })
             } else {
@@ -183,10 +170,21 @@ $(function(){
             }
         }
 
-        if (description.hasClass("opened")) {
-            close(target);
+        function close(moveTarget){
+            description.removeClass("is_opened");
+            description.stop().animate({"opacity":"0"}, fadeSpeed, function() {
+                if (moveTarget !== ""){
+                    $.each(moveTarget, function(){
+                        $(this).animate({"marginTop" : originalGap}, moveSpeed);
+                    })
+                }
+            });
+        }
+
+        if (description.hasClass("is_opened")) {
+            close(moveTarget);
         } else {
-            open(target);
+            open(moveTarget);
         }
     });
 
@@ -223,7 +221,7 @@ $(function(){
             
             $.each(target, function(){
                 $(this).stop().animate({"marginTop" : moveTo}, moveSpeed, function(){
-                        openAnimation();
+                    openAnimation();
                 });
             })
         }
