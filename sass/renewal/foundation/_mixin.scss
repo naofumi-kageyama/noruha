@@ -18,3 +18,20 @@
         padding: 30px 20px;
     }
 }
+@mixin content {
+    >* {
+        @include margin_1em;
+    }
+    >h2 {
+        font-size: var.$font-size_l;
+        font-weight: bold;
+        margin: 1.6em 0 1em;
+        &:first-child { margin-top: 0; }
+    }
+    >h3 {
+        font-size: var.$font-size_m;
+        font-weight: bold;
+        margin: 1.2em 0 1em;
+        &:first-child { margin-top: 0; }
+    }
+}

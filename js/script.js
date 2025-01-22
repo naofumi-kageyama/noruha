@@ -20,7 +20,7 @@ $(function(){
 
     //テロップ
     $(function($) {
-        $('#noruha-copy').marquee({
+        $('.js-marquee').marquee({
         direction: 'left',
         duration: 4500,
         delayBeforeStart: 0,
@@ -113,28 +113,26 @@ $(function(){
     });
 
     //プロフィール写真表示オンオフ
-    $('.member-photo').mouseenter(function(){
-        $(this).find('.img-off').css("display","none");
-        $(this).find('.img-on').css("display","inline");
-    }).mouseleave(function(){
-        $(this).find('.img-on').css("display","none");
-        $(this).find('.img-off').css("display","inline");
-    });
+    // $('.member-photo').mouseenter(function(){
+    //     $(this).find('.img-off').css("display","none");
+    //     $(this).find('.img-on').css("display","inline");
+    // }).mouseleave(function(){
+    //     $(this).find('.img-on').css("display","none");
+    //     $(this).find('.img-off').css("display","inline");
+    // });
 
     //プロフィール文オンオフ
-    $('.member-photo').click(function(){
-        const description = $(this).next().find('.member-description');
-
-        const height = description.height()
-        const gap = 62;
-        const originalGap = 77;
-        const moveTo = height + gap
+    $('.js-member-open-button').click(function(){
+        const gap = 60;
+        const originalGap = 80;
         const moveSpeed = 500;
         const fadeSpeed = 200;
-
+        
+        const description = $(this).closest('.js-member-open-container').find('.js-member-open-target');
+        const height = description.height()
+        const moveTo = height + gap
         const nextChild = $(this).parent().next();
         const nextParent = $(this).parent().parent().next();
-
         const parentIndex = $(this).parent().parent().index();
         const childIndex = $(this).parent().index();
 
@@ -152,7 +150,7 @@ $(function(){
             } else if (childIndex == 1 && parentIndex == 0){
                 target = [nextParent];
             } else if (childIndex == 1 && parentIndex == 1){
-                target = $('.members-photo-credit');
+                target = $('.js-member-open-target');
             }        
         }
 

@@ -24,7 +24,7 @@
                 padding-bottom: 10px;
             }
         }
-        &__title-area {
+        &__title-container {
             border-top: var.$black 1px solid;
             border-bottom: var.$black 1px solid;
             padding: 10px 2.5%;
@@ -40,7 +40,7 @@
             font-size: var.$font_size_l;            
             font-family: 'gtwalsheim';
         }
-        &__description-area {
+        &__description-container {
             padding: 20px 2.5%;
         }
         &__description-section {
