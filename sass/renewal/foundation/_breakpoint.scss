@@ -2,7 +2,8 @@
 
 $breakpoint: (
   sp: var.$breakpoint_sp,
-  tab: var.$breakpoint_tab
+  tab: var.$breakpoint_tab,
+  laptop: var.$breakpoint_laptop
 );
 
 @mixin mq($bp) {

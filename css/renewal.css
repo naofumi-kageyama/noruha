@@ -334,8 +334,15 @@
 }
 
 @font-face {
-  font-family: "";
-  src: url();
+  font-family: "gtwalsheim";
+  src: url("fonts/GT-Walsheim-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "gtwalsheim";
+  src: url("fonts/GT-Walsheim-Light.woff2") format("woff2");
+  font-weight: 300;
   font-display: swap;
 }
 /*=== breakpoint ===*/
@@ -559,11 +566,87 @@
 
 .renewal .p-top-next-section {
   background-color: #fff;
+  padding-bottom: 200px;
 }
 @media screen and (max-width: 768px) {
   .renewal .p-top-next-section {
     padding-bottom: 58px;
   }
+}
+.renewal .p-top-next-section__heading {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: #000 1px solid;
+  font-family: "gtwalsheim";
+  font-weight: light;
+  font-size: 20px;
+  text-align: center;
+}
+.renewal .p-top-next-section__main-visual {
+  padding: 60px 2.5%;
+}
+@media screen and (max-width: 1280px) {
+  .renewal .p-top-next-section__main-visual {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+.renewal .p-top-next-section__title-area {
+  border-top: #000 1px solid;
+  border-bottom: #000 1px solid;
+  padding: 10px 2.5%;
+  text-align: center;
+}
+.renewal .p-top-next-section__title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.renewal .p-top-next-section__subtitle {
+  margin-top: 0.5em;
+  font-size: 20px;
+  font-family: "gtwalsheim";
+}
+.renewal .p-top-next-section__description-area {
+  padding: 20px 2.5%;
+}
+.renewal .p-top-next-section__description-section {
+  margin: 1em 0;
+}
+.renewal .p-top-next-section__description-section:first-child {
+  margin-top: 0;
+}
+.renewal .p-top-next-section__description-section:last-child {
+  margin-bottom: 0;
+}
+.renewal .p-top-next-section__description-heading {
+  width: -moz-fit-content;
+  width: fit-content;
+  line-height: 1;
+  padding: 5px;
+  background-color: #000;
+  color: #d6d6d6;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+.renewal .p-top-next-section__venue-name {
+  margin-bottom: 1em;
+}
+.renewal .p-top-next-section__people-list {
+  display: flex;
+  gap: 20px;
+}
+.renewal .p-top-next-section__button {
+  display: block;
+  padding: 10px 0;
+  border-top: #000 1px solid;
+  border-bottom: #000 1px solid;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.renewal .p-top-next-section__button:hover {
+  background-color: #f2e170;
 }
 
 .renewal .p-top-main-section {

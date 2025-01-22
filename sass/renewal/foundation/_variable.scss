@@ -1,4 +1,5 @@
 /*=== breakpoint ===*/
+$breakpoint_laptop: 'screen and (max-width: 1280px)';
 $breakpoint_tab: 'screen and (max-width: 768px)';
 $breakpoint_sp: 'screen and (max-width: 520px)';
 
@@ -7,6 +8,7 @@ $font_color: #333;
 $black: #000;
 $white: #fff;
 $gray: #d6d6d6;
+$yellow: #f2e170;
 $color_main: $gray;
 
 /*=== font size ===*/
