@@ -553,6 +553,7 @@
 @media screen and (max-width: 768px) {
   .renewal .p-top__left {
     width: 100%;
+    border-right: none;
   }
 }
 .renewal .p-top__right {

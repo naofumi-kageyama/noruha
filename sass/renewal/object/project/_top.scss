@@ -30,6 +30,7 @@
             border-right: var.$black 1px solid;
             @include br.mq(tab) {
                 width: 100%;
+                border-right: none;
             }
         }
         &__right {
