@@ -97,20 +97,20 @@ $(function(){
     });
 
     //menu:about
-    $('.moveto-about').click(function(){
-        const hostUrl = $(location).attr('host');
-        const hash = "#declaration";
-        const topUrl = ( "https://" + hostUrl + "/" );
-        const targetUrl = ( topUrl + hash );
+    // $('.moveto-about').click(function(){
+    //     const hostUrl = $(location).attr('host');
+    //     const hash = "#declaration";
+    //     const topUrl = ( "https://" + hostUrl + "/" );
+    //     const targetUrl = ( topUrl + hash );
 
-        const presentUrl = $(location).attr('href');
+    //     const presentUrl = $(location).attr('href');
 
-        if( presentUrl == topUrl || presentUrl == targetUrl ){
-            moveTo(hash);
-        } else {
-            window.location.href = targetUrl;
-        }
-    });
+    //     if( presentUrl == topUrl || presentUrl == targetUrl ){
+    //         moveTo(hash);
+    //     } else {
+    //         window.location.href = targetUrl;
+    //     }
+    // });
 
     //プロフィール写真表示オンオフ
     // $('.member-photo').mouseenter(function(){

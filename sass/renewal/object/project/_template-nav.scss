@@ -1,0 +1,32 @@
+@use "../../foundation/mixin" as mix;
+@use "../../foundation/variable" as var;
+@use "../../foundation/breakpoint" as br;
+.renewal {
+    .p-template-nav {
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        border-bottom: var.$black 1px solid;
+        // overflow: hidden;
+        @include br.mq(tab) {
+            border-top: var.$black 1px solid;
+        }        
+        &__item {
+            width: 25%;
+            height: 100%;
+        }
+        &__link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            font-family: "gtwalsheim";
+            font-size: var.$font_size_l;
+            text-decoration: none;
+            cursor: pointer;
+            &:hover {
+                background-color: var.$yellow;
+            }
+        }
+    }
+}

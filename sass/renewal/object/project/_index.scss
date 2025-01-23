@@ -1,6 +1,9 @@
 @use "top";
 @use "top-next-section";
 @use "top-main-section";
+
+@use "template-nav";
+
 @use "24kasou-description" as kasou-description;
 @use "24kasou-kansou" as kasou-kansou;
 @use "24kasou-child" as kasou-child;

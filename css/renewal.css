@@ -579,7 +579,7 @@
   line-height: 40px;
   border-bottom: #000 1px solid;
   font-family: "gtwalsheim";
-  font-weight: light;
+  font-weight: 300;
   font-size: 20px;
   text-align: center;
 }
@@ -794,6 +794,35 @@
   font-family: "gtwalsheim-l";
   font-size: 20px;
   text-align: center;
+}
+
+.renewal .p-template-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  border-bottom: #000 1px solid;
+}
+@media screen and (max-width: 768px) {
+  .renewal .p-template-nav {
+    border-top: #000 1px solid;
+  }
+}
+.renewal .p-template-nav__item {
+  width: 25%;
+  height: 100%;
+}
+.renewal .p-template-nav__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: "gtwalsheim";
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.renewal .p-template-nav__link:hover {
+  background-color: #f2e170;
 }
 
 .renewal .p-24kasou-description {
