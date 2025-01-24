@@ -1,0 +1,7 @@
+@use "../../foundation/mixin" as mix;
+@use "../../foundation/variable" as var;
+@use "../../foundation/breakpoint" as br;
+
+.js-form-container {    
+    opacity: 0;
+}

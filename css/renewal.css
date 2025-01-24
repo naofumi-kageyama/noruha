@@ -409,6 +409,114 @@
   padding: 120px 0 20px;
 }
 
+.renewal .l-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  /* contact form7 */
+  /* 閉じるボタン */
+  /* エラーメッセージ */
+  /* 送信後フォーム消去 */
+}
+.renewal .l-footer__form-container {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+@media screen and (max-width: 520px) {
+  .renewal .l-footer__form-container {
+    width: 80%;
+  }
+}
+.renewal .l-footer__close-button {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(calc(-100% - 10px));
+  cursor: pointer;
+}
+.renewal .l-footer__close-button::before, .renewal .l-footer__close-button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 141.4%;
+  height: 2px;
+  background: #000;
+}
+.renewal .l-footer__close-button::before {
+  transform: rotate(-45deg);
+}
+.renewal .l-footer__close-button::after {
+  transform: rotate(45deg);
+}
+.renewal .l-footer__form {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.renewal .l-footer__form .wpcf7-spinner {
+  display: block;
+}
+@media screen and (max-width: 520px) {
+  .renewal .l-footer__form {
+    display: block;
+  }
+}
+.renewal .l-footer__input {
+  width: 480px;
+  height: 40px;
+  font-size: 24px;
+  padding-left: 20px;
+  border: 1px solid #d6d6d6;
+  border-radius: 0.5em;
+  background-color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .renewal .l-footer__input {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .renewal .l-footer__input {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+.renewal .l-footer__submit {
+  width: 120px;
+  height: 40px;
+  padding: 0 10px;
+  background-color: #000;
+  border-radius: 0.5em;
+  color: #fff;
+  font-size: 16px;
+  font-family: "gtwalsheim";
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .renewal .l-footer__submit {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .renewal .l-footer__submit {
+    width: 25%;
+    margin-top: 15px;
+  }
+}
+.renewal .l-footer .wpcf7 form.invalid .wpcf7-response-output {
+  display: none;
+  box-sizing: border-box;
+  margin: 14px 0;
+  height: 40px;
+}
+.renewal .l-footer form.sent p {
+  display: none;
+}
 .renewal .l-project {
   font-size: 20px;
 }
@@ -1050,4 +1158,8 @@
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 0 1em;
+}
+
+.js-form-container {
+  opacity: 0;
 }/*# sourceMappingURL=renewal.css.map */

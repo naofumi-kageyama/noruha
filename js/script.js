@@ -55,8 +55,7 @@ $(function(){
         const delayTime = 500;
 
         if( presentUrl == topUrl || presentUrl == unctfUrl){
-            $('.form').css("display", "block");
-            $('.form').delay(delayTime).animate({"opacity":"1"}, fadespeed);
+            $('.js-form-container').delay(delayTime).animate({"opacity":"1"}, fadespeed);
         }
 
         //プロフィールある場合書式変更
@@ -89,10 +88,9 @@ $(function(){
     });
 
     //フォーム非表示
-    $('.form-batsu').click(function(){
-        const target = $(this).parent();
+    $('.js-form-close').click(function(){
         const fadespeed = 300;
-
+        const target = $(this).closest('.js-form-container');
         target.animate({"opacity":"0"}, fadespeed);
     });
 

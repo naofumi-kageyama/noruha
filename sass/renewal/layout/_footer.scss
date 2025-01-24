@@ -2,6 +2,140 @@
 @use "../foundation/variable" as var;
 @use "../foundation/breakpoint" as br;
 
+.renewal {
 .l-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;    
+    &__form-container {
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+        @include br.mq(sp) {
+            width: 80%;
+        }
+    }
+    &__close-button {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateY(calc(-100% - 10px));
+        cursor: pointer;
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            width: calc(100% * 1.414);
+            height: 2px;
+            background: var.$black;
+        }
+        &::before {
+            transform: rotate(-45deg);
+        }
+        &::after {
+            transform: rotate(45deg);
+        }
+    }
+    &__form {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        .wpcf7-spinner {
+            display: block;
+        }
+        @include br.mq(sp) {
+            display: block;
+        }
+    }
+    &__input {
+        width: 480px;
+        height: 40px;
+        font-size: var.$font_size_ll;
+        padding-left: 20px;
+        border: 1px solid var.$gray;
+        border-radius: 0.5em;
+        background-color: var.$white;
+        @include br.mq(tab) {
+            width: 300px;
+        }
+        @include br.mq(sp) {
+            width: 100%;
+            font-size: var.$font_size_l;
+        }
+    }
+    &__submit {
+        width: 120px;
+        height: 40px;
+        padding: 0 10px;
+        background-color: var.$black;
+        border-radius: 0.5em;
+        color: var.$white;
+        font-size: var.$font_size_m;
+        font-family: "gtwalsheim";
+        text-align: center;        
+        @include br.mq(tab) {
+            width: 100px;
+        }
+        @include br.mq(sp) {        
+            width: 25%;
+            margin-top: 15px;
+        }
+    }
+
     
+    /* contact form7 */
+    
+    #mail-form {
+        // height: 40px;
+        // margin: auto 0;
+    }
+    
+    #submit {
+    }
+    
+    /* 閉じるボタン */
+    
+    /* エラーメッセージ */
+    .wpcf7 form.invalid .wpcf7-response-output {
+        display: none;
+        box-sizing: border-box;
+        margin: 14px 0;
+        height: 40px;
+    }
+    
+    /* 送信後フォーム消去 */
+    form.sent p {
+        display :none;
+    }
+
+    #mail-form {
+    }
+
+    #submit {
+    }
+    .wpcf7-form {
+    }
+
+    // .wpcf7-form p:first-of-type {
+    //     margin-right: 20px;
+    // }
+
+    // .wpcf7-form p:last-of-type {
+    //     text-align: right;
+    // }
+
+    // #submit {
+    //     box-sizing: border-box;
+    //     width: 80%;
+    //     margin-top: 0;
+    // }
+
+    // .wpcf7 form.invalid .wpcf7-response-output {
+    //     margin-top: 0;
+    // }
+}
 }
