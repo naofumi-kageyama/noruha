@@ -17,7 +17,6 @@
     }
     &__article {
         margin-top: 2em;
-        @include mix.white_area;
     }
     &__article-heading {
         font-size: var.$font_size_ll;

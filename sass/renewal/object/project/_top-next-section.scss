@@ -47,7 +47,6 @@
             @include mix.margin_between(1em);
         }
         &__description-heading {
-            @include mix.heading_black_background;
             margin-bottom: 1em;
         }
         &__venue-name {

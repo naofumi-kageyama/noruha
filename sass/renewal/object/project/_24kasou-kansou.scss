@@ -3,7 +3,6 @@
 @use "../../foundation/breakpoint" as br;
 .renewal {
 .p-24kasou-kansou {
-    @include mix.white_area;
     &__subheading {
         font-size: var.$font_size_m;
     }

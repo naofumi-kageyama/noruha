@@ -4,7 +4,7 @@
 .renewal {
 .c-rich-text {
     >p {
-        @include margin_between(1em);
+        @include mix.margin_between(1em);
     }
 }
 }

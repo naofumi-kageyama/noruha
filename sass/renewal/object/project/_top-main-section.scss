@@ -36,9 +36,6 @@
             padding: 20px;
             font-weight: 700;
         }
-        &__about-content {
-            @include rich_text;
-        }
         &__members-content {
             font-weight: 400;
         }
@@ -89,7 +86,6 @@
             text-align: center;
         }
         &__member-description {
-            @include rich_text;
             position: absolute;
             opacity: 0;
         }
