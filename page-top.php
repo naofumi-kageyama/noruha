@@ -9,16 +9,9 @@ Template Name: top
     <main class="p-top">
         <section class="p-top__section p-top__left">
             <div class="p-top__section-inner p-top-next-section">
-                <h2 class="p-top-next-section__heading top-left-title">
-                    <?php
-                        $values = cfs()->get('label');
-                        foreach ( $values as $key => $label ):
-                    ?>
-                        <?php echo $label; ?>
-                    <?php endforeach; ?>
-                </h2>
+                <h2 class="p-top-next-section__heading top-left-title">Next Exhibition Information</h2>
                 <div class="p-top-next-section__main-visual">
-                    <a href="<?php echo get_page_link('392'); ?>"><img src="<?php echo $cfs->get('next-mainvisual'); ?>"></a>
+                    <a href="<?php echo esc_url($cfs->get('link')); ?>"><img src="<?php echo esc_url($cfs->get('next-mainvisual')); ?>"></a>
                 </div>
                 <div class="p-top-next-section__title-container">
                     <h3 class="p-top-next-section__title"><?php echo $cfs->get('title'); ?></h3>
@@ -30,15 +23,15 @@ Template Name: top
                     <div class="p-top-next-section__description-section">
                         <h4 class="p-top-next-section__description-heading">会期</h4>
                         <div class="p-top-next-section__description-text-container">
-                            <p class="p-top-next-section__date"><?php echo $cfs->get('date'); ?></p>
+                            <p class="p-top-next-section__date"><?php echo esc_html($cfs->get('date')); ?></p>
                         </div>
                     </div>
                     <div class="p-top-next-section__description-section">
                     <h4 class="p-top-next-section__description-heading">会場</h4>
                         <div class="p-top-next-section__description-text-container">
-                            <p class="p-top-next-section__venue-name"><?php echo $cfs->get('venue'); ?></p>
-                            <p class="p-top-next-section__venue-detail"><?php echo $cfs->get('venue-detail'); ?></p>
-                            <p class="p-top-next-section__venue-url"><a href="<?php $venueUrl = $cfs->get('venue-url'); echo esc_url($venueUrl); ?>" target="blank"><?php $venueUrl = $cfs->get('venue-url'); echo esc_url($venueUrl); ?></a></p>
+                            <p class="p-top-next-section__venue-name"><?php echo esc_html($cfs->get('venue')); ?></p>
+                            <p class="p-top-next-section__venue-detail"><?php echo nl2br(esc_textarea($cfs->get('venue-detail'))); ?></p>
+                            <p class="p-top-next-section__venue-url"><a href="<?php echo esc_url($cfs->get('venue-url')); ?>" target="blank"><?php echo esc_url($cfs->get('venue-url')); ?></a></p>
                         </div>
                     </div>
                     <?php
@@ -50,15 +43,15 @@ Template Name: top
                             <div class="p-top-next-section__description-text-container">
                                 <?php foreach ($fields as $field) : ?>
                                     <dl class="p-top-next-section__people-list">
-                                        <dt class="p-top-next-section__people-term"><?php echo $field['role']; ?></dt>
-                                        <dd class="p-top-next-section__people-description"><?php echo $field['name']; ?></dd>
+                                        <dt class="p-top-next-section__people-term"><?php echo esc_html($field['role']); ?></dt>
+                                        <dd class="p-top-next-section__people-description"><?php echo nl2br(esc_textarea($field['name'])); ?></dd>
                                     </dl>
                                 <?php endforeach; ?>
                             </div>
                         </div>
                     <?php endif ; ?>
                 </div>
-                <a class="p-top-next-section__button" href="<?php echo get_page_link('392'); ?>">詳細</a>
+                <a class="p-top-next-section__button" href="<?php echo esc_url($cfs->get('link')); ?>">詳細</a>
             </div>
         </section>
         <section class="p-top__section p-top__right">
@@ -69,27 +62,27 @@ Template Name: top
                 </div>
                 <div class="p-top-main-section__main-visual-container">
                     <figure class="p-top-main-section__main-visual">
-                        <img src="<?php echo $cfs->get('mainvisual'); ?>">
-                        <figcaption><?php echo $cfs->get('mainvisual-credit'); ?></figcaption>
+                        <img src="<?php echo esc_url($cfs->get('mainvisual')); ?>">
+                        <figcaption><?php echo esc_url($cfs->get('mainvisual-credit')); ?></figcaption>
                     </figure>
                 </div>
                 <div id="declaration" class="p-top-main-section__section">
                     <h2 class="p-top-main-section__section-heading">円盤に乗る派宣言</h2>
                     <div class="p-top-main-section__section-content">
-                        <p><?php echo $cfs->get('declaration'); ?></p>
+                        <p><?php echo esc_html($cfs->get('declaration')); ?></p>
                     </div>
                 </div>
                 <div class="p-top-main-section__section">
                     <h2 class="p-top-main-section__section-heading">円盤に乗る派について</h2>
                     <div class="p-top-main-section__section-content p-top-main-section__about-content">
-                        <?php echo $cfs->get('noruha-profile'); ?>
+                        <?php echo apply_filters('the_content', $cfs->get('noruha-profile')); ?>
                     </div>
                 </div>
                 <div class="p-top-main-section__section">
                     <h2 class="p-top-main-section__section-heading">プロジェクトメンバー</h2>
                     <div class="p-top-main-section__section-content p-top-main-section__members-content">
                         <div class="p-top-main-section__members-image">
-                            <img src="<?php echo $cfs->get('artistphoto_members'); ?>">
+                            <img src="<?php echo esc_url($cfs->get('artistphoto_members')); ?>">
                         </div>
                         <div class="p-top-main-section__members-column-wrapper">
                             <?php
@@ -103,12 +96,12 @@ Template Name: top
                                     ?>
                                         <div class="p-top-main-section__member-container js-member-open-container">
                                             <div class="p-top-main-section__member-image-container js-member-open-button">
-                                                <img class="p-top-main-section__member-image--off" src="<?php echo $field['artistphoto_off']; ?>">
-                                                <img class="p-top-main-section__member-image--on" src="<?php echo $field['artistphoto_on']; ?>">
+                                                <img class="p-top-main-section__member-image--off" src="<?php echo esc_url($field['artistphoto_off']); ?>">
+                                                <img class="p-top-main-section__member-image--on" src="<?php echo esc_url($field['artistphoto_on']); ?>">
                                             </div>
-                                            <h3 class="p-top-main-section__member-heading"><?php echo $field['member-name']; ?></h3>
+                                            <h3 class="p-top-main-section__member-heading"><?php echo esc_html($field['member-name']); ?></h3>
                                             <div class="p-top-main-section__member-description js-member-open-target">
-                                                <?php echo $field['member-description']; ?>
+                                                <?php echo apply_filters('the_content', $field['member-description']); ?>
                                             </div>
                                         </div>
                                     <?php endforeach; ?>
