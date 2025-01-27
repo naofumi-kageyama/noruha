@@ -1,0 +1,14 @@
+@use "../../foundation/mixin" as mix;
+@use "../../foundation/variable" as var;
+@use "../../foundation/breakpoint" as br;
+.renewal {
+.c-white-area {
+    padding: 30px 50px;
+    background-color: var.$white;
+    border-radius: 10px;
+    border: 1px solid;
+    @include br.mq(tab) {
+        padding: 30px 20px;
+    }
+}
+}

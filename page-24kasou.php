@@ -41,7 +41,7 @@ Template Name: 24kasou
             </div>
             <div class="next-description">
                 <div class="renewal">
-                    <div class="p-24kasou-description">
+                    <div class="p-24kasou-description c-white-area">
                         <div class="p-24kasou-description__content">
                             <?php echo $cfs->get('description'); ?>
                         </div>
@@ -212,7 +212,7 @@ Template Name: 24kasou
 
             <div class="renewal">
                 <div class="l-project">
-                    <section class="l-project__section p-24kasou-kansou">
+                    <section class="l-project__section p-24kasou-kansou c-white-area">
                         <p class="p-24kasou-kansou__subheading">寄り道して帰ろう</p>
                         <h3 class="p-24kasou-kansou__heading">円盤に乗る派『仮想的な失調』感想会</h3>
                         <div class="p-24kasou-kansou__main">

@@ -21,11 +21,11 @@ Template Name: works
                         </div>
                         <div class="p-works-main-visual__info-wrapper">
                             <div class="p-works-main-visual__info-container">
-                                <h3 class="p-works-main-visual__info-heading">会期</h3>
+                                <h3 class="p-works-main-visual__info-heading c-heading-black-background">会期</h3>
                                 <p class="p-works-main-visual__info-text next-detail-text"><?php echo esc_html($cfs->get('date')); ?></p>
                             </div>
                             <div class="p-works-main-visual__info-container">
-                            <h3 class="p-works-main-visual__info-heading">会場</h3>
+                            <h3 class="p-works-main-visual__info-heading c-heading-black-background">会場</h3>
                                 <p class="p-works-main-visual__info-text"><?php echo esc_html($cfs->get('venue')); ?></p>
                             </div>
                         </div>

@@ -21,13 +21,13 @@ Template Name: top
                 </div>
                 <div class="p-top-next-section__description-container">
                     <div class="p-top-next-section__description-section">
-                        <h4 class="p-top-next-section__description-heading">会期</h4>
+                        <h4 class="p-top-next-section__description-heading c-heading-black-background">会期</h4>
                         <div class="p-top-next-section__description-text-container">
                             <p class="p-top-next-section__date"><?php echo esc_html($cfs->get('date')); ?></p>
                         </div>
                     </div>
                     <div class="p-top-next-section__description-section">
-                    <h4 class="p-top-next-section__description-heading">会場</h4>
+                    <h4 class="p-top-next-section__description-heading c-heading-black-background">会場</h4>
                         <div class="p-top-next-section__description-text-container">
                             <p class="p-top-next-section__venue-name"><?php echo esc_html($cfs->get('venue')); ?></p>
                             <p class="p-top-next-section__venue-detail"><?php echo nl2br(esc_textarea($cfs->get('venue-detail'))); ?></p>
@@ -39,7 +39,7 @@ Template Name: top
                         if(!empty($fields)) :
                     ?>
                         <div class="p-top-next-section__description-section">
-                        <h4 class="p-top-next-section__description-heading">人々</h4>
+                        <h4 class="p-top-next-section__description-heading c-heading-black-background">人々</h4>
                             <div class="p-top-next-section__description-text-container">
                                 <?php foreach ($fields as $field) : ?>
                                     <dl class="p-top-next-section__people-list">
@@ -74,7 +74,7 @@ Template Name: top
                 </div>
                 <div class="p-top-main-section__section">
                     <h2 class="p-top-main-section__section-heading">円盤に乗る派について</h2>
-                    <div class="p-top-main-section__section-content p-top-main-section__about-content">
+                    <div class="p-top-main-section__section-content p-top-main-section__about-content c-rich-text">
                         <?php echo apply_filters('the_content', $cfs->get('noruha-profile')); ?>
                     </div>
                 </div>
@@ -100,7 +100,7 @@ Template Name: top
                                                 <img class="p-top-main-section__member-image--on" src="<?php echo esc_url($field['artistphoto_on']); ?>">
                                             </div>
                                             <h3 class="p-top-main-section__member-heading"><?php echo esc_html($field['member-name']); ?></h3>
-                                            <div class="p-top-main-section__member-description js-member-open-target">
+                                            <div class="p-top-main-section__member-description c-rich-text js-member-open-target">
                                                 <?php echo apply_filters('the_content', $field['member-description']); ?>
                                             </div>
                                         </div>
