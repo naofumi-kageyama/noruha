@@ -59,30 +59,25 @@ $(function(){
         }
 
         //プロフィールある場合書式変更
-        $('.open-profile').each(function(){
-            const profile = $(this).parent().find('.profile');
-            const profLength = profile.length;
-            const css = {
-                "text-decoration" : "underline",
-                "cursor" : "pointer"
-            }
+        // $('.open-profile').each(function(){
+        //     const profile = $(this).parent().find('.profile');
+        //     const profLength = profile.length;
+        //     const css = {
+        //         "text-decoration" : "underline",
+        //         "cursor" : "pointer"
+        //     }
 
-            if ( profLength !== 0 ){
-                $(this).css(css);
-            }
-        });
+        //     if ( profLength !== 0 ){
+        //         $(this).css(css);
+        //     }
+        // });
 
         //プロフィールある場合書式変更（改良版）
-        $('.js-open-profile-btn').each(function(){
-            const profile = $(this).parent().find('.js-open-profile-content');
-            const profLength = profile.length;
-            const css = {
-                "text-decoration" : "underline",
-                "cursor" : "pointer"
-            }
-
-            if ( profLength !== 0 ){
-                $(this).css(css);
+        $('.js-open-profile-container').each(function(){
+            const profile = $(this).find('.js-open-profile-target');
+            const profileLength = profile.length;
+            if ( profileLength !== 0 ){
+                $(this).addClass('has-credit');
             }
         });
     });
@@ -152,7 +147,7 @@ $(function(){
         }
         
         function openAnimation() {
-            description.addClass("is_opened");
+            description.addClass("is-open");
             description.stop().animate({"opacity":"1"}, fadeSpeed);
         }
 
@@ -169,7 +164,7 @@ $(function(){
         }
 
         function close(moveTarget){
-            description.removeClass("is_opened");
+            description.removeClass("is-open");
             description.stop().animate({"opacity":"0"}, fadeSpeed, function() {
                 if (moveTarget !== ""){
                     $.each(moveTarget, function(){
@@ -179,7 +174,7 @@ $(function(){
             });
         }
 
-        if (description.hasClass("is_opened")) {
+        if (description.hasClass("is-open")) {
             close(moveTarget);
         } else {
             open(moveTarget);
@@ -187,59 +182,58 @@ $(function(){
     });
 
     //nextプロフィール表示
-    $('.open-profile').click(function(){
-        const profile = $(this).parent().find('.profile');
+    $('.js-open-profile-button').click(function(){
+        if($(this).closest('.js-open-profile-container').hasClass("has-credit")) {
+            const gap = 20;
+            const moveSpeed = 500;
+            const fadeSpeed = 200;
 
-        const height = profile.outerHeight(true);
-        const gap = 20;
-        const originalGap = 5;
-        const moveTo = height + gap;
-        const moveSpeed = 500;
-        const fadeSpeed = 200;
-
-        const nextChild = $(this).parent().next();
-        const nextParent = $(this).parent().parent().parent().next();
-
-        const length = $(this).parent().parent().children().length;
-        const index = $(this).parent().index();
-        const correctIndex = index + 1;
-
-    	if (correctIndex == length){
-                target = [nextParent];
-        } else {
-                target = [nextChild];
-        }
-
-        function open(target){
-            function openAnimation() {
-                profile.addClass("opened");
-                profile.stop().animate({"opacity":"1"}, fadeSpeed);
-                profile.css("display","inline-block");
+            const openTarget = $(this).closest('.js-open-profile-container').find('.js-open-profile-target');
+            const height = openTarget.outerHeight(true);
+            const moveTo = height + gap;
+                    
+            let moveTarget = "";
+            let originalGap = "";
+            const length = $(this).closest('.js-open-profile-children-wrapper').children().length;
+            const thisIndex = $(this).closest('.js-open-profile-child').index();
+            const nextChild = $(this).closest('.js-open-profile-child').next();
+            const nextParent = $(this).closest('.js-open-profile-parent').next();
+            if (thisIndex + 1 == length){
+                originalGap = $(this).closest('.js-open-profile-parent').css('margin-bottom');
+                moveTarget = nextParent;
+            } else {
+                originalGap = $(this).closest('.js-open-profile-child').css('margin-bottom');
+                moveTarget = nextChild;
             }
-            
-            $.each(target, function(){
-                $(this).stop().animate({"marginTop" : moveTo}, moveSpeed, function(){
-                    openAnimation();
-                });
-            })
-        }
 
-        function close(target){
-            profile.removeClass("opened");
-            profile.stop().animate({"opacity":"0"}, fadeSpeed, function() {
-                $.each(target, function(){
-                    $(this).animate({"marginTop" : originalGap}, moveSpeed);
+            function open(){
+                function openAnimation() {
+                    openTarget.addClass("is-open");
+                    openTarget.stop().animate({"opacity":"1"}, fadeSpeed);
+                }
+                $.each(moveTarget, function(){
+                    $(this).stop().animate({"marginTop" : moveTo}, moveSpeed, function(){
+                        openAnimation();
+                    });
                 })
-                profile.css("display","none");
-            });
-        }
+            }
 
-        if ($(this).hasClass("non-credit")) {
-            ;
-        } else if (profile.hasClass("opened")) {
-            close(target);
+            function close(){
+                openTarget.removeClass("is-open");
+                openTarget.stop().animate({"opacity":"0"}, fadeSpeed, function() {
+                    $.each(moveTarget, function(){
+                        $(this).animate({"marginTop" : originalGap}, moveSpeed);
+                    })
+                });
+            }
+
+            if (openTarget.hasClass("is-open")) {
+                close();
+            } else {
+                open();
+            }
         } else {
-            open(target);
+            console.log("no-credit");
         }
     });    
 

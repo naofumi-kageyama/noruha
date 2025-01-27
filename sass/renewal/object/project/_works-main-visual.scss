@@ -32,8 +32,5 @@
         &__info-container{
             @include mix.margin_between(1em);
         }
-        &__info-heading {
-            margin-bottom: 1em;
-        }
     }
 }

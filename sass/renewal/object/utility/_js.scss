@@ -1,7 +1,26 @@
 @use "../../foundation/mixin" as mix;
 @use "../../foundation/variable" as var;
 @use "../../foundation/breakpoint" as br;
-
 .js-form-container {    
+    opacity: 0;
+}
+.js-member-open-container {
+    position: relative;
+}
+.js-member-open-target {
+    position: absolute;
+    opacity: 0;
+}
+.js-open-profile-container {
+    position: relative;
+    &.has-credit {
+        .js-open-profile-button {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
+.js-open-profile-target {
+    position: absolute;
     opacity: 0;
 }

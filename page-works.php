@@ -31,78 +31,74 @@ Template Name: works
                         </div>
                     </div>
                     <div class="p-works__section p-works-description">
-                        <div class="next-copy">
-                            <p><?php echo $cfs->get('catch'); ?></p>
+                        <p class="p-works-description__copy"><?php echo $cfs->get('catch'); ?></p>
+                        <div class="p-works-description__text c-rich-text next-description">
+                            <?php echo apply_filters("the_content",$cfs->get('description')); ?>
                         </div>
-                        <div class="next-description">
-                            <?php echo $cfs->get('description'); ?>
-                            <?php if(!empty($post->post_content)): ?>
+                        <?php if(!empty($post->post_content)): ?>
+                            <div class="p-works-description__content c-content">
                                 <?php the_content(); ?>
-                            <?php endif; ?>
-                        </div>
+                            </div>
+                        <?php endif; ?>
                     </div>
                     <div class="p-works__section p-works-info">
-                        <div id="people" class="next-content">
-                            <div class="next-detail-title">
-                                <span>人々</span>
+                        <div class="p-works-info__section">
+                            <h2 class="p-works-info__section-heading c-heading-black-background">人々</h2>
+                            <div class="p-works-info__member-list-container">
+                                <dl class="p-works-info__member-list js-open-profile-parent-wrapper">
+                                    <?php
+                                        $fields = cfs()->get('people');
+                                        foreach ($fields as $field) :
+                                    ?>
+                                        <div class="p-works-info__member-terms-container js-open-profile-parent">
+                                            <dt class="p-works-info__member-terms"><?php echo esc_html($field['role']); ?></dt>
+                                            <dd class="p-works-info__member-description js-open-profile-children-wrapper">
+                                                <?php
+                                                    $fields = $field['individual'];
+                                                    foreach ((array)$fields as $field):
+                                                ?>
+                                                    <div class="p-works-info__member-container js-open-profile-container js-open-profile-child">
+                                                        <p class="p-works-info__member-name js-open-profile-button"><?php echo esc_html($field['name']); ?></p>
+                                                        <?php if(!empty($field['profile'])): ?>
+                                                            <div class="p-works-info__member-profile c-white-area c-rich-text js-open-profile-target">
+                                                                <button class="c-white-area__close"></button>
+                                                                <?php echo apply_filters("the_content", $field['profile']); ?>
+                                                            </div>
+                                                        <?php endif; ?>
+                                                    </div>
+                                                <?php endforeach; ?>
+                                            </dd>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </dl>
+                                <p class="p-works-info__member-remarks"><?php echo esc_html($cfs->get('remarks')); ?></p>
                             </div>
 
-                            <?php
-                                $fields = cfs()->get('people'); //親ループ
-                                foreach ($fields as $field) :
-                            ?>
-                                <div class="credit-area">
-                                    <div class="role-area">
-                                        <p><?php echo $field['role']; ?></p>
-                                    </div>
-                                    <div class="name-area">
-                                        <?php
-                                            $fields = $field['individual']; //子ループ
-                                            foreach ((array)$fields as $field):
-                                        ?>
-                                            <div class="name">
-                                                <p class="open-profile"><?php echo $field['name']; ?></p>
-                                                <?php if(!empty($field['profile'])): ?>
-                                                    <div class="profile">
-                                                        <span class="batsu"></span>
-                                                        <?php echo $field['profile']; ?>
-                                                    </div>
-                                                <?php endif; ?>
-                                            </div>
-                                        <?php endforeach; ?>
-                                    </div>
-                                </div>                
-                            <?php endforeach; ?>
-
-                            <p><?php echo $cfs->get('remarks'); ?></p>
-
-                            <div class="organizer">
+                            <div class="p-works-info__organizer-list-container">
+                                <dl class="p-works-info__organizer-list">
+                                    <?php
+                                        $fields = cfs()->get('organizer'); //親ループ
+                                        foreach ($fields as $field) :
+                                    ?>
+                                        <div class="p-works-info__organizer-terms-container">
+                                            <dt class="p-works-info__organizer-terms"><?php echo esc_html($field['role']); ?></dt>
+                                            <dd class="p-works-info__organizer-description">
+                                            <?php echo nl2br(esc_textarea($field['name'])); ?>
+                                                    <?php if($field['imgs-true']): ?>
+                                                        <!-- <div class="organizer-logo-wrap">
+                                                            <?php
+                                                                $fields = $field['logo-imgs']; //子ループ
+                                                                foreach ((array)$fields as $field):
+                                                            ?>
+                                                                <img src="<?php echo $field['logo-img']; ?>">
+                                                            <?php endforeach; ?>
+                                                        </div> -->
+                                                    <?php endif; ?>
+                                            </dd>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </dl>
                                 <table class="credit-area">
-                                <?php
-                                    $fields = cfs()->get('organizer'); //親ループ
-                                    foreach ($fields as $field) :
-                                ?>
-                                    <tr>
-                                        <th class="role-area">
-                                            <p><?php echo $field['role']; ?></p>
-                                        </th>
-                                        <td class="name-area">
-                                            <div class="name">
-                                                <p><?php echo $field['name']; ?></p>
-                                                <?php if($field['imgs-true']): ?>
-                                                    <div class="organizer-logo-wrap">
-                                                        <?php
-                                                            $fields = $field['logo-imgs']; //子ループ
-                                                            foreach ((array)$fields as $field):
-                                                        ?>
-                                                            <img src="<?php echo $field['logo-img']; ?>">
-                                                        <?php endforeach; ?>
-                                                    </div>
-                                                <?php endif; ?>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                <?php endforeach; ?>
                                 </table>
 
                                 <div class="grant">
@@ -110,32 +106,24 @@ Template Name: works
                                 </div>
                             </div>
                         </div>
-                        <div id="timetable" class="next-content">
-                            <div class="next-detail-title">
-                                <span>日時</span>
-                            </div>
+                        <div id="timetable" class="p-works-info__section">
+                            <h2 class="p-works-info__section-heading c-heading-black-background">日時</h2>
                             <p>
                                 <?php echo $cfs->get('timetable'); ?>
                             </p>
                         </div>
-                        <div id="price" class="next-content">
-                            <div class="next-detail-title">
-                                <span>料金</span>
-                            </div>
+                        <div id="price" class="p-works-info__section">
+                            <h2 class="p-works-info__section-heading c-heading-black-background">料金</h2>
                             <p>
                                 <?php echo $cfs->get('price'); ?>
                             </p>
                         </div>
-                        <div id="ticket" class="next-content">
-                            <div class="next-detail-title">
-                                <span>チケット</span>
-                            </div>
+                        <div id="ticket" class="p-works-info__section">
+                            <h2 class="p-works-info__section-heading c-heading-black-background">チケット</h2>
                             <?php echo $cfs->get('ticket'); ?>
                         </div>
-                        <div id="venue" class="next-content">
-                            <div class="next-detail-title">
-                                <span>会場</span>
-                            </div>
+                        <div id="venue" class="p-works-info__section">
+                            <h2 class="p-works-info__section-heading c-heading-black-background">会場</h2>
                             <div class="next-venue-logo">
                                 <?php echo $cfs->get('next-venue-logo'); ?>
                             </div>
@@ -143,10 +131,8 @@ Template Name: works
                                 <?php echo $cfs->get('next-venue-detail'); ?>
                             </div>
                         </div>
-                        <div id="contact" class="next-content">
-                            <div class="next-detail-title">
-                                <span>お問い合わせ</span>
-                            </div>
+                        <div id="contact" class="p-works-info__section">
+                            <h2 class="p-works-info__section-heading c-heading-black-background">お問い合わせ</h2>
                             <?php echo $cfs->get('contact'); ?>
                         </div>
                     </div>

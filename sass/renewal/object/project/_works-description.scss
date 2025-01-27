@@ -3,5 +3,13 @@
 @use "../../foundation/breakpoint" as br;
 .renewal {
     .p-works-description {
+        &__copy {
+            margin-bottom: 60px;
+            font-size: var.$font_size_ll;
+            font-weight: 600;
+        }
+        &__text {
+            font-size: var.$font_size_l;
+        }
     }
 }

@@ -3,5 +3,43 @@
 @use "../../foundation/breakpoint" as br;
 .renewal {
     .p-works-info {
+        font-size: var.$font_size_l;
+        &__section {
+            @include mix.margin_between(60px);
+        }
+        &__member-list-container {
+            margin-bottom: 1em;
+        }
+        &__member-terms-container {
+            display: flex;
+            justify-content: flex-start;
+            @include mix.margin_between(0.5em);
+        }
+        &__member-terms {
+            margin-right: 1em;
+        }
+        &__member-description {
+            flex-grow: 1;
+        }
+        &__member-profile {
+            margin-top: 10px;
+        }
+        &__member-remarks {
+            margin-top: 1em;
+        }
+        &__organizer-list-container {
+            font-size: var.$font_size_m;
+        }
+        &__organizer-terms-container {
+            display: flex;
+            justify-content: flex-start;
+        }
+        &__organizer-terms {
+            margin-right: 1em;
+            white-space: nowrap;
+        }
+        &__organizer-description {
+            flex-grow: 1;
+        }
     }
 }
