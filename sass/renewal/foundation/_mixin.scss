@@ -1,5 +1,13 @@
 @use "variable" as var;
 @use "breakpoint" as br;
+@mixin heading_black_background {    
+    width: fit-content;
+    line-height: 1;
+    padding: 5px;
+    background-color: var.$black;
+    color: var.$gray;
+    font-weight: 600;
+}
 @mixin margin_1em {
     margin: 1em 0;
     &:first-child {

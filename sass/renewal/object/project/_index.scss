@@ -2,6 +2,11 @@
 @use "top-next-section";
 @use "top-main-section";
 
+@use "works";
+@use "works-main-visual";
+@use "works-description";
+@use "works-info";
+
 @use "template-nav";
 
 @use "24kasou-description" as kasou-description;
