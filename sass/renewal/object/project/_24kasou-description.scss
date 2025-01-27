@@ -6,11 +6,11 @@
     font-size: var.$font_size_l;
     &__content {
         p {
-            @include mix.margin_1em;
+            @include mix.margin_between(1em);
         }
     }
     &__genre-item {
-        @include mix.margin_1em;
+        @include mix.margin_between(1em);
     }
     &__genre-heading {
         font-weight: bold;

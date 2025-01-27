@@ -37,7 +37,7 @@
             font-weight: 700;
         }
         &__about-content {
-            @include mix.textarea;
+            @include rich_text;
         }
         &__members-content {
             font-weight: 400;
@@ -89,7 +89,7 @@
             text-align: center;
         }
         &__member-description {
-            @include mix.textarea;
+            @include rich_text;
             position: absolute;
             opacity: 0;
         }

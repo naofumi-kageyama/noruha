@@ -30,13 +30,7 @@
             border-bottom: var.$black 1px solid;
         }
         &__info-container{
-            margin: 1em auto;
-            &:first-of-type {
-                margin-top: 0;
-            }
-            &:last-of-type {
-                margin-bottom: 0;
-            }
+            @include mix.margin_between(1em);
         }
         &__info-heading {
             @include mix.heading_black_background;

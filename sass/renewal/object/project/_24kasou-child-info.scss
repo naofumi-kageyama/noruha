@@ -29,7 +29,7 @@
         margin-top: 30px;
     }
     &__section {
-        @include mix.margin_1em;
+        @include mix.margin_between(1em);
     }
     &__section-heading {
         width: fit-content;
@@ -41,7 +41,7 @@
         margin-bottom: 0.5em;
     }
     &__text {
-        @include mix.margin_1em;
+        @include mix.margin_between(1em);
     }
     &__list {
         display: grid;

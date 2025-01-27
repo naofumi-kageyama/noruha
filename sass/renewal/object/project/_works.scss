@@ -4,13 +4,7 @@
 .renewal {
     .p-works {
         &__section {
-            margin: 60px 0;
-            &:first-of-type {
-                margin-top: 0;
-            }
-            &:last-of-type {
-                margin-bottom: 0;
-            }
+            @include mix.margin_between(60px);
         }
     }
 }

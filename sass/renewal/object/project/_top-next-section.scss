@@ -44,7 +44,7 @@
             padding: 20px 2.5%;
         }
         &__description-section {
-            @include mix.margin_1em;
+            @include mix.margin_between(1em);
         }
         &__description-heading {
             @include mix.heading_black_background;

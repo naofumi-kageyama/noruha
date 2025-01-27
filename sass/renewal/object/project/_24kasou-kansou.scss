@@ -15,7 +15,7 @@
         font-size: var.$font_size_m;
     }
     &__section {
-        @include mix.margin_1em;
+        @include mix.margin_between(1em);
     }
     &__section-heading {
         &::before {
@@ -23,7 +23,7 @@
         }
     }
     &__text {
-        @include mix.margin_1em;
+        @include mix.margin_between(1em);
     }
     &__list-item {
         list-style-type: disc;

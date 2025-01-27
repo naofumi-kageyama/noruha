@@ -8,8 +8,8 @@
     color: var.$gray;
     font-weight: 600;
 }
-@mixin margin_1em {
-    margin: 1em 0;
+@mixin margin_between($margin) {
+    margin: $margin 0;
     &:first-child {
         margin-top: 0;
     }
@@ -26,8 +26,8 @@
         padding: 30px 20px;
     }
 }
-@mixin textarea {
+@mixin rich_text {
     >p {
-        @include margin_1em;
+        @include margin_between(1em);
     }
 }
