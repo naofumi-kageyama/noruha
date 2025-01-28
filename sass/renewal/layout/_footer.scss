@@ -16,29 +16,11 @@
         }
     }
     &__close-button {
-        width: 20px;
-        height: 20px;
+        @include mix.close_button;
         position: absolute;
         top: 0;
         right: 0;
         transform: translateY(calc(-100% - 10px));
-        cursor: pointer;
-        &::before,
-        &::after {
-            content: "";
-            display: block;
-            position: absolute;
-            top: 50%;
-            width: calc(100% * 1.414);
-            height: 2px;
-            background: var.$black;
-        }
-        &::before {
-            transform: rotate(-45deg);
-        }
-        &::after {
-            transform: rotate(45deg);
-        }
     }
     &__form {
         display: flex;

@@ -232,38 +232,38 @@ $(function(){
             } else {
                 open();
             }
-        } else {
-            console.log("no-credit");
         }
     });    
 
-    $('.batsu').click(function(){
-        const profile = $(this).parent().parent().find('.profile');
-
-        const originalGap = 5;
+    $('.js-close-profile-button').click(function(){
+        const gap = 20;
         const moveSpeed = 500;
         const fadeSpeed = 200;
 
-        const nextChild = $(this).parent().parent().next();
-        const nextParent = $(this).parent().parent().parent().parent().next();
-
-        const length = $(this).parent().parent().parent().children().length;
-        const index = $(this).parent().parent().index();
-        const correctIndex = index + 1;
-
-    	if (correctIndex == length){
-                target = [nextParent];
+        const openTarget = $(this).closest('.js-open-profile-container').find('.js-open-profile-target');
+        const height = openTarget.outerHeight(true);
+        const moveTo = height + gap;
+                
+        let moveTarget = "";
+        let originalGap = "";
+        const length = $(this).closest('.js-open-profile-children-wrapper').children().length;
+        const thisIndex = $(this).closest('.js-open-profile-child').index();
+        const nextChild = $(this).closest('.js-open-profile-child').next();
+        const nextParent = $(this).closest('.js-open-profile-parent').next();
+        if (thisIndex + 1 == length){
+            originalGap = $(this).closest('.js-open-profile-parent').css('margin-bottom');
+            moveTarget = nextParent;
         } else {
-                target = [nextChild];
+            originalGap = $(this).closest('.js-open-profile-child').css('margin-bottom');
+            moveTarget = nextChild;
         }
 
-        profile.removeClass("opened");
-        profile.stop().animate({"opacity":"0"}, fadeSpeed, function() {
-            $.each(target, function(){
+        openTarget.removeClass("is-open");
+        openTarget.stop().animate({"opacity":"0"}, fadeSpeed, function() {
+            $.each(moveTarget, function(){
                 $(this).animate({"marginTop" : originalGap}, moveSpeed);
             })
-            profile.css("display","none");
-        });        
+        });
     });
 
     //nextプロフィール表示（改良版）

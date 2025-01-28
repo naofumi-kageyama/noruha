@@ -428,26 +428,27 @@
 .renewal .l-footer__close-button {
   width: 20px;
   height: 20px;
+  cursor: pointer;
   position: absolute;
   top: 0;
   right: 0;
   transform: translateY(calc(-100% - 10px));
-  cursor: pointer;
 }
 .renewal .l-footer__close-button::before, .renewal .l-footer__close-button::after {
   content: "";
   display: block;
   position: absolute;
   top: 50%;
+  left: 50%;
   width: 141.4%;
   height: 2px;
   background: #000;
 }
 .renewal .l-footer__close-button::before {
-  transform: rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 .renewal .l-footer__close-button::after {
-  transform: rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 .renewal .l-footer__form {
   display: flex;
@@ -652,6 +653,34 @@
     padding: 30px 20px;
   }
 }
+.renewal .c-white-area--with-close-button {
+  position: relative;
+}
+.renewal .c-white-area__close-button {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+.renewal .c-white-area__close-button::before, .renewal .c-white-area__close-button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 141.4%;
+  height: 2px;
+  background: #000;
+}
+.renewal .c-white-area__close-button::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.renewal .c-white-area__close-button::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
 .renewal .p-top {
   display: flex;
   justify-content: space-between;
@@ -955,7 +984,11 @@
 .renewal .p-works-info__member-description {
   flex-grow: 1;
 }
-.renewal .p-works-info__member-profile {
+.renewal .p-works-info__member-name {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.renewal .p-works-info__member-profile-container {
   margin-top: 10px;
 }
 .renewal .p-works-info__member-remarks {

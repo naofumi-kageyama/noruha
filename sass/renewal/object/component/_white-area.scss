@@ -10,8 +10,14 @@
     @include br.mq(tab) {
         padding: 30px 20px;
     }
-    &__close {
-        
+    &--with-close-button {
+        position: relative;
+    }
+    &__close-button {
+        @include mix.close_button;
+        position: absolute;
+        top: 15px;
+        right: 20px;
     }
 }
 }

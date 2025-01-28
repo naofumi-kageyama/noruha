@@ -21,7 +21,10 @@
         &__member-description {
             flex-grow: 1;
         }
-        &__member-profile {
+        &__member-name {
+            width: fit-content;
+        }
+        &__member-profile-container {
             margin-top: 10px;
         }
         &__member-remarks {
