@@ -4,9 +4,9 @@
 .renewal {
     .p-top-main-section {
         padding-bottom: 200px;
-        @include br.mq(tab) {
-            padding-bottom: 60px;
-        }
+        // @include br.mq(tab) {
+        //     padding-bottom: 150px;
+        // }
         &__copy-container {
             padding: 50px 0;
             overflow: hidden;
@@ -40,6 +40,7 @@
             font-weight: 400;
         }
         &__members-column-wrapper {
+            margin-bottom: 150px;
             padding-top: 60px;
             display: flex;
             justify-content: space-around;
@@ -86,7 +87,6 @@
             text-align: center;
         }
         &__members-image-credit {
-            margin-top: 150px;
             font-family: "gtwalsheim-l";
             font-size: var.$font-size_l;
             text-align: center;

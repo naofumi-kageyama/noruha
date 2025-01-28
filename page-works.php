@@ -61,7 +61,7 @@ Template Name: works
                                                         <p class="p-works-info__member-name js-open-profile-button"><?php echo esc_html($field['name']); ?></p>
                                                         <?php if(!empty($field['profile'])): ?>
                                                             <div class="p-works-info__member-profile-container c-white-area js-open-profile-target">
-                                                                <button class="c-white-area__close-button js-close-profile-button"></button>
+                                                                <button class="c-white-area__close-button js-open-profile-button"></button>
                                                                 <div class="p-works-info__member-profile c-rich-text">
                                                                     <?php echo apply_filters("the_content", $field['profile']); ?>
                                                                 </div>

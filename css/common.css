@@ -1,5 +1,5 @@
 /* ここからフォント */
-@font-face {
+/* @font-face {
 	font-family: 'gtwalsheim-l';
 	src: url("fonts/GT-Walsheim-Light.woff2") format('woff2'),
 	url("fonts/GT-Walsheim-Light.woff") format('woff'),
@@ -11,7 +11,7 @@
 	src: url("fonts/GT-Walsheim-Regular.woff2") format('woff2'),
 	url("fonts/GT-Walsheim-Regular.woff") format('woff'),
 	url("fonts/GT-Walsheim-Regular.eot") format('eot');
-}
+} */
 /* ここまでフォント */
 
 /* 全体 */

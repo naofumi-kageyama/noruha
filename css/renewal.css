@@ -335,13 +335,13 @@
 
 @font-face {
   font-family: "gtwalsheim";
-  src: url("fonts/GT-Walsheim-Regular.woff2") format("woff2");
+  src: url("../fonts/GT-Walsheim-Regular.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "gtwalsheim";
-  src: url("fonts/GT-Walsheim-Light.woff2") format("woff2");
+  src: url("../fonts/GT-Walsheim-Light.woff2") format("woff2");
   font-weight: 300;
   font-display: swap;
 }
@@ -806,11 +806,6 @@
 .renewal .p-top-main-section {
   padding-bottom: 200px;
 }
-@media screen and (max-width: 768px) {
-  .renewal .p-top-main-section {
-    padding-bottom: 60px;
-  }
-}
 .renewal .p-top-main-section__copy-container {
   padding: 50px 0;
   overflow: hidden;
@@ -843,6 +838,7 @@
   font-weight: 400;
 }
 .renewal .p-top-main-section__members-column-wrapper {
+  margin-bottom: 150px;
   padding-top: 60px;
   display: flex;
   justify-content: space-around;
@@ -889,7 +885,6 @@
   text-align: center;
 }
 .renewal .p-top-main-section__members-image-credit {
-  margin-top: 150px;
   font-family: "gtwalsheim-l";
   font-size: 20px;
   text-align: center;

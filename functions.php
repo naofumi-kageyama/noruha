@@ -28,7 +28,7 @@ add_filter( 'document_title_separator', 'wp_document_title_separator' );
 //css取得
 function enqueue_style(){
   wp_enqueue_style('style', get_stylesheet_directory_uri(). '/css/common.css', array(), '1.0.0');
-  wp_enqueue_style('lightbox', get_stylesheet_directory_uri(). 'https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css');  
+  // wp_enqueue_style('lightbox', get_stylesheet_directory_uri(). 'https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css');  
   wp_enqueue_style('renewal', get_stylesheet_directory_uri(). '/css/renewal.css', array(), '1.0.0');
   if( is_page_template('page-23kofuku.php') || is_page_template('page-23kofuku-bbs.php') ) {
     wp_enqueue_style('kofuku', get_stylesheet_directory_uri(). '/css/kofuku.css', array(), '1.0.0');
@@ -40,9 +40,16 @@ function print_scripts() {
 	if (!is_admin()) {
 		wp_deregister_script('jquery'); //デフォルトjquery削除
 		wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js', true);
-		wp_enqueue_script('lightbox', 'https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js', true);
+		// wp_enqueue_script('lightbox', 'https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js', true);
 		wp_enqueue_script('marquee', get_template_directory_uri(). '/js/jquery.marquee.js', true);
 		wp_enqueue_script('script', get_template_directory_uri(). '/js/script.js', true);
+    if(is_home() || is_front_page()) {
+      wp_enqueue_script('marquee-config', get_template_directory_uri(). '/js/marquee-config.js', true);
+      wp_enqueue_script('form', get_template_directory_uri(). '/js/form.js', true);
+      wp_enqueue_script('top-profile', get_template_directory_uri(). '/js/top-profile.js', true);
+    } else {    
+      wp_enqueue_script('profile', get_template_directory_uri(). '/js/profile.js', true);
+    }
 	}
 }
 add_action('wp_print_scripts', 'print_scripts');

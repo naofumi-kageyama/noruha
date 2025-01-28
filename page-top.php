@@ -84,7 +84,7 @@ Template Name: top
                         <div class="p-top-main-section__members-image">
                             <img src="<?php echo esc_url($cfs->get('artistphoto_members')); ?>">
                         </div>
-                        <div class="p-top-main-section__members-column-wrapper">
+                        <div class="p-top-main-section__members-column-wrapper js-member-open-column-wrapper">
                             <?php
                                 $fields = cfs()->get('members-column'); //親ループ
                                 foreach ($fields as $field) :
