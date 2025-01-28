@@ -37,6 +37,7 @@ $(function(){
         
         function openAnimation() {
             description.addClass("is-open");
+            description.css("visibility", "visible");
             description.stop().animate({"opacity":"1"}, fadeSpeed);
         }
 
@@ -55,6 +56,7 @@ $(function(){
         function close(moveTarget){
             description.removeClass("is-open");
             description.stop().animate({"opacity":"0"}, fadeSpeed, function() {
+                description.css("visibility", "hidden");
                 if (moveTarget !== ""){
                     $.each(moveTarget, function(){
                         $(this).animate({"marginTop" : originalGap}, moveSpeed);

@@ -49,6 +49,7 @@ function print_scripts() {
       wp_enqueue_script('top-profile', get_template_directory_uri(). '/js/top-profile.js', true);
     } else {    
       wp_enqueue_script('profile', get_template_directory_uri(). '/js/profile.js', true);
+      wp_enqueue_script('set-attr-size', get_template_directory_uri(). '/js/set-attr-size.js', true);
     }
 	}
 }

@@ -73,7 +73,7 @@ Template Name: works
                                         </div>
                                     <?php endforeach; ?>
                                 </dl>
-                                <p class="p-works-info__member-remarks"><?php echo esc_html($cfs->get('remarks')); ?></p>
+                                <p class="p-works-info__member-remarks js-open-profile-next-element"><?php echo esc_html($cfs->get('remarks')); ?></p>
                             </div>
 
                             <div class="p-works-info__organizer-list-container">
@@ -85,7 +85,7 @@ Template Name: works
                                         <div class="p-works-info__organizer-terms-container">
                                             <dt class="p-works-info__organizer-terms"><?php echo esc_html($field['role']); ?></dt>
                                             <dd class="p-works-info__organizer-description">
-                                            <?php echo nl2br(esc_textarea($field['name'])); ?>
+                                                <?php echo nl2br(esc_textarea($field['name'])); ?>
                                                 <?php if($field['imgs-true']): ?>
                                                     <!-- <div class="organizer-logo-wrap">
                                                         <?php
@@ -100,40 +100,49 @@ Template Name: works
                                         </div>
                                     <?php endforeach; ?>
                                 </dl>
-
-                                <div class="grant">
-                                    <?php echo $cfs->get('grant'); ?>
+                                <div class="p-works-info__organizer-others">
+                                    <?php echo nl2br(esc_textarea($cfs->get('organizer-others'))); ?>
+                                </div>
+                                <div class="p-works-info__logo-pc js-set-attr-size">
+                                    <?php echo apply_filters('the_content', $cfs->get('logo-pc')); ?>
+                                </div>
+                                <div class="p-works-info__logo-sp js-set-attr-size">
+                                    <?php echo apply_filters('the_content', $cfs->get('logo-sp')); ?>
                                 </div>
                             </div>
                         </div>
-                        <div id="timetable" class="p-works-info__section">
+                        <div class="p-works-info__section">
                             <h2 class="p-works-info__section-heading c-heading-black-background">日時</h2>
-                            <p>
-                                <?php echo $cfs->get('timetable'); ?>
-                            </p>
+                            <div class="p-works-info__timetable">
+                                <?php echo nl2br(esc_textarea($cfs->get('timetable'))); ?>
+                            </div>
                         </div>
-                        <div id="price" class="p-works-info__section">
+                        <div class="p-works-info__section">
                             <h2 class="p-works-info__section-heading c-heading-black-background">料金</h2>
-                            <p>
-                                <?php echo $cfs->get('price'); ?>
-                            </p>
+                            <div class="p-works-info__price">
+                                <?php echo nl2br(esc_textarea($cfs->get('price'))); ?>
+                            </div>
                         </div>
                         <div id="ticket" class="p-works-info__section">
                             <h2 class="p-works-info__section-heading c-heading-black-background">チケット</h2>
-                            <?php echo $cfs->get('ticket'); ?>
+                            <div class="p-works-info__ticket">
+                                <?php echo apply_filters('the_content', $cfs->get('ticket')); ?>
+                            </div>
                         </div>
-                        <div id="venue" class="p-works-info__section">
+                        <div class="p-works-info__section">
                             <h2 class="p-works-info__section-heading c-heading-black-background">会場</h2>
-                            <div class="next-venue-logo">
-                                <?php echo $cfs->get('next-venue-logo'); ?>
+                            <div class="p-works-info__venue-name js-set-attr-size">
+                                <?php echo apply_filters('the_content', $cfs->get('next-venue-logo')); ?>
                             </div>
-                            <div class="next-venue-detail">
-                                <?php echo $cfs->get('next-venue-detail'); ?>
+                            <div class="p-works-info__venue-detail">
+                                <?php echo apply_filters('the_content', $cfs->get('next-venue-detail')); ?>
                             </div>
                         </div>
-                        <div id="contact" class="p-works-info__section">
+                        <div class="p-works-info__section">
                             <h2 class="p-works-info__section-heading c-heading-black-background">お問い合わせ</h2>
-                            <?php echo $cfs->get('contact'); ?>
+                            <div class="p-works-info__contact">
+                                <?php echo apply_filters('the_content', $cfs->get('contact')); ?>
+                            </div>
                         </div>
                     </div>
                 <?php endwhile; ?>

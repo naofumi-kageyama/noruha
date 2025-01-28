@@ -10,6 +10,9 @@
         &__member-list-container {
             margin-bottom: 1em;
         }
+        &__member-list {            
+            margin-bottom: 1em;
+        }
         &__member-terms-container {
             display: flex;
             justify-content: flex-start;
@@ -27,9 +30,6 @@
         &__member-profile-container {
             margin-top: 10px;
         }
-        &__member-remarks {
-            margin-top: 1em;
-        }
         &__organizer-list-container {
             font-size: var.$font_size_m;
         }
@@ -43,6 +43,33 @@
         }
         &__organizer-description {
             flex-grow: 1;
+        }
+        &__organizer-others {
+            margin-top: 1em;
+        }
+        &__logo-pc,
+        &__logo-sp {
+            img {
+                display: inline-block;
+                width: unset;
+            }
+        }
+        &__logo-pc {
+            margin-top: 1em;
+            @include br.mq(sp) {
+                display: none;
+            }
+        }
+        &__logo-sp {
+            margin-top: 1em;
+            display: none;
+            @include br.mq(sp) {
+                display: block;
+            }
+        }
+        &__venue-detail {
+            margin-top: 1em;
+            font-size: var.$font_size_m;
         }
     }
 }

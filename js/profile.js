@@ -6,6 +6,7 @@ $(function(){
     function open(openTarget, moveTarget, moveTo){
         function openAnimation() {
             openTarget.addClass("is-open");
+            openTarget.css("visibility", "visible");
             openTarget.stop().animate({"opacity":"1"}, fadeSpeed);
         }
         $.each(moveTarget, function(){
@@ -18,6 +19,7 @@ $(function(){
     function close(openTarget, moveTarget, originalGap){
         openTarget.removeClass("is-open");
         openTarget.stop().animate({"opacity":"0"}, fadeSpeed, function() {
+            openTarget.css("visibility", "hidden");
             $.each(moveTarget, function(){
                 $(this).animate({"marginTop" : originalGap}, moveSpeed);
             })
@@ -44,8 +46,15 @@ $(function(){
         const nextChild = $(this).closest('.js-open-profile-child').next();
         const nextParent = $(this).closest('.js-open-profile-parent').next();
         if (thisIndex + 1 == length){
-            originalGap = $(this).closest('.js-open-profile-parent').css('margin-bottom');
-            moveTarget = nextParent;
+            const parentLength =  $(this).closest('.js-open-profile-parent-wrapper').children().length;
+            const parentIndex = $(this).closest('.js-open-profile-parent').index();
+            if(parentIndex + 1 == parentLength) {
+                originalGap = $(this).closest('.js-open-profile-parent-wrapper').css('margin-bottom');
+                moveTarget = $('.js-open-profile-next-element');
+            } else {
+                originalGap = $(this).closest('.js-open-profile-parent').css('margin-bottom');
+                moveTarget = nextParent;
+            }
         } else {
             originalGap = $(this).closest('.js-open-profile-child').css('margin-bottom');
             moveTarget = nextChild;

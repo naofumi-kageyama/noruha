@@ -9,6 +9,7 @@
 }
 .js-member-open-target {
     position: absolute;
+    visibility: hidden;
     opacity: 0;
 }
 .js-open-profile-container {
@@ -22,5 +23,6 @@
 }
 .js-open-profile-target {
     position: absolute;
+    visibility: hidden;
     opacity: 0;
 }

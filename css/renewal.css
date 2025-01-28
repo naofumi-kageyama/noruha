@@ -406,7 +406,7 @@
   width: 95%;
   max-width: 900px;
   margin: 0 auto;
-  padding: 120px 0 20px;
+  padding: 120px 0 100px;
 }
 
 .renewal .l-footer {
@@ -962,6 +962,9 @@
 .renewal .p-works-info__member-list-container {
   margin-bottom: 1em;
 }
+.renewal .p-works-info__member-list {
+  margin-bottom: 1em;
+}
 .renewal .p-works-info__member-terms-container {
   display: flex;
   justify-content: flex-start;
@@ -986,9 +989,6 @@
 .renewal .p-works-info__member-profile-container {
   margin-top: 10px;
 }
-.renewal .p-works-info__member-remarks {
-  margin-top: 1em;
-}
 .renewal .p-works-info__organizer-list-container {
   font-size: 16px;
 }
@@ -1002,6 +1002,34 @@
 }
 .renewal .p-works-info__organizer-description {
   flex-grow: 1;
+}
+.renewal .p-works-info__organizer-others {
+  margin-top: 1em;
+}
+.renewal .p-works-info__logo-pc img, .renewal .p-works-info__logo-sp img {
+  display: inline-block;
+  width: unset;
+}
+.renewal .p-works-info__logo-pc {
+  margin-top: 1em;
+}
+@media screen and (max-width: 520px) {
+  .renewal .p-works-info__logo-pc {
+    display: none;
+  }
+}
+.renewal .p-works-info__logo-sp {
+  margin-top: 1em;
+  display: none;
+}
+@media screen and (max-width: 520px) {
+  .renewal .p-works-info__logo-sp {
+    display: block;
+  }
+}
+.renewal .p-works-info__venue-detail {
+  margin-top: 1em;
+  font-size: 16px;
 }
 
 .renewal .p-template-nav {
@@ -1250,6 +1278,7 @@
 
 .js-member-open-target {
   position: absolute;
+  visibility: hidden;
   opacity: 0;
 }
 
@@ -1263,5 +1292,6 @@
 
 .js-open-profile-target {
   position: absolute;
+  visibility: hidden;
   opacity: 0;
 }/*# sourceMappingURL=renewal.css.map */
