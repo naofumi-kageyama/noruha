@@ -86,11 +86,13 @@
             font-size: var.$font-size_l;
             text-align: center;
         }
+        &__member-description {    
+            position: absolute;
+        }
         &__members-image-credit {
             font-family: "gtwalsheim-l";
             font-size: var.$font-size_l;
             text-align: center;
         }
-        
     }
 }

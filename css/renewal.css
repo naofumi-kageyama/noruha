@@ -884,6 +884,9 @@
   font-size: 20px;
   text-align: center;
 }
+.renewal .p-top-main-section__member-description {
+  position: absolute;
+}
 .renewal .p-top-main-section__members-image-credit {
   font-family: "gtwalsheim-l";
   font-size: 20px;
@@ -966,6 +969,7 @@
   margin-bottom: 1em;
 }
 .renewal .p-works-info__member-terms-container {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   margin: 0.5em 0;
@@ -987,6 +991,8 @@
   width: fit-content;
 }
 .renewal .p-works-info__member-profile-container {
+  position: absolute;
+  left: 0;
   margin-top: 10px;
 }
 .renewal .p-works-info__organizer-list-container {
@@ -1277,21 +1283,16 @@
 }
 
 .js-member-open-target {
-  position: absolute;
   visibility: hidden;
   opacity: 0;
 }
 
-.js-open-profile-container {
-  position: relative;
-}
 .js-open-profile-container.has-credit .js-open-profile-button {
   text-decoration: underline;
   cursor: pointer;
 }
 
 .js-open-profile-target {
-  position: absolute;
   visibility: hidden;
   opacity: 0;
 }/*# sourceMappingURL=renewal.css.map */
