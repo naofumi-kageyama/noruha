@@ -47,6 +47,12 @@
         .wpcf7-spinner {
             display: block;
         }
+        &.invalid .wpcf7-response-output {
+            display: none;
+        }
+        &.sent p {
+            display: none;
+        }
         @include br.mq(sp) {
             display: block;
         }
@@ -85,57 +91,5 @@
             margin-top: 15px;
         }
     }
-
-    
-    /* contact form7 */
-    
-    #mail-form {
-        // height: 40px;
-        // margin: auto 0;
-    }
-    
-    #submit {
-    }
-    
-    /* 閉じるボタン */
-    
-    /* エラーメッセージ */
-    .wpcf7 form.invalid .wpcf7-response-output {
-        display: none;
-        box-sizing: border-box;
-        margin: 14px 0;
-        height: 40px;
-    }
-    
-    /* 送信後フォーム消去 */
-    form.sent p {
-        display :none;
-    }
-
-    #mail-form {
-    }
-
-    #submit {
-    }
-    .wpcf7-form {
-    }
-
-    // .wpcf7-form p:first-of-type {
-    //     margin-right: 20px;
-    // }
-
-    // .wpcf7-form p:last-of-type {
-    //     text-align: right;
-    // }
-
-    // #submit {
-    //     box-sizing: border-box;
-    //     width: 80%;
-    //     margin-top: 0;
-    // }
-
-    // .wpcf7 form.invalid .wpcf7-response-output {
-    //     margin-top: 0;
-    // }
 }
 }

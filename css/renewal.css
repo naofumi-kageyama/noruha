@@ -413,10 +413,6 @@
   position: fixed;
   bottom: 0;
   width: 100vw;
-  /* contact form7 */
-  /* 閉じるボタン */
-  /* エラーメッセージ */
-  /* 送信後フォーム消去 */
 }
 .renewal .l-footer__form-container {
   position: relative;
@@ -460,6 +456,12 @@
 }
 .renewal .l-footer__form .wpcf7-spinner {
   display: block;
+}
+.renewal .l-footer__form.invalid .wpcf7-response-output {
+  display: none;
+}
+.renewal .l-footer__form.sent p {
+  display: none;
 }
 @media screen and (max-width: 520px) {
   .renewal .l-footer__form {
@@ -508,15 +510,7 @@
     margin-top: 15px;
   }
 }
-.renewal .l-footer .wpcf7 form.invalid .wpcf7-response-output {
-  display: none;
-  box-sizing: border-box;
-  margin: 14px 0;
-  height: 40px;
-}
-.renewal .l-footer form.sent p {
-  display: none;
-}
+
 .renewal .l-project {
   font-size: 20px;
 }

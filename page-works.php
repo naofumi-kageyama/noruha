@@ -84,22 +84,20 @@ Template Name: works
                                             <dt class="p-works-info__organizer-terms"><?php echo esc_html($field['role']); ?></dt>
                                             <dd class="p-works-info__organizer-description">
                                             <?php echo nl2br(esc_textarea($field['name'])); ?>
-                                                    <?php if($field['imgs-true']): ?>
-                                                        <!-- <div class="organizer-logo-wrap">
-                                                            <?php
-                                                                $fields = $field['logo-imgs']; //子ループ
-                                                                foreach ((array)$fields as $field):
-                                                            ?>
-                                                                <img src="<?php echo $field['logo-img']; ?>">
-                                                            <?php endforeach; ?>
-                                                        </div> -->
-                                                    <?php endif; ?>
+                                                <?php if($field['imgs-true']): ?>
+                                                    <!-- <div class="organizer-logo-wrap">
+                                                        <?php
+                                                            $fields = $field['logo-imgs']; //子ループ
+                                                            foreach ((array)$fields as $field):
+                                                        ?>
+                                                            <img src="<?php echo $field['logo-img']; ?>">
+                                                        <?php endforeach; ?>
+                                                    </div> -->
+                                                <?php endif; ?>
                                             </dd>
                                         </div>
                                     <?php endforeach; ?>
                                 </dl>
-                                <table class="credit-area">
-                                </table>
 
                                 <div class="grant">
                                     <?php echo $cfs->get('grant'); ?>
