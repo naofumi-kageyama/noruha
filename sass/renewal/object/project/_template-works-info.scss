@@ -2,7 +2,7 @@
 @use "../../foundation/variable" as var;
 @use "../../foundation/breakpoint" as br;
 .renewal {
-    .p-works-info {
+    .p-template-works-info {
         font-size: var.$font_size_l;
         &__section {
             @include mix.margin_between(60px);

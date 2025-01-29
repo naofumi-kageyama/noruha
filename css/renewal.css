@@ -903,141 +903,6 @@
   margin-bottom: 0;
 }
 
-.renewal .p-works-main-visual__main-visual {
-  width: 95%;
-  max-width: 540px;
-  margin: 0 auto 30px;
-}
-.renewal .p-works-main-visual__title-container {
-  border-top: #000 1px solid;
-  border-bottom: #000 1px solid;
-  padding: 16px 0;
-  text-align: center;
-}
-.renewal .p-works-main-visual__title {
-  font-size: 32px;
-  font-weight: 600;
-}
-@media screen and (max-width: 520px) {
-  .renewal .p-works-main-visual__title {
-    font-size: 24px;
-  }
-}
-.renewal .p-works-main-visual__subtitle {
-  font-size: 20px;
-}
-.renewal .p-works-main-visual__info-wrapper {
-  font-size: 20px;
-  padding: 1em 0;
-  border-bottom: #000 1px solid;
-}
-.renewal .p-works-main-visual__info-container {
-  margin: 1em 0;
-}
-.renewal .p-works-main-visual__info-container:first-child {
-  margin-top: 0;
-}
-.renewal .p-works-main-visual__info-container:last-child {
-  margin-bottom: 0;
-}
-
-.renewal .p-works-description__copy {
-  margin-bottom: 60px;
-  font-size: 24px;
-  font-weight: 600;
-}
-.renewal .p-works-description__text {
-  font-size: 20px;
-}
-
-.renewal .p-works-info {
-  font-size: 20px;
-}
-.renewal .p-works-info__section {
-  margin: 60px 0;
-}
-.renewal .p-works-info__section:first-child {
-  margin-top: 0;
-}
-.renewal .p-works-info__section:last-child {
-  margin-bottom: 0;
-}
-.renewal .p-works-info__member-list-container {
-  margin-bottom: 1em;
-}
-.renewal .p-works-info__member-list {
-  margin-bottom: 1em;
-}
-.renewal .p-works-info__member-terms-container {
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  margin: 0.5em 0;
-}
-.renewal .p-works-info__member-terms-container:first-child {
-  margin-top: 0;
-}
-.renewal .p-works-info__member-terms-container:last-child {
-  margin-bottom: 0;
-}
-.renewal .p-works-info__member-terms {
-  margin-right: 1em;
-}
-.renewal .p-works-info__member-description {
-  flex-grow: 1;
-}
-.renewal .p-works-info__member-name {
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.renewal .p-works-info__member-profile-container {
-  position: absolute;
-  left: 0;
-  margin-top: 10px;
-}
-.renewal .p-works-info__organizer-list-container {
-  font-size: 16px;
-}
-.renewal .p-works-info__organizer-terms-container {
-  display: flex;
-  justify-content: flex-start;
-}
-.renewal .p-works-info__organizer-terms {
-  margin-right: 1em;
-  white-space: nowrap;
-}
-.renewal .p-works-info__organizer-description {
-  flex-grow: 1;
-}
-.renewal .p-works-info__organizer-others {
-  margin-top: 1em;
-}
-.renewal .p-works-info__logo-pc img, .renewal .p-works-info__logo-sp img {
-  display: inline-block;
-  width: unset;
-}
-.renewal .p-works-info__logo-pc {
-  margin-top: 1em;
-}
-@media screen and (max-width: 520px) {
-  .renewal .p-works-info__logo-pc {
-    display: none;
-  }
-}
-.renewal .p-works-info__logo-sp {
-  margin-top: 1em;
-  display: none;
-}
-@media screen and (max-width: 520px) {
-  .renewal .p-works-info__logo-sp {
-    display: block;
-  }
-}
-.renewal .p-works-info__venue-detail {
-  margin-top: 1em;
-  font-size: 16px;
-}
-
 .renewal .p-template-nav {
   display: flex;
   justify-content: space-between;
@@ -1065,6 +930,141 @@
 }
 .renewal .p-template-nav__link:hover {
   background-color: #f2e170;
+}
+
+.renewal .p-template-works-main-visual__main-visual {
+  width: 95%;
+  max-width: 540px;
+  margin: 0 auto 30px;
+}
+.renewal .p-template-works-main-visual__title-container {
+  border-top: #000 1px solid;
+  border-bottom: #000 1px solid;
+  padding: 16px 0;
+  text-align: center;
+}
+.renewal .p-template-works-main-visual__title {
+  font-size: 32px;
+  font-weight: 600;
+}
+@media screen and (max-width: 520px) {
+  .renewal .p-template-works-main-visual__title {
+    font-size: 24px;
+  }
+}
+.renewal .p-template-works-main-visual__subtitle {
+  font-size: 20px;
+}
+.renewal .p-template-works-main-visual__info-wrapper {
+  font-size: 20px;
+  padding: 1em 0;
+  border-bottom: #000 1px solid;
+}
+.renewal .p-template-works-main-visual__info-container {
+  margin: 1em 0;
+}
+.renewal .p-template-works-main-visual__info-container:first-child {
+  margin-top: 0;
+}
+.renewal .p-template-works-main-visual__info-container:last-child {
+  margin-bottom: 0;
+}
+
+.renewal .p-template-works-description__copy {
+  margin-bottom: 60px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.renewal .p-template-works-description__text {
+  font-size: 20px;
+}
+
+.renewal .p-template-works-info {
+  font-size: 20px;
+}
+.renewal .p-template-works-info__section {
+  margin: 60px 0;
+}
+.renewal .p-template-works-info__section:first-child {
+  margin-top: 0;
+}
+.renewal .p-template-works-info__section:last-child {
+  margin-bottom: 0;
+}
+.renewal .p-template-works-info__member-list-container {
+  margin-bottom: 1em;
+}
+.renewal .p-template-works-info__member-list {
+  margin-bottom: 1em;
+}
+.renewal .p-template-works-info__member-terms-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.5em 0;
+}
+.renewal .p-template-works-info__member-terms-container:first-child {
+  margin-top: 0;
+}
+.renewal .p-template-works-info__member-terms-container:last-child {
+  margin-bottom: 0;
+}
+.renewal .p-template-works-info__member-terms {
+  margin-right: 1em;
+}
+.renewal .p-template-works-info__member-description {
+  flex-grow: 1;
+}
+.renewal .p-template-works-info__member-name {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.renewal .p-template-works-info__member-profile-container {
+  position: absolute;
+  left: 0;
+  margin-top: 10px;
+}
+.renewal .p-template-works-info__organizer-list-container {
+  font-size: 16px;
+}
+.renewal .p-template-works-info__organizer-terms-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.renewal .p-template-works-info__organizer-terms {
+  margin-right: 1em;
+  white-space: nowrap;
+}
+.renewal .p-template-works-info__organizer-description {
+  flex-grow: 1;
+}
+.renewal .p-template-works-info__organizer-others {
+  margin-top: 1em;
+}
+.renewal .p-template-works-info__logo-pc img, .renewal .p-template-works-info__logo-sp img {
+  display: inline-block;
+  width: unset;
+}
+.renewal .p-template-works-info__logo-pc {
+  margin-top: 1em;
+}
+@media screen and (max-width: 520px) {
+  .renewal .p-template-works-info__logo-pc {
+    display: none;
+  }
+}
+.renewal .p-template-works-info__logo-sp {
+  margin-top: 1em;
+  display: none;
+}
+@media screen and (max-width: 520px) {
+  .renewal .p-template-works-info__logo-sp {
+    display: block;
+  }
+}
+.renewal .p-template-works-info__venue-detail {
+  margin-top: 1em;
+  font-size: 16px;
 }
 
 .renewal .p-24kasou-description {
