@@ -3,7 +3,7 @@
 @use "../../foundation/breakpoint" as br;
 .p-22kasou-description {
     &__section {
-        @include mix.margin_between(1em);
+        @include mix.margin_between(2em);
     }
     &__section-heading {
         font-size: var.$font_size_ll;
@@ -12,6 +12,10 @@
     }
     &__essay-list {
         margin-top: 1em;
+    }
+    &__essay-item {
+        list-style: disc;
+        list-style-position: inside;
     }
     &__essay-title {
         font-weight: 600;

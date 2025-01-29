@@ -1144,8 +1144,8 @@ dt {
 }
 
 .p-22kasou-description__section {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 .p-22kasou-description__section:first-child {
   margin-top: 0;
@@ -1160,6 +1160,10 @@ dt {
 }
 .p-22kasou-description__essay-list {
   margin-top: 1em;
+}
+.p-22kasou-description__essay-item {
+  list-style: disc;
+  list-style-position: inside;
 }
 .p-22kasou-description__essay-title {
   font-weight: 600;
