@@ -9,6 +9,7 @@ body {
     font-size: var.$font_size_main;
     font-weight: var.$font_weight_main;
     line-height: var.$line_height_main;
+    word-wrap: break-word;
     @include br.mq(sp) {
         font-size: var.$font_size_sp;
     }

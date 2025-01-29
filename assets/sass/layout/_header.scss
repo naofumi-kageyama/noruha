@@ -8,6 +8,7 @@
     justify-content: center;
     width: 100vw;
     height: var.$header_height;
+    background-color: var.$gray;
     border-bottom: var.$black 1px solid;
     z-index: 100;
     @include br.mq(tab) {

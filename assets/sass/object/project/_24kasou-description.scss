@@ -12,14 +12,14 @@
         @include mix.margin_between(1em);
     }
     &__genre-heading {
-        font-weight: bold;
+        font-weight: 600;
     }
     &__article {
         margin-top: 2em;
     }
     &__article-heading {
         font-size: var.$font_size_ll;
-        font-weight: bold;
+        font-weight: 600;
         margin-bottom: 0.5em;
     }
     &__article-item {

@@ -30,6 +30,8 @@
     &__member-profile-container {
         position: absolute;
         left: 0;
+        width: 100%;
+        max-width: 100%; //長い英字が折り返しされない問題への対策
         margin-top: 10px;
     }
     &__organizer-list-container {

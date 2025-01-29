@@ -35,7 +35,7 @@
   position: relative;
 }
 .kofuku .p-symposium__guest-item:first-of-type {
-  font-weight: bold;
+  font-weight: 600;
 }
 .kofuku .p-symposium__guest-name {
   width: -moz-fit-content;
@@ -313,7 +313,7 @@
   list-style: none;
 }
 .kofuku-bbs dt {
-  font-weight: bold;
+  font-weight: 600;
 }
 .kofuku-bbs dd {
   margin-left: 0;
@@ -472,7 +472,7 @@
 }
 .kofuku-bbs th {
   text-align: left;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .kofuku-bbs.p-main {
