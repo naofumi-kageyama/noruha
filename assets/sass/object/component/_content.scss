@@ -2,7 +2,6 @@
 @use "../../foundation/variable" as var;
 @use "../../foundation/breakpoint" as br;
 .c-content {
-    font-size: var.$font_size_l;
     @include br.mq(tab) {
         font-size: var.$font_size_m;
     }

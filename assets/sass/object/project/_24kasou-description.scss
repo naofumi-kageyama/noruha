@@ -2,7 +2,6 @@
 @use "../../foundation/variable" as var;
 @use "../../foundation/breakpoint" as br;
 .p-24kasou-description {
-    font-size: var.$font_size_l;
     &__content {
         p {
             @include mix.margin_between(1em);

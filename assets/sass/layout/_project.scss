@@ -2,7 +2,6 @@
 @use "../foundation/variable" as var;
 @use "../foundation/breakpoint" as br;
 .l-project {
-    font-size: var.$font_size_l;
     &__section{
         margin: 60px 0;
     }

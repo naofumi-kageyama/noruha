@@ -4,6 +4,7 @@
 .p-top {
     display: flex;
     justify-content: space-between;
+    font-size: var.$font_size_s;
     @include br.mq(tab) {
         display: block;
     }
