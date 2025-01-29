@@ -54,7 +54,8 @@ Template Name: 22kasou
                     <?php
                         $args = [
                             'cfs' => $cfs,
-                            'additional' => ''
+                            'additional_member' => '',
+                            'additional_venue' => ''
                         ];
                         get_template_part('template-parts/works-info', 'null', $args);
                     ?>

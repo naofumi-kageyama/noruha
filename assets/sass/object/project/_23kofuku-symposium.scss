@@ -1,0 +1,80 @@
+@use "../../foundation/mixin" as mix;
+@use "../../foundation/variable" as var;
+@use "../../foundation/breakpoint" as br;
+.p-23kofuku-symposium {
+    &__heading {
+        font-size: var.$font_size_ll;
+        font-weight: 600;
+        margin-bottom: 0.5em;
+    }
+    &__description {
+        margin-bottom: 50px;
+    }
+    &__symposium-list {
+        margin-bottom: 2em;
+    }
+    &__symposium-item {
+        @include mix.margin_between(2em);
+    }
+    &__symposium-heading {
+        font-weight: 600;
+        margin-bottom: 1em;
+    }
+    &__symposium-date {
+        margin-bottom: 1em;
+    }
+    &__guest-list {
+        margin-top: 1.5em;
+    }
+    &__guest-item {
+        @include mix.margin_between(5px);
+        position: relative;
+    }
+    &__guest-heading {
+        font-weight: 600;
+    }
+    &__guest-name {
+        width: fit-content;
+        margin-bottom: 5px;
+    }
+    &__guest-profile {
+        position: absolute;
+        left: 0;
+        margin-top: 10px;
+    }
+    &__close-button {
+        @include mix.close-button;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+    &__guest-profile-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include br.mq(sp){
+            display: block;
+        }
+    }
+    &__guest-image {
+        width: 25%;
+        @include br.mq(sp){
+            width: 100%;
+        }
+        figcaption{
+            font-size: var.$font_size_ss;
+        }
+    }
+    &__guest-description {
+        width: 70%;
+        @include br.mq(sp){
+            width: 100%;
+        }
+        p {
+            @include mix.margin_between(1em);
+        }
+    }
+    &__ticket {
+        margin-top: 1em;
+    }
+}

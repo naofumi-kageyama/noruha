@@ -1251,6 +1251,128 @@ dt {
   transform: translate(-50%, -50%) rotate(45deg);
 }
 
+.p-23kofuku-symposium__heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+.p-23kofuku-symposium__description {
+  margin-bottom: 50px;
+}
+.p-23kofuku-symposium__symposium-list {
+  margin-bottom: 2em;
+}
+.p-23kofuku-symposium__symposium-item {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.p-23kofuku-symposium__symposium-item:first-child {
+  margin-top: 0;
+}
+.p-23kofuku-symposium__symposium-item:last-child {
+  margin-bottom: 0;
+}
+.p-23kofuku-symposium__symposium-heading {
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+.p-23kofuku-symposium__symposium-date {
+  margin-bottom: 1em;
+}
+.p-23kofuku-symposium__guest-list {
+  margin-top: 1.5em;
+}
+.p-23kofuku-symposium__guest-item {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+}
+.p-23kofuku-symposium__guest-item:first-child {
+  margin-top: 0;
+}
+.p-23kofuku-symposium__guest-item:last-child {
+  margin-bottom: 0;
+}
+.p-23kofuku-symposium__guest-heading {
+  font-weight: 600;
+}
+.p-23kofuku-symposium__guest-name {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 5px;
+}
+.p-23kofuku-symposium__guest-profile {
+  position: absolute;
+  left: 0;
+  margin-top: 10px;
+}
+.p-23kofuku-symposium__close-button {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+.p-23kofuku-symposium__close-button::before, .p-23kofuku-symposium__close-button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 141.4%;
+  height: 2px;
+  background: #000;
+}
+.p-23kofuku-symposium__close-button::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.p-23kofuku-symposium__close-button::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.p-23kofuku-symposium__guest-profile-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 520px) {
+  .p-23kofuku-symposium__guest-profile-inner {
+    display: block;
+  }
+}
+.p-23kofuku-symposium__guest-image {
+  width: 25%;
+}
+@media screen and (max-width: 520px) {
+  .p-23kofuku-symposium__guest-image {
+    width: 100%;
+  }
+}
+.p-23kofuku-symposium__guest-image figcaption {
+  font-size: 12px;
+}
+.p-23kofuku-symposium__guest-description {
+  width: 70%;
+}
+@media screen and (max-width: 520px) {
+  .p-23kofuku-symposium__guest-description {
+    width: 100%;
+  }
+}
+.p-23kofuku-symposium__guest-description p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.p-23kofuku-symposium__guest-description p:first-child {
+  margin-top: 0;
+}
+.p-23kofuku-symposium__guest-description p:last-child {
+  margin-bottom: 0;
+}
+.p-23kofuku-symposium__ticket {
+  margin-top: 1em;
+}
+
 .p-24kasou-description__content p {
   margin-top: 1em;
   margin-bottom: 1em;
@@ -1464,10 +1586,6 @@ dt {
 
 .js-form-container {
   opacity: 0;
-}
-
-.js-member-open-container {
-  position: relative;
 }
 
 .js-member-open-target {

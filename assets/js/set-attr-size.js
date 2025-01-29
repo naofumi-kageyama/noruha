@@ -8,5 +8,4 @@ $(function(){
             'height': height
         });
     });
-    console.log($imgs);
 });

@@ -32,7 +32,6 @@
             </dl>
             <p class="p-template-works-info__member-remarks js-open-profile-next-element"><?php echo esc_html($args['cfs']->get('remarks')); ?></p>
         </div>
-
         <div class="p-template-works-info__organizer-list-container">
             <dl class="p-template-works-info__organizer-list">
                 <?php
@@ -71,6 +70,11 @@
                 </div>
             <?php endif ; ?>
         </div>
+        <?php if($args['additional_member']) : ?>
+            <div class="p-template-works-info__additional">
+                <?php echo $args['additional_member']; ?>
+            </div>
+        <?php endif; ?>
     </div>
     <div class="p-template-works-info__section">
         <h2 class="p-template-works-info__section-heading c-heading-black-background">日時</h2>
@@ -98,6 +102,11 @@
         <div class="p-template-works-info__venue-detail">
             <?php echo apply_filters('the_content', $args['cfs']->get('next-venue-detail')); ?>
         </div>
+        <?php if($args['additional_venue']) : ?>
+            <div class="p-template-works-info__additional">
+                <?php echo $args['additional_venue']; ?>
+            </div>
+        <?php endif; ?>
     </div>
     <div class="p-template-works-info__section">
         <h2 class="p-template-works-info__section-heading c-heading-black-background">お問い合わせ</h2>
@@ -105,9 +114,4 @@
             <?php echo apply_filters('the_content', $args['cfs']->get('contact')); ?>
         </div>
     </div>
-    <?php if($args['additional']) : ?>
-        <div class="p-template-works-info__additional">
-            <?php echo $args['additional']; ?>
-        </div>
-    <?php endif; ?>
 </div>

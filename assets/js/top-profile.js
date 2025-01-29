@@ -31,7 +31,6 @@ $(function(){
             } else {
                 moveTarget = $('.js-member-open-next-element');
                 originalGap = $(this).closest('.js-member-open-column-wrapper').css('margin-bottom');
-                console.log(originalGap);
             }
         }
         
