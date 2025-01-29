@@ -51,6 +51,9 @@ function print_scripts() {
       wp_enqueue_script('profile', get_template_directory_uri(). '/assets/js/profile.js', true);
       wp_enqueue_script('set-attr-size', get_template_directory_uri(). '/assets/js/set-attr-size.js', true);
     }
+    if(is_page()) {
+      wp_enqueue_script('modal', get_template_directory_uri(). '/assets/js/modal.js', true);
+    }
 	}
 }
 add_action('wp_print_scripts', 'print_scripts');

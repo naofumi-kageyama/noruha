@@ -9,8 +9,11 @@
 @use "template-works-description";
 @use "template-works-info";
 
-@use "24kasou-description" as kasou-description;
-@use "24kasou-kansou" as kasou-kansou;
-@use "24kasou-child" as kasou-child;
-@use "24kasou-child-article" as kasou-child-article;
-@use "24kasou-child-info" as kasou-child-info;
+@use "22kasou-description" as kasou-description;
+@use "22kasou-modal" as kasou-modal;
+
+@use "24kasou-description" as re-kasou-description;
+@use "24kasou-kansou" as re-kasou-kansou;
+@use "24kasou-child" as re-kasou-child;
+@use "24kasou-child-article" as re-kasou-child-article;
+@use "24kasou-child-info" as re-kasou-child-info;

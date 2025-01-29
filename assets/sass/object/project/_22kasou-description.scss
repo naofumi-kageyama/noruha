@@ -1,0 +1,22 @@
+@use "../../foundation/mixin" as mix;
+@use "../../foundation/variable" as var;
+@use "../../foundation/breakpoint" as br;
+.p-22kasou-description {
+    &__section {
+        @include mix.margin_between(1em);
+    }
+    &__section-heading {
+        font-size: var.$font_size_ll;
+        font-weight: 600;
+        margin-bottom: 0.5em;
+    }
+    &__essay-list {
+        margin-top: 1em;
+    }
+    &__essay-title {
+        font-weight: 600;
+        text-decoration: underline;
+        margin-right: 1em;
+        cursor: pointer;
+    }
+}

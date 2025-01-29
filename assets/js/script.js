@@ -30,24 +30,4 @@ $(function(){
     if(hash){
         moveTo(hash);
     }
-
-    //ポップアップテキスト
-    $('.open-text').click(function(){
-        const thisIndex = $(this).parent().index();
-        const target = $('.opened-text-wrapper').eq(thisIndex);
-
-        console.log(thisIndex);
-
-        target.css("display", "block");
-        target.animate({"opacity": "1"}, 400, "swing");
-    });
-
-    $('.opened-text-batsu').click(function (){
-        const target = $(this).parent();
-
-        target.stop().animate({"opacity": "0"}, 400, "swing", function(){
-            target.css("display", "none");
-        });
-    });
-
 });

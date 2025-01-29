@@ -57,15 +57,19 @@
                     </div>
                 <?php endforeach; ?>
             </dl>
-            <div class="p-template-works-info__organizer-others">
-                <?php echo nl2br(esc_textarea($args['cfs']->get('organizer-others'))); ?>
-            </div>
-            <div class="p-template-works-info__logo-pc js-set-attr-size">
-                <?php echo apply_filters('the_content', $args['cfs']->get('logo-pc')); ?>
-            </div>
-            <div class="p-template-works-info__logo-sp js-set-attr-size">
-                <?php echo apply_filters('the_content', $args['cfs']->get('logo-sp')); ?>
-            </div>
+            <?php if(!empty($args['cfs']->get('organizer-others'))) : ?>
+                <div class="p-template-works-info__organizer-others">
+                    <?php echo nl2br(esc_textarea($args['cfs']->get('organizer-others'))); ?>
+                </div>
+            <?php endif ; ?>
+            <?php if(!empty($args['cfs']->get('logo-pc'))) : ?>
+                <div class="p-template-works-info__logo-pc js-set-attr-size">
+                    <?php echo apply_filters('the_content', $args['cfs']->get('logo-pc')); ?>
+                </div>
+                <div class="p-template-works-info__logo-sp js-set-attr-size">
+                    <?php echo apply_filters('the_content', $args['cfs']->get('logo-sp')); ?>
+                </div>
+            <?php endif ; ?>
         </div>
     </div>
     <div class="p-template-works-info__section">
@@ -101,5 +105,9 @@
             <?php echo apply_filters('the_content', $args['cfs']->get('contact')); ?>
         </div>
     </div>
-    <?php echo $args['additional']; ?>
+    <?php if($args['additional']) : ?>
+        <div class="p-template-works-info__additional">
+            <?php echo $args['additional']; ?>
+        </div>
+    <?php endif; ?>
 </div>

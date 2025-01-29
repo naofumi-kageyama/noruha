@@ -16,5 +16,9 @@
             <p class="p-template-works-main-visual__info-text"><?php echo esc_html($args['cfs']->get('venue')); ?></p>
         </div>
     </div>
-    <?php echo $args['additional']; ?>
+    <?php if($args['additional']) : ?>
+        <div class="p-template-works-main-visual__additional">
+            <?php echo $args['additional']; ?>
+        </div>
+    <?php endif; ?>
 </div>

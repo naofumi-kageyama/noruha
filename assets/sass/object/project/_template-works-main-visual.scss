@@ -31,4 +31,7 @@
     &__info-container{
         @include mix.margin_between(1em);
     }
+    &__additional {
+        margin-top: 2em;
+    }
 }

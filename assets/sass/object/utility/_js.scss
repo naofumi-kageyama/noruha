@@ -23,3 +23,12 @@
     visibility: hidden;
     opacity: 0;
 }
+.js-modal {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+    &.is-open {
+        visibility: visible;
+        opacity: 1;
+    }
+}

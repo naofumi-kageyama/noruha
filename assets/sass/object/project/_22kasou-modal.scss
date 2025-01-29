@@ -1,0 +1,58 @@
+@use "../../foundation/mixin" as mix;
+@use "../../foundation/variable" as var;
+@use "../../foundation/breakpoint" as br;
+.p-22kasou-modal {
+	position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    &__overlay {        
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.5);
+    }
+    &__contents {        
+        box-sizing:border-box;
+        position: absolute;
+        top: 5vh;
+        width: 90%;
+        height: 90vh;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 60px 0;
+        border: 1px solid #000;
+        border-radius: 20px;
+        overflow-y: scroll;
+    }
+    &__contents-inner {        
+        width: 90%;
+        max-width: var.$content_width_main;
+        margin: 0 auto;
+    }
+    &__heading {
+        margin-bottom: 60px;
+    }
+    &__text-container {
+        p {
+            @include mix.margin_between(1em);
+            font-size: var.$font_size_m;
+        }
+    }
+    &__quote {    
+        margin: 2em 0 2em 2em;
+    }
+    &__author-container {
+        margin-top: 60px;
+    }
+    &__author-description {
+        font-size: var.$font_size_s;
+        margin-top: 1em;
+    }
+    &__close-button {
+        @include mix.close-button;
+        position: fixed;
+        top: calc(5vh + 15px);
+        right: calc(5% + 20px);
+    }
+}
