@@ -395,7 +395,6 @@ th {
 /*=== content width ===*/
 /*=== header height ===*/
 body {
-  padding-top: 120px;
   font-family: "Noto Sans", "Noto Sans CJK JP", "Noto Sans CJK JP Subset", sans-serif;
   background-color: #d6d6d6;
   color: #333;
@@ -445,6 +444,9 @@ dt {
 
 /* パスワード保護ページここまで */
 .l-header {
+  padding-top: 120px;
+}
+.l-header__logo-container {
   position: fixed;
   top: 0;
   display: flex;
@@ -456,7 +458,7 @@ dt {
   z-index: 100;
 }
 @media screen and (max-width: 768px) {
-  .l-header {
+  .l-header__logo-container {
     position: absolute;
   }
 }

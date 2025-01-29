@@ -2,7 +2,6 @@
 @use "variable" as var;
 @use "breakpoint" as br;
 body {
-    padding-top: var.$header-height;
     font-family: var.$font_main;
     background-color: var.$gray;
     color: var.$font_color;

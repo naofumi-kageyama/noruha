@@ -20,7 +20,7 @@ $(function(){
     //画面スクロール関数
     function moveTo(target){
         const targetTop = $(target).offset().top;
-        const headerHeight = $('header').height();
+        const headerHeight = $('js-header-height').height();
         const moveTo = targetTop - headerHeight;
         $(window).scrollTop(moveTo);
     }
