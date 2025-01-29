@@ -1,0 +1,72 @@
+@use "../../foundation/mixin" as mix;
+@use "../../foundation/variable" as var;
+@use "../../foundation/breakpoint" as br;
+.c-content {
+    font-size: var.$font_size_l;
+    @include br.mq(tab) {
+        font-size: var.$font_size_m;
+    }
+    h2 {
+        font-size: var.$font_size_ll;
+        font-weight: bold;
+        @include br.mq(tab) {
+            font-size: var.$font_size_l;
+        }
+    }
+    h3 {
+        font-weight: bold;
+    }
+    p {
+        @include mix.margin_between(1em);
+        &.has-small-font-size {
+            font-size: var.$font_size_m!important;
+            @include br.mq(tab) {
+                font-size: var.$font_size_s!important;
+            }
+        }
+    }
+    img {
+        width: auto;
+        margin: 2em 0;
+    }
+    blockquote {
+        margin-block-start: 2em;
+        margin-block-end: 2em;
+        margin-inline-start: 40px;
+        margin-inline-end: 40px;
+        @include br.mq(sp) {
+            margin-inline-start: 20px;
+            margin-inline-end: 20px;
+        }
+        p {
+            margin-bottom: 0.5em;
+        }
+        cite {
+            font-size: var.$font_size_m;
+            text-align: right;
+            @include br.mq(tab) {
+                font-size: var.$font_size_s;
+            }
+        }
+    }
+    /* common.cssの記述を上書き */
+    .page_pass_wrap {
+        max-width: unset;
+        padding: 0;
+        margin: 0;
+    }
+    /* ここまで */
+    .page_pass {
+        margin: 1em auto 0;
+        max-width: 400px;
+    }
+    .page_pass_input {
+        border: 1px solid;
+        background-color: var.$white;
+        padding: 5px;
+    }
+    .page_pass_submit {
+        text-align: center;
+        background-color: var.$white;
+    }
+}

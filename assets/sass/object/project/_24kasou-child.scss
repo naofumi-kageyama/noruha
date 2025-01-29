@@ -1,0 +1,15 @@
+@use "../../foundation/mixin" as mix;
+@use "../../foundation/variable" as var;
+@use "../../foundation/breakpoint" as br;
+.p-24kasou-child {
+    padding: 60px 0;
+    @include br.mq(tab) {
+        padding-bottom: 150px;
+    }
+    &__section {
+        margin-bottom: 100px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}

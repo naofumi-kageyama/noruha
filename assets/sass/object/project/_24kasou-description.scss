@@ -1,0 +1,33 @@
+@use "../../foundation/mixin" as mix;
+@use "../../foundation/variable" as var;
+@use "../../foundation/breakpoint" as br;
+.p-24kasou-description {
+    font-size: var.$font_size_l;
+    &__content {
+        p {
+            @include mix.margin_between(1em);
+        }
+    }
+    &__genre-item {
+        @include mix.margin_between(1em);
+    }
+    &__genre-heading {
+        font-weight: bold;
+    }
+    &__article {
+        margin-top: 2em;
+    }
+    &__article-heading {
+        font-size: var.$font_size_ll;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+    }
+    &__article-item {
+        list-style-type: disc;
+        list-style-position: inside;
+        margin-bottom: 0.5em;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}

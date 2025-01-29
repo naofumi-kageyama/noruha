@@ -9,16 +9,13 @@
         echo '<meta name="robots" content="noindex,follow" />';
     }
 ?>
-<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico">
+<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico">
 <?php wp_head(); ?>
 </head>
-
-<div class="renewal">
+<body <?php body_class(); ?>>
     <header class="l-header">
-        <a class="l-header__logo" href="<?php echo esc_url( home_url() ); ?>">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/logo_noruha.png" alt="円盤に乗る派　NORUHA">
-        </a>
+    <a class="l-header__logo" href="<?php echo esc_url( home_url() ); ?>">
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/logo_noruha.png" alt="円盤に乗る派　NORUHA">
+    </a>
     </header>
     <?php if(!is_home() && !is_front_page()) get_template_part('template-parts/nav'); ?>
-</div>
-<body <?php body_class(); ?>>

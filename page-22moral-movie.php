@@ -307,7 +307,7 @@ Template Name: 22moral-movie
             </div>
 
                 <?php else:  ?>
-                    <img class="passImg" src="<?php echo get_template_directory_uri(); ?>/images/moral-movie.jpg"/>
+                    <img class="passImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/moral-movie.jpg"/>
                     <?php echo get_the_password_form(); ?>
                 <?php endif;  ?>
             </article>

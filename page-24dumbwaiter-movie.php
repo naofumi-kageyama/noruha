@@ -45,7 +45,7 @@ Template Name: 22mdumbwaiter-movie
                         撮影・編集：宮﨑輝
                     </p>
                 <?php else:  ?>
-                    <img class="passImg" src="<?php echo get_template_directory_uri(); ?>/images/image_dumbwaiter.jpg"/>
+                    <img class="passImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/image_dumbwaiter.jpg"/>
                     <?php echo get_the_password_form(); ?>
                 <?php endif;  ?>
             </article>

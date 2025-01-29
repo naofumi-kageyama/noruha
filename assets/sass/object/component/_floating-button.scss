@@ -1,0 +1,18 @@
+@use "../../foundation/mixin" as mix;
+@use "../../foundation/variable" as var;
+@use "../../foundation/breakpoint" as br;
+.c-floating-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var.$black;
+    color: var.$color_main;
+    font-size: var.$font_size_l;
+    text-decoration: none;
+}

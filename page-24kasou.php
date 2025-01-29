@@ -40,68 +40,66 @@ Template Name: 24kasou
                 <p><?php echo $cfs->get('catch'); ?></p>
             </div>
             <div class="next-description">
-                <div class="renewal">
-                    <div class="p-24kasou-description c-white-area">
-                        <div class="p-24kasou-description__content">
-                            <?php echo $cfs->get('description'); ?>
-                        </div>
-                        <?php
-                            $genres = array(
-                                'interview' => 'インタビュー',
-                                'review' => '批評',
-                                'essay' => 'エッセイ'
-                            );
-                            $args = array(
-                                'post_parent' => get_the_ID(),
-                                'post_type' => 'page',
-                                'posts_per_page' => -1,
-                                'orderby' => 'menu_order',
-                                'order' => 'ASC',
-                                'has_password' => false,
-                            );
-                            $children = new WP_Query($args);
-                        ?>
-                        <?php if($children->have_posts()): ?>
-                            <div class="p-24kasou-description__article">
-                                <h3 class="p-24kasou-description__article-heading">関連記事</h3>
-                                <ul class="p-24kasou-description__genre-list">
-                                    <?php foreach($genres as $key => $label) : ?>                                   
-                                        <?php $genre_exist = false; ?>
-                                        <?php while($children->have_posts()): ?>
-                                        <?php $children->the_post();?>
-                                            <?php $this_article_genre = CFS()->get('genre'); ?>
-                                            <?php if(is_array($this_article_genre)): ?>
-                                                <?php foreach($this_article_genre as $this_article_key => $this_article_label): ?>
-                                                    <?php if($this_article_key == $key) $genre_exist = true; ?>
-                                                <?php endforeach; ?>
-                                            <?php endif; ?>
-                                        <?php endwhile;?>
-                                        <?php if($genre_exist) : ?>
-                                            <li class="p-24kasou-description__genre-item">
-                                                <h4 class="p-24kasou-description__genre-heading"><?php echo $label; ?></h4>
-                                                <ul class="p-24kasou-description__article-list">
-                                                    <?php while($children->have_posts()): ?>
-                                                    <?php $children->the_post();?>                                            
-                                                        <?php $this_article_genre = CFS()->get('genre'); ?>
-                                                        <?php if(is_array($this_article_genre)): ?>
-                                                            <?php foreach($this_article_genre as $this_article_key => $this_article_label): ?>
-                                                                <?php if($this_article_key == $key) : ?>
-                                                                    <li class="p-24kasou-description__article-item">
-                                                                        <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
-                                                                    </li>
-                                                                <?php endif; ?>
-                                                            <?php endforeach; ?>
-                                                        <?php endif; ?>
-                                                    <?php endwhile;?>
-                                                </ul>
-                                            </li>
-                                        <?php endif ?>
-                                    <?php endforeach; ?>
-                                </ul>
-                            </div>
-                        <?php endif;?>
-                        <?php wp_reset_postdata();?>
+                <div class="p-24kasou-description c-white-area">
+                    <div class="p-24kasou-description__content">
+                        <?php echo $cfs->get('description'); ?>
                     </div>
+                    <?php
+                        $genres = array(
+                            'interview' => 'インタビュー',
+                            'review' => '批評',
+                            'essay' => 'エッセイ'
+                        );
+                        $args = array(
+                            'post_parent' => get_the_ID(),
+                            'post_type' => 'page',
+                            'posts_per_page' => -1,
+                            'orderby' => 'menu_order',
+                            'order' => 'ASC',
+                            'has_password' => false,
+                        );
+                        $children = new WP_Query($args);
+                    ?>
+                    <?php if($children->have_posts()): ?>
+                        <div class="p-24kasou-description__article">
+                            <h3 class="p-24kasou-description__article-heading">関連記事</h3>
+                            <ul class="p-24kasou-description__genre-list">
+                                <?php foreach($genres as $key => $label) : ?>                                   
+                                    <?php $genre_exist = false; ?>
+                                    <?php while($children->have_posts()): ?>
+                                    <?php $children->the_post();?>
+                                        <?php $this_article_genre = CFS()->get('genre'); ?>
+                                        <?php if(is_array($this_article_genre)): ?>
+                                            <?php foreach($this_article_genre as $this_article_key => $this_article_label): ?>
+                                                <?php if($this_article_key == $key) $genre_exist = true; ?>
+                                            <?php endforeach; ?>
+                                        <?php endif; ?>
+                                    <?php endwhile;?>
+                                    <?php if($genre_exist) : ?>
+                                        <li class="p-24kasou-description__genre-item">
+                                            <h4 class="p-24kasou-description__genre-heading"><?php echo $label; ?></h4>
+                                            <ul class="p-24kasou-description__article-list">
+                                                <?php while($children->have_posts()): ?>
+                                                <?php $children->the_post();?>                                            
+                                                    <?php $this_article_genre = CFS()->get('genre'); ?>
+                                                    <?php if(is_array($this_article_genre)): ?>
+                                                        <?php foreach($this_article_genre as $this_article_key => $this_article_label): ?>
+                                                            <?php if($this_article_key == $key) : ?>
+                                                                <li class="p-24kasou-description__article-item">
+                                                                    <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+                                                                </li>
+                                                            <?php endif; ?>
+                                                        <?php endforeach; ?>
+                                                    <?php endif; ?>
+                                                <?php endwhile;?>
+                                            </ul>
+                                        </li>
+                                    <?php endif ?>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                    <?php endif;?>
+                    <?php wp_reset_postdata();?>
                 </div>
             </div>
             <div id="people" class="next-content">
@@ -210,60 +208,58 @@ Template Name: 24kasou
                 </div>
             </div>
 
-            <div class="renewal">
-                <div class="l-project">
-                    <section class="l-project__section p-24kasou-kansou c-white-area">
-                        <p class="p-24kasou-kansou__subheading">寄り道して帰ろう</p>
-                        <h3 class="p-24kasou-kansou__heading">円盤に乗る派『仮想的な失調』感想会</h3>
-                        <div class="p-24kasou-kansou__main">
-                            <div class="p-24kasou-kansou__section">
-                                <h4 class="p-24kasou-kansou__section-heading">開催概要</h4>
-                                <div class="p-24kasou-kansou__text-wrap">
-                                    <p class="p-24kasou-kansou__text">
-                                        円盤に乗る派『仮想的な失調』の終演後に、感想会を開催します。東京芸術祭事務局がホストとなり、お話しします。<br>
-                                        観劇の感想を話してもよし、集まった人の話を聞いてもよし、公演コラボメニューを味わうもよしです。
-                                    </p>
-                                    <p class="p-24kasou-kansou__text">
-                                        今年の東京芸術祭のテーマは『トランジット・ナウ～寄り道しよう、舞台の世界へ～』。ぜひ、お帰りの前にゆるっと寄り道してみてください。
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="p-24kasou-kansou__section">
-                                <h4 class="p-24kasou-kansou__section-heading">開催回</h4>
-                                <div class="p-24kasou-kansou__text-wrap">
-                                    <p class="p-24kasou-kansou__text">
-                                        9月
-                                        19日(木)  19:00（20:30終演予定）<br>
-                                        20日(金)  14:00（15:30終演予定）<br>
-                                        21日(土)  19:00（20:30終演予定）　※14:00の回は開催なし<br>
-                                        22日(日･祝) 14:00（15:30終演予定）
-                                    </p>
-                                    <p class="p-24kasou-kansou__text">
-                                        準備ができ次第開始／最大1時間ほど／途中参加・退出OK<br>
-                                        雨天中止の可能性あり
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="p-24kasou-kansou__section">
-                                <h4 class="p-24kasou-kansou__section-heading">会場</h4>                                
-                                <div class="p-24kasou-kansou__text-wrap">
-                                    <p class="p-24kasou-kansou__text">
-                                        東京芸術劇場 劇場前広場<br>
-                                        「東京芸術祭ひろば - トランジット キッチン」
-                                    </p>
-                                    <h5 class="p-24kasou-kansou__list-heading">= menu =</h5>
-                                    <ul class="p-24kasou-kansou__list">
-                                        <li class="p-24kasou-kansou__list-item">コラボかき氷（円盤に乗る派、木ノ下歌舞伎）</li>
-                                        <li class="p-24kasou-kansou__list-item">コラボバゲットサンド（チェルフィッチュ）</li>
-                                        <li class="p-24kasou-kansou__list-item">世界のバゲットサンド</li>
-                                        <li class="p-24kasou-kansou__list-item">コーヒー／アルコール 他 ドリンク</li>
-                                        <li class="p-24kasou-kansou__list-item">（キッチンカーの営業時間は21時まで）</li>
-                                    </ul>
-                                </div>
+            <div class="l-project">
+                <section class="l-project__section p-24kasou-kansou c-white-area">
+                    <p class="p-24kasou-kansou__subheading">寄り道して帰ろう</p>
+                    <h3 class="p-24kasou-kansou__heading">円盤に乗る派『仮想的な失調』感想会</h3>
+                    <div class="p-24kasou-kansou__main">
+                        <div class="p-24kasou-kansou__section">
+                            <h4 class="p-24kasou-kansou__section-heading">開催概要</h4>
+                            <div class="p-24kasou-kansou__text-wrap">
+                                <p class="p-24kasou-kansou__text">
+                                    円盤に乗る派『仮想的な失調』の終演後に、感想会を開催します。東京芸術祭事務局がホストとなり、お話しします。<br>
+                                    観劇の感想を話してもよし、集まった人の話を聞いてもよし、公演コラボメニューを味わうもよしです。
+                                </p>
+                                <p class="p-24kasou-kansou__text">
+                                    今年の東京芸術祭のテーマは『トランジット・ナウ～寄り道しよう、舞台の世界へ～』。ぜひ、お帰りの前にゆるっと寄り道してみてください。
+                                </p>
                             </div>
                         </div>
-                    </section>
-                </div>
+                        <div class="p-24kasou-kansou__section">
+                            <h4 class="p-24kasou-kansou__section-heading">開催回</h4>
+                            <div class="p-24kasou-kansou__text-wrap">
+                                <p class="p-24kasou-kansou__text">
+                                    9月
+                                    19日(木)  19:00（20:30終演予定）<br>
+                                    20日(金)  14:00（15:30終演予定）<br>
+                                    21日(土)  19:00（20:30終演予定）　※14:00の回は開催なし<br>
+                                    22日(日･祝) 14:00（15:30終演予定）
+                                </p>
+                                <p class="p-24kasou-kansou__text">
+                                    準備ができ次第開始／最大1時間ほど／途中参加・退出OK<br>
+                                    雨天中止の可能性あり
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-24kasou-kansou__section">
+                            <h4 class="p-24kasou-kansou__section-heading">会場</h4>                                
+                            <div class="p-24kasou-kansou__text-wrap">
+                                <p class="p-24kasou-kansou__text">
+                                    東京芸術劇場 劇場前広場<br>
+                                    「東京芸術祭ひろば - トランジット キッチン」
+                                </p>
+                                <h5 class="p-24kasou-kansou__list-heading">= menu =</h5>
+                                <ul class="p-24kasou-kansou__list">
+                                    <li class="p-24kasou-kansou__list-item">コラボかき氷（円盤に乗る派、木ノ下歌舞伎）</li>
+                                    <li class="p-24kasou-kansou__list-item">コラボバゲットサンド（チェルフィッチュ）</li>
+                                    <li class="p-24kasou-kansou__list-item">世界のバゲットサンド</li>
+                                    <li class="p-24kasou-kansou__list-item">コーヒー／アルコール 他 ドリンク</li>
+                                    <li class="p-24kasou-kansou__list-item">（キッチンカーの営業時間は21時まで）</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
 
             <div id="contact" class="next-content">
@@ -279,7 +275,5 @@ Template Name: 24kasou
         <?php endif;  ?>
     </div>
 </section>
-<div class="renewal">
-    <a class="c-floating-button" href="<?php echo esc_url(get_page_link(239)); ?>#ticket">TICKET</a>
-</div>
+<a class="c-floating-button" href="<?php echo esc_url(get_page_link(239)); ?>#ticket">TICKET</a>
 <?php get_footer(); ?>

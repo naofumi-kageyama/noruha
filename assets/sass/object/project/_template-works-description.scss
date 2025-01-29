@@ -1,0 +1,13 @@
+@use "../../foundation/mixin" as mix;
+@use "../../foundation/variable" as var;
+@use "../../foundation/breakpoint" as br;
+.p-template-works-description {
+    &__copy {
+        margin-bottom: 60px;
+        font-size: var.$font_size_ll;
+        font-weight: 600;
+    }
+    &__text {
+        font-size: var.$font_size_l;
+    }
+}

@@ -141,7 +141,7 @@ Template Name: 23kofuku
                                 <span class="p-symposium__close-btn js-open-profile-close"></span>
                                 <div class="p-symposium__guest-profile-inner">
                                     <figure class="p-symposium__guest-image">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/image_ozawa.png" alt="小澤みゆき氏のプロフィール画像" width="1969" height="1978">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image_ozawa.png" alt="小澤みゆき氏のプロフィール画像" width="1969" height="1978">
                                     </figure>
                                     <div class="p-symposium__guest-text">
                                         <p>
@@ -158,7 +158,7 @@ Template Name: 23kofuku
                                 <span class="p-symposium__close-btn js-open-profile-close"></span>
                                 <div class="p-symposium__guest-profile-inner">
                                     <figure class="p-symposium__guest-image">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/image_kitamura.jpg" alt="北村みなみ氏のプロフィール画像" width="2450" height="2450">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image_kitamura.jpg" alt="北村みなみ氏のプロフィール画像" width="2450" height="2450">
                                     </figure>                                    
                                     <div class="p-symposium__guest-text">
                                         <p>静岡県戸田村にて海と山に囲まれ育つ。</p>
@@ -173,7 +173,7 @@ Template Name: 23kofuku
                                 <span class="p-symposium__close-btn js-open-profile-close"></span>
                                 <div class="p-symposium__guest-profile-inner">
                                     <figure class="p-symposium__guest-image">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/image_kageyama_square.jpg" alt="カゲヤマ気象台のプロフィール画像" width="1000" height="667">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image_kageyama_square.jpg" alt="カゲヤマ気象台のプロフィール画像" width="1000" height="667">
                                         <figcaption>photo by Arata Mino</figcaption>
                                     </figure>                                                   
                                     <div class="p-symposium__guest-text">                     
@@ -189,7 +189,7 @@ Template Name: 23kofuku
                                 <span class="p-symposium__close-btn js-open-profile-close"></span>
                                 <div class="p-symposium__guest-profile-inner">
                                     <figure class="p-symposium__guest-image">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/image_sone.jpg" alt="曽根千智氏のプロフィール画像" width="1046" height="1568">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image_sone.jpg" alt="曽根千智氏のプロフィール画像" width="1046" height="1568">
                                         <figcaption>photo by Saki Chikai</figcaption>
                                     </figure>                                          
                                     <div class="p-symposium__guest-text">                          
@@ -214,7 +214,7 @@ Template Name: 23kofuku
                                 <span class="p-symposium__close-btn js-open-profile-close"></span>
                                 <div class="p-symposium__guest-profile-inner">
                                     <figure class="p-symposium__guest-image">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/image_enaga.jpg" alt="江永泉氏のプロフィール画像" width="1944" height="2592">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image_enaga.jpg" alt="江永泉氏のプロフィール画像" width="1944" height="2592">
                                     </figure>                                                                    
                                     <div class="p-symposium__guest-text">
                                         <p>著作に『闇の自己啓発』(早川書房、2021年、木澤佐登志・ひでシス・役所暁と共著)、「集まる流れを探るため──羽鳥ヨダ嘉郎『リンチ(戯曲)』」(『地域上演』第二号 2022年10月)、「笑えないところで笑う――向坂達矢『FINAL FUNTASY僕と犬と厭離穢土』」(Blu-ray版『FF』特典、2023年5月)などがある。2023年4月、『TED×Utokyo2023“どくどく”』にスピーカーとして参加。2023年2月よりYouTubeチャンネルTERECOにて米原将磨とコンテンツ雑談「光の曠達」を配信中。</p>
@@ -228,7 +228,7 @@ Template Name: 23kofuku
                                 <span class="p-symposium__close-btn js-open-profile-close"></span>
                                 <div class="p-symposium__guest-profile-inner">
                                     <figure class="p-symposium__guest-image">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/image_komiya.jpg" alt="小宮りさ麻吏奈氏のプロフィール画像" width="500" height="500">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image_komiya.jpg" alt="小宮りさ麻吏奈氏のプロフィール画像" width="500" height="500">
                                         <figcaption>Photo by Ardie Yorgans</figcaption>
                                     </figure>                                                                  
                                     <div class="p-symposium__guest-text">
@@ -243,7 +243,7 @@ Template Name: 23kofuku
                                 <span class="p-symposium__close-btn js-open-profile-close"></span>
                                 <div class="p-symposium__guest-profile-inner">
                                     <figure class="p-symposium__guest-image">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/image_kageyama_square.jpg" alt="カゲヤマ気象台のプロフィール画像" width="1000" height="667">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image_kageyama_square.jpg" alt="カゲヤマ気象台のプロフィール画像" width="1000" height="667">
                                         <figcaption>photo by Arata Mino</figcaption>
                                     </figure>                                                   
                                     <div class="p-symposium__guest-text">                     
@@ -259,7 +259,7 @@ Template Name: 23kofuku
                                 <span class="p-symposium__close-btn js-open-profile-close"></span>
                                 <div class="p-symposium__guest-profile-inner">
                                     <figure class="p-symposium__guest-image">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/image_sone.jpg" alt="曽根千智氏のプロフィール画像" width="1046" height="1568">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image_sone.jpg" alt="曽根千智氏のプロフィール画像" width="1046" height="1568">
                                         <figcaption>photo by Saki Chikai</figcaption>
                                     </figure>                                          
                                     <div class="p-symposium__guest-text">                          

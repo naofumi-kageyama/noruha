@@ -1,0 +1,24 @@
+@use "../foundation/mixin" as mix;
+@use "../foundation/variable" as var;
+@use "../foundation/breakpoint" as br;
+.l-header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: var.$header_height;
+    border-bottom: var.$black 1px solid;
+    z-index: 100;
+    @include br.mq(tab) {
+        position: absolute;
+    }
+    &__logo {
+        display: block;
+        height: 100%;
+        img {
+            width: auto;
+            height: 100%;
+        }
+    }
+}

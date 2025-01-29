@@ -99,7 +99,7 @@ Template Name: 23-kofuku-bbs
             </div>
             <div class="p-head__image-wrap">
                 <figure class="p-head__image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/image_agora.webp" alt="こまばアゴラ劇場の写真">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image_agora.webp" alt="こまばアゴラ劇場の写真">
                     <figcaption class="p-head__caption">こまばアゴラ劇場の写真（当時）</figcaption>
                 </figure>
                 <!-- <figure class="p-head__image">
