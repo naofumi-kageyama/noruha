@@ -5,7 +5,7 @@ Template Name: 24kasou-child
 ?>
 <?php get_header(); ?>
 <div class="global-wrapper">
-    <?php include('menu.php'); ?>
+    <?php get_template_part('template-parts/nav'); ?>
     <div class="renewal">
         <main class="l-main p-24kasou-child">
             <?php if (have_posts()): ?>

@@ -85,7 +85,7 @@ Template Name: 23-kofuku-bbs
 
 <main class="global-wrapper kofuku-bbs p-main">
     <section class="p-container">
-        <!-- <?php include('menu.php'); ?> -->
+        <!-- <?php get_template_part('template-parts/nav'); ?> -->
         <div class="p-container__head p-head">
             <h2 class="p-head__title">上演『幸福な島の夜』に関する調査</h2>
             <div class="p-head__description">

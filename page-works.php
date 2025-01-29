@@ -6,8 +6,7 @@ Template Name: works
 
 <?php get_header(); ?>
 <div class="renewal">
-<?php include('menu.php'); ?>
-    <main class="l-main p-works">        
+    <main class="l-main p-works">
         <?php if (have_posts()): ?>
             <?php if( !post_password_required( $post->ID ) ) :  ?>
                 <?php while (have_posts()): the_post(); ?>

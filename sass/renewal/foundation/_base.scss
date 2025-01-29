@@ -1,14 +1,16 @@
 @use "mixin" as mix;
 @use "variable" as var;
 @use "breakpoint" as br;
-.renewal {
-font-family: var.$font_main;
-color: var.$font_color;
-font-size: var.$font_size_main;
-font-weight: var.$font_weight_main;
-line-height: var.$line_height_main;
-@include br.mq(sp) {
-    font-size: var.$font_size_sp;
+body {
+    padding-top: var.$header-height;
+    font-family: var.$font_main;
+    color: var.$font_color;
+    font-size: var.$font_size_main;
+    font-weight: var.$font_weight_main;
+    line-height: var.$line_height_main;
+    @include br.mq(sp) {
+        font-size: var.$font_size_sp;
+    }
 }
 img {
     width: 100%;
@@ -21,5 +23,4 @@ a {
 }
 dt {
     font-weight: var.$font_weight_main;
-}
 }

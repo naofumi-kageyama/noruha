@@ -5,7 +5,6 @@
     .p-top {        
         display: flex;
         justify-content: space-between;
-        padding-top: var.$header_height;
         @include br.mq(tab) {
             display: block;
         }

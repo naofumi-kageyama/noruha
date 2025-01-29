@@ -8,7 +8,7 @@ Template Name: 22moral-movie
 
 
 <section class="global-wrapper">
-    <?php include('menu.php'); ?>
+    <?php get_template_part('template-parts/nav'); ?>
 
     <div class="contents-wrapper">
         <?php if (have_posts()): ?>

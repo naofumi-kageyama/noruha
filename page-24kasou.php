@@ -7,7 +7,7 @@ Template Name: 24kasou
 <?php get_header(); ?>
 
 <section class="global-wrapper">
-    <?php include('menu.php'); ?>
+    <?php get_template_part('template-parts/nav'); ?>
 
     <div class="contents-wrapper">
     <?php if( !post_password_required( $post->ID ) ) :  ?>

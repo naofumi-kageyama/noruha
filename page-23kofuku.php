@@ -7,7 +7,7 @@ Template Name: 23kofuku
 <?php get_header(); ?>
 
 <section class="global-wrapper kofuku">
-    <?php include('menu.php'); ?>
+    <?php get_template_part('template-parts/nav'); ?>
 
     <div class="contents-wrapper">
         <?php while (have_posts()): the_post(); ?>

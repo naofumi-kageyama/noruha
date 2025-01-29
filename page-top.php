@@ -56,7 +56,7 @@ Template Name: top
         </section>
         <section class="p-top__section p-top__right">
             <div class="p-top__section-inner p-top-main-section">
-                <?php include('menu.php'); ?>
+                <?php get_template_part('template-parts/nav'); ?>
                 <div class="p-top-main-section__copy-container js-marquee">
                     <p class="p-top-main-section__copy"><?php echo $cfs->get('catch'); ?></p>
                 </div>

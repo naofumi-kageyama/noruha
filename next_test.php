@@ -7,7 +7,7 @@ Template Name: next_test
 <?php get_header(); ?>
 
 <section class="global-wrapper">
-    <?php include('menu.php'); ?>
+    <?php get_template_part('template-parts/nav'); ?>
 
     <div class="contents-wrapper">
         <?php while (have_posts()): the_post(); ?>

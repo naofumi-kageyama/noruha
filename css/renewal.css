@@ -353,7 +353,8 @@
 /*=== font ===*/
 /*=== content width ===*/
 /*=== header height ===*/
-.renewal {
+body {
+  padding-top: 120px;
   font-family: "Noto Sans", "Noto Sans CJK JP", "Noto Sans CJK JP Subset", sans-serif;
   color: #333;
   font-size: 14px;
@@ -361,19 +362,22 @@
   line-height: 1.6;
 }
 @media screen and (max-width: 520px) {
-  .renewal {
+  body {
     font-size: 14px;
   }
 }
-.renewal img {
+
+img {
   width: 100%;
   height: auto;
   display: block;
 }
-.renewal a {
+
+a {
   text-decoration: underline;
 }
-.renewal dt {
+
+dt {
   font-weight: 400;
 }
 
@@ -406,7 +410,7 @@
   width: 95%;
   max-width: 900px;
   margin: 0 auto;
-  padding: 120px 0 100px;
+  padding-bottom: 100px;
 }
 
 .renewal .l-footer {
@@ -684,7 +688,6 @@
 .renewal .p-top {
   display: flex;
   justify-content: space-between;
-  padding-top: 120px;
 }
 @media screen and (max-width: 768px) {
   .renewal .p-top {
