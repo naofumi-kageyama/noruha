@@ -1,0 +1,16 @@
+@use "../../foundation/mixin" as mix;
+@use "../../foundation/variable" as var;
+@use "../../foundation/breakpoint" as br;
+.p-23kofuku-bbs {
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    font-family:'ＭＳ ゴシック', 'MS Gothic', sans-serif;
+    font-weight: 400;
+    &__section {
+        @include mix.margin_between(150px);
+        @include br.mq(sp) {
+            @include mix.margin_between(100px);
+        }
+    }
+}

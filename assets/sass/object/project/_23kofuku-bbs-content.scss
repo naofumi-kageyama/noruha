@@ -1,0 +1,21 @@
+@use "../../foundation/mixin" as mix;
+@use "../../foundation/variable" as var;
+@use "../../foundation/breakpoint" as br;
+.p-23kofuku-bbs-content {
+    &__post{
+        margin-bottom: 50px;
+    }
+    &__no{
+        margin-bottom: 1em;
+    }
+    &__author{
+        margin-bottom: 1em;
+    }
+    &__pagination {
+        display: flex;
+        gap: 10px;
+    }
+    &__pagination-link{
+        text-decoration: underline;
+    }
+}

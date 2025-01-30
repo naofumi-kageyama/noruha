@@ -3,59 +3,5 @@
 
 .kofuku-bbs{
     .p-form{
-        &__input-wrap{
-            display: flex;
-            justify-content: flex-start;
-            align-items: start;
-            &--author{
-                margin-bottom: 20px;
-            }
-            @include mixin.mq(tab){
-                display: block;
-            }
-        }
-        &__label{
-            display: block;
-            width: 150px;
-            @include mixin.mq(tab){
-                margin-bottom: 10px;
-            }
-        }
-        &__author-input{
-            display: block;
-            width: 200px;
-            background-color: #fff;
-            color: #000;
-            padding: 5px 10px;
-            &:focus{
-                outline: 2px solid #000;
-            }
-        }
-        &__content-textarea{
-            display: block;
-            width: 500px;
-            padding: 5px 10px;
-            background-color: #fff;
-            color: #000;
-            resize: none;
-            &:focus{
-                outline: 2px solid #000;
-            }
-            @include mixin.mq(tab){
-                width: 100%;
-            }
-        }
-        &__submit-button{
-            display: block;
-            background-color: #c4c4c4;
-            border: 1px solid #000;
-            color: #000;
-            padding: 5px 10px;
-            margin: 0 auto;
-            margin-top: 30px;
-            &:focus{
-                outline: 2px solid #000;
-            }
-        }
     }
 }

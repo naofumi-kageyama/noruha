@@ -581,10 +581,6 @@ dt {
   }
 }
 
-.l-project__section {
-  margin: 60px 0;
-}
-
 @media screen and (max-width: 768px) {
   .c-content {
     font-size: 16px;
@@ -1048,6 +1044,11 @@ dt {
   font-size: 24px;
   font-weight: 600;
 }
+@media screen and (max-width: 520px) {
+  .p-template-works-description__copy {
+    font-size: 20px;
+  }
+}
 .p-template-works-description__additional {
   margin-top: 2em;
 }
@@ -1374,15 +1375,174 @@ dt {
   margin-top: 1em;
 }
 
-.p-24kasou-description__content p {
+.p-23kofuku-bbs {
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+  font-family: "ＭＳ ゴシック", "MS Gothic", sans-serif;
+  font-weight: 400;
+}
+.p-23kofuku-bbs__section {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.p-23kofuku-bbs__section:first-child {
+  margin-top: 0;
+}
+.p-23kofuku-bbs__section:last-child {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 520px) {
+  .p-23kofuku-bbs__section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .p-23kofuku-bbs__section:first-child {
+    margin-top: 0;
+  }
+  .p-23kofuku-bbs__section:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.p-23kofuku-bbs-head__heading {
+  font-size: 24px;
+  text-align: center;
+}
+@media screen and (max-width: 520px) {
+  .p-23kofuku-bbs-head__heading {
+    font-size: 20px;
+  }
+}
+.p-23kofuku-bbs-head__description {
+  padding: 80px 0;
+}
+.p-23kofuku-bbs-head__description-line {
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.p-24kasou-description__content p:first-child {
+.p-23kofuku-bbs-head__description-line:first-child {
   margin-top: 0;
 }
-.p-24kasou-description__content p:last-child {
+.p-23kofuku-bbs-head__description-line:last-child {
   margin-bottom: 0;
+}
+.p-23kofuku-bbs-head__signature {
+  margin-top: 1em;
+  text-align: right;
+}
+.p-23kofuku-bbs-head__image {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.p-23kofuku-bbs-head__image figcaption {
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: right;
+}
+.p-23kofuku-bbs-head__form {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+@media screen and (max-width: 768px) {
+  .p-23kofuku-bbs-head__form {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+.p-23kofuku-bbs-head__input-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+}
+.p-23kofuku-bbs-head__input-container--author {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .p-23kofuku-bbs-head__input-container {
+    display: block;
+  }
+}
+.p-23kofuku-bbs-head__label {
+  display: block;
+  width: 150px;
+}
+@media screen and (max-width: 768px) {
+  .p-23kofuku-bbs-head__label {
+    margin-bottom: 10px;
+  }
+}
+.p-23kofuku-bbs-head__author-input {
+  display: block;
+  width: 200px;
+  background-color: #fff;
+  color: #000;
+  padding: 5px 10px;
+}
+.p-23kofuku-bbs-head__author-input:focus {
+  outline: 2px solid #000;
+}
+.p-23kofuku-bbs-head__content-textarea {
+  display: block;
+  width: 500px;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #000;
+  resize: none;
+}
+.p-23kofuku-bbs-head__content-textarea:focus {
+  outline: 2px solid #000;
+}
+@media screen and (max-width: 768px) {
+  .p-23kofuku-bbs-head__content-textarea {
+    width: 100%;
+  }
+}
+.p-23kofuku-bbs-head__submit-button {
+  display: block;
+  background-color: #c4c4c4;
+  border: 1px solid #000;
+  color: #000;
+  padding: 5px 10px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.p-23kofuku-bbs-head__submit-button:focus {
+  outline: 2px solid #000;
+}
+.p-23kofuku-bbs-head__remarks {
+  text-align: right;
+  margin-top: 50px;
+}
+
+.p-23kofuku-bbs-content__post {
+  margin-bottom: 50px;
+}
+.p-23kofuku-bbs-content__no {
+  margin-bottom: 1em;
+}
+.p-23kofuku-bbs-content__author {
+  margin-bottom: 1em;
+}
+.p-23kofuku-bbs-content__pagination {
+  display: flex;
+  gap: 10px;
+}
+.p-23kofuku-bbs-content__pagination-link {
+  text-decoration: underline;
+}
+
+.p-24kasou-description__heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+@media screen and (max-width: 520px) {
+  .p-24kasou-description__heading {
+    font-size: 20px;
+  }
 }
 .p-24kasou-description__genre-item {
   margin-top: 1em;
@@ -1397,20 +1557,16 @@ dt {
 .p-24kasou-description__genre-heading {
   font-weight: 600;
 }
-.p-24kasou-description__article {
-  margin-top: 2em;
-}
-.p-24kasou-description__article-heading {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 0.5em;
-}
 .p-24kasou-description__article-item {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   list-style-type: disc;
   list-style-position: inside;
-  margin-bottom: 0.5em;
 }
-.p-24kasou-description__article-item:last-of-type {
+.p-24kasou-description__article-item:first-child {
+  margin-top: 0;
+}
+.p-24kasou-description__article-item:last-child {
   margin-bottom: 0;
 }
 
@@ -1420,9 +1576,6 @@ dt {
 .p-24kasou-kansou__heading {
   font-weight: 600;
   margin-bottom: 1em;
-}
-.p-24kasou-kansou__main {
-  font-size: 16px;
 }
 .p-24kasou-kansou__section {
   margin-top: 1em;
@@ -1455,18 +1608,14 @@ dt {
   list-style: none;
 }
 
-.p-24kasou-child {
-  padding: 60px 0;
-}
-@media screen and (max-width: 768px) {
-  .p-24kasou-child {
-    padding-bottom: 150px;
-  }
-}
 .p-24kasou-child__section {
+  margin-top: 100px;
   margin-bottom: 100px;
 }
-.p-24kasou-child__section:last-of-type {
+.p-24kasou-child__section:first-child {
+  margin-top: 0;
+}
+.p-24kasou-child__section:last-child {
   margin-bottom: 0;
 }
 
@@ -1488,6 +1637,7 @@ dt {
 .p-24kasou-child-article__profile-container {
   display: flex;
   gap: 30px;
+  font-size: 14px;
 }
 @media screen and (max-width: 768px) {
   .p-24kasou-child-article__profile-container {
@@ -1518,6 +1668,9 @@ dt {
   margin-bottom: 0;
 }
 
+.p-24kasou-child-info {
+  font-size: 14px;
+}
 .p-24kasou-child-info__heading {
   font-size: 32px;
   margin-bottom: 20px;

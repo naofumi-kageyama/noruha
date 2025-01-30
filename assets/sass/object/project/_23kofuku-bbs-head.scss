@@ -1,0 +1,98 @@
+@use "../../foundation/mixin" as mix;
+@use "../../foundation/variable" as var;
+@use "../../foundation/breakpoint" as br;
+.p-23kofuku-bbs-head {
+    &__heading {
+        font-size: 24px;
+        text-align: center;
+        @include br.mq(sp){
+            font-size: 20px;
+        }
+    }
+    &__description{
+        padding: 80px 0;
+    }
+    &__description-line{
+        @include mix.margin_between(1em);
+    }
+    &__signature{
+        margin-top: 1em;
+        text-align: right;
+    }
+    &__image{
+        max-width: 400px;
+        margin: 0 auto;
+        figcaption {
+            font-size: 12px;
+            margin-top: 5px;
+            text-align: right;
+        }
+    }
+    &__form{
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 50px;
+        @include br.mq(tab){
+            width: 100%;
+            max-width: 500px;
+        }
+    }
+    &__input-container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: start;
+        &--author{
+            margin-bottom: 20px;
+        }
+        @include br.mq(tab){
+            display: block;
+        }
+    }
+    &__label{
+        display: block;
+        width: 150px;
+        @include br.mq(tab){
+            margin-bottom: 10px;
+        }
+    }
+    &__author-input{
+        display: block;
+        width: 200px;
+        background-color: #fff;
+        color: #000;
+        padding: 5px 10px;
+        &:focus{
+            outline: 2px solid #000;
+        }
+    }
+    &__content-textarea{
+        display: block;
+        width: 500px;
+        padding: 5px 10px;
+        background-color: #fff;
+        color: #000;
+        resize: none;
+        &:focus{
+            outline: 2px solid #000;
+        }
+        @include br.mq(tab){
+            width: 100%;
+        }
+    }
+    &__submit-button{
+        display: block;
+        background-color: #c4c4c4;
+        border: 1px solid #000;
+        color: #000;
+        padding: 5px 10px;
+        margin: 0 auto;
+        margin-top: 30px;
+        &:focus{
+            outline: 2px solid #000;
+        }
+    }
+    &__remarks{
+        text-align: right;
+        margin-top: 50px;
+    }
+}
