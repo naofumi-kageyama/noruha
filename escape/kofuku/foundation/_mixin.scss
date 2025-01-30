@@ -1,8 +1,0 @@
-@use "variable" as var;
-
-//media query
-@mixin mq($media) {
-    @media #{map-get(var.$bp, $media)} {
-        @content;
-    }
-}
