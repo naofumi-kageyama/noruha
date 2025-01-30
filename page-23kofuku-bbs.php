@@ -4,33 +4,39 @@ Template Name: 23-kofuku-bbs
 */
 ?>
 <?php
-    global $wpdb;
-    $no = 0;
-    
-    if (isset($_POST['comment_author'])) {
-        $author = $_POST['comment_author'];
-        $post_id = get_the_ID();
-        $author_IP = $_SERVER["REMOTE_ADDR"];
-        $date = wp_date('Y-m-d H:i:s');
-        $date_gmt = gmdate('Y-m-d H:i:s');
-        $content = $_POST['comment_content'];
-        $approved = 1;
-        $agent = $_SERVER['HTTP_USER_AGENT'];
+    if($_SERVER["REQUEST_METHOD"]==="POST"){
+        global $wpdb;
+        $no = 0;
         
-        $comment_column = array(
-            'comment_author' => $author,
-            'comment_post_ID' => $post_id,
-            'comment_author_IP' => $author_IP,
-            'comment_date' => $date,
-            'comment_date_gmt' => $date_gmt,
-            'comment_content' => $content,
-            'comment_approved' => $approved,
-            'comment_agent' => $agent
-        );
-        $comment_type = array('%s', '%d', '%s', '%s', '%s', '%s', '%d', '%s');
-        $wpdb -> insert("wp_comments", $comment_column, $comment_type);                            
+        if (isset($_POST['comment_author'])) {
+            $author = $_POST['comment_author'];
+            $post_id = get_the_ID();
+            $author_IP = $_SERVER["REMOTE_ADDR"];
+            $date = wp_date('Y-m-d H:i:s');
+            $date_gmt = gmdate('Y-m-d H:i:s');
+            $content = $_POST['comment_content'];
+            $approved = 1;
+            $agent = $_SERVER['HTTP_USER_AGENT'];
+            
+            $comment_column = array(
+                'comment_author' => $author,
+                'comment_post_ID' => $post_id,
+                'comment_author_IP' => $author_IP,
+                'comment_date' => $date,
+                'comment_date_gmt' => $date_gmt,
+                'comment_content' => $content,
+                'comment_approved' => $approved,
+                'comment_agent' => $agent
+            );
+            $comment_type = array('%s', '%d', '%s', '%s', '%s', '%s', '%d', '%s');
+            $wpdb -> insert("wp_comments", $comment_column, $comment_type);                            
+        }
+        
+        $url = get_the_permalink('210');
+        header("location: $url");
+        exit;
     }
-    
+        
     function generate_bbs() {
         global $wpdb;
         $post_per_page = 10; //ページあたりの件数
