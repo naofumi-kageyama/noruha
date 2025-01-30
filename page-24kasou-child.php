@@ -31,7 +31,7 @@ Template Name: 24kasou-child
                     <?php endif; ?>
                     <div class="p-24kasou-child-article__profile-text-containter">
                         <p class="p-24kasou-child-article__profile-name"><?php echo esc_html($profile['name']); ?></p>
-                        <div class="p-24kasou-child-article__profile-text">
+                        <div class="p-24kasou-child-article__profile-text c-rich-text">
                             <?php echo apply_filters('the_content', $profile['profile-text']); ?>
                         </div>
                     </div>

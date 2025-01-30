@@ -1477,16 +1477,6 @@ dt {
 .p-24kasou-child-article__profile-name {
   margin-bottom: 1em;
 }
-.p-24kasou-child-article__profile-text p {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-.p-24kasou-child-article__profile-text p:first-child {
-  margin-top: 0;
-}
-.p-24kasou-child-article__profile-text p:last-child {
-  margin-bottom: 0;
-}
 
 .p-24kasou-child-info {
   font-size: 14px;

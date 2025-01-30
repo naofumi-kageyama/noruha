@@ -51,10 +51,10 @@
             </div>
         <?php endif ; ?>
         <?php if(!empty($args['cfs']->get('logo-pc'))) : ?>
-            <div class="p-template-works-info-member__logo-pc js-set-attr-size">
+            <div class="p-template-works-info-member__logo-pc c-rich-text js-set-attr-size">
                 <?php echo apply_filters('the_content', $args['cfs']->get('logo-pc')); ?>
             </div>
-            <div class="p-template-works-info-member__logo-sp js-set-attr-size">
+            <div class="p-template-works-info-member__logo-sp c-rich-text js-set-attr-size">
                 <?php echo apply_filters('the_content', $args['cfs']->get('logo-sp')); ?>
             </div>
         <?php endif ; ?>

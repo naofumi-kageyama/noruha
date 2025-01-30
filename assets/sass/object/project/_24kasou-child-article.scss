@@ -34,10 +34,4 @@
     &__profile-name {
         margin-bottom: 1em;
     }
-    &__profile-text {
-        p {
-            @include mix.margin_between(1em);
-        }
-    }
-
 }
