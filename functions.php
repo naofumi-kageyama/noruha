@@ -100,11 +100,11 @@ add_theme_support('post-thumbnails');
 // パスワード保護ページカスタマイズ
 function my_password_form() {
   return
-    '<div class="page_pass_wrap">
-      <div class="page_pass_text">このコンテンツはパスワードで保護されています。閲覧するにはパスワードを入力してください。</div>
-      <form class="page_pass" action="' . home_url() . '/wp-login.php?action=postpass" method="post">
-      <input class="page_pass_input" name="post_password" type="password" size="">
-      <input class="page_pass_submit" type="submit" name="Submit" value="' . esc_attr__("送信") . '">
+    '<div class="p-password-form">
+      <p class="p-password-form__text">このコンテンツはパスワードで保護されています。閲覧するにはパスワードを入力してください。</p>
+      <form class="p-password-form__form" action="' . home_url() . '/wp-login.php?action=postpass" method="post">
+        <input class="p-password-form__input" name="post_password" type="password" size="">
+        <input class="p-password-form__submit" type="submit" name="Submit" value="' . esc_attr__("送信") . '">
       </form>
     </div>'
   ;

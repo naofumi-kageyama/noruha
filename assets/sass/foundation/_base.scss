@@ -25,20 +25,3 @@ a {
 dt {
     font-weight: var.$font_weight_main;
 }
-/* パスワード保護ページ */
-.page_pass {
-    margin: 1em auto 0;
-    max-width: 400px;
-}
-.page_pass_input {
-    border: var.$black 1px solid;
-    background-color: var.$white;
-    padding: 5px;
-}
-.page_pass_submit {
-    border: var.$black 1px solid;
-    background-color: var.$white;
-    text-align: center;
-    padding: 5px;
-}
-/* パスワード保護ページここまで */

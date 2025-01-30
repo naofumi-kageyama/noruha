@@ -423,26 +423,6 @@ dt {
   font-weight: 400;
 }
 
-/* パスワード保護ページ */
-.page_pass {
-  margin: 1em auto 0;
-  max-width: 400px;
-}
-
-.page_pass_input {
-  border: #000 1px solid;
-  background-color: #fff;
-  padding: 5px;
-}
-
-.page_pass_submit {
-  border: #000 1px solid;
-  background-color: #fff;
-  text-align: center;
-  padding: 5px;
-}
-
-/* パスワード保護ページここまで */
 .l-header {
   padding-top: 120px;
 }
@@ -983,167 +963,6 @@ dt {
   font-family: "gtwalsheim-l";
   font-size: 20px;
   text-align: center;
-}
-
-.p-template-nav {
-  display: flex;
-  justify-content: space-between;
-  height: 40px;
-  border-bottom: #000 1px solid;
-}
-@media screen and (max-width: 768px) {
-  .p-template-nav {
-    border-top: #000 1px solid;
-  }
-}
-.p-template-nav__item {
-  width: 25%;
-  height: 100%;
-}
-.p-template-nav__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  font-size: 20px;
-  font-family: "gtwalsheim";
-  text-decoration: none;
-  cursor: pointer;
-}
-.p-template-nav__link:hover {
-  background-color: #f2e170;
-}
-
-.p-template-works-main-visual__main-visual {
-  width: 95%;
-  max-width: 540px;
-  margin: 0 auto 40px;
-}
-.p-template-works-main-visual__title-container {
-  border-top: #000 1px solid;
-  border-bottom: #000 1px solid;
-  padding: 16px 0;
-  text-align: center;
-}
-.p-template-works-main-visual__title {
-  font-size: 32px;
-  font-weight: 600;
-}
-@media screen and (max-width: 520px) {
-  .p-template-works-main-visual__title {
-    font-size: 24px;
-  }
-}
-.p-template-works-main-visual__info-wrapper {
-  padding: 1em 0;
-  border-bottom: #000 1px solid;
-}
-.p-template-works-main-visual__info-container {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-.p-template-works-main-visual__info-container:first-child {
-  margin-top: 0;
-}
-.p-template-works-main-visual__info-container:last-child {
-  margin-bottom: 0;
-}
-.p-template-works-main-visual__additional {
-  margin-top: 2em;
-}
-
-.p-template-works-description__copy {
-  margin-bottom: 60px;
-  font-size: 24px;
-  font-weight: 600;
-}
-@media screen and (max-width: 520px) {
-  .p-template-works-description__copy {
-    font-size: 20px;
-  }
-}
-.p-template-works-description__additional {
-  margin-top: 2em;
-}
-
-.p-template-works-info-member__list-container {
-  margin-bottom: 1em;
-}
-.p-template-works-info-member__list {
-  margin-bottom: 1em;
-}
-.p-template-works-info-member__terms-container {
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
-.p-template-works-info-member__terms-container:first-child {
-  margin-top: 0;
-}
-.p-template-works-info-member__terms-container:last-child {
-  margin-bottom: 0;
-}
-.p-template-works-info-member__terms {
-  margin-right: 1em;
-}
-.p-template-works-info-member__description {
-  flex-grow: 1;
-}
-.p-template-works-info-member__name {
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.p-template-works-info-member__profile-container {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  max-width: 100%;
-  margin-top: 10px;
-}
-.p-template-works-info-member__organizer-list-container {
-  font-size: 16px;
-}
-.p-template-works-info-member__organizer-terms-container {
-  display: flex;
-  justify-content: flex-start;
-}
-.p-template-works-info-member__organizer-terms {
-  margin-right: 1em;
-  white-space: nowrap;
-}
-.p-template-works-info-member__organizer-description {
-  flex-grow: 1;
-}
-.p-template-works-info-member__organizer-others {
-  margin-top: 1em;
-}
-.p-template-works-info-member__logo-pc img, .p-template-works-info-member__logo-sp img {
-  display: inline-block;
-  width: unset;
-}
-.p-template-works-info-member__logo-pc {
-  margin-top: 1em;
-}
-@media screen and (max-width: 520px) {
-  .p-template-works-info-member__logo-pc {
-    display: none;
-  }
-}
-.p-template-works-info-member__logo-sp {
-  margin-top: 1em;
-  display: none;
-}
-@media screen and (max-width: 520px) {
-  .p-template-works-info-member__logo-sp {
-    display: block;
-  }
-}
-
-.p-template-works-info-venue__detail {
-  margin-top: 1em;
-  font-size: 16px;
 }
 
 .p-22kasou-description__section {
@@ -1737,6 +1556,188 @@ dt {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 0 1em;
+}
+
+.p-template-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  border-bottom: #000 1px solid;
+}
+@media screen and (max-width: 768px) {
+  .p-template-nav {
+    border-top: #000 1px solid;
+  }
+}
+.p-template-nav__item {
+  width: 25%;
+  height: 100%;
+}
+.p-template-nav__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 20px;
+  font-family: "gtwalsheim";
+  text-decoration: none;
+  cursor: pointer;
+}
+.p-template-nav__link:hover {
+  background-color: #f2e170;
+}
+
+.p-template-works-main-visual__main-visual {
+  width: 95%;
+  max-width: 540px;
+  margin: 0 auto 40px;
+}
+.p-template-works-main-visual__title-container {
+  border-top: #000 1px solid;
+  border-bottom: #000 1px solid;
+  padding: 16px 0;
+  text-align: center;
+}
+.p-template-works-main-visual__title {
+  font-size: 32px;
+  font-weight: 600;
+}
+@media screen and (max-width: 520px) {
+  .p-template-works-main-visual__title {
+    font-size: 24px;
+  }
+}
+.p-template-works-main-visual__info-wrapper {
+  padding: 1em 0;
+  border-bottom: #000 1px solid;
+}
+.p-template-works-main-visual__info-container {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.p-template-works-main-visual__info-container:first-child {
+  margin-top: 0;
+}
+.p-template-works-main-visual__info-container:last-child {
+  margin-bottom: 0;
+}
+.p-template-works-main-visual__additional {
+  margin-top: 2em;
+}
+
+.p-template-works-description__copy {
+  margin-bottom: 60px;
+  font-size: 24px;
+  font-weight: 600;
+}
+@media screen and (max-width: 520px) {
+  .p-template-works-description__copy {
+    font-size: 20px;
+  }
+}
+.p-template-works-description__additional {
+  margin-top: 2em;
+}
+
+.p-template-works-info-member__list-container {
+  margin-bottom: 1em;
+}
+.p-template-works-info-member__list {
+  margin-bottom: 1em;
+}
+.p-template-works-info-member__terms-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.p-template-works-info-member__terms-container:first-child {
+  margin-top: 0;
+}
+.p-template-works-info-member__terms-container:last-child {
+  margin-bottom: 0;
+}
+.p-template-works-info-member__terms {
+  margin-right: 1em;
+}
+.p-template-works-info-member__description {
+  flex-grow: 1;
+}
+.p-template-works-info-member__name {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.p-template-works-info-member__profile-container {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 10px;
+}
+.p-template-works-info-member__organizer-list-container {
+  font-size: 16px;
+}
+.p-template-works-info-member__organizer-terms-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.p-template-works-info-member__organizer-terms {
+  margin-right: 1em;
+  white-space: nowrap;
+}
+.p-template-works-info-member__organizer-description {
+  flex-grow: 1;
+}
+.p-template-works-info-member__organizer-others {
+  margin-top: 1em;
+}
+.p-template-works-info-member__logo-pc img, .p-template-works-info-member__logo-sp img {
+  display: inline-block;
+  width: unset;
+}
+.p-template-works-info-member__logo-pc {
+  margin-top: 1em;
+}
+@media screen and (max-width: 520px) {
+  .p-template-works-info-member__logo-pc {
+    display: none;
+  }
+}
+.p-template-works-info-member__logo-sp {
+  margin-top: 1em;
+  display: none;
+}
+@media screen and (max-width: 520px) {
+  .p-template-works-info-member__logo-sp {
+    display: block;
+  }
+}
+
+.p-template-works-info-venue__detail {
+  margin-top: 1em;
+  font-size: 16px;
+}
+
+.p-password-form {
+  margin: 0 auto;
+}
+.p-password-form__text {
+  margin-bottom: 1em;
+}
+.p-password-form__form {
+  text-align: center;
+}
+.p-password-form__input {
+  border: #000 1px solid;
+  background-color: #fff;
+  padding: 5px;
+}
+.p-password-form__submit {
+  border: #000 1px solid;
+  background-color: #fff;
+  text-align: center;
+  padding: 5px;
 }
 
 .js-form-container {
