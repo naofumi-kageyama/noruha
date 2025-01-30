@@ -2,12 +2,15 @@
 @use "top-next-section";
 @use "top-main-section";
 
-@use "works";
-
 @use "template-nav";
 @use "template-works-main-visual";
 @use "template-works-description";
-@use "template-works-info";
+@use "template-works-info-member";
+@use "template-works-info-timetable";
+@use "template-works-info-price";
+@use "template-works-info-ticket";
+@use "template-works-info-venue";
+@use "template-works-info-contact";
 
 @use "22kasou-description" as kasou-description;
 @use "22kasou-modal" as kasou-modal;

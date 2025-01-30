@@ -4,38 +4,64 @@ Template Name: works
 */
 ?>
 <?php get_header(); ?>
-<main class="l-main p-works">
+<main class="l-main c-works">
     <?php if (have_posts()): ?>
         <?php if( !post_password_required( $post->ID ) ) :  ?>
             <?php while (have_posts()): the_post(); ?>
-                <div class="p-works__section">
+                <section class="c-works__section">
                     <?php
                         $args = [
                             'cfs' => $cfs,
-                            'additional' => ''
                         ];
                         get_template_part('template-parts/works-main-visual', 'null', $args);
                     ?>
-                </div>
-                <div class="p-works__section">
+                </section>
+                <section class="c-works__section">
                     <?php
                         $args = [
                             'cfs' => $cfs,
-                            'additional' => ''
                         ];
                         get_template_part('template-parts/works-description', 'null', $args);
                     ?>
-                </div>
-                <div class="p-works__section">
+                </section>
+                <section class="c-works__section">
                     <?php
                         $args = [
                             'cfs' => $cfs,
-                            'additional_member' => '',
-                            'additional_venue' => ''
                         ];
-                        get_template_part('template-parts/works-info', 'null', $args);
+                        get_template_part('template-parts/works-info-member', 'null', $args);
                     ?>
-                </div>
+                    <?php
+                        $args = [
+                            'cfs' => $cfs,
+                        ];
+                        get_template_part('template-parts/works-info-timetable', 'null', $args);
+                    ?>
+                    <?php
+                        $args = [
+                            'cfs' => $cfs,
+                        ];
+                        get_template_part('template-parts/works-info-price', 'null', $args);
+                    ?>
+                    <?php
+                        $args = [
+                            'cfs' => $cfs,
+                        ];
+                        get_template_part('template-parts/works-info-ticket', 'null', $args);
+                    ?>
+                    <?php
+                        $args = [
+                            'cfs' => $cfs,
+                        ];
+                        get_template_part('template-parts/works-info-venue', 'null', $args);
+                    ?>
+                    <?php
+                        $args = [
+                            'cfs' => $cfs,
+                        ];
+                        get_template_part('template-parts/works-info-contact', 'null', $args);
+                    ?>
+                </section>
             <?php endwhile; ?>
         <?php else:  ?>
             <?php echo get_the_password_form(); ?>

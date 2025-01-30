@@ -1,0 +1,14 @@
+@use "../../foundation/mixin" as mix;
+@use "../../foundation/variable" as var;
+@use "../../foundation/breakpoint" as br;
+.c-works {
+    &__section {
+        @include mix.margin_between(60px);
+    }
+    &__info-section {
+        @include mix.margin_between(60px);
+    }
+    &__additional-content {
+        margin-top: 2em;
+    }
+}

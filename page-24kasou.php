@@ -4,11 +4,11 @@ Template Name: 24kasou
 */
 ?>
 <?php get_header(); ?>
-<main class="l-main p-works">
+<main class="l-main c-works">
     <?php if (have_posts()): ?>
         <?php if( !post_password_required( $post->ID ) ) :  ?>
             <?php while (have_posts()): the_post(); ?>
-                <div class="p-works__section">
+                <section class="c-works__section">
                     <?php
                         $args = [
                             'cfs' => $cfs,
@@ -16,9 +16,15 @@ Template Name: 24kasou
                         ];
                         get_template_part('template-parts/works-main-visual', 'null', $args);
                     ?>
-                </div>
-                <div class="p-works__section">
+                </section>
+                <section class="c-works__section">
                     <?php
+                        $args = [
+                            'cfs' => $cfs,
+                            'additional' => ''
+                        ];
+                        get_template_part('template-parts/works-description', 'null', $args);
+
                         $genres = array(
                             "interview" => "インタビュー",
                             "review" => "批評",
@@ -94,84 +100,106 @@ Template Name: 24kasou
                                 </li>
                             ';
                         }
-
+                        echo '
+                            <div class="c-works__additional-content p-24kasou-description c-white-area">
+                                <h2 class="p-24kasou-description__heading">関連記事</h2>
+                                <ul class="p-24kasou-description__genre-list">
+                                    ' . $output . '
+                                </ul>
+                            </div>
+                        ';
                         wp_reset_postdata();
-                        $args = [
-                            'cfs' => $cfs,
-                            'additional' => '
-                                <div class="p-24kasou-description c-white-area">
-                                    <h2 class="p-24kasou-description__heading">関連記事</h2>
-                                    <ul class="p-24kasou-description__genre-list">
-                                        ' . $output . '
-                                    </ul>
-                                </div>
-                            '
-                        ];
-                        get_template_part('template-parts/works-description', 'null', $args);
                     ?>
-                </div>
-                <div class="p-works__section">
+                </section>
+                <section class="c-works__section">
                     <?php
                         $args = [
                             'cfs' => $cfs,
-                            'additional_member' => '',
-                            'additional_venue' => '
-                                <div class="p-24kasou-kansou c-white-area">
-                                    <p class="p-24kasou-kansou__subheading">寄り道して帰ろう</p>
-                                    <h3 class="p-24kasou-kansou__heading">円盤に乗る派『仮想的な失調』感想会</h3>
-                                    <div class="p-24kasou-kansou__main">
-                                        <div class="p-24kasou-kansou__section">
-                                            <h4 class="p-24kasou-kansou__section-heading">開催概要</h4>
-                                            <div class="p-24kasou-kansou__text-wrap">
-                                                <p class="p-24kasou-kansou__text">
-                                                    円盤に乗る派『仮想的な失調』の終演後に、感想会を開催します。東京芸術祭事務局がホストとなり、お話しします。<br>
-                                                    観劇の感想を話してもよし、集まった人の話を聞いてもよし、公演コラボメニューを味わうもよしです。
-                                                </p>
-                                                <p class="p-24kasou-kansou__text">
-                                                    今年の東京芸術祭のテーマは『トランジット・ナウ～寄り道しよう、舞台の世界へ～』。ぜひ、お帰りの前にゆるっと寄り道してみてください。
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="p-24kasou-kansou__section">
-                                            <h4 class="p-24kasou-kansou__section-heading">開催回</h4>
-                                            <div class="p-24kasou-kansou__text-wrap">
-                                                <p class="p-24kasou-kansou__text">
-                                                    9月
-                                                    19日(木)  19:00（20:30終演予定）<br>
-                                                    20日(金)  14:00（15:30終演予定）<br>
-                                                    21日(土)  19:00（20:30終演予定）　※14:00の回は開催なし<br>
-                                                    22日(日･祝) 14:00（15:30終演予定）
-                                                </p>
-                                                <p class="p-24kasou-kansou__text">
-                                                    準備ができ次第開始／最大1時間ほど／途中参加・退出OK<br>
-                                                    雨天中止の可能性あり
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="p-24kasou-kansou__section">
-                                            <h4 class="p-24kasou-kansou__section-heading">会場</h4>                                
-                                            <div class="p-24kasou-kansou__text-wrap">
-                                                <p class="p-24kasou-kansou__text">
-                                                    東京芸術劇場 劇場前広場<br>
-                                                    「東京芸術祭ひろば - トランジット キッチン」
-                                                </p>
-                                                <h5 class="p-24kasou-kansou__list-heading">= menu =</h5>
-                                                <ul class="p-24kasou-kansou__list">
-                                                    <li class="p-24kasou-kansou__list-item">コラボかき氷（円盤に乗る派、木ノ下歌舞伎）</li>
-                                                    <li class="p-24kasou-kansou__list-item">コラボバゲットサンド（チェルフィッチュ）</li>
-                                                    <li class="p-24kasou-kansou__list-item">世界のバゲットサンド</li>
-                                                    <li class="p-24kasou-kansou__list-item">コーヒー／アルコール 他 ドリンク</li>
-                                                    <li class="p-24kasou-kansou__list-item">（キッチンカーの営業時間は21時まで）</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            '
                         ];
-                        get_template_part('template-parts/works-info', 'null', $args);
+                        get_template_part('template-parts/works-info-member', 'null', $args);
                     ?>
-                </div>
+                    <?php
+                        $args = [
+                            'cfs' => $cfs,
+                        ];
+                        get_template_part('template-parts/works-info-timetable', 'null', $args);
+                    ?>
+                    <?php
+                        $args = [
+                            'cfs' => $cfs,
+                        ];
+                        get_template_part('template-parts/works-info-price', 'null', $args);
+                    ?>
+                    <?php
+                        $args = [
+                            'cfs' => $cfs,
+                        ];
+                        get_template_part('template-parts/works-info-ticket', 'null', $args);
+                    ?>
+                    <?php
+                        $args = [
+                            'cfs' => $cfs,
+                        ];
+                        get_template_part('template-parts/works-info-venue', 'null', $args);
+                    ?>
+                    <div class="c-works__info-section p-24kasou-kansou c-white-area">
+                        <p class="p-24kasou-kansou__subheading">寄り道して帰ろう</p>
+                        <h3 class="p-24kasou-kansou__heading">円盤に乗る派『仮想的な失調』感想会</h3>
+                        <div class="p-24kasou-kansou__main">
+                            <div class="p-24kasou-kansou__section">
+                                <h4 class="p-24kasou-kansou__section-heading">開催概要</h4>
+                                <div class="p-24kasou-kansou__text-wrap">
+                                    <p class="p-24kasou-kansou__text">
+                                        円盤に乗る派『仮想的な失調』の終演後に、感想会を開催します。東京芸術祭事務局がホストとなり、お話しします。<br>
+                                        観劇の感想を話してもよし、集まった人の話を聞いてもよし、公演コラボメニューを味わうもよしです。
+                                    </p>
+                                    <p class="p-24kasou-kansou__text">
+                                        今年の東京芸術祭のテーマは『トランジット・ナウ～寄り道しよう、舞台の世界へ～』。ぜひ、お帰りの前にゆるっと寄り道してみてください。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-24kasou-kansou__section">
+                                <h4 class="p-24kasou-kansou__section-heading">開催回</h4>
+                                <div class="p-24kasou-kansou__text-wrap">
+                                    <p class="p-24kasou-kansou__text">
+                                        9月
+                                        19日(木)  19:00（20:30終演予定）<br>
+                                        20日(金)  14:00（15:30終演予定）<br>
+                                        21日(土)  19:00（20:30終演予定）　※14:00の回は開催なし<br>
+                                        22日(日･祝) 14:00（15:30終演予定）
+                                    </p>
+                                    <p class="p-24kasou-kansou__text">
+                                        準備ができ次第開始／最大1時間ほど／途中参加・退出OK<br>
+                                        雨天中止の可能性あり
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-24kasou-kansou__section">
+                                <h4 class="p-24kasou-kansou__section-heading">会場</h4>                                
+                                <div class="p-24kasou-kansou__text-wrap">
+                                    <p class="p-24kasou-kansou__text">
+                                        東京芸術劇場 劇場前広場<br>
+                                        「東京芸術祭ひろば - トランジット キッチン」
+                                    </p>
+                                    <h5 class="p-24kasou-kansou__list-heading">= menu =</h5>
+                                    <ul class="p-24kasou-kansou__list">
+                                        <li class="p-24kasou-kansou__list-item">コラボかき氷（円盤に乗る派、木ノ下歌舞伎）</li>
+                                        <li class="p-24kasou-kansou__list-item">コラボバゲットサンド（チェルフィッチュ）</li>
+                                        <li class="p-24kasou-kansou__list-item">世界のバゲットサンド</li>
+                                        <li class="p-24kasou-kansou__list-item">コーヒー／アルコール 他 ドリンク</li>
+                                        <li class="p-24kasou-kansou__list-item">（キッチンカーの営業時間は21時まで）</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <?php
+                        $args = [
+                            'cfs' => $cfs,
+                        ];
+                        get_template_part('template-parts/works-info-contact', 'null', $args);
+                    ?>
+                </section>
             <?php endwhile; ?>
         <?php else:  ?>
             <?php echo get_the_password_form(); ?>

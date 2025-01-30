@@ -4,71 +4,94 @@ Template Name: 22kasou
 */
 ?>
 <?php get_header(); ?>
-    <main class="l-main p-works">
+    <main class="l-main c-works">
         <?php if (have_posts()): ?>
             <?php if( !post_password_required( $post->ID ) ) :  ?>
                 <?php while (have_posts()): the_post(); ?>
-                    <div class="p-works__section">
+                    <section class="c-works__section">
                         <?php
                             $args = [
                                 'cfs' => $cfs,
-                                'additional' => ''
                             ];
                             get_template_part('template-parts/works-main-visual', 'null', $args);
                         ?>
-                    </div>
-                <div class="p-works__section">
+                    </section>
+                    <section class="c-works__section">
+                        <?php
+                            $args = [
+                                'cfs' => $cfs,
+                            ];
+                            get_template_part('template-parts/works-description', 'null', $args);
+                        ?>
+                        <div class="c-works__additional-content p-22kasou-description">
+                            <div id="essay" class="p-22kasou-description__section p-22kasou-description__essay">
+                                <h2 class="p-22kasou-description__section-heading">寄稿エッセイ</h2>
+                                <p class="p-22kasou-description__section-description">
+                                    戯曲『仮想的な失調』に寄せて、エッセイを執筆していただきました。
+                                </p>
+                                <ul class="p-22kasou-description__essay-list">
+                                    <li class="p-22kasou-description__essay-item">
+                                        <span class="p-22kasou-description__essay-title js-modal-open-button">「仮想的な失調」について</span>松田正隆（劇作家・演出家）                                
+                                    </li>
+                                    <li class="p-22kasou-description__essay-item">
+                                        <span class="p-22kasou-description__essay-title js-modal-open-button">「どちらでもない」私（あなた）の身体</span>草野なつか（映画作家）
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="p-22kasou-description__section">
+                                <h2 class="p-22kasou-description__section-heading">戯曲『仮想的な失調』販売中！</h2>
+                                <p class="p-22kasou-description__section-description">
+                                    戯曲『仮想的な失調』の電子データを販売しております。円盤に乗る派webショップよりご購入ください。<br>
+                                    <a href="https://noruha.stores.jp/" target="blank">https://noruha.stores.jp/</a>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="c-works__section">
                     <?php
                         $args = [
                             'cfs' => $cfs,
-                            'additional' => '
-                                <div class="p-22kasou-description">
-                                    <div id="essay" class="p-22kasou-description__section p-22kasou-description__essay">
-                                        <h2 class="p-22kasou-description__section-heading">寄稿エッセイ</h2>
-                                        <p class="p-22kasou-description__section-description">
-                                            戯曲『仮想的な失調』に寄せて、エッセイを執筆していただきました。
-                                        </p>
-                                        <ul class="p-22kasou-description__essay-list">
-                                            <li class="p-22kasou-description__essay-item">
-                                                <span class="p-22kasou-description__essay-title js-modal-open-button">「仮想的な失調」について</span>松田正隆（劇作家・演出家）                                
-                                            </li>
-                                            <li class="p-22kasou-description__essay-item">
-                                                <span class="p-22kasou-description__essay-title js-modal-open-button">「どちらでもない」私（あなた）の身体</span>草野なつか（映画作家）
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="p-22kasou-description__section">
-                                        <h2 class="p-22kasou-description__section-heading">戯曲『仮想的な失調』販売中！</h2>
-                                        <p class="p-22kasou-description__section-description">
-                                            戯曲『仮想的な失調』の電子データを販売しております。円盤に乗る派webショップよりご購入ください。<br>
-                                            <a href="https://noruha.stores.jp/" target="blank">https://noruha.stores.jp/</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            '
                         ];
-                        get_template_part('template-parts/works-description', 'null', $args);
+                        get_template_part('template-parts/works-info-member', 'null', $args);
                     ?>
-                </div>
-                <div class="p-works__section">
                     <?php
                         $args = [
                             'cfs' => $cfs,
-                            'additional_member' => '',
-                            'additional_venue' => ''
                         ];
-                        get_template_part('template-parts/works-info', 'null', $args);
+                        get_template_part('template-parts/works-info-timetable', 'null', $args);
                     ?>
-                </div>
-            <?php endwhile; ?>
-        <?php else:  ?>
-            <?php echo get_the_password_form(); ?>
+                    <?php
+                        $args = [
+                            'cfs' => $cfs,
+                        ];
+                        get_template_part('template-parts/works-info-price', 'null', $args);
+                    ?>
+                    <?php
+                        $args = [
+                            'cfs' => $cfs,
+                        ];
+                        get_template_part('template-parts/works-info-ticket', 'null', $args);
+                    ?>
+                    <?php
+                        $args = [
+                            'cfs' => $cfs,
+                        ];
+                        get_template_part('template-parts/works-info-venue', 'null', $args);
+                    ?>
+                    <?php
+                        $args = [
+                            'cfs' => $cfs,
+                        ];
+                        get_template_part('template-parts/works-info-contact', 'null', $args);
+                    ?>
+                </section>
+                <?php endwhile; ?>
+            <?php else:  ?>
+                <?php echo get_the_password_form(); ?>
         <?php endif;  ?>
     <?php endif;  ?>
 </main>
 <?php get_footer(); ?>
-
-<?php //ポップアップテキスト ?>
 <div class="p-22kasou-modal js-modal">
     <div class="p-22kasou-modal__overlay"></div>
     <div class="p-22kasou-modal__contents c-white-area">
@@ -113,7 +136,6 @@ Template Name: 22kasou
     </div>
     <button class="p-22kasou-modal__close-button js-modal-close-button"></button>
 </div>
-
 <div class="p-22kasou-modal js-modal">
     <div class="p-22kasou-modal__overlay"></div>
     <div class="p-22kasou-modal__contents c-white-area">

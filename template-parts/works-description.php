@@ -8,9 +8,4 @@
             <?php the_content(); ?>
         </div>
     <?php endif; ?>
-    <?php if($args['additional']) : ?>
-        <div class="p-template-works-description__additional">
-            <?php echo $args['additional']; ?>
-        </div>
-    <?php endif; ?>
 </div>
