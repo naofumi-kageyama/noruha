@@ -11,12 +11,12 @@ add_theme_support( 'title-tag' );
 
 //フロントページではtitleのみ
 function wp_document_title_parts ( $title ) {
-    if ( is_home() || is_front_page() ) {
+  if(is_home() || is_front_page()){
     unset( $title['tagline'] );
-    }
-    return $title;
-    }
-    add_filter( 'document_title_parts', 'wp_document_title_parts', 10, 1 );
+  }
+  return $title;
+}
+add_filter( 'document_title_parts', 'wp_document_title_parts', 10, 1 );
 
 //セパレーターを'|'に
 function wp_document_title_separator( $separator ) {
@@ -32,7 +32,7 @@ function enqueue_style(){
 add_action('wp_enqueue_scripts','enqueue_style');
 
 function print_scripts() {
-	if (!is_admin()) {
+	if(!is_admin() && !in_array($GLOBALS['pagenow'], array('wp-login.php', 'wp-register.php'))){
 		wp_deregister_script('jquery'); //デフォルトjquery削除
 		wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js', true);
 		wp_enqueue_script('marquee', get_template_directory_uri(). '/assets/js/jquery.marquee.js', true);

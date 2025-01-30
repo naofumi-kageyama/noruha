@@ -9,7 +9,6 @@
         echo '<meta name="robots" content="noindex,follow" />';
     }
 ?>
-<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico">
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
