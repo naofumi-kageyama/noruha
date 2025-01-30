@@ -2,9 +2,12 @@
 @use "../../foundation/variable" as var;
 @use "../../foundation/breakpoint" as br;
 .p-24kasou-description {
-    &__content {
-        p {
-            @include mix.margin_between(1em);
+    &__heading {
+        font-size: var.$font_size_ll;
+        font-weight: 600;
+        margin-bottom: 0.5em;
+        @include br.mq(sp) {
+            font-size: var.$font_size_l;
         }
     }
     &__genre-item {
@@ -13,20 +16,9 @@
     &__genre-heading {
         font-weight: 600;
     }
-    &__article {
-        margin-top: 2em;
-    }
-    &__article-heading {
-        font-size: var.$font_size_ll;
-        font-weight: 600;
-        margin-bottom: 0.5em;
-    }
     &__article-item {
+        @include mix.margin_between(0.5em);
         list-style-type: disc;
         list-style-position: inside;
-        margin-bottom: 0.5em;
-        &:last-of-type {
-            margin-bottom: 0;
-        }
     }
 }

@@ -6,6 +6,9 @@
         margin-bottom: 60px;
         font-size: var.$font_size_ll;
         font-weight: 600;
+        @include br.mq(sp) {
+            font-size: var.$font_size_l;
+        }
     }
     &__additional {
         margin-top: 2em;

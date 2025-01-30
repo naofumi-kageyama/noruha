@@ -9,5 +9,10 @@
             "savePath": "/assets/css",
             "savePathReplacementPairs": null
         }
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "/**/node_modules/**",
+        "/.vscode/**",
+        "/escape/**"
     ]
 }

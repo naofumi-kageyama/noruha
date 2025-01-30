@@ -42,16 +42,6 @@
                         <dt class="p-template-works-info__organizer-terms"><?php echo esc_html($field['role']); ?></dt>
                         <dd class="p-template-works-info__organizer-description">
                             <?php echo nl2br(esc_textarea($field['name'])); ?>
-                            <?php if($field['imgs-true']): ?>
-                                <!-- <div class="organizer-logo-wrap">
-                                    <?php
-                                        $fields = $field['logo-imgs']; //子ループ
-                                        foreach ((array)$fields as $field):
-                                    ?>
-                                        <img src="<?php echo $field['logo-img']; ?>">
-                                    <?php endforeach; ?>
-                                </div> -->
-                            <?php endif; ?>
                         </dd>
                     </div>
                 <?php endforeach; ?>
@@ -84,13 +74,13 @@
     </div>
     <div class="p-template-works-info__section">
         <h2 class="p-template-works-info__section-heading c-heading-black-background">料金</h2>
-        <div class="p-template-works-info__price">
-            <?php echo nl2br(esc_textarea($args['cfs']->get('price'))); ?>
+        <div class="p-template-works-info__price js-set-attr-size">
+            <?php echo apply_filters('the_content', $args['cfs']->get('price')); ?>
         </div>
     </div>
     <div id="ticket" class="p-template-works-info__section">
         <h2 class="p-template-works-info__section-heading c-heading-black-background">チケット</h2>
-        <div class="p-template-works-info__ticket">
+        <div class="p-template-works-info__ticket js-set-attr-size">
             <?php echo apply_filters('the_content', $args['cfs']->get('ticket')); ?>
         </div>
     </div>
@@ -99,7 +89,7 @@
         <div class="p-template-works-info__venue-name js-set-attr-size">
             <?php echo apply_filters('the_content', $args['cfs']->get('next-venue-logo')); ?>
         </div>
-        <div class="p-template-works-info__venue-detail">
+        <div class="p-template-works-info__venue-detail js-set-attr-size">
             <?php echo apply_filters('the_content', $args['cfs']->get('next-venue-detail')); ?>
         </div>
         <?php if($args['additional_venue']) : ?>
@@ -110,7 +100,7 @@
     </div>
     <div class="p-template-works-info__section">
         <h2 class="p-template-works-info__section-heading c-heading-black-background">お問い合わせ</h2>
-        <div class="p-template-works-info__contact">
+        <div class="p-template-works-info__contact js-set-attr-size">
             <?php echo apply_filters('the_content', $args['cfs']->get('contact')); ?>
         </div>
     </div>

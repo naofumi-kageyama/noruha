@@ -9,9 +9,6 @@
         font-weight: 600;
         margin-bottom: 1em;
     }
-    &__main {
-        font-size: var.$font_size_m;
-    }
     &__section {
         @include mix.margin_between(1em);
     }

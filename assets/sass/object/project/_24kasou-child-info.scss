@@ -2,6 +2,7 @@
 @use "../../foundation/variable" as var;
 @use "../../foundation/breakpoint" as br;
 .p-24kasou-child-info {
+    font-size: var.$font_size_s;
     &__heading {
         font-size: var.$font_size_lll;
         margin-bottom: 20px;
