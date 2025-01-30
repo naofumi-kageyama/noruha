@@ -1,29 +1,6 @@
 <?php
-// $url = (empty($_SERVER['HTTPS']) ? 'http://' : 'https://') . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-
-// preg_match((), $url, )
-
-// if($url == "thedumbwaiter") {
-//   wp_redirect('', 'ステータスコード' );
-// }
 // title取得
-add_theme_support( 'title-tag' );
-
-//フロントページではtitleのみ
-function wp_document_title_parts ( $title ) {
-  if(is_home() || is_front_page()){
-    unset( $title['tagline'] );
-  }
-  return $title;
-}
-add_filter( 'document_title_parts', 'wp_document_title_parts', 10, 1 );
-
-//セパレーターを'|'に
-function wp_document_title_separator( $separator ) {
-    $separator = '|';
-    return $separator;
-}
-add_filter( 'document_title_separator', 'wp_document_title_separator' );
+add_theme_support('title-tag');
 
 //css取得
 function enqueue_style(){
@@ -51,40 +28,6 @@ function print_scripts() {
 	}
 }
 add_action('wp_print_scripts', 'print_scripts');
-
-//meta description取得
-function get_meta_description() {
-  global $post;
-  $description = "";
-  if ( is_front_page() ) {
-    // フロントページでは、ブログの説明文を取得
-    $description = get_bloginfo( 'description' );
-  }
-  elseif ( is_page() ) {
-    // 固定ページでは、本文を取得
-    $description = strip_tags($post->post_content);
-  }
-  elseif ( is_category() ) {
-    // カテゴリーページでは、カテゴリーの説明文を取得
-    $description = category_description();
-  }
-  elseif ( is_single() ) {
-    if ($post->post_excerpt) {
-      // 記事ページでは、記事本文から抜粋を取得
-      $description = $post->post_excerpt;
-    } else {
-      // post_excerpt で取れない時は、自力で記事の冒頭100文字を抜粋して取得
-      $description = strip_tags($post->post_content);
-      $description = str_replace("\n", "", $description);
-      $description = str_replace("\r", "", $description);
-      $description = mb_substr($description, 0, 100) . "...";
-    }
-  } else {
-    ;
-  }
-
-  return $description;
-}
 
 // echo meta description tag
 function echo_meta_description_tag() {

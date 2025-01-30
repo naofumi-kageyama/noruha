@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
 <meta charset="<?php bloginfo('charset'); ?>" >
-<?php echo_meta_description_tag(); ?>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" >
 <meta content="width=device-width,initial-scale=1.0,user-scalable=yes" name="viewport">
 <?php
