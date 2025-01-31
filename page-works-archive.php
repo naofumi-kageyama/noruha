@@ -68,9 +68,15 @@ Template Name: works-archive
                             ?>
                             <li class="p-works-archive__item">
                                 <div class="p-works-archive__item-left">
-                                    <a class="p-works-archive__item-main-visual" href="<?php echo $url; ?>">
-                                        <img src="<?php echo esc_url($cfs->get('mainvisual')); ?> ">
-                                    </a>
+                                    <?php if(!empty($url)) : ?>
+                                        <a class="p-works-archive__item-main-visual" href="<?php echo $url; ?>">
+                                            <img src="<?php echo esc_url($cfs->get('mainvisual')); ?> ">
+                                        </a>
+                                    <?php else : ?>
+                                        <div class="p-works-archive__item-main-visual">
+                                            <img src="<?php echo esc_url($cfs->get('mainvisual')); ?> ">
+                                        </div>
+                                    <?php endif; ?>
                                 </div>
                                 <div class="p-works-archive__item-right">
                                     <div class="p-works-archive__item-heading-container">

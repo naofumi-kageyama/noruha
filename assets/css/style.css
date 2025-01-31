@@ -994,6 +994,7 @@ dt {
 }
 .p-works-archive__item-left {
   width: 33.33%;
+  flex-shrink: 0;
 }
 @media screen and (max-width: 768px) {
   .p-works-archive__item-left {
