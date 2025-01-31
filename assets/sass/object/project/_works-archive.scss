@@ -24,11 +24,15 @@
     &__item-heading {
         font-weight: 600;
     }
+    &__item-subtitle {        
+        font-size: var.$font_size_m;
+    }
     &__item-heading-container {
         margin-bottom: 2em;
     }
     &__info-container {
         @include mix.margin_between(1em);
+        font-size: var.$font_size_m;
     }
 
 }

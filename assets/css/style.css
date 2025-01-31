@@ -1005,12 +1005,16 @@ dt {
 .p-works-archive__item-heading {
   font-weight: 600;
 }
+.p-works-archive__item-subtitle {
+  font-size: 16px;
+}
 .p-works-archive__item-heading-container {
   margin-bottom: 2em;
 }
 .p-works-archive__info-container {
   margin-top: 1em;
   margin-bottom: 1em;
+  font-size: 16px;
 }
 .p-works-archive__info-container:first-child {
   margin-top: 0;
