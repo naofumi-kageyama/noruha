@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: works
+Template Name: works-single
 */
 ?>
 <?php get_header(); ?>

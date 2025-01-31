@@ -1,0 +1,33 @@
+@use "../../foundation/mixin" as mix;
+@use "../../foundation/variable" as var;
+@use "../../foundation/breakpoint" as br;
+.p-works-archive {
+    &__heading {
+        @include mix.h1;
+    }
+    &__item {
+        display: flex;
+        gap: 30px;
+        @include mix.margin_between(100px);
+        @include br.mq(tab) {
+            display: block;
+        }
+    }
+    &__item-left {
+        width: 33.33%;
+        @include br.mq(tab) {
+            width: 100%;
+            margin-bottom: 1em;
+        }
+    }
+    &__item-heading {
+        font-weight: 600;
+    }
+    &__item-heading-container {
+        margin-bottom: 2em;
+    }
+    &__info-container {
+        @include mix.margin_between(1em);
+    }
+
+}

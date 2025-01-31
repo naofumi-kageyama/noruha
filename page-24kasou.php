@@ -38,14 +38,14 @@ Template Name: 24kasou
                             "order" => "ASC",
                             "has_password" => false,
                         );
-                        $children = new WP_Query($args);
+                        $children_query = new WP_Query($args);
 
                         $all_genre_array = array();
-                        if($children->have_posts()){
+                        if($children_query->have_posts()){
                             foreach($genres as $key => $label){
                                 $genre_exist = false;
-                                while($children->have_posts()){
-                                    $children->the_post();
+                                while($children_query->have_posts()){
+                                    $children_query->the_post();
                                     $this_article_genre = CFS()->get("genre");
                                     if(is_array($this_article_genre)){
                                         foreach($this_article_genre as $this_article_key => $this_article_label){
@@ -59,8 +59,8 @@ Template Name: 24kasou
                                         'articles' => ''
                                     );
                                     $articles_array = array();
-                                    while($children->have_posts()){
-                                        $children->the_post();
+                                    while($children_query->have_posts()){
+                                        $children_query->the_post();
                                         $article_array = array();
                                         $this_article_genre = CFS()->get("genre");
                                         if(is_array($this_article_genre)){
