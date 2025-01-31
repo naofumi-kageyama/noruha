@@ -6,12 +6,28 @@ Template Name: works-archive
 <?php 
     $exerpt_url = array(
         array(
-            'id' => 418,
-            'url' => 'https://chasingwaterfalls.net/'
+            'id' => 416,
+            'url' => ''
         ),
         array(
-            'id' => '',
+            'id' => 419,
             'url' => ''
+        ),
+        array(
+            'id' => 422,
+            'url' => ''
+        ),
+        array(
+            'id' => 429,
+            'url' => ''
+        ),
+        array(
+            'id' => 425,
+            'url' => 'https://chasingwaterfalls.net/2020/'
+        ),
+        array(
+            'id' => 432,
+            'url' => 'https://chasingwaterfalls.net/'
         ),
     );
 ?>
