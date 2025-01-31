@@ -13,9 +13,11 @@
 <body <?php body_class(); ?>>
     <header class="l-header">
         <div class="l-header__logo-container js-header-height">
-            <a class="l-header__logo" href="<?php echo esc_url( home_url() ); ?>">
-                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/logo_noruha.png" alt="円盤に乗る派　NORUHA">
-            </a>
+            <?php if(is_home() || is_front_page()) echo '<h1 class="l-header__h1">'; ?>
+                <a class="l-header__logo" href="<?php echo esc_url( home_url() ); ?>">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/logo_noruha.png" alt="円盤に乗る派　NORUHA">
+                </a>
+            <?php if(is_home() || is_front_page()) echo '</h1>'; ?>
         </div>
         <?php if(!is_home() && !is_front_page()) get_template_part('template-parts/nav'); ?>
     </header>
