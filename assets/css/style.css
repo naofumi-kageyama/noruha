@@ -675,6 +675,13 @@ dt {
     font-size: 14px;
   }
 }
+.c-content__thumbnail {
+  margin-bottom: 1em;
+}
+.c-content__thumbnail img {
+  margin: 0;
+  width: 100%;
+}
 
 .c-rich-text > p {
   margin-top: 1em;

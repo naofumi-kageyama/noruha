@@ -60,4 +60,11 @@
             }
         }
     }
+    &__thumbnail {
+        margin-bottom: 1em;
+        img {
+            margin: 0;
+            width: 100%;
+        }
+    }
 }
