@@ -51,7 +51,7 @@ Template Name: 23kofuku
                                     <li class="p-23kofuku-symposium__guest-item js-open-profile-container js-open-profile-child">
                                         <p class="p-23kofuku-symposium__guest-name js-open-profile-button">小澤みゆき（編集者・ライター）</p>
                                         <div class="p-23kofuku-symposium__guest-profile c-white-area js-open-profile-target">
-                                            <button class="p-23kofuku-symposium__close-button js-open-profile-button"></button>
+                                            <button class="p-23kofuku-symposium__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                                             <div class="p-23kofuku-symposium__guest-profile-inner">
                                                 <figure class="p-23kofuku-symposium__guest-image">
                                                     <img src="<?php echo esc_html(get_template_directory_uri()); ?>/assets/images/image_ozawa.png" alt="小澤みゆき氏のプロフィール画像" width="1969" height="1978">
@@ -68,7 +68,7 @@ Template Name: 23kofuku
                                     <li class="p-23kofuku-symposium__guest-item js-open-profile-container js-open-profile-child">
                                         <p class="p-23kofuku-symposium__guest-name js-open-profile-button">北村みなみ（イラストレーター／映像作家／漫画作家）</p>
                                         <div class="p-23kofuku-symposium__guest-profile c-white-area js-open-profile-target">
-                                            <button class="p-23kofuku-symposium__close-button js-open-profile-button"></button>
+                                            <button class="p-23kofuku-symposium__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                                             <div class="p-23kofuku-symposium__guest-profile-inner">
                                                 <figure class="p-23kofuku-symposium__guest-image">
                                                     <img src="<?php echo esc_html(get_template_directory_uri()); ?>/assets/images/image_kitamura.jpg" alt="北村みなみ氏のプロフィール画像" width="2450" height="2450">
@@ -83,7 +83,7 @@ Template Name: 23kofuku
                                     <li class="p-23kofuku-symposium__guest-item js-open-profile-container js-open-profile-child">
                                         <p class="p-23kofuku-symposium__guest-name js-open-profile-button">カゲヤマ気象台（劇作家・演出家、円盤に乗る派代表）</p>
                                         <div class="p-23kofuku-symposium__guest-profile c-white-area js-open-profile-target">
-                                            <button class="p-23kofuku-symposium__close-button js-open-profile-button"></button>
+                                            <button class="p-23kofuku-symposium__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                                             <div class="p-23kofuku-symposium__guest-profile-inner">
                                                 <figure class="p-23kofuku-symposium__guest-image">
                                                     <img src="<?php echo esc_html(get_template_directory_uri()); ?>/assets/images/image_kageyama_square.jpg" alt="カゲヤマ気象台のプロフィール画像" width="1000" height="667">
@@ -99,7 +99,7 @@ Template Name: 23kofuku
                                     <li class="p-23kofuku-symposium__guest-item js-open-profile-container js-open-profile-child">
                                         <p class="p-23kofuku-symposium__guest-name js-open-profile-button">司会：曽根千智</p>
                                         <div class="p-23kofuku-symposium__guest-profile c-white-area js-open-profile-target">
-                                            <button class="p-23kofuku-symposium__close-button js-open-profile-button"></button>
+                                            <button class="p-23kofuku-symposium__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                                             <div class="p-23kofuku-symposium__guest-profile-inner">
                                                 <figure class="p-23kofuku-symposium__guest-image">
                                                     <img src="<?php echo esc_html(get_template_directory_uri()); ?>/assets/images/image_sone.jpg" alt="曽根千智氏のプロフィール画像" width="1046" height="1568">
@@ -124,7 +124,7 @@ Template Name: 23kofuku
                                     <li class="p-23kofuku-symposium__guest-item js-open-profile-container js-open-profile-child">
                                         <p class="p-23kofuku-symposium__guest-name js-open-profile-button">江永泉（批評家）</p>
                                         <div class="p-23kofuku-symposium__guest-profile c-white-area js-open-profile-target">
-                                            <button class="p-23kofuku-symposium__close-button js-open-profile-button"></button>
+                                            <button class="p-23kofuku-symposium__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                                             <div class="p-23kofuku-symposium__guest-profile-inner">
                                                 <figure class="p-23kofuku-symposium__guest-image">
                                                     <img src="<?php echo esc_html(get_template_directory_uri()); ?>/assets/images/image_enaga.jpg" alt="江永泉氏のプロフィール画像" width="1944" height="2592">
@@ -138,7 +138,7 @@ Template Name: 23kofuku
                                     <li class="p-23kofuku-symposium__guest-item js-open-profile-container js-open-profile-child">
                                         <p class="p-23kofuku-symposium__guest-name js-open-profile-button">小宮りさ麻吏奈（アーティスト/ アーター ）</p>
                                         <div class="p-23kofuku-symposium__guest-profile c-white-area js-open-profile-target">
-                                            <button class="p-23kofuku-symposium__close-button js-open-profile-button"></button>
+                                            <button class="p-23kofuku-symposium__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                                             <div class="p-23kofuku-symposium__guest-profile-inner">
                                                 <figure class="p-23kofuku-symposium__guest-image">
                                                     <img src="<?php echo esc_html(get_template_directory_uri()); ?>/assets/images/image_komiya.jpg" alt="小宮りさ麻吏奈氏のプロフィール画像" width="500" height="500">
@@ -153,7 +153,7 @@ Template Name: 23kofuku
                                     <li class="p-23kofuku-symposium__guest-item js-open-profile-container js-open-profile-child">
                                         <p class="p-23kofuku-symposium__guest-name js-open-profile-button">カゲヤマ気象台（劇作家・演出家、円盤に乗る派代表）</p>
                                         <div class="p-23kofuku-symposium__guest-profile c-white-area js-open-profile-target">
-                                            <button class="p-23kofuku-symposium__close-button js-open-profile-button"></button>
+                                            <button class="p-23kofuku-symposium__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                                             <div class="p-23kofuku-symposium__guest-profile-inner">
                                                 <figure class="p-23kofuku-symposium__guest-image">
                                                     <img src="<?php echo esc_html(get_template_directory_uri()); ?>/assets/images/image_kageyama_square.jpg" alt="カゲヤマ気象台のプロフィール画像" width="1000" height="667">
@@ -169,7 +169,7 @@ Template Name: 23kofuku
                                     <li class="p-23kofuku-symposium__guest-item js-open-profile-container js-open-profile-child">
                                         <p class="p-23kofuku-symposium__guest-name js-open-profile-button">司会：曽根千智</p>
                                         <div class="p-23kofuku-symposium__guest-profile c-white-area js-open-profile-target">
-                                            <button class="p-23kofuku-symposium__close-button js-open-profile-button"></button>
+                                            <button class="p-23kofuku-symposium__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                                             <div class="p-23kofuku-symposium__guest-profile-inner">
                                                 <figure class="p-23kofuku-symposium__guest-image">
                                                     <img src="<?php echo esc_html(get_template_directory_uri()); ?>/assets/images/image_sone.jpg" alt="曽根千智氏のプロフィール画像" width="1046" height="1568">

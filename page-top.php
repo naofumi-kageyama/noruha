@@ -10,7 +10,9 @@ Template Name: top
         <div class="p-top__section-inner p-top-next-section">
             <h2 class="p-top-next-section__heading top-left-title">Next Exhibition Information</h2>
             <div class="p-top-next-section__main-visual">
-                <a href="<?php echo esc_url($cfs->get('link')); ?>"><img src="<?php echo esc_url($cfs->get('next-mainvisual')); ?>"></a>
+                <a href="<?php echo esc_url($cfs->get('link')); ?>" title="<?php echo $cfs->get('title'); ?>">
+                    <?php echo wp_get_attachment_image($cfs->get('next-mainvisual'), "large"); ?>
+                </a>
             </div>
             <div class="p-top-next-section__title-container">
                 <h3 class="p-top-next-section__title"><?php echo $cfs->get('title'); ?></h3>
@@ -61,7 +63,7 @@ Template Name: top
             </div>
             <div class="p-top-main-section__main-visual-container">
                 <figure class="p-top-main-section__main-visual">
-                    <img src="<?php echo esc_url($cfs->get('mainvisual')); ?>">
+                    <?php echo wp_get_attachment_image($cfs->get('mainvisual'), "large"); ?>
                     <figcaption><?php echo esc_url($cfs->get('mainvisual-credit')); ?></figcaption>
                 </figure>
             </div>
@@ -81,7 +83,7 @@ Template Name: top
                 <h2 class="p-top-main-section__section-heading">プロジェクトメンバー</h2>
                 <div class="p-top-main-section__section-content p-top-main-section__members-content">
                     <div class="p-top-main-section__members-image">
-                        <img src="<?php echo esc_url($cfs->get('artistphoto_members')); ?>">
+                        <?php echo wp_get_attachment_image($cfs->get('artistphoto_members'), "large"); ?>
                     </div>
                     <div class="p-top-main-section__members-column-wrapper js-member-open-column-wrapper">
                         <?php
@@ -95,8 +97,8 @@ Template Name: top
                                 ?>
                                     <div class="p-top-main-section__member-container js-member-open-container">
                                         <div class="p-top-main-section__member-image-container js-member-open-button">
-                                            <img class="p-top-main-section__member-image--off" src="<?php echo esc_url($field['artistphoto_off']); ?>">
-                                            <img class="p-top-main-section__member-image--on" src="<?php echo esc_url($field['artistphoto_on']); ?>">
+                                            <?php echo wp_get_attachment_image($field['artistphoto_off'], "large", false, array('class' => 'p-top-main-section__member-image--off')); ?>
+                                            <?php echo wp_get_attachment_image($field['artistphoto_on'], "large", false, array('class' => 'p-top-main-section__member-image--on')); ?>
                                         </div>
                                         <h3 class="p-top-main-section__member-heading"><?php echo esc_html($field['member-name']); ?></h3>
                                         <div class="p-top-main-section__member-description c-rich-text js-member-open-target">

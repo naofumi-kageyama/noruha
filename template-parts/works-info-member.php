@@ -17,7 +17,7 @@
                                 <p class="p-template-works-info-member__name js-open-profile-button"><?php echo esc_html($field['name']); ?></p>
                                 <?php if(!empty($field['profile'])): ?>
                                     <div class="p-template-works-info-member__profile-container c-white-area js-open-profile-target">
-                                        <button class="c-white-area__close-button js-open-profile-button"></button>
+                                        <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                                         <div class="p-template-works-info-member__profile c-rich-text">
                                             <?php echo apply_filters("the_content", $field['profile']); ?>
                                         </div>

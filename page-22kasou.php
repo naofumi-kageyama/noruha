@@ -134,7 +134,7 @@ Template Name: 22kasou
             </div>
         </div>
     </div>
-    <button class="p-22kasou-modal__close-button js-modal-close-button"></button>
+    <button class="p-22kasou-modal__close-button js-modal-close-button"><span class="u-visually-hidden">close</span></button>
 </div>
 <div class="p-22kasou-modal js-modal">
     <div class="p-22kasou-modal__overlay"></div>
@@ -174,5 +174,5 @@ Template Name: 22kasou
             </div>
         </div>
     </div>
-    <button class="p-22kasou-modal__close-button js-modal-close-button"></button>
+    <button class="p-22kasou-modal__close-button js-modal-close-button"><span class="u-visually-hidden">close</span></button>
 </div>
