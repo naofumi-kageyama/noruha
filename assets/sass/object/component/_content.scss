@@ -2,9 +2,9 @@
 @use "../../foundation/variable" as var;
 @use "../../foundation/breakpoint" as br;
 .c-content {
-    @include br.mq(tab) {
-        font-size: var.$font_size_m;
-    }
+    // @include br.mq(tab) {
+    //     font-size: var.$font_size_m;
+    // }
     *:has(+ h2),
     *:has(+ h3) {
         margin-bottom: 0!important;

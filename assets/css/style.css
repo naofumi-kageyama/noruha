@@ -588,11 +588,6 @@ dt {
   margin-top: 2em;
 }
 
-@media screen and (max-width: 768px) {
-  .c-content {
-    font-size: 16px;
-  }
-}
 .c-content *:has(+ h2),
 .c-content *:has(+ h3) {
   margin-bottom: 0 !important;
