@@ -1,0 +1,9 @@
+@use "../../foundation/mixin" as mix;
+@use "../../foundation/variable" as var;
+@use "../../foundation/breakpoint" as br;
+.c-button {
+    display: inline-block;
+    padding: 0.25em 1em;
+    border: 1px solid;
+    border-radius: 9999px;
+}

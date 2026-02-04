@@ -6,6 +6,17 @@
         width: 95%;
         max-width: 540px;
         margin: 0 auto 40px;
+        &--horizontal {
+            max-width: none;
+        }
+        figcaption {
+            margin-top: .5em;
+            text-align: right;
+            font-size: var.$font_size_m;
+            @include br.mq(sp) {
+                font-size: var.$font_size_s;
+            }
+        }
     }
     &__title-container {
         border-top: var.$black 1px solid;
