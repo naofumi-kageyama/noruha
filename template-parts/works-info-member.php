@@ -7,7 +7,7 @@
                 foreach ($fields as $field) :
             ?>
                 <div class="p-template-works-info-member__terms-container js-open-profile-parent">
-                    <dt class="p-template-works-info-member__terms"><?php echo esc_html($field['role']); ?></dt>
+                    <dt class="p-template-works-info-member__terms"><span class="c-button"><?php echo esc_html($field['role']); ?></span></dt>
                     <dd class="p-template-works-info-member__description js-open-profile-children-wrapper">
                         <?php
                             $fields = $field['individual'];

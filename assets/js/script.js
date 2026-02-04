@@ -17,17 +17,16 @@ $(function(){
         s.parentNode.insertBefore(wf, s);
     })();
 
-    //画面スクロール関数
-    function moveTo(target){
-        const targetTop = $(target).offset().top;
-        const headerHeight = $('.js-header-height').height();
-        const moveTo = targetTop - headerHeight;
-        $(window).scrollTop(moveTo);
-    }
-
-    //hash時画面位置調整
-    const hash = $(location).attr('hash');
-    if(hash){
-        moveTo(hash);
-    }
+    //アンカーリンククリック
+    $('a[href^="#"]').click(function() {
+        const href = $(this).attr("href");
+        const target = $(href == "#" || href == "" ? 'html' : href);
+        if(target.length){
+            const targetTop = target.offset().top;
+            const headerHeight = $('.js-header-height').height();
+            const position = targetTop - headerHeight;
+            $('body,html').animate({scrollTop:position}, 1000, 'swing');
+            return false;
+        }
+    });
 });
