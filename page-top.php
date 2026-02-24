@@ -10,9 +10,13 @@ Template Name: top
         <div class="p-top__section-inner p-top-next-section">
             <h2 class="p-top-next-section__heading top-left-title">Next Exhibition Information</h2>
             <div class="p-top-next-section__main-visual">
-                <a href="<?php echo esc_url($cfs->get('link')); ?>" title="<?php echo $cfs->get('title'); ?>">
-                    <?php echo wp_get_attachment_image($cfs->get('next-mainvisual'), "large"); ?>
-                </a>
+                <?php if(!empty($cfs->get('next-mainvisual'))) : ?>
+                    <a href="<?php echo esc_attr($cfs->get('link')); ?>" title="<?php echo $cfs->get('title'); ?>">
+                        <?php echo wp_get_attachment_image($cfs->get('next-mainvisual'), "large"); ?>
+                    </a>
+                <?php else : ?>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image_coming-soon.png" alt="coming soon" width="1080" height="1080">
+                <?php endif; ?>
             </div>
             <div class="p-top-next-section__title-container">
                 <h3 class="p-top-next-section__title"><?php echo $cfs->get('title'); ?></h3>
@@ -51,8 +55,15 @@ Template Name: top
                         </div>
                     </div>
                 <?php endif ; ?>
+                <?php if(!empty($cfs->get('detail'))) : ?>
+                    <div class="p-top-next-section__description-section c-content">
+                        <?php echo apply_filters('the_content', $cfs->get('detail')); ?>
+                    </div>
+                <?php endif; ?>
             </div>
-            <a class="p-top-next-section__button" href="<?php echo esc_url($cfs->get('link')); ?>">詳細</a>
+            <?php if(!empty($cfs->get('link'))) : ?>
+                <a class="p-top-next-section__button" href="<?php echo esc_url($cfs->get('link')); ?>">詳細</a>
+            <?php endif; ?>
         </div>
     </section>
     <section class="p-top__section p-top__right">
@@ -63,8 +74,8 @@ Template Name: top
             </div>
             <div class="p-top-main-section__main-visual-container">
                 <figure class="p-top-main-section__main-visual">
-                    <?php echo wp_get_attachment_image($cfs->get('mainvisual'), "large"); ?>
-                    <figcaption><?php echo esc_url($cfs->get('mainvisual-credit')); ?></figcaption>
+                    <?php echo wp_get_attachment_image($cfs->get('mainvisual'), "full"); ?>
+                    <figcaption><?php echo esc_html($cfs->get('mainvisual-credit')); ?></figcaption>
                 </figure>
             </div>
             <div id="declaration" class="p-top-main-section__section">
@@ -83,7 +94,7 @@ Template Name: top
                 <h2 class="p-top-main-section__section-heading">プロジェクトメンバー</h2>
                 <div class="p-top-main-section__section-content p-top-main-section__members-content">
                     <div class="p-top-main-section__members-image">
-                        <?php echo wp_get_attachment_image($cfs->get('artistphoto_members'), "large"); ?>
+                        <?php echo wp_get_attachment_image($cfs->get('artistphoto_members'), "full"); ?>
                     </div>
                     <div class="p-top-main-section__members-column-wrapper js-member-open-column-wrapper">
                         <?php

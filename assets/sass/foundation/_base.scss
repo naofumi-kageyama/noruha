@@ -9,6 +9,11 @@ body {
     font-weight: var.$font_weight_main;
     line-height: var.$line_height_main;
     word-wrap: break-word;
+    &:not(.home) {
+        .grecaptcha-badge {
+            visibility: hidden;
+        }
+    }
     @include br.mq(sp) {
         font-size: var.$font_size_sp;
     }

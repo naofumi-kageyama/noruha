@@ -403,6 +403,9 @@ body {
   line-height: 1.6;
   word-wrap: break-word;
 }
+body:not(.home) .grecaptcha-badge {
+  visibility: hidden;
+}
 @media screen and (max-width: 520px) {
   body {
     font-size: 16px;
@@ -585,11 +588,6 @@ dt {
   margin-top: 2em;
 }
 
-@media screen and (max-width: 768px) {
-  .c-content {
-    font-size: 16px;
-  }
-}
 .c-content *:has(+ h2),
 .c-content *:has(+ h3) {
   margin-bottom: 0 !important;
@@ -621,12 +619,18 @@ dt {
 .c-content h2 + * {
   margin-top: 0 !important;
 }
+.c-content h2:first-child {
+  margin-top: 0 !important;
+}
 .c-content h3 {
   font-weight: 600;
   margin-top: 1em;
   margin-bottom: 0.5em;
 }
 .c-content h3 + * {
+  margin-top: 0 !important;
+}
+.c-content h3:first-child {
   margin-top: 0 !important;
 }
 .c-content p {
@@ -731,6 +735,13 @@ dt {
 }
 .c-white-area__close-button::after {
   transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.c-button {
+  display: inline-block;
+  padding: 0.25em 1em;
+  border: 1px solid;
+  border-radius: 9999px;
 }
 
 .c-floating-button {
@@ -1613,6 +1624,43 @@ dt {
   gap: 0 1em;
 }
 
+.p-26tamashii-club__about {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+@media screen and (max-width: 520px) {
+  .p-26tamashii-club__about {
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+  }
+}
+.p-26tamashii-club__about-text {
+  font-size: 16px;
+}
+.p-26tamashii-club__image {
+  margin-top: 2rem;
+}
+.p-26tamashii-club__image img {
+  width: 100%;
+  margin: 0;
+}
+.p-26tamashii-club__logo {
+  width: 12rem;
+  margin-left: auto;
+}
+@media screen and (max-width: 520px) {
+  .p-26tamashii-club__logo {
+    width: 10rem;
+  }
+}
+.p-26tamashii-club__logo img {
+  width: 100%;
+  margin: 0;
+}
+
 .p-template-nav {
   display: flex;
   justify-content: space-between;
@@ -1646,6 +1694,19 @@ dt {
   width: 95%;
   max-width: 540px;
   margin: 0 auto 40px;
+}
+.p-template-works-main-visual__main-visual--horizontal {
+  max-width: none;
+}
+.p-template-works-main-visual__main-visual figcaption {
+  margin-top: 0.5em;
+  text-align: right;
+  font-size: 16px;
+}
+@media screen and (max-width: 520px) {
+  .p-template-works-main-visual__main-visual figcaption {
+    font-size: 14px;
+  }
 }
 .p-template-works-main-visual__title-container {
   border-top: #000 1px solid;
@@ -1722,6 +1783,7 @@ dt {
 .p-template-works-info-member__name {
   width: -moz-fit-content;
   width: fit-content;
+  margin-top: 0.25em;
 }
 .p-template-works-info-member__profile-container {
   position: absolute;
