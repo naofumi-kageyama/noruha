@@ -1,0 +1,61 @@
+@use "../../foundation/mixin" as mix;
+@use "../../foundation/variable" as var;
+@use "../../foundation/breakpoint" as br;
+.p-26tamashii-club-page {
+    &__description {
+        margin-top: 4rem;
+    }
+    &__main-image {
+    }
+    &__profile {
+        margin-top: 4rem;
+    }
+    &__profile-image {
+        margin-top: 2rem;
+    }
+    &__info {
+        margin-top: 4rem;
+    }
+    &__info-subtitle {
+        font-weight: bold;
+    }
+    &__comment {
+        margin-top: 4rem;
+    }
+    &__comment-image {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        figcaption {
+            font-size: 80%;
+            margin-top: 1em;
+        }
+    }
+    &__about {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 3rem;
+        @include br.mq(sp) {
+            flex-direction: column;
+            align-items: end;
+            gap: 1rem;
+        }
+    }
+    &__about-text {
+        font-size: var.$font_size_m;
+    }
+    &__logo {
+        width: 12rem;
+        margin-left: auto;
+        @include br.mq(sp) {
+            width: 10rem;
+        }
+        img {
+            margin: 0;
+        }
+    }
+    &__card {
+        margin-top: 8rem;
+    }
+}

@@ -108,6 +108,27 @@ Template Name: 26tamashii-rekishi-1
         text-align:left;
       }
 
+      /* 注釈（脚注っぽい） */
+      .footnote{
+        font-family: var(--gothic);
+        font-size: 0.9rem;
+        color: #666;
+        line-height: 1.7;
+
+        border-left: 3px solid #cfcfcf;
+        padding: 10px 12px;
+        margin: 10px 0 22px;
+
+        background: rgba(246,247,248,0.55);
+        border-radius: 6px;
+      }
+      .footnote::before{
+        content: "※";
+        margin-right: 0.4em;
+        color: #888;
+        font-weight: 700;
+      }
+
       .heading{
         font-family:var(--gothic);
         font-weight:700;
@@ -203,6 +224,15 @@ Template Name: 26tamashii-rekishi-1
         .article-title{ line-height: 1.34; }
       }
     </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QV80TZK3W7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QV80TZK3W7');
+    </script>
   </head>
 
   <body>
@@ -390,7 +420,7 @@ Template Name: 26tamashii-rekishi-1
             <p class="speaker">カゲヤマ</p>
             <p class="speech">そうね。ほんとはね、『HOSONO HOUSE*』みたいなのがいいんだけどね。</p>
 
-            <p class="speech">*細野晴臣のソロ・デビュー作。埼玉県狭山市にあった細野晴臣の自宅でレコーディングされた。</p>
+            <p class="footnote">細野晴臣のソロ・デビュー作。埼玉県狭山市にあった細野晴臣の自宅でレコーディングされた。</p>
 
             <p class="speaker">下駄</p>
             <p class="speech">逆に子どもとか関係なく考えてることもある？《乗る派》の今後として。</p>

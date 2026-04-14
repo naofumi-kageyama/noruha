@@ -3,7 +3,7 @@
 @mixin h1 {
     font-size: var.$font_size_lll;
     font-weight: 600;
-    margin-bottom: 0.5em;
+    margin-bottom: 2em;
     @include br.mq(tab) {
         font-size: var.$font_size_ll;
     }

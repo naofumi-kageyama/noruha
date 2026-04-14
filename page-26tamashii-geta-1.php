@@ -312,6 +312,15 @@ Template Name: 26tamashii-rekishi-top
       border:0;
     }
   </style>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QV80TZK3W7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QV80TZK3W7');
+  </script>
 </head>
 
 <body>
@@ -324,6 +333,7 @@ Template Name: 26tamashii-rekishi-top
     </div>
 
     <div class="article-list">
+
       <a class="article-link" href="https://noruha.net/tamashii/hiyorigeta-no-rekishi-ni-kizame/vol1/">
         <div class="article-card">
           <img class="article-thumb" src="/wp-content/themes/noruha2022/assets/images/rekishi-thumb-Kageyama.jpg" alt="カゲヤマ気象台">
@@ -333,6 +343,47 @@ Template Name: 26tamashii-rekishi-top
           </div>
         </div>
       </a>
+
+      <a class="article-link" href="https://noruha.net/tamashii/hiyorigeta-no-rekishi-ni-kizame/vol2/">
+        <div class="article-card">
+          <img class="article-thumb" src="/wp-content/themes/noruha2022/assets/images/rekishi-thumb-Yamamoto.jpg" alt="山本ジャスティン伊等">
+          <div class="article-info">
+            <p class="article-title">日和下駄の歴史に刻め！第二回</p>
+            <p class="article-guest">ゲスト：山本ジャスティン伊等</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="article-link" href="https://noruha.net/tamashii/hiyorigeta-no-rekishi-ni-kizame/vol3/">
+        <div class="article-card">
+          <img class="article-thumb" src="/wp-content/themes/noruha2022/assets/images/rekishi-thumb-Hatakeyama.jpg" alt="畠山峻">
+          <div class="article-info">
+            <p class="article-title">日和下駄の歴史に刻め！第三回</p>
+            <p class="article-guest">ゲスト：畠山峻</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="article-link" href="https://noruha.net/tamashii/hiyorigeta-no-rekishi-ni-kizame/vol4/">
+        <div class="article-card">
+          <img class="article-thumb" src="/wp-content/themes/noruha2022/assets/images/rekishi-thumb-HukasawaYokota.jpg" alt="深澤しほ、横田僚平">
+          <div class="article-info">
+            <p class="article-title">日和下駄の歴史に刻め！第四回</p>
+            <p class="article-guest">ゲスト：深澤しほ、横田僚平</p>
+          </div> 
+        </div>
+      </a>
+
+      <a class="article-link" href="https://noruha.net/tamashii/hiyorigeta-no-rekishi-ni-kizame/vol5/">
+        <div class="article-card">
+          <img class="article-thumb" src="/wp-content/themes/noruha2022/assets/images/rekishi-thumb-Watanabe.jpg" alt="渡邊まな実">
+          <div class="article-info">
+            <p class="article-title">日和下駄の歴史に刻め！第五回</p>
+            <p class="article-guest">ゲスト：渡邊まな実</p>
+          </div>
+        </div>
+      </a>
+      
     </div>
 
     <div class="profile-section">
