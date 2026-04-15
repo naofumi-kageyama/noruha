@@ -19,8 +19,8 @@ Template Name: 26tamashii-rekishi-5
         <meta property="og:type" content="article">
         <meta property="og:url" content="https://noruha.net/tamashii/hiyorigeta-no-rekishi-ni-kizame/vol5/">
 
-        <meta property="og:image" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/rekishi-thumb-Watanabe.jpg">
-        <meta property="og:image:secure_url" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/rekishi-thumb-Watanabe.jpg">
+        <meta property="og:image" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/image_rekishi-thumb-Watanabe.jpg">
+        <meta property="og:image:secure_url" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/image_rekishi-thumb-Watanabe.jpg">
         <meta property="og:image:width" content="1200">
         <meta property="og:image:height" content="630">
         <meta name="twitter:image:alt" content="日和下駄の歴史に刻め！｜ゲスト：渡邊まな実">
@@ -31,7 +31,7 @@ Template Name: 26tamashii-rekishi-5
         <meta name="twitter:site" content="@hiyorigeta">
         <meta name="twitter:title" content="日和下駄の歴史に刻め！｜ゲスト：渡邊まな実">
         <meta name="twitter:description" content="歴史的な俳優を目指す日和下駄が、渡邊まな実と対談。コーナー企画を交えつつ、歴史的俳優への憧れや海外芝居の実感を語り合う、ひらかれた第五回。">
-        <meta name="twitter:image" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/rekishi-thumb-Watanabe.jpg">
+        <meta name="twitter:image" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/image_rekishi-thumb-Watanabe.jpg">
 
         <link rel="icon" href="/wp-content/themes/noruha2022/assets/images/favicon.ico">
 
@@ -228,7 +228,7 @@ Template Name: 26tamashii-rekishi-5
                 </header>
 
                 <figure>
-                    <img class="eyecatch" src="/wp-content/themes/noruha2022/assets/images/rekishi-eyecatch-Watanabe.jpg" alt="渡邊まな実">
+                    <img class="eyecatch" src="/wp-content/themes/noruha2022/assets/images/image_rekishi-eyecatch-Watanabe.jpg" alt="渡邊まな実">
                     <figcaption class="eyecatch-credit">撮影：濱田晋</figcaption>
                 </figure>
 

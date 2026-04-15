@@ -19,8 +19,8 @@ Template Name: 26tamashii-rekishi-3
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://noruha.net/tamashii/hiyorigeta-no-rekishi-ni-kizame/vol3/">
 
-    <meta property="og:image" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/rekishi-thumb-Hatakeyama.jpg">
-    <meta property="og:image:secure_url" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/rekishi-thumb-Hatakeyama.jpg">
+    <meta property="og:image" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/image_rekishi-thumb-Hatakeyama.jpg">
+    <meta property="og:image:secure_url" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/image_rekishi-thumb-Hatakeyama.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:image:alt" content="日和下駄の歴史に刻め！｜ゲスト：畠山峻">
@@ -31,7 +31,7 @@ Template Name: 26tamashii-rekishi-3
     <meta name="twitter:site" content="@hiyorigeta">
     <meta name="twitter:title" content="日和下駄の歴史に刻め！｜ゲスト：畠山峻">
     <meta name="twitter:description" content="歴史的な俳優を目指す日和下駄が、畠山峻と対談。《円盤に乗る派》の俳優同士だからこそ話せる「これからの付き合い方」を探る第三回。">
-    <meta name="twitter:image" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/rekishi-thumb-Hatakeyama.jpg">
+    <meta name="twitter:image" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/image_rekishi-thumb-Hatakeyama.jpg">
 
     <link rel="icon" href="/wp-content/themes/noruha2022/assets/images/favicon.ico">
 
@@ -230,7 +230,7 @@ Template Name: 26tamashii-rekishi-3
         </header>
 
         <figure>
-          <img class="eyecatch" src="/wp-content/themes/noruha2022/assets/images/rekishi-eyecatch-Hatakeyama.jpg" alt="畠山峻">
+          <img class="eyecatch" src="/wp-content/themes/noruha2022/assets/images/image_rekishi-eyecatch-Hatakeyama.jpg" alt="畠山峻">
           <figcaption class="eyecatch-credit">撮影：濱田晋</figcaption>
         </figure>
 

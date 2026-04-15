@@ -15,8 +15,8 @@ Template Name: 26tamashii-rekishi-top
     <meta property="og:description" content="歴史的な俳優を目指す日和下駄が、《円盤に乗る派》新作公演のメンバーと対談。現代演劇を取り巻く状況を読み解き、これからの活動のヒントを探るポッドキャスト。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://noruha.net/tamashii/hiyorigeta-no-rekishi-ni-kizame/" />
-    <meta property="og:image" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/rekishi-profile-ogp.jpg">
-    <meta property="og:image:secure_url" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/rekishi-profile-ogp.jpg">
+    <meta property="og:image" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/image_rekishi-profile-ogp.jpg">
+    <meta property="og:image:secure_url" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/image_rekishi-profile-ogp.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:image:alt" content="日和下駄の歴史に刻め！">
@@ -26,7 +26,7 @@ Template Name: 26tamashii-rekishi-top
     <meta name="twitter:site" content="@hiyorigeta">
     <meta name="twitter:title" content="日和下駄の歴史に刻め！">
     <meta name="twitter:description" content="歴史的な俳優を目指す日和下駄が、《円盤に乗る派》新作公演のメンバーと対談。現代演劇を取り巻く状況を読み解き、これからの活動のヒントを探るポッドキャスト。">
-    <meta name="twitter:image" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/rekishi-profile-ogp.jpg">
+    <meta name="twitter:image" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/image_rekishi-profile-ogp.jpg">
     <link rel="icon" href="/wp-content/themes/noruha2022/assets/images/favicon.ico">
   <style>
     :root{
@@ -326,7 +326,7 @@ Template Name: 26tamashii-rekishi-top
 <body>
   <div class="container">
     <h1 class="sr-only">日和下駄の歴史に刻め！</h1>
-    <img class="title-img" src="/wp-content/themes/noruha2022/assets/images/rekishi-title.png" alt="日和下駄の歴史に刻め！">
+    <img class="title-img" src="/wp-content/themes/noruha2022/assets/images/image_rekishi-title.png" alt="日和下駄の歴史に刻め！">
 
     <div class="summary-box">
       <p>これは、歴史的な俳優になりたい日和下駄が、円盤に乗る派の新作公演『「いまのところまだ存在しているわたしのたましいが……」』に参加しているメンバーに話を聞き、どうやったら日和下駄がその名を歴史に刻むことができるのかを考えるポッドキャスト番組です。それぞれのゲストとテーマを設定して対談を実施することで、《乗る派》の状況や現代演劇を取り巻く状況について議論を深めます。いまの状況を読み解き、その中でどのように活動をしていくことができるのか。日和下駄が歴史に名を刻むための模索は続きます。</p>
@@ -336,7 +336,7 @@ Template Name: 26tamashii-rekishi-top
 
       <a class="article-link" href="https://noruha.net/tamashii/hiyorigeta-no-rekishi-ni-kizame/vol1/">
         <div class="article-card">
-          <img class="article-thumb" src="/wp-content/themes/noruha2022/assets/images/rekishi-thumb-Kageyama.jpg" alt="カゲヤマ気象台">
+          <img class="article-thumb" src="/wp-content/themes/noruha2022/assets/images/image_rekishi-thumb-Kageyama.jpg" alt="カゲヤマ気象台">
           <div class="article-info">
             <p class="article-title">日和下駄の歴史に刻め！第一回</p>
             <p class="article-guest">ゲスト：カゲヤマ気象台</p>
@@ -346,7 +346,7 @@ Template Name: 26tamashii-rekishi-top
 
       <a class="article-link" href="https://noruha.net/tamashii/hiyorigeta-no-rekishi-ni-kizame/vol2/">
         <div class="article-card">
-          <img class="article-thumb" src="/wp-content/themes/noruha2022/assets/images/rekishi-thumb-Yamamoto.jpg" alt="山本ジャスティン伊等">
+          <img class="article-thumb" src="/wp-content/themes/noruha2022/assets/images/image_rekishi-thumb-Yamamoto.jpg" alt="山本ジャスティン伊等">
           <div class="article-info">
             <p class="article-title">日和下駄の歴史に刻め！第二回</p>
             <p class="article-guest">ゲスト：山本ジャスティン伊等</p>
@@ -356,7 +356,7 @@ Template Name: 26tamashii-rekishi-top
 
       <a class="article-link" href="https://noruha.net/tamashii/hiyorigeta-no-rekishi-ni-kizame/vol3/">
         <div class="article-card">
-          <img class="article-thumb" src="/wp-content/themes/noruha2022/assets/images/rekishi-thumb-Hatakeyama.jpg" alt="畠山峻">
+          <img class="article-thumb" src="/wp-content/themes/noruha2022/assets/images/image_rekishi-thumb-Hatakeyama.jpg" alt="畠山峻">
           <div class="article-info">
             <p class="article-title">日和下駄の歴史に刻め！第三回</p>
             <p class="article-guest">ゲスト：畠山峻</p>
@@ -366,7 +366,7 @@ Template Name: 26tamashii-rekishi-top
 
       <a class="article-link" href="https://noruha.net/tamashii/hiyorigeta-no-rekishi-ni-kizame/vol4/">
         <div class="article-card">
-          <img class="article-thumb" src="/wp-content/themes/noruha2022/assets/images/rekishi-thumb-HukasawaYokota.jpg" alt="深澤しほ、横田僚平">
+          <img class="article-thumb" src="/wp-content/themes/noruha2022/assets/images/image_rekishi-thumb-HukasawaYokota.jpg" alt="深澤しほ、横田僚平">
           <div class="article-info">
             <p class="article-title">日和下駄の歴史に刻め！第四回</p>
             <p class="article-guest">ゲスト：深澤しほ、横田僚平</p>
@@ -376,7 +376,7 @@ Template Name: 26tamashii-rekishi-top
 
       <a class="article-link" href="https://noruha.net/tamashii/hiyorigeta-no-rekishi-ni-kizame/vol5/">
         <div class="article-card">
-          <img class="article-thumb" src="/wp-content/themes/noruha2022/assets/images/rekishi-thumb-Watanabe.jpg" alt="渡邊まな実">
+          <img class="article-thumb" src="/wp-content/themes/noruha2022/assets/images/image_rekishi-thumb-Watanabe.jpg" alt="渡邊まな実">
           <div class="article-info">
             <p class="article-title">日和下駄の歴史に刻め！第五回</p>
             <p class="article-guest">ゲスト：渡邊まな実</p>
@@ -389,7 +389,7 @@ Template Name: 26tamashii-rekishi-top
     <div class="profile-section">
       <div class="profile-media">
        
-        <img class="profile-img" src="/wp-content/themes/noruha2022/assets/images/rekishi-profile.jpg" alt="日和下駄">
+        <img class="profile-img" src="/wp-content/themes/noruha2022/assets/images/image_rekishi-profile.jpg" alt="日和下駄">
         <p class="profile-credit">撮影：志賀耕太</p>
       </div>
 

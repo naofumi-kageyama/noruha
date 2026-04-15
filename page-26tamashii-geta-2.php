@@ -17,8 +17,8 @@ Template Name: 26tamashii-rekishi-1
     <meta property="og:description" content="歴史的な俳優を目指す日和下駄が、カゲヤマ気象台と対談。子育てと創作の両立、稽古の設計、そして《円盤に乗る派》の未来を読み解く第一回。">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://noruha.net/tamashii/hiyorigeta-no-rekishi-ni-kizame/vol1/">
-    <meta property="og:image" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/rekishi-thumb-Kageyama.jpg">
-    <meta property="og:image:secure_url" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/rekishi-thumb-Kageyama.jpg">
+    <meta property="og:image" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/image_rekishi-thumb-Kageyama.jpg">
+    <meta property="og:image:secure_url" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/image_rekishi-thumb-Kageyama.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:image:alt" content="日和下駄の歴史に刻め！｜ゲスト：カゲヤマ気象台">
@@ -29,7 +29,7 @@ Template Name: 26tamashii-rekishi-1
     <meta name="twitter:site" content="@hiyorigeta">
     <meta name="twitter:title" content="日和下駄の歴史に刻め！｜ゲスト：カゲヤマ気象台">
     <meta name="twitter:description" content="歴史的な俳優を目指す日和下駄が、カゲヤマ気象台と対談。子育てと創作の両立、稽古の設計、そして《円盤に乗る派》の未来を読み解く第一回。">
-    <meta name="twitter:image" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/rekishi-thumb-Kageyama.jpg">
+    <meta name="twitter:image" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/image_rekishi-thumb-Kageyama.jpg">
 
     <link rel="icon" href="/wp-content/themes/noruha2022/assets/images/favicon.ico">
 
@@ -244,7 +244,7 @@ Template Name: 26tamashii-rekishi-1
         </header>
 
         <figure>
-          <img class="eyecatch" src="/wp-content/themes/noruha2022/assets/images/rekishi-eyecatch-Kageyama.jpg" alt="カゲヤマ気象台">
+          <img class="eyecatch" src="/wp-content/themes/noruha2022/assets/images/image_rekishi-eyecatch-Kageyama.jpg" alt="カゲヤマ気象台">
           <figcaption class="eyecatch-credit">撮影：濱田晋</figcaption>
         </figure>
 

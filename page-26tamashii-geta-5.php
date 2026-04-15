@@ -19,8 +19,8 @@ Template Name: 26tamashii-rekishi-4
         <meta property="og:type" content="article">
         <meta property="og:url" content="https://noruha.net/tamashii/hiyorigeta-no-rekishi-ni-kizame/vol4/">
 
-        <meta property="og:image" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/rekishi-thumb-HukasawaYokota.jpg">
-        <meta property="og:image:secure_url" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/rekishi-thumb-HukasawaYokota.jpg">
+        <meta property="og:image" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/image_rekishi-thumb-HukasawaYokota.jpg">
+        <meta property="og:image:secure_url" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/image_rekishi-thumb-HukasawaYokota.jpg">
         <meta property="og:image:width" content="1200">
         <meta property="og:image:height" content="630">
         <meta name="twitter:image:alt" content="日和下駄の歴史に刻め！｜ゲスト：深澤しほ、横田僚平">
@@ -31,7 +31,7 @@ Template Name: 26tamashii-rekishi-4
         <meta name="twitter:site" content="@hiyorigeta">
         <meta name="twitter:title" content="日和下駄の歴史に刻め！｜ゲスト：深澤しほ、横田僚平">
         <meta name="twitter:description" content="歴史的な俳優を目指す日和下駄が、深澤しほ、横田僚平と対談。2019年の『これは演劇ではない』を起点に、それぞれの歩みと俳優としての現在地をたどる第四回。">
-        <meta name="twitter:image" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/rekishi-thumb-HukasawaYokota.jpg">
+        <meta name="twitter:image" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/image_rekishi-thumb-HukasawaYokota.jpg">
 
         <link rel="icon" href="/wp-content/themes/noruha2022/assets/images/favicon.ico">
 
@@ -228,7 +228,7 @@ Template Name: 26tamashii-rekishi-4
                 </header>
 
                 <figure>
-                    <img class="eyecatch" src="/wp-content/themes/noruha2022/assets/images/rekishi-eyecatch-HukasawaYokota.jpg" alt="深澤しほ、横田僚平">
+                    <img class="eyecatch" src="/wp-content/themes/noruha2022/assets/images/image_rekishi-eyecatch-HukasawaYokota.jpg" alt="深澤しほ、横田僚平">
                     <figcaption class="eyecatch-credit">撮影：濱田晋</figcaption>
                 </figure>
 

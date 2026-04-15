@@ -18,8 +18,8 @@ Template Name: 26tamashii-rekishi-2
     <meta property="og:description" content="歴史的な俳優を目指す日和下駄が、山本ジャスティン伊等と対談。言葉と身体、ポリティカルコレクトネス、現代演劇を取り巻く状況をテーマに、“いま”の空気を整理する第二回。">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://noruha.net/tamashii/hiyorigeta-no-rekishi-ni-kizame/vol2/">
-    <meta property="og:image" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/rekishi-thumb-Yamamoto.jpg">
-    <meta property="og:image:secure_url" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/rekishi-thumb-Yamamoto.jpg">
+    <meta property="og:image" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/image_rekishi-thumb-Yamamoto.jpg">
+    <meta property="og:image:secure_url" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/image_rekishi-thumb-Yamamoto.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:image:alt" content="日和下駄の歴史に刻め！｜ゲスト：山本ジャスティン伊等">
@@ -30,7 +30,7 @@ Template Name: 26tamashii-rekishi-2
     <meta name="twitter:site" content="@hiyorigeta">
     <meta name="twitter:title" content="日和下駄の歴史に刻め！｜ゲスト：山本ジャスティン伊等">
     <meta name="twitter:description" content="歴史的な俳優になりたい日和下駄が、山本ジャスティン伊等と対談。言葉と身体、ポリティカルコレクトネス、現代演劇を取り巻く状況を語る第二回。">
-    <meta name="twitter:image" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/rekishi-thumb-Yamamoto.jpg">
+    <meta name="twitter:image" content="https://noruha.net/wp-content/themes/noruha2022/assets/images/image_rekishi-thumb-Yamamoto.jpg">
 
     <link rel="icon" href="/wp-content/themes/noruha2022/assets/images/favicon.ico">
 
@@ -229,7 +229,7 @@ Template Name: 26tamashii-rekishi-2
         </header>
 
         <figure>
-          <img class="eyecatch" src="/wp-content/themes/noruha2022/assets/images/rekishi-eyecatch-Yamamoto.jpg" alt="山本ジャスティン伊等">
+          <img class="eyecatch" src="/wp-content/themes/noruha2022/assets/images/image_rekishi-eyecatch-Yamamoto.jpg" alt="山本ジャスティン伊等">
           <figcaption class="eyecatch-credit">撮影：濱田晋</figcaption>
         </figure>
 
