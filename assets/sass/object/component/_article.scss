@@ -1,0 +1,12 @@
+@use "../../foundation/mixin" as mix;
+@use "../../foundation/variable" as var;
+@use "../../foundation/breakpoint" as br;
+.c-article {
+    &__thumbnail {
+        margin-bottom: 1em;
+        img {
+            margin: 0;
+            width: 100%;
+        }
+    }
+}

@@ -590,6 +590,14 @@ dt {
   margin-top: 2em;
 }
 
+.c-article__thumbnail {
+  margin-bottom: 1em;
+}
+.c-article__thumbnail img {
+  margin: 0;
+  width: 100%;
+}
+
 .c-content h1 {
   font-size: 32px;
   font-weight: 600;
@@ -685,13 +693,6 @@ dt {
 .c-content ol li {
   list-style: decimal;
   list-style-position: inside;
-}
-.c-content__thumbnail {
-  margin-bottom: 1em;
-}
-.c-content__thumbnail img {
-  margin: 0;
-  width: 100%;
 }
 
 .c-rich-text > p {
@@ -1832,10 +1833,6 @@ dt {
 }
 .p-26tamashii-diary__item-title {
   margin-bottom: 0.5em;
-  font-size: 16px;
-}
-.p-26tamashii-diary__item-title--guest {
-  margin-bottom: 1em;
 }
 .p-26tamashii-diary__item-link {
   display: block;
@@ -1883,13 +1880,16 @@ dt {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+@media screen and (max-width: 768px) {
+  .p-26tamashii-diary__guest-article {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .p-26tamashii-diary__guest-article-title {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 1em;
-}
-.p-26tamashii-diary__guest-article-text {
-  font-size: 16px;
 }
 .p-26tamashii-diary__guest-article-text p {
   margin-top: 1em;
