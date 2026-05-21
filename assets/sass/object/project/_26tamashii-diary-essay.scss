@@ -1,0 +1,76 @@
+@use "../../foundation/mixin" as mix;
+@use "../../foundation/variable" as var;
+@use "../../foundation/breakpoint" as br;
+.p-26tamashii-diary-essay {
+  &__title {
+    @include mix.h1;
+  }
+  &__description {
+    margin-bottom: 2em;
+    p {
+      @include mix.margin_between(1em);
+    }
+  }
+  &__section {
+    margin-bottom: 6rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__section-title {
+    font-size: var.$font_size_lll;
+    font-weight: 700;
+    margin-bottom: 1em;
+    @include br.mq(tab) {
+        font-size: var.$font_size_ll;
+    }
+  }
+  &__toc-item {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-bottom: .5em;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  &__essay-text {
+    p {
+      @include mix.margin_between(1em);
+    }
+  }
+  &__profile {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include br.mq(sp){
+      display: block;
+    }
+  }
+  &__profile-left {
+    width: 25%;
+    @include br.mq(sp){
+      width: 100%;
+    }
+  }
+  &__profile-image {
+    figcaption{
+      font-size: var.$font_size_ss;
+    }
+  }
+  &__profile-right {
+    width: 70%;
+    @include br.mq(sp){
+      width: 100%;
+    }
+  }
+  &__profile-name {
+    font-weight: 700;
+    margin-bottom: 1em;
+  }
+  &__profile-description {
+    p {
+      @include mix.margin_between(1em);
+    }
+  }
+}

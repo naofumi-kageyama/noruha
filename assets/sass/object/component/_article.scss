@@ -2,6 +2,9 @@
 @use "../../foundation/variable" as var;
 @use "../../foundation/breakpoint" as br;
 .c-article {
+    &__title {
+        @include mix.h1;
+    }
     &__thumbnail {
         margin-bottom: 1em;
         img {

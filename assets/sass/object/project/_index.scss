@@ -18,11 +18,14 @@
 @use "24kasou-child-article" as re-kasou-child-article;
 @use "24kasou-child-info" as re-kasou-child-info;
 
+@use "26tamashii" as tamashii;
 @use "26tamashii-club" as tamashii-club;
 @use "26tamashii-club-page" as tamashii-club-page;
 @use "26tamashii-card" as tamashii-card;
 @use "26tamashii-single" as tamashii-single;
 @use "26tamashii-diary" as tamashii-diary;
+@use "26tamashii-diary-essay" as tamashii-diary-essay;
+
 
 @use "template-nav";
 @use "template-works-main-visual";

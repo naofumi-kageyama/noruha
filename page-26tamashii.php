@@ -15,15 +15,17 @@ Template Name: 26tamashii
                         ];
                         get_template_part('template-parts/works-main-visual', 'null', $args);
                     ?>
-                    <div class="c-works__additional-content c-white-area c-content">
-                        <h3>最新情報</h3>
-                        <ul>
-                            <li>カゲヤマ気象台によるエッセイ<a href="<?php echo esc_url(get_page_link(530)); ?>">『演劇と私的』</a>に記事を追加しました。(2026.3.11)</li>
-                            <li><a href="<?php echo esc_url(get_page_link(548)); ?>">『「いまのところまだ存在しているわたしのたましいが……」』を観た日の日記をお寄せください</a>(2026.3.10)</li>
-                            <li>カゲヤマ気象台によるエッセイ<a href="<?php echo esc_url(get_page_link(530)); ?>">『演劇と私的』</a>を公開しました。(2026.3.8)</li>
-                            <li><a href="<?php echo esc_url(get_page_link(509)); ?>">出演者変更のお知らせ</a>(2026.2.24)</li>
-                            <li>ポッドキャスト<a href="<?php echo esc_url(get_page_link(490)); ?>" target="_blank">『日和下駄の歴史に刻め！』</a>がスタートしました。(2026.2.23)</li>
-                            <li><a href="<?php echo esc_url(get_page_link(518)); ?>">「乗る派クラブ#2「♨︎」」</a>の情報を公開しました。(2026.1.31)</li>
+                    <div class="c-works__additional-content c-white-area" >
+                        <h3 class="p-26tamashii__toc-title">最新情報</h3>
+                        <ul class="p-26tamashii__toc">
+                            <li class="p-26tamashii__toc-item"><a href="<?php echo esc_url(get_page_link(575)); ?>">『「いまのところまだ存在しているわたしのたましいが……」』を観た日の日記（的なエッセイ）</a>を公開しました。(2026.5.1)</li>
+                            <li class="p-26tamashii__toc-item"><a href="<?php echo esc_url(get_page_link(568)); ?>">『「いまのところまだ存在しているわたしのたましいが……」』を観た日の日記</a>を公開しました。(2026.5.1)</li>
+                            <li class="p-26tamashii__toc-item">カゲヤマ気象台によるエッセイ<a href="<?php echo esc_url(get_page_link(530)); ?>">『演劇と私的』</a>に記事を追加しました。(2026.3.11)</li>
+                            <li class="p-26tamashii__toc-item"><a href="<?php echo esc_url(get_page_link(548)); ?>">『「いまのところまだ存在しているわたしのたましいが……」』を観た日の日記をお寄せください</a>(2026.3.10)</li>
+                            <li class="p-26tamashii__toc-item">カゲヤマ気象台によるエッセイ<a href="<?php echo esc_url(get_page_link(530)); ?>">『演劇と私的』</a>を公開しました。(2026.3.8)</li>
+                            <li class="p-26tamashii__toc-item"><a href="<?php echo esc_url(get_page_link(509)); ?>">出演者変更のお知らせ</a>(2026.2.24)</li>
+                            <li class="p-26tamashii__toc-item">ポッドキャスト<a href="<?php echo esc_url(get_page_link(490)); ?>" target="_blank">『日和下駄の歴史に刻め！』</a>がスタートしました。(2026.2.23)</li>
+                            <li class="p-26tamashii__toc-item"><a href="<?php echo esc_url(get_page_link(518)); ?>">「乗る派クラブ#2「♨︎」」</a>の情報を公開しました。(2026.1.31)</li>
                         </ul>
                     </div>
                 </section>

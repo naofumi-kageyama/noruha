@@ -13,7 +13,7 @@ Template Name: 26tamashii-single
                     <?php the_post_thumbnail('full'); ?>
                 </div>
             <?php endif; ?>
-            <h1><?php the_title(); ?></h1>
+            <h1 class="c-article__title"><?php the_title(); ?></h1>
             <div class="c-content">
                 <?php the_content(); ?>
             </div>

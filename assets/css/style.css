@@ -590,6 +590,16 @@ dt {
   margin-top: 2em;
 }
 
+.c-article__title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 2em;
+}
+@media screen and (max-width: 768px) {
+  .c-article__title {
+    font-size: 24px;
+  }
+}
 .c-article__thumbnail {
   margin-bottom: 1em;
 }
@@ -1655,6 +1665,21 @@ dt {
   gap: 0 1em;
 }
 
+.p-26tamashii__toc-title {
+  font-weight: 600;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+}
+.p-26tamashii__toc-item {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-bottom: 0.5em;
+}
+.p-26tamashii__toc-item:last-of-type {
+  margin-bottom: 0;
+}
+
 .p-26tamashii-club__image {
   width: 75%;
   margin: 0 auto;
@@ -1802,20 +1827,20 @@ dt {
   }
 }
 .p-26tamashii-diary__description {
+  margin-bottom: 2em;
+}
+.p-26tamashii-diary__description p {
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.p-26tamashii-diary__description:first-child {
+.p-26tamashii-diary__description p:first-child {
   margin-top: 0;
 }
-.p-26tamashii-diary__description:last-child {
+.p-26tamashii-diary__description p:last-child {
   margin-bottom: 0;
 }
-.p-26tamashii-diary__description {
-  margin-bottom: 2em;
-}
 .p-26tamashii-diary__section {
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 .p-26tamashii-diary__section:last-of-type {
   margin-bottom: 0;
@@ -1824,6 +1849,14 @@ dt {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 1em;
+}
+.p-26tamashii-diary__toc-item {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-bottom: 0.5em;
+}
+.p-26tamashii-diary__toc-item:last-of-type {
+  margin-bottom: 0;
 }
 .p-26tamashii-diary__item {
   margin-bottom: 2em;
@@ -1875,30 +1908,106 @@ dt {
   top: 0;
   left: 0;
 }
-.p-26tamashii-diary__guest-article {
-  margin-top: 4rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+
+.p-26tamashii-diary-essay__title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 2em;
 }
 @media screen and (max-width: 768px) {
-  .p-26tamashii-diary__guest-article {
-    padding-left: 0;
-    padding-right: 0;
+  .p-26tamashii-diary-essay__title {
+    font-size: 24px;
   }
 }
-.p-26tamashii-diary__guest-article-title {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 1em;
+.p-26tamashii-diary-essay__description {
+  margin-bottom: 2em;
 }
-.p-26tamashii-diary__guest-article-text p {
+.p-26tamashii-diary-essay__description p {
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.p-26tamashii-diary__guest-article-text p:first-child {
+.p-26tamashii-diary-essay__description p:first-child {
   margin-top: 0;
 }
-.p-26tamashii-diary__guest-article-text p:last-child {
+.p-26tamashii-diary-essay__description p:last-child {
+  margin-bottom: 0;
+}
+.p-26tamashii-diary-essay__section {
+  margin-bottom: 6rem;
+}
+.p-26tamashii-diary-essay__section:last-child {
+  margin-bottom: 0;
+}
+.p-26tamashii-diary-essay__section-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+@media screen and (max-width: 768px) {
+  .p-26tamashii-diary-essay__section-title {
+    font-size: 24px;
+  }
+}
+.p-26tamashii-diary-essay__toc-item {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-bottom: 0.5em;
+}
+.p-26tamashii-diary-essay__toc-item:last-of-type {
+  margin-bottom: 0;
+}
+.p-26tamashii-diary-essay__essay-text p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.p-26tamashii-diary-essay__essay-text p:first-child {
+  margin-top: 0;
+}
+.p-26tamashii-diary-essay__essay-text p:last-child {
+  margin-bottom: 0;
+}
+.p-26tamashii-diary-essay__profile {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 520px) {
+  .p-26tamashii-diary-essay__profile {
+    display: block;
+  }
+}
+.p-26tamashii-diary-essay__profile-left {
+  width: 25%;
+}
+@media screen and (max-width: 520px) {
+  .p-26tamashii-diary-essay__profile-left {
+    width: 100%;
+  }
+}
+.p-26tamashii-diary-essay__profile-image figcaption {
+  font-size: 12px;
+}
+.p-26tamashii-diary-essay__profile-right {
+  width: 70%;
+}
+@media screen and (max-width: 520px) {
+  .p-26tamashii-diary-essay__profile-right {
+    width: 100%;
+  }
+}
+.p-26tamashii-diary-essay__profile-name {
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+.p-26tamashii-diary-essay__profile-description p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.p-26tamashii-diary-essay__profile-description p:first-child {
+  margin-top: 0;
+}
+.p-26tamashii-diary-essay__profile-description p:last-child {
   margin-bottom: 0;
 }
 
