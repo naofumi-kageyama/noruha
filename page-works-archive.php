@@ -3,7 +3,7 @@
 Template Name: works-archive
 */
 ?>
-<?php 
+<?php
     $exerpt_url = array(
         array(
             'id' => 416,
@@ -54,14 +54,14 @@ Template Name: works-archive
                     'order' => 'DESC',
                     'has_password' => false,
                 );
-                $works_query = new WP_Query($args);
+                $query = new WP_Query($args);
             ?>
-            <?php if($works_query->have_posts()) : ?>
+            <?php if($query->have_posts()) : ?>
                 <ul class="p-works-archive__list">
                     <?php
-                        while($works_query->have_posts()) :
-                            $works_query->the_post();
-                            if ($works_query->current_post == 0) continue;
+                        while($query->have_posts()) :
+                            $query->the_post();
+                            if ($query->current_post == 0) continue;
 
                             $key = array_search(get_the_ID(), array_column($exerpt_url, 'id'));
                             $url = ($key !== false) ? $exerpt_url[$key]['url'] : esc_url(get_the_permalink());
@@ -70,32 +70,40 @@ Template Name: works-archive
                                 <div class="p-works-archive__item-left">
                                     <?php if(!empty($url)) : ?>
                                         <a class="p-works-archive__item-main-visual" href="<?php echo $url; ?>">
-                                            <img src="<?php echo esc_url($cfs->get('mainvisual')); ?> ">
+                                            <?php if (has_post_thumbnail()) : ?>
+                                                <?php the_post_thumbnail('full'); ?>
+                                            <?php else : ?>
+                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image_coming-soon.png" alt="coming soon" width="1080" height="1080">
+                                            <?php endif; ?>
                                         </a>
                                     <?php else : ?>
                                         <div class="p-works-archive__item-main-visual">
-                                            <img src="<?php echo esc_url($cfs->get('mainvisual')); ?> ">
+                                            <?php if (has_post_thumbnail()) : ?>
+                                                <?php the_post_thumbnail('full'); ?>
+                                            <?php else : ?>
+                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image_coming-soon.png" alt="coming soon" width="1080" height="1080">
+                                            <?php endif; ?>
                                         </div>
                                     <?php endif; ?>
                                 </div>
                                 <div class="p-works-archive__item-right">
                                     <div class="p-works-archive__item-heading-container">
                                         <h3 class="p-works-archive__item-heading"><?php the_title(); ?></h3>
-                                        <?php if(!empty($cfs->get('subtitle'))) : ?>
-                                            <p class="p-works-archive__item-subtitle"><?php echo $cfs->get('subtitle'); ?></p>
+                                        <?php if(!empty(get_field('subtitle'))) : ?>
+                                            <p class="p-works-archive__item-subtitle"><?php echo get_field('subtitle'); ?></p>
                                         <?php endif; ?>
                                     </div>
                                     <dl class="p-works-archive__info-list">
                                         <div class="p-works-archive__info-container">
                                             <dt class="p-works-archive__info-terms c-heading-black-background">会期</dt>
-                                            <dd class="p-works-archive__info-description"><?php echo esc_html($cfs->get('date')); ?></dd>
+                                            <dd class="p-works-archive__info-description"><?php echo esc_html(get_field('date')); ?></dd>
                                         </div>
                                         <div class="p-works-archive__info-container">
                                             <dt class="p-works-archive__info-terms c-heading-black-background">会場</dt>
-                                            <dd class="p-works-archive__info-description"><?php echo esc_html($cfs->get('venue')); ?></dd>
+                                            <dd class="p-works-archive__info-description"><?php echo esc_html(get_field('venue')); ?></dd>
                                         </div>
                                     </dl>
-                                </div>                            
+                                </div>
                             </li>
                             <?php
                         endwhile;

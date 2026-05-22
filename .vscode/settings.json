@@ -14,5 +14,8 @@
         "/**/node_modules/**",
         "/.vscode/**",
         "/escape/**"
+    ],
+    "intelephense.environment.includePaths": [
+        "../..//plugins/advanced-custom-fields/includes"
     ]
 }
