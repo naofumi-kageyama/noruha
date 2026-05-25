@@ -20,22 +20,28 @@ Template Name: 24kasou-child
                 <?php the_content(); ?>
             </article>
             <div class="p-24kasou-child-article__profile-container">
+
                 <?php
-                    $profiles = cfs()->get('profile');
-                    foreach ($profiles as $profile) :
-                ?>
-                    <?php if($profile['image']) : ?>
+                    $image = get_field('image');
+                    if(!empty($image)) :
+                        ?>
                         <div class="p-24kasou-child-article__profile-image">
-                            <?php echo wp_get_attachment_image($profile['image'], 'medium'); ?>
+                            <img
+                                src="<?php echo esc_url($image['url']); ?>"
+                                alt="<?php echo esc_html($image['alt']); ?>"
+                                width="<?php echo esc_attr($image['sizes'][ 'large-width' ]); ?>"
+                                height="<?php echo esc_attr($image['sizes'][ 'large-height' ]); ?>"
+                            >
                         </div>
-                    <?php endif; ?>
-                    <div class="p-24kasou-child-article__profile-text-containter">
-                        <p class="p-24kasou-child-article__profile-name"><?php echo esc_html($profile['name']); ?></p>
-                        <div class="p-24kasou-child-article__profile-text c-rich-text">
-                            <?php echo apply_filters('the_content', $profile['profile-text']); ?>
-                        </div>
+                        <?php
+                    endif;
+                ?>
+                <div class="p-24kasou-child-article__profile-text-containter">
+                    <p class="p-24kasou-child-article__profile-name"><?php echo esc_html(get_field('name')); ?></p>
+                    <div class="p-24kasou-child-article__profile-text c-rich-text">
+                        <?php echo apply_filters('the_content', get_field('profile-text')); ?>
                     </div>
-                <?php endforeach; ?>
+                </div>
             </div>
         </section>
     <?php endwhile; ?>
@@ -91,11 +97,11 @@ Template Name: 24kasou-child
             </div>
             <div class="p-24kasou-child-info__section">
                 <div class="p-24kasou-child-info__text-container">
-                    <p class="p-24kasou-child-info__text">公演特設ページ：<a href="<?php echo esc_url(get_page_link(239)); ?>"><?php echo esc_url(get_page_link(239)); ?></a></p>
+                    <p class="p-24kasou-child-info__text">公演特設ページ：<a href="<?php echo esc_url(home_url('/kasou2024/')); ?>"><?php echo esc_url(home_url('/kasou2024/')); ?></a></p>
                 </div>
             </div>
         </div>
     </section>
 </main>
-<a class="c-floating-button" href="<?php echo esc_url(get_page_link(239)); ?>#ticket">TICKET</a>
+<a class="c-floating-button" href="<?php echo esc_url(home_url('/kasou2024/')); ?>#ticket">TICKET</a>
 <?php get_footer(); ?>

@@ -48,6 +48,7 @@ Template Name: 26tamashii-diary
 
         $ogpData = [];
         foreach ($ogpMetaTags as $tag) {
+            if (!($tag instanceof DOMElement)) continue;
             $property = str_replace('og:', '', $tag->getAttribute('property'));
             $ogpData[$property] = $tag->getAttribute('content');
         }
@@ -114,7 +115,7 @@ Template Name: 26tamashii-diary
             <?php endif; ?>
             <h1 class="p-26tamashii-diary__title"><?php the_title(); ?></h1>
             <div class="p-26tamashii-diary__description">
-                <p>円盤に乗る派の公演<a href="<?php echo esc_url(get_page_link(478)); ?>">『「いまのところまだ存在しているわたしのたましいが……」』</a>では、ご来場くださったみなさんから<a href="<?php echo esc_url(get_page_link(548)); ?>">観劇した日の日記を募集</a>いたしました。たくさんのご応募、誠にありがとうございました。</p>
+                <p>円盤に乗る派の公演<a href="<?php echo esc_url(home_url('/tamashii/')); ?>">『「いまのところまだ存在しているわたしのたましいが……」』</a>では、ご来場くださったみなさんから<a href="<?php echo esc_url(home_url('/submit-diary/')); ?>">">観劇した日の日記を募集</a>いたしました。たくさんのご応募、誠にありがとうございました。</p>
                 <p>お寄せいただいた日記を一覧にして紹介いたします。いただいた日記からは、あの日劇場に集まったみなさんの生活や思考の軌跡をたどることができます。これを読むみなさんも、あの時期をどのように過ごしていたか、あるいは今どのように日々を送っているか、ふと立ち止まって思いを馳せてみるきっかけもなるかもしれません。</p>
             </div>
             <ul class="p-26tamashii-diary__toc c-white-area">
@@ -282,7 +283,7 @@ Template Name: 26tamashii-diary
                 <dt class="p-26tamashii-card__info-term c-heading-black-background">会場</dt>
                 <dd class="p-26tamashii-card__info-description">吉祥寺シアター（東京都武蔵野市）</dd>
             </dl>
-            <a href="<?php echo esc_url(get_page_link(478)); ?>" class="c-button p-26tamashii-card__button">公演詳細</a>
+            <a href="<?php echo esc_url(home_url('/tamashii/')); ?>" class="c-button p-26tamashii-card__button">公演詳細</a>
         </div>
     </section>
     </div>

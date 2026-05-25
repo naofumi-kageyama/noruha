@@ -14,9 +14,9 @@ Template Name: 26tamashii-diary-essay
             <?php endif; ?>
             <h1 class="p-26tamashii-diary-essay__title"><?php the_title(); ?></h1>
             <div class="p-26tamashii-diary-essay__description">
-                <p>複数の執筆者の方に、<a href="<?php echo esc_url(get_page_link(478)); ?>">『「いまのところまだ存在しているわたしのたましいが……」』</a>を観た日の日記（的なエッセイ）をご寄稿いただきました。</p>
+                <p>複数の執筆者の方に、<a href="<?php echo esc_url(home_url('/tamashii/')); ?>">『「いまのところまだ存在しているわたしのたましいが……」』</a>を観た日の日記（的なエッセイ）をご寄稿いただきました。</p>
                 <p>批評やレビューではなく、あくまで日記という体をとったエッセイです。その人の日常と分かちがたく結びついた個人的な体験である「観劇」という行為を、個人的な言葉で綴っていただきました。</p>
-                <p>また本公演では観客の方からも広く日記を募集しており、集まった日記は<a href="<?php echo esc_url(get_page_link(568)); ?>">こちら</a>で紹介しております。とても多くの方にお寄せいただきましたので、どうぞ併せてご覧ください。</p>
+                <p>また本公演では観客の方からも広く日記を募集しており、集まった日記は<a href="<?php echo esc_url(home_url('/diary/')); ?>">こちら</a>で紹介しております。とても多くの方にお寄せいただきましたので、どうぞ併せてご覧ください。</p>
             </div>
             <ul class="p-26tamashii-diary-essay__toc c-white-area">
                 <li class="p-26tamashii-diary-essay__toc-item">
@@ -151,7 +151,7 @@ Template Name: 26tamashii-diary-essay
                     <dt class="p-26tamashii-card__info-term c-heading-black-background">会場</dt>
                     <dd class="p-26tamashii-card__info-description">吉祥寺シアター（東京都武蔵野市）</dd>
                 </dl>
-                <a href="<?php echo esc_url(get_page_link(478)); ?>" class="c-button p-26tamashii-card__button">公演詳細</a>
+                <a href="<?php echo esc_url(home_url('/tamashii/')); ?>" class="c-button p-26tamashii-card__button">公演詳細</a>
             </div>
         </section>
     </div>

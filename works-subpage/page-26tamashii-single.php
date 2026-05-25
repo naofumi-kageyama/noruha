@@ -40,7 +40,7 @@ Template Name: 26tamashii-single
                 <dt class="p-26tamashii-card__info-term c-heading-black-background">会場</dt>
                 <dd class="p-26tamashii-card__info-description">吉祥寺シアター（東京都武蔵野市）</dd>
             </dl>
-            <a href="<?php echo esc_url(get_page_link(478)); ?>" class="c-button p-26tamashii-card__button">公演詳細</a>
+            <a href="<?php echo esc_url(home_url('/tamashii/')); ?>" class="c-button p-26tamashii-card__button">公演詳細</a>
         </div>
     </section>
 </main>

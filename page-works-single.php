@@ -3,65 +3,73 @@
 Template Name: works-single
 */
 ?>
+<?php
+    $works = [
+        [
+            'slug' => 'tamashii',
+            'template' => '26tamashii'
+        ],
+        [
+            'slug' => 'club-1',
+            'template' => '25club-1'
+        ],
+        [
+            'slug' => 'kasou2024',
+            'template' => '24kasou'
+        ],
+        [
+            'slug' => 'thedumbwaiter',
+            'template' => '24thedumbwaiter'
+        ],
+        [
+            'slug' => 'kofuku',
+            'template' => '23kofuku'
+        ],
+        [
+            'slug' => 'kasou',
+            'template' => '22kasou'
+        ],
+    ];
+?>
 <?php get_header(); ?>
 <main class="l-main c-works">
     <?php if (have_posts()): ?>
-        <?php if( !post_password_required( $post->ID ) ) :  ?>
+        <?php if( !post_password_required() ) :  ?>
             <?php while (have_posts()): the_post(); ?>
                 <section class="c-works__section">
-                    <?php
-                        $args = [
-                            'cfs' => $cfs,
-                        ];
-                        get_template_part('template-parts/works-main-visual', 'null', $args);
-                    ?>
+                    <div class="p-template-works-main-visual">
+                        <figure class="p-template-works-main-visual__main-visual<?php if(get_field('horizontal')) echo " p-template-works-main-visual__main-visual--horizontal"; ?>">
+                            <?php if(has_post_thumbnail()) : ?>
+                                <?php the_post_thumbnail('full'); ?>
+                                <figcaption><?php echo get_field('caption'); ?></figcaption>
+                            <?php else : ?>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image_coming-soon.png" alt="coming soon" width="1080" height="1080">
+                            <?php endif; ?>
+                        </figure>
+                        <div class="p-template-works-main-visual__title-container">
+                            <h1 class="p-template-works-main-visual__title"><?php the_title(); ?></h1>
+                            <p class="p-template-works-main-visual__subtitle"><?php echo esc_html(get_field('subtitle')); ?></p>
+                        </div>
+                        <div class="p-template-works-main-visual__info-wrapper">
+                            <div class="p-template-works-main-visual__info-container">
+                                <h3 class="p-template-works-main-visual__info-heading c-heading-black-background">会期</h3>
+                                <p class="p-template-works-main-visual__info-text next-detail-text"><?php echo esc_html(get_field('date')); ?></p>
+                            </div>
+                            <div class="p-template-works-main-visual__info-container">
+                            <h3 class="p-template-works-main-visual__info-heading c-heading-black-background">会場</h3>
+                                <p class="p-template-works-main-visual__info-text"><?php echo esc_html(get_field('venue')); ?></p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <section class="c-works__section">
-                    <?php
-                        $args = [
-                            'cfs' => $cfs,
-                        ];
-                        get_template_part('template-parts/works-description', 'null', $args);
-                    ?>
-                </section>
-                <section class="c-works__section">
-                    <?php
-                        $args = [
-                            'cfs' => $cfs,
-                        ];
-                        get_template_part('template-parts/works-info-member', 'null', $args);
-                    ?>
-                    <?php
-                        $args = [
-                            'cfs' => $cfs,
-                        ];
-                        get_template_part('template-parts/works-info-timetable', 'null', $args);
-                    ?>
-                    <?php
-                        $args = [
-                            'cfs' => $cfs,
-                        ];
-                        get_template_part('template-parts/works-info-price', 'null', $args);
-                    ?>
-                    <?php
-                        $args = [
-                            'cfs' => $cfs,
-                        ];
-                        get_template_part('template-parts/works-info-ticket', 'null', $args);
-                    ?>
-                    <?php
-                        $args = [
-                            'cfs' => $cfs,
-                        ];
-                        get_template_part('template-parts/works-info-venue', 'null', $args);
-                    ?>
-                    <?php
-                        $args = [
-                            'cfs' => $cfs,
-                        ];
-                        get_template_part('template-parts/works-info-contact', 'null', $args);
-                    ?>
-                </section>
+                <?php
+                    $current_slug = get_post_field('post_name', get_the_ID());
+                    $matched = array_filter($works, fn($p) => $p['slug'] === $current_slug);
+                    $matched_page = reset($matched);
+                    if ($matched_page) {
+                        get_template_part('works/' . $matched_page['template']);
+                    }
+                ?>
             <?php endwhile; ?>
         <?php else:  ?>
             <?php echo get_the_password_form(); ?>

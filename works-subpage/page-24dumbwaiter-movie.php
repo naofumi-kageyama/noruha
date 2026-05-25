@@ -13,9 +13,9 @@ Template Name: 22mdumbwaiter-movie
         <?php if (have_posts()): ?>
         <?php while (have_posts()) : the_post(); ?>
             <h1><?php echo get_the_title(); ?></h1>
-            
+
             <article class="basicContent">
-                <?php if( !post_password_required( $post->ID ) ) :  ?>
+                <?php if( !post_password_required( ) ) :  ?>
                     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
                     <video id="hls" preload="metadata" controls="" width="100%" playsinline="" poster="サムネURL"></video>
 

@@ -14,9 +14,9 @@ Template Name: 22moral-movie
         <?php if (have_posts()): ?>
         <?php while (have_posts()) : the_post(); ?>
             <h1><?php echo get_the_title(); ?></h1>
-            
+
             <article class="basicContent">
-                <?php if( !post_password_required( $post->ID ) ) :  ?>
+                <?php if( !post_password_required() ) :  ?>
                     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
                     <video id="hls" preload="metadata" controls="" width="100%" playsinline="" poster="サムネURL"></video>
 
@@ -56,7 +56,7 @@ Template Name: 22moral-movie
                                 </div>
                             </div>
                         </div>
-                    </div>                
+                    </div>
                     <div class="credit-area">
                         <div class="role-area">
                             <p>出演</p>
@@ -127,7 +127,7 @@ Template Name: 22moral-movie
                                 </div>
                             </div>
                         </div>
-                    </div>                
+                    </div>
                     <div class="credit-area">
                         <div class="role-area">
                             <p>照明</p>
@@ -144,7 +144,7 @@ Template Name: 22moral-movie
                                 <p class="open-profile">河野真衣</p>
                             </div>
                         </div>
-                    </div>                
+                    </div>
                     <div class="credit-area">
                         <div class="role-area">
                             <p>音楽</p>
@@ -159,7 +159,7 @@ Template Name: 22moral-movie
                                 </div>
                             </div>
                         </div>
-                    </div>                
+                    </div>
                     <div class="credit-area">
                         <div class="role-area">
                             <p>音響</p>
@@ -173,7 +173,7 @@ Template Name: 22moral-movie
                                 </div>
                             </div>
                         </div>
-                    </div>                
+                    </div>
                     <div class="credit-area">
                         <div class="role-area">
                             <p>美術</p>
@@ -209,7 +209,7 @@ Template Name: 22moral-movie
                                 </div>
                             </div>
                         </div>
-                    </div>                
+                    </div>
                     <div class="credit-area">
                         <div class="role-area">
                             <p>フライヤーデザイン</p>
@@ -223,7 +223,7 @@ Template Name: 22moral-movie
                                 </div>
                             </div>
                         </div>
-                    </div>                
+                    </div>
                     <div class="credit-area">
                         <div class="role-area">
                             <p>制作</p>
@@ -237,7 +237,7 @@ Template Name: 22moral-movie
                                 </div>
                             </div>
                         </div>
-                    </div>                
+                    </div>
                     <div class="credit-area">
                         <div class="role-area">
                             <p>制作補佐</p>
@@ -259,7 +259,7 @@ Template Name: 22moral-movie
                                 </div>
                             </div>
                         </div>
-                    </div>                
+                    </div>
                     <div class="credit-area">
                         <div class="role-area">
                             <p>記録映像</p>
@@ -273,8 +273,8 @@ Template Name: 22moral-movie
                                 </div>
                             </div>
                         </div>
-                    </div>  
-                
+                    </div>
+
                     <p>*＝円盤に乗る派プロジェクトチーム</p>
 
                     <div class="organizer">
@@ -298,7 +298,7 @@ Template Name: 22moral-movie
                                 </div>
                             </div>
                         </div>
-                    
+
                     <div class="grant">
                         <p><span style="font-weight: 400;">文化庁「ARTS for the future! 2」補助対象事業</span></p>
                     </div>
