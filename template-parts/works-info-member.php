@@ -1,5 +1,5 @@
-<div class="c-works__info-section p-works-info-member">
-    <h2 class="c-works__info-section-heading c-heading-black-background">人々</h2>
+<div class="p-works__info-section p-works-info-member">
+    <h2 class="p-works__info-section-heading c-heading-black-background">人々</h2>
     <div class="p-works-info-member__list-container">
         <dl class="p-works-info-member__list js-open-profile-parent-wrapper">
             <?php

@@ -1,4 +1,4 @@
-<section class="c-works__section">
+<section class="p-works__section">
   <div class="p-works-description">
     <p class="p-works-description__copy">地下室に指示を待つ殺し屋が二人。傍には料理昇降機（ダム・ウェイター）。 不条理演劇の金字塔に《円盤に乗る派》が挑む！</p>
     <div class="p-works-description__text c-rich-text next-description">
@@ -8,9 +8,9 @@
     </div>
   </div>
 </section>
-<section class="c-works__section">
-  <div class="c-works__info-section p-works-info-member">
-    <h2 class="c-works__info-section-heading c-heading-black-background">人々</h2>
+<section class="p-works__section">
+  <div class="p-works__info-section p-works-info-member">
+    <h2 class="p-works__info-section-heading c-heading-black-background">人々</h2>
     <div class="p-works-info-member__list-container">
       <dl class="p-works-info-member__list js-open-profile-parent-wrapper">
         <div class="p-works-info-member__terms-container js-open-profile-parent">
@@ -58,8 +58,8 @@
       </dl>
     </div>
   </div>
-  <div class="c-works__info-section p-works-info-timetable">
-    <h2 class="c-works__info-section-heading c-heading-black-background">日時</h2>
+  <div class="p-works__info-section p-works-info-timetable">
+    <h2 class="p-works__info-section-heading c-heading-black-background">日時</h2>
     <div class="p-works-info-timetable__content c-rich-text">
       <p>3日（金・祝）　17:00<br />
         4日（土・祝）　14:00　19:00</p>
@@ -68,20 +68,20 @@
         ※上演時間90分+トーク45分を予定</p>
     </div>
   </div>
-  <div class="c-works__info-section p-works-info-price">
-    <h2 class="c-works__info-section-heading c-heading-black-background">料金</h2>
+  <div class="p-works__info-section p-works-info-price">
+    <h2 class="p-works__info-section-heading c-heading-black-background">料金</h2>
     <div class="p-works-info-price__content c-content js-set-attr-size">
       <p>￥2,000</p>
     </div>
   </div>
-  <div id="ticket" class="c-works__info-section p-works-info-ticket">
-    <h2 class="c-works__info-section-heading c-heading-black-background">チケット</h2>
+  <div id="ticket" class="p-works__info-section p-works-info-ticket">
+    <h2 class="p-works__info-section-heading c-heading-black-background">チケット</h2>
     <div class="p-works-info-ticket__content c-rich-text js-set-attr-size">
       <p><a href="https://noruha.stores.jp/" target="_blank" rel="noopener">https://noruha.stores.jp/</a></p>
     </div>
   </div>
-  <div class="c-works__info-section p-works-info-venue">
-    <h2 class="c-works__info-section-heading c-heading-black-background">会場</h2>
+  <div class="p-works__info-section p-works-info-venue">
+    <h2 class="p-works__info-section-heading c-heading-black-background">会場</h2>
     <div class="p-works-info-venue__name c-rich-text js-set-attr-size">
       <p>おぐセンター　2階<br /><a href="https://www.instagram.com/ogucenter" target="_blank" rel="noopener">https://www.instagram.com/ogucenter</a></p>
     </div>
@@ -89,8 +89,8 @@
       <p>都電荒川線「小台」駅より徒歩5分、<br />JR「尾久」駅より徒歩10分、「田端」駅より徒歩17分<br />東京都荒川区西尾久２丁目３１−１</p>
     </div>
   </div>
-  <div class="c-works__info-section p-works-info-contact">
-    <h2 class="c-works__info-section-heading c-heading-black-background">お問い合わせ</h2>
+  <div class="p-works__info-section p-works-info-contact">
+    <h2 class="p-works__info-section-heading c-heading-black-background">お問い合わせ</h2>
     <div class="p-works-info-contact__content c-rich-text js-set-attr-size">
       <p>info@noruha.net</p>
     </div>

@@ -566,30 +566,6 @@ dt {
   }
 }
 
-.c-works__section {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-.c-works__section:first-child {
-  margin-top: 0;
-}
-.c-works__section:last-child {
-  margin-bottom: 0;
-}
-.c-works__info-section {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-.c-works__info-section:first-child {
-  margin-top: 0;
-}
-.c-works__info-section:last-child {
-  margin-bottom: 0;
-}
-.c-works__additional-content {
-  margin-top: 2em;
-}
-
 .c-article__title {
   font-size: 32px;
   font-weight: 600;
@@ -1010,6 +986,30 @@ dt {
   font-family: "gtwalsheim-l";
   font-size: 20px;
   text-align: center;
+}
+
+.p-works__section {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.p-works__section:first-child {
+  margin-top: 0;
+}
+.p-works__section:last-child {
+  margin-bottom: 0;
+}
+.p-works__info-section {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.p-works__info-section:first-child {
+  margin-top: 0;
+}
+.p-works__info-section:last-child {
+  margin-bottom: 0;
+}
+.p-works__additional-content {
+  margin-top: 2em;
 }
 
 .p-works-archive__heading {

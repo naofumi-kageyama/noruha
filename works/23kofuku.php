@@ -1,4 +1,4 @@
-<section class="c-works__section">
+<section class="p-works__section">
   <div class="p-works-description">
     <p class="p-works-description__copy">自己が不気味な他者として立ち現れてくる、奇妙な「現実」を描く現代の寓話</p>
     <div class="p-works-description__text c-rich-text next-description">
@@ -9,9 +9,9 @@
     </div>
   </div>
 </section>
-<section class="c-works__section">
-  <div class="c-works__info-section p-works-info-member">
-    <h2 class="c-works__info-section-heading c-heading-black-background">人々</h2>
+<section class="p-works__section">
+  <div class="p-works__info-section p-works-info-member">
+    <h2 class="p-works__info-section-heading c-heading-black-background">人々</h2>
     <div class="p-works-info-member__list-container">
       <dl class="p-works-info-member__list js-open-profile-parent-wrapper">
         <div class="p-works-info-member__terms-container js-open-profile-parent">
@@ -337,7 +337,7 @@
       </div>
     </div>
   </div>
-  <div id="symposium" class="c-works__info-section p-23kofuku-symposium c-white-area">
+  <div id="symposium" class="p-works__info-section p-23kofuku-symposium c-white-area">
     <h2 class="p-23kofuku-symposium__heading">
       同時開催<br>
       「現実をまた見つけるためのシンポジウム」
@@ -503,8 +503,8 @@
       <a href="https://noruha.stores.jp/?category_id=64e3117ab37ea4002e67e06b" target="blank">https://noruha.stores.jp/?category_id=64e3117ab37ea4002e67e06b</a>
     </p>
   </div>
-  <div class="c-works__info-section p-works-info-timetable">
-    <h2 class="c-works__info-section-heading c-heading-black-background">日時</h2>
+  <div class="p-works__info-section p-works-info-timetable">
+    <h2 class="p-works__info-section-heading c-heading-black-background">日時</h2>
     <div class="p-works-info-timetable__content c-rich-text">
       <p>10月26日（木）　19:00 ★プレビュー公演<br />
         10月27日（金）　19:00<br />
@@ -521,16 +521,16 @@
         上演時間：約90分（休憩なし）</p>
     </div>
   </div>
-  <div class="c-works__info-section p-works-info-price">
-    <h2 class="c-works__info-section-heading c-heading-black-background">料金</h2>
+  <div class="p-works__info-section p-works-info-price">
+    <h2 class="p-works__info-section-heading c-heading-black-background">料金</h2>
     <div class="p-works-info-price__content c-content js-set-attr-size">
       <p>一般　4,000円<br />前半割（10/27〜30）　3,500円<br />25歳以下 　3,000円<br />当日券　各＋500円<br />プレビュー公演（10/26）　3,000円（前売・当日とも）</p>
       <p>18歳以下 無料ご招待（枚数限定・要予約）<br />※ご招待日：10月26日（木）〜30日（月）</p>
       <p>●日時指定・全席自由・税込 <br />●25歳以下・18歳以下チケットご利用の方は、受付にて証明書をご提示ください。 <br />●開場時は【劇場支援会員→一般】の順でお呼び出しいたします。開場後は、券種にかかわらず来場順の入場となります。<br />●未就学児はご入場いただけません。</p>
     </div>
   </div>
-  <div id="ticket" class="c-works__info-section p-works-info-ticket">
-    <h2 class="c-works__info-section-heading c-heading-black-background">チケット</h2>
+  <div id="ticket" class="p-works__info-section p-works-info-ticket">
+    <h2 class="p-works__info-section-heading c-heading-black-background">チケット</h2>
     <div class="p-works-info-ticket__content c-rich-text js-set-attr-size">
       <p dir="ltr">円盤に乗る派 Shop<br /><a href="https://noruha.stores.jp/" target="_blank" rel="noopener">https://noruha.stores.jp/</a></p>
       <p dir="ltr">イープラス<br /><a href="https://eplus.jp/sf/detail/3925380001-P0030001" target="_blank" rel="noopener">https://eplus.jp/sf/detail/3925380001-P0030001</a></p>
@@ -538,8 +538,8 @@
       <p dir="ltr">発売日：8月21日（月）20:00</p>
     </div>
   </div>
-  <div class="c-works__info-section p-works-info-venue">
-    <h2 class="c-works__info-section-heading c-heading-black-background">会場</h2>
+  <div class="p-works__info-section p-works-info-venue">
+    <h2 class="p-works__info-section-heading c-heading-black-background">会場</h2>
     <div class="p-works-info-venue__name c-rich-text js-set-attr-size">
       <p><a href="http://www.komaba-agora.com/" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="" src="<?php echo esc_html(get_template_directory_uri()); ?>/assets/images/logo_agora.png" width="250" height="94" /></a></p>
       <p><img loading="lazy" decoding="async" class="" src="<?php echo esc_html(get_template_directory_uri()); ?>/assets/images/logo_agora-shien.png" width="253" height="53" /></p>
@@ -549,8 +549,8 @@
       <p dir="ltr">※会場には駐車場・駐輪場がございませんので、お越しの際は公共交通機関をご利用ください。</p>
     </div>
   </div>
-  <div class="c-works__info-section p-works-info-contact">
-    <h2 class="c-works__info-section-heading c-heading-black-background">お問い合わせ</h2>
+  <div class="p-works__info-section p-works-info-contact">
+    <h2 class="p-works__info-section-heading c-heading-black-background">お問い合わせ</h2>
     <div class="p-works-info-contact__content c-rich-text js-set-attr-size">
       <p dir="ltr">円盤に乗る派<br />E-Mail：<a href="mailto:info@noruha.net">info@noruha.net</a><br />TEL：050-3631-4380（平日11:00-18:00）</p>
     </div>

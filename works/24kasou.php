@@ -1,4 +1,4 @@
-<section class="c-works__section">
+<section class="p-works__section">
   <div class="p-works-description">
     <p class="p-works-description__copy">演劇のアップデートを追求し続ける《円盤に乗る派》の代表作、待望の再演！　能『船弁慶』、狂言『名取川』のふたつの古典をベースに、現代のアイデンティティを問い直す。</p>
     <div class="p-works-description__text c-rich-text next-description">
@@ -6,7 +6,7 @@
       <p>『仮想的な失調』は2022年に初演され、大好評を博した《円盤に乗る派》の代表作。<br />物語の下敷きとなっているのは二つの古典作品だ。ひとつは、自分の名前すら忘れてしまう坊主を主人公とした狂言「名取川」。もうひとつは、源義経の西国落ちを題材にとり、義経の愛妾・静御前とかつての敵・平知盛の怨霊を一人二役で演じる能「船弁慶」。常に複数のSNSを使い分け、様々なアイデンティティを駆使する現代の生活に向けて、これらの物語の新たな語り直しを試みる。</p>
     </div>
   </div>
-  <div class="c-works__additional-content p-24kasou-description c-white-area">
+  <div class="p-works__additional-content p-24kasou-description c-white-area">
     <h2 class="p-24kasou-description__heading">関連記事</h2>
     <ul class="p-24kasou-description__genre-list">
 
@@ -74,9 +74,9 @@
     </ul>
   </div>
 </section>
-<section class="c-works__section">
-  <div class="c-works__info-section p-works-info-member">
-    <h2 class="c-works__info-section-heading c-heading-black-background">人々</h2>
+<section class="p-works__section">
+  <div class="p-works__info-section p-works-info-member">
+    <h2 class="p-works__info-section-heading c-heading-black-background">人々</h2>
     <div class="p-works-info-member__list-container">
       <dl class="p-works-info-member__list js-open-profile-parent-wrapper">
         <div class="p-works-info-member__terms-container js-open-profile-parent">
@@ -526,8 +526,8 @@
       </div>
     </div>
   </div>
-  <div class="c-works__info-section p-works-info-timetable">
-    <h2 class="c-works__info-section-heading c-heading-black-background">日時</h2>
+  <div class="p-works__info-section p-works-info-timetable">
+    <h2 class="p-works__info-section-heading c-heading-black-background">日時</h2>
     <div class="p-works-info-timetable__content c-rich-text">
       <p>9月19日（木）19:00<br />
         9月20日（金）14:00<br />
@@ -539,14 +539,14 @@
         受付開始は開演の60分前・開場は開演の30分前</p>
     </div>
   </div>
-  <div class="c-works__info-section p-works-info-price">
-    <h2 class="c-works__info-section-heading c-heading-black-background">料金</h2>
+  <div class="p-works__info-section p-works-info-price">
+    <h2 class="p-works__info-section-heading c-heading-black-background">料金</h2>
     <div class="p-works-info-price__content c-content js-set-attr-size">
       <p>全席自由（入場整理番号付き）・税込 チケット発売日：7月20日（土）10:00 一般 3,000円 29歳以下 2,000円（枚数限定） 18歳以下* 無料（枚数限定） *18歳以下無料チケットは「東京芸術祭 2024」特設サイトよりお申し込みください <a href="https://tokyo-festival.jp/2024/program/emban-noruha/" target="_blank" rel="noopener">https://tokyo-festival.jp/2024/program/emban-noruha/</a></p>
     </div>
   </div>
-  <div id="ticket" class="c-works__info-section p-works-info-ticket">
-    <h2 class="c-works__info-section-heading c-heading-black-background">チケット</h2>
+  <div id="ticket" class="p-works__info-section p-works-info-ticket">
+    <h2 class="p-works__info-section-heading c-heading-black-background">チケット</h2>
     <div class="p-works-info-ticket__content c-rich-text js-set-attr-size">
       <p><strong>東京芸術劇場ボックスオフィス （休館日を除く10:00～19:00）</strong><br />電話：0570-010-296　窓口：東京芸術劇場1階<br />WEB：<a href="https://www.geigeki.jp/t/" target="_blank" rel="noopener">https://www.geigeki.jp/t/</a> （24時間受付 ※メンテナンス時間を除く）</p>
       <p><strong>チケットぴあ（Pコード：527-964）</strong><br /><a href="https://w.pia.jp/t/tokyo-festival-noruha/" target="_blank" rel="noopener">https://w.pia.jp/t/tokyo-festival-noruha/</a></p>
@@ -559,8 +559,8 @@
       <p><span style="font-size: 10pt;">■ 託児型ワークショップ ：東京芸術祭2024『こどもあそびシアター』</span><br /><span style="font-size: 10pt;">（4歳〜小学生／有料・定員制／こどものアート体験支援型託児）</span><br /><span style="font-size: 10pt;">9月20日（金）〜28日（土）※各公演時間に合わせて実施予定<br /><a href="https://tokyo-festival.jp/2024/program/kodomo_asobi_theater/" target="_blank" rel="noopener">https://tokyo-festival.jp/2024/program/kodomo_asobi_theater/</a><br /></span></p>
     </div>
   </div>
-  <div class="c-works__info-section p-works-info-venue">
-    <h2 class="c-works__info-section-heading c-heading-black-background">会場</h2>
+  <div class="p-works__info-section p-works-info-venue">
+    <h2 class="p-works__info-section-heading c-heading-black-background">会場</h2>
     <div class="p-works-info-venue__name c-rich-text js-set-attr-size">
       <p><span style="font-weight: 400;">東京芸術劇場 シアターウエスト</span></p>
     </div>
@@ -569,7 +569,7 @@
       <p>JR・東京メトロ・東武東上線・西武池袋線 池袋駅西口より徒歩2分（駅地下通路2b出口 直結）</p>
     </div>
   </div>
-  <div class="c-works__info-section p-24kasou-kansou c-white-area">
+  <div class="p-works__info-section p-24kasou-kansou c-white-area">
     <p class="p-24kasou-kansou__subheading">寄り道して帰ろう</p>
     <h3 class="p-24kasou-kansou__heading">円盤に乗る派『仮想的な失調』感想会</h3>
     <div class="p-24kasou-kansou__main">
@@ -620,8 +620,8 @@
       </div>
     </div>
   </div>
-  <div class="c-works__info-section p-works-info-contact">
-    <h2 class="c-works__info-section-heading c-heading-black-background">お問い合わせ</h2>
+  <div class="p-works__info-section p-works-info-contact">
+    <h2 class="p-works__info-section-heading c-heading-black-background">お問い合わせ</h2>
     <div class="p-works-info-contact__content c-rich-text js-set-attr-size">
       <p>東京芸術祭事務局<br />TEL: 050-1746-0996（平日10:00〜18:00）<br /><a href="https://tokyo-festival.jp/2024/" target="_blank" rel="noopener">https://tokyo-festival.jp/2024/</a></p>
     </div>

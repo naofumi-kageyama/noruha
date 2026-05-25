@@ -4,7 +4,7 @@ Template Name: 26tamashii-club
 */
 ?>
 <?php get_header(); ?>
-<main class="l-main c-works p-26tamashii-club-page c-article">
+<main class="l-main p-works p-26tamashii-club-page c-article">
     <h1 class="c-article__title">乗る派クラブ#2「♨︎」1日限定オープン!</h1>
     <div class="p-26tamashii-club-page__main-image">
         <img src="<?php echo esc_attr(get_template_directory_uri() . '/assets/images/image_tamashii-club.png'); ?>" alt="いまのところまだ存在しているわたしのたましいが繰り返しこだまする空間が……" width="1080" height="1080">

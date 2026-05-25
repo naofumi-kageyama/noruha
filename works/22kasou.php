@@ -1,4 +1,4 @@
-<section class="c-works__section">
+<section class="p-works__section">
   <div class="p-works-description">
     <p class="p-works-description__copy">幽霊、自我の喪失、顔の見えない誰かの欲望……すべてが仮想的な時代における、物語の”失調”</p>
     <div class="p-works-description__text c-rich-text next-description">
@@ -6,7 +6,7 @@
       <p>円盤に乗る派の新作公演『仮想的な失調』は、二つの古典作品を下敷きにした物語です。ひとつは、自分の名前すら忘れてしまう坊主を主人公とした狂言「名取川」。もうひとつは、源義経の西国落ちを題材にとり、涙の別れをする静御前と、かつて義経に滅ぼされた平家の亡霊を一人二役で演じる能「船弁慶」。常に複数のSNSを使い分け、様々なアイデンティティを駆使する現代の生活に向けて、これらの物語の新たな語り直しを試みます。そこから幽霊のように立ち上がってくるのは、私たちが根本的に抱えている根拠のない不安や、どこか既視感のある不気味さ。その先に、顔の見えないまま欲望が作用し合い、そのもつれが原因不明の&#8221;失調&#8221;を引き起こす現代社会のシステムを見つめ直すこともできるかもしれません。演出には、2020年の『おはようクラブ』でもコラボレーションした蜂巣ももを再び迎え、カゲヤマ気象台との新たな共同体制で挑みます。</p>
     </div>
   </div>
-  <div class="c-works__additional-content p-22kasou-description">
+  <div class="p-works__additional-content p-22kasou-description">
     <div id="essay" class="p-22kasou-description__section p-22kasou-description__essay">
       <h2 class="p-22kasou-description__section-heading">寄稿エッセイ</h2>
       <p class="p-22kasou-description__section-description">
@@ -30,9 +30,9 @@
     </div>
   </div>
 </section>
-<section class="c-works__section">
-  <div class="c-works__info-section p-works-info-member">
-    <h2 class="c-works__info-section-heading c-heading-black-background">人々</h2>
+<section class="p-works__section">
+  <div class="p-works__info-section p-works-info-member">
+    <h2 class="p-works__info-section-heading c-heading-black-background">人々</h2>
     <div class="p-works-info-member__list-container">
       <dl class="p-works-info-member__list js-open-profile-parent-wrapper">
         <div class="p-works-info-member__terms-container js-open-profile-parent">
@@ -342,8 +342,8 @@
       </div>
     </div>
   </div>
-  <div class="c-works__info-section p-works-info-timetable">
-    <h2 class="c-works__info-section-heading c-heading-black-background">日時</h2>
+  <div class="p-works__info-section p-works-info-timetable">
+    <h2 class="p-works__info-section-heading c-heading-black-background">日時</h2>
     <div class="p-works-info-timetable__content c-rich-text">
       <p>2022年6月3日(金)～5日(日)<br />
         3日(金) 19:00<br />
@@ -353,20 +353,20 @@
       <p>上演時間：90分（予定）</p>
     </div>
   </div>
-  <div class="c-works__info-section p-works-info-price">
-    <h2 class="c-works__info-section-heading c-heading-black-background">料金</h2>
+  <div class="p-works__info-section p-works-info-price">
+    <h2 class="p-works__info-section-heading c-heading-black-background">料金</h2>
     <div class="p-works-info-price__content c-content js-set-attr-size">
       <p>前売 一般 3,000円 U25 2,500円 アルテ友の会会員 2,500円(武蔵野文化生涯学習事業団のみ取扱) 当日 3,500円 ※日時指定、全席自由、税込 ※U25チケットは入場時に年齢確認証が必要です。</p>
     </div>
   </div>
-  <div id="ticket" class="c-works__info-section p-works-info-ticket">
-    <h2 class="c-works__info-section-heading c-heading-black-background">チケット</h2>
+  <div id="ticket" class="p-works__info-section p-works-info-ticket">
+    <h2 class="p-works__info-section-heading c-heading-black-background">チケット</h2>
     <div class="p-works-info-ticket__content c-rich-text js-set-attr-size">
       <p>円盤に乗る派shop：<a href="https://noruha.stores.jp/" target="_blank" rel="noopener">https://noruha.stores.jp/</a><br />イープラス：<a href="https://eplus.jp/sf/detail/3618990001-P0030001" target="_blank" rel="noopener">https://eplus.jp/sf/detail/3618990001-P0030001</a><br />武蔵野文化生涯学習事業団：0422-54-2011(9:00～22:00)</p>
     </div>
   </div>
-  <div class="c-works__info-section p-works-info-venue">
-    <h2 class="c-works__info-section-heading c-heading-black-background">会場</h2>
+  <div class="p-works__info-section p-works-info-venue">
+    <h2 class="p-works__info-section-heading c-heading-black-background">会場</h2>
     <div class="p-works-info-venue__name c-rich-text js-set-attr-size">
       <p><a href="https://www.musashino.or.jp/k_theatre/index.html" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-81" src="<?php echo esc_html(get_template_directory_uri()); ?>/assets/images/logo_kichijoji.png" alt="" width="200" height="52" /></a></p>
     </div>
@@ -374,8 +374,8 @@
       <p>〒180-0004 東京都武蔵野市吉祥寺本町1丁目33番22号<br />※JR中央線・京王井の頭線吉祥寺駅北口より徒歩5分。</p>
     </div>
   </div>
-  <div class="c-works__info-section p-works-info-contact">
-    <h2 class="c-works__info-section-heading c-heading-black-background">お問い合わせ</h2>
+  <div class="p-works__info-section p-works-info-contact">
+    <h2 class="p-works__info-section-heading c-heading-black-background">お問い合わせ</h2>
     <div class="p-works-info-contact__content c-rich-text js-set-attr-size">
       <p>050-3631-4380<br />info@noruha.net</p>
     </div>

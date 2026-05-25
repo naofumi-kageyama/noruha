@@ -1,4 +1,4 @@
-<div class="c-works__additional-content c-white-area">
+<div class="p-works__additional-content c-white-area">
   <h3 class="p-26tamashii__toc-title">最新情報</h3>
   <ul class="p-26tamashii__toc">
     <li class="p-26tamashii__toc-item"><a href="<?php echo esc_url(home_url('/tamashii/diary-essay/')); ?>">『「いまのところまだ存在しているわたしのたましいが……」』を観た日の日記（的なエッセイ）</a>を公開しました。(2026.5.1)</li>
@@ -11,7 +11,7 @@
     <li class="p-26tamashii__toc-item"><a href="<?php echo esc_url(home_url('/tamashii/club/')); ?>">「乗る派クラブ#2「♨︎」」</a>の情報を公開しました。(2026.1.31)</li>
   </ul>
 </div>
-<section class="c-works__section">
+<section class="p-works__section">
   <div class="p-works-description">
     <p class="p-works-description__copy">絶望、分断、戦争の時代を前に、われわれの「たましい」と「<ruby>業<rt>ごう</rt></ruby>」をめぐる物語が再生される……虚ろに</p>
     <div class="p-works-description__text c-rich-text next-description">
@@ -21,7 +21,7 @@
     </div>
   </div>
 </section>
-<div id="club" class="c-works__info-section c-white-area c-content p-26tamashii-club">
+<div id="club" class="p-works__info-section c-white-area c-content p-26tamashii-club">
   <h2>乗る派クラブ#2「♨︎」1日限定オープン!</h2>
   <div class="p-26tamashii-club__image">
     <img src="https://noruha.net/wp-content/themes/noruha2022/assets/images/image_tamashii-club.png" alt="いまのところまだ存在しているわたしのたましいが繰り返しこだまする空間が……" width="1080" height="1080">
@@ -45,9 +45,9 @@
   <a href="https://noruha.net/tamashii/club/" class="c-button p-26tamashii-club__button">詳細はこちら</a>
   <div class="p-26tamashii-club__logo"><img src="https://noruha.net/wp-content/themes/noruha2022/assets/images/logo_club.png" alt="乗る派クラブ" width="400" height="196"></div>
 </div>
-<section class="c-works__section">
-  <div class="c-works__info-section p-works-info-member">
-    <h2 class="c-works__info-section-heading c-heading-black-background">人々</h2>
+<section class="p-works__section">
+  <div class="p-works__info-section p-works-info-member">
+    <h2 class="p-works__info-section-heading c-heading-black-background">人々</h2>
     <div class="p-works-info-member__list-container">
       <dl class="p-works-info-member__list js-open-profile-parent-wrapper">
         <div class="p-works-info-member__terms-container js-open-profile-parent">
@@ -329,16 +329,16 @@
       </div>
     </div>
   </div>
-  <div class="c-works__info-section p-works-info-timetable">
-    <h2 class="c-works__info-section-heading c-heading-black-background">日時</h2>
+  <div class="p-works__info-section p-works-info-timetable">
+    <h2 class="p-works__info-section-heading c-heading-black-background">日時</h2>
     <div class="p-works-info-timetable__content c-rich-text">
       <p>3月12日（木）19:00 <br />3月13日（金）14:00／♨︎<br />3月14日（土）14:00★／19:00<br />3月15日（日）14:00</p>
       <p>受付開始：開演の45分前　開場：開演の30分前<br />★託児サービスあり（要事前申込）<br />♨︎<a href="#club">乗る派クラブ</a>開催</p>
       <p>上演時間：約100分</p>
     </div>
   </div>
-  <div class="c-works__info-section p-works-info-price">
-    <h2 class="c-works__info-section-heading c-heading-black-background">料金</h2>
+  <div class="p-works__info-section p-works-info-price">
+    <h2 class="p-works__info-section-heading c-heading-black-background">料金</h2>
     <div class="p-works-info-price__content c-content js-set-attr-size">
       <p>全席自由（整理番号付き）・税込</p>
       <p>一般：4,000円<br />U29：3,500円<br />18歳以下：無料（枚数限定・要事前申込）<br />アルテ友の会会員：3,500円<br />当日券：＋500円（一般・U29のみ取り扱い）</p>
@@ -351,8 +351,8 @@
       </div>
     </div>
   </div>
-  <div id="ticket" class="c-works__info-section p-works-info-ticket">
-    <h2 class="c-works__info-section-heading c-heading-black-background">チケット</h2>
+  <div id="ticket" class="p-works__info-section p-works-info-ticket">
+    <h2 class="p-works__info-section-heading c-heading-black-background">チケット</h2>
     <div class="p-works-info-ticket__content c-rich-text js-set-attr-size">
       <p>◆円盤に乗る派 Shop<br /><a href="https://noruha.stores.jp/" target="_blank" rel="nofollow noopener noreferrer">https://noruha.stores.jp/</a></p>
       <p>◆イープラス<br /><a href="https://eplus.jp/sf/detail/4458680001-P0030001" target="_blank" rel="nofollow noopener noreferrer">https://eplus.jp/sf/detail/4458680001-P0030001</a></p>
@@ -360,8 +360,8 @@
       <p>◆18歳以下チケット申込フォーム<br /><a href="https://reserve.tolpa.jp/reserve/4407453" target="_blank" rel="nofollow noopener noreferrer">https://reserve.tolpa.jp/reserve/4407453</a></p>
     </div>
   </div>
-  <div class="c-works__info-section p-works-info-venue">
-    <h2 class="c-works__info-section-heading c-heading-black-background">会場</h2>
+  <div class="p-works__info-section p-works-info-venue">
+    <h2 class="p-works__info-section-heading c-heading-black-background">会場</h2>
     <div class="p-works-info-venue__name c-rich-text js-set-attr-size">
       <p>
         <img
@@ -375,8 +375,8 @@
       <p><a href="https://www.musashino.or.jp/k_theatre/1002088.html" target="_blank" rel="nofollow noopener noreferrer">https://www.musashino.or.jp/k_theatre/1002088.html</a><br /><span data-sheets-root="1">〒180-0004 東京都武蔵野市吉祥寺本町1丁目33番22号<br />※JR中央線・京王井の頭線吉祥寺駅北口より徒歩5分。</span></p>
     </div>
   </div>
-  <div class="c-works__info-section p-works-info-contact">
-    <h2 class="c-works__info-section-heading c-heading-black-background">お問い合わせ</h2>
+  <div class="p-works__info-section p-works-info-contact">
+    <h2 class="p-works__info-section-heading c-heading-black-background">お問い合わせ</h2>
     <div class="p-works-info-contact__content c-rich-text js-set-attr-size">
       <p>050-3631-4380<br />info@noruha.net</p>
     </div>

@@ -32,11 +32,11 @@ Template Name: works-single
     ];
 ?>
 <?php get_header(); ?>
-<main class="l-main c-works">
+<main class="l-main p-works">
     <?php if (have_posts()): ?>
         <?php if( !post_password_required() ) :  ?>
             <?php while (have_posts()): the_post(); ?>
-                <section class="c-works__section">
+                <section class="p-works__section">
                     <div class="p-works-main-visual">
                         <figure class="p-works-main-visual__main-visual<?php if(get_field('horizontal')) echo " p-works-main-visual__main-visual--horizontal"; ?>">
                             <?php if(has_post_thumbnail()) : ?>
