@@ -37,8 +37,8 @@ Template Name: works-single
         <?php if( !post_password_required() ) :  ?>
             <?php while (have_posts()): the_post(); ?>
                 <section class="c-works__section">
-                    <div class="p-template-works-main-visual">
-                        <figure class="p-template-works-main-visual__main-visual<?php if(get_field('horizontal')) echo " p-template-works-main-visual__main-visual--horizontal"; ?>">
+                    <div class="p-works-main-visual">
+                        <figure class="p-works-main-visual__main-visual<?php if(get_field('horizontal')) echo " p-works-main-visual__main-visual--horizontal"; ?>">
                             <?php if(has_post_thumbnail()) : ?>
                                 <?php the_post_thumbnail('full'); ?>
                                 <figcaption><?php echo get_field('caption'); ?></figcaption>
@@ -46,18 +46,18 @@ Template Name: works-single
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image_coming-soon.png" alt="coming soon" width="1080" height="1080">
                             <?php endif; ?>
                         </figure>
-                        <div class="p-template-works-main-visual__title-container">
-                            <h1 class="p-template-works-main-visual__title"><?php the_title(); ?></h1>
-                            <p class="p-template-works-main-visual__subtitle"><?php echo esc_html(get_field('subtitle')); ?></p>
+                        <div class="p-works-main-visual__title-container">
+                            <h1 class="p-works-main-visual__title"><?php the_title(); ?></h1>
+                            <p class="p-works-main-visual__subtitle"><?php echo esc_html(get_field('subtitle')); ?></p>
                         </div>
-                        <div class="p-template-works-main-visual__info-wrapper">
-                            <div class="p-template-works-main-visual__info-container">
-                                <h3 class="p-template-works-main-visual__info-heading c-heading-black-background">会期</h3>
-                                <p class="p-template-works-main-visual__info-text next-detail-text"><?php echo esc_html(get_field('date')); ?></p>
+                        <div class="p-works-main-visual__info-wrapper">
+                            <div class="p-works-main-visual__info-container">
+                                <h3 class="p-works-main-visual__info-heading c-heading-black-background">会期</h3>
+                                <p class="p-works-main-visual__info-text next-detail-text"><?php echo esc_html(get_field('date')); ?></p>
                             </div>
-                            <div class="p-template-works-main-visual__info-container">
-                            <h3 class="p-template-works-main-visual__info-heading c-heading-black-background">会場</h3>
-                                <p class="p-template-works-main-visual__info-text"><?php echo esc_html(get_field('venue')); ?></p>
+                            <div class="p-works-main-visual__info-container">
+                            <h3 class="p-works-main-visual__info-heading c-heading-black-background">会場</h3>
+                                <p class="p-works-main-visual__info-text"><?php echo esc_html(get_field('venue')); ?></p>
                             </div>
                         </div>
                     </div>

@@ -1,7 +1,7 @@
 @use "../../foundation/mixin" as mix;
 @use "../../foundation/variable" as var;
 @use "../../foundation/breakpoint" as br;
-.p-template-works-info-venue {
+.p-works-info-venue {
     &__detail {
         margin-top: 1em;
         font-size: var.$font_size_m;

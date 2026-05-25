@@ -1,7 +1,7 @@
 @use "../../foundation/mixin" as mix;
 @use "../../foundation/variable" as var;
 @use "../../foundation/breakpoint" as br;
-.p-template-works-description {
+.p-works-description {
     &__copy {
         margin-bottom: 60px;
         font-size: var.$font_size_ll;

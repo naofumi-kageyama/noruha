@@ -3,6 +3,18 @@
 @use "top-main-section";
 
 @use "works-archive";
+@use "works-main-visual";
+@use "works-description";
+@use "works-info-member";
+@use "works-info-timetable";
+@use "works-info-price";
+@use "works-info-ticket";
+@use "works-info-venue";
+@use "works-info-contact";
+
+@use "template-nav";
+@use "password-form";
+
 
 @use "22kasou-description" as kasou-description;
 @use "22kasou-modal" as kasou-modal;
@@ -25,16 +37,3 @@
 @use "26tamashii-single" as tamashii-single;
 @use "26tamashii-diary" as tamashii-diary;
 @use "26tamashii-diary-essay" as tamashii-diary-essay;
-
-
-@use "template-nav";
-@use "template-works-main-visual";
-@use "template-works-description";
-@use "template-works-info-member";
-@use "template-works-info-timetable";
-@use "template-works-info-price";
-@use "template-works-info-ticket";
-@use "template-works-info-venue";
-@use "template-works-info-contact";
-
-@use "password-form";

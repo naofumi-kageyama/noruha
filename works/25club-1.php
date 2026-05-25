@@ -1,7 +1,7 @@
 <section class="c-works__section">
-  <div class="p-template-works-description">
-    <p class="p-template-works-description__copy">いつでも、また乗れるように</p>
-    <div class="p-template-works-description__text c-rich-text next-description">
+  <div class="p-works-description">
+    <p class="p-works-description__copy">いつでも、また乗れるように</p>
+    <div class="p-works-description__text c-rich-text next-description">
       <p>2025年、発足から7年を迎える演劇プロジェクト「円盤に乗る派」。代表・カゲヤマ気象台とメンバーによって作られてきたこれまでの作品を、観客（ファン）がふたたび眺め、遊ぶイベントを開催します。映像を観る、戯曲を発話する、短歌をつくる、関連する本を読む――毎日違うプログラムを4日間にわたり開催します。あなたの「乗る派」を再創造してみてください。</p>
       <p>「新プロジェクト「乗る派クラブ」について」カゲヤマ気象台（2025.2.28）<br /><a href="https://noruha.net/club-1/article01/">https://noruha.net/club-1/article01/</a></p>
       <p>&nbsp;</p>
@@ -37,32 +37,32 @@
   </div>
 </section>
 <section class="c-works__section">
-  <div class="c-works__info-section p-template-works-info-price">
+  <div class="c-works__info-section p-works-info-price">
     <h2 class="c-works__info-section-heading c-heading-black-background">料金</h2>
-    <div class="p-template-works-info-price__content c-content js-set-attr-size">
+    <div class="p-works-info-price__content c-content js-set-attr-size">
       <p>3/20,21,22 <br />・一日通しチケット（ワークショップ、トークイベント両方参加可能なチケット）：¥3,500<br />・トークイベントのみ参加チケット：¥2,000</p>
       <p>3/23<br />・一日通しチケット（ワークショップ、クロージングパーティー両方参加可能なチケット）：¥2,500<br />・クロージングパーティー：¥1,000</p>
       <p>※Peatixでお申し込みのうえ、当日会場にて現金でお支払いください。<br />※チケット料金にはワンドリンクが含まれます。</p>
     </div>
   </div>
-  <div id="ticket" class="c-works__info-section p-template-works-info-ticket">
+  <div id="ticket" class="c-works__info-section p-works-info-ticket">
     <h2 class="c-works__info-section-heading c-heading-black-background">チケット</h2>
-    <div class="p-template-works-info-ticket__content c-rich-text js-set-attr-size">
+    <div class="p-works-info-ticket__content c-rich-text js-set-attr-size">
       <p>Peatix<br /><a href="https://noruha-club-1.peatix.com">https://noruha-club-1.peatix.com</a></p>
     </div>
   </div>
-  <div class="c-works__info-section p-template-works-info-venue">
+  <div class="c-works__info-section p-works-info-venue">
     <h2 class="c-works__info-section-heading c-heading-black-background">会場</h2>
-    <div class="p-template-works-info-venue__name c-rich-text js-set-attr-size">
+    <div class="p-works-info-venue__name c-rich-text js-set-attr-size">
       <p>元映画館（東京都荒川区）</p>
     </div>
-    <div class="p-template-works-info-venue__detail c-rich-text js-set-attr-size">
+    <div class="p-works-info-venue__detail c-rich-text js-set-attr-size">
       <p>〒116-0014　東京都荒川区東日暮里3丁目31-18 旭ビル 2F<br />JR常磐線三河島駅より徒歩5分/ JR山手線日暮里駅より徒歩15分<br /><a href="https://www.moto-eigakan.com/" target="_blank" rel="noopener">https://www.moto-eigakan.com/</a></p>
     </div>
   </div>
-  <div class="c-works__info-section p-template-works-info-contact">
+  <div class="c-works__info-section p-works-info-contact">
     <h2 class="c-works__info-section-heading c-heading-black-background">お問い合わせ</h2>
-    <div class="p-template-works-info-contact__content c-rich-text js-set-attr-size">
+    <div class="p-works-info-contact__content c-rich-text js-set-attr-size">
       <p>メール：club@noruha.net</p>
     </div>
   </div>
