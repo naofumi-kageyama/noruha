@@ -296,9 +296,6 @@
 .list-disc {
   list-style-type: disc;
 }
-.list-none {
-  list-style-type: none;
-}
 .list-none\! {
   list-style-type: none !important;
 }
