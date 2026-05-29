@@ -95,11 +95,11 @@ Template Name: works-archive
                                     </div>
                                     <dl class="p-works-archive__info-list">
                                         <div class="p-works-archive__info-container">
-                                            <dt class="p-works-archive__info-terms c-heading-black-background">会期</dt>
+                                            <dt class="p-works-archive__info-terms c-heading--black">会期</dt>
                                             <dd class="p-works-archive__info-description"><?php echo esc_html(get_field('date')); ?></dd>
                                         </div>
                                         <div class="p-works-archive__info-container">
-                                            <dt class="p-works-archive__info-terms c-heading-black-background">会場</dt>
+                                            <dt class="p-works-archive__info-terms c-heading--black">会場</dt>
                                             <dd class="p-works-archive__info-description"><?php echo esc_html(get_field('venue')); ?></dd>
                                         </div>
                                     </dl>

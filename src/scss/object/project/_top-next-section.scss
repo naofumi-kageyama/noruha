@@ -1,0 +1,65 @@
+@use "foundation/global" as *;
+.p-top-next-section {
+    background-color: $white;
+    padding-bottom: 12.5rem;
+    @include mq(md) {
+        padding-bottom: 3.5rem;
+    }
+    &__heading {
+        height: 2.5rem;
+        line-height: 2.5rem;
+        border-bottom: $black 1px solid;
+        font-family: "gtwalsheim";
+        font-weight: 300;
+        font-size: $font_size_xl;
+        text-align: center;
+    }
+    &__main-visual {
+        padding: 3.75rem 2.5%;
+        @include mq(lg) {
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+        }
+    }
+    &__title-container {
+        border-top: $black 1px solid;
+        border-bottom: $black 1px solid;
+        padding: 0.75rem 2.5%;
+        text-align: center;
+    }
+    &__title {
+        font-size: $font_size_xl;
+        font-weight: 700;
+        text-align: center;
+    }
+    &__subtitle {
+        margin-top: 0.5em;
+        font-size: $font_size_xl;
+        font-family: 'gtwalsheim';
+    }
+    &__description-container {
+        padding: 1.25rem 2.5%;
+    }
+    &__description-section {
+        @include margin_between(1em);
+    }
+    &__venue-name {
+        margin-bottom: 1em;
+    }
+    &__people-list {
+        display: flex;
+        gap: 1.25rem;
+    }
+    &__button {
+        display: block;
+        padding: 0.5rem 0;
+        border-top: $black 1px solid;
+        border-bottom: $black 1px solid;
+        font-size: $font_size_lg;
+        text-align: center;
+        text-decoration: none;
+        &:hover {
+            background-color: $yellow;
+        }
+    }
+}

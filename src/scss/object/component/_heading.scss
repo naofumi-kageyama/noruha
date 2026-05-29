@@ -1,0 +1,21 @@
+@use "foundation/global" as *;
+.c-heading {
+  &--h1 {
+    @include h1;
+  }
+  &--h2 {
+    @include h2;
+  }
+  &--h3 {
+    @include h3;
+  }
+  &--black {
+    width: fit-content;
+    line-height: 1;
+    padding: 0.25rem;
+    background-color: $black;
+    color: $gray;
+    font-weight: 600;
+    margin-bottom: 1em;
+  }
+}

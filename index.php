@@ -17,5 +17,6 @@
     <?php else: ?>
         <p>投稿がありません。</p>
     <?php endif; ?>
+    <a class="c-button mt-6" href="<?php echo esc_html(home_url('/')); ?>">TOPへ</a>
 </main>
 <?php get_footer(); ?>

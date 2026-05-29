@@ -1,0 +1,26 @@
+@use "foundation/global" as *;
+.l-header {
+    padding-top: $header_height;
+    &__logo-container {
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: $header_height;
+        background-color: $gray;
+        border-bottom: $black 1px solid;
+        z-index: 100;
+        @include mq(md) {
+            position: absolute;
+        }
+    }
+    &__logo {
+        display: block;
+        height: 100%;
+        img {
+            width: auto;
+            height: 100%;
+        }
+    }
+}

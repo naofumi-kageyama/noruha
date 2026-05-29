@@ -4,35 +4,35 @@ Template Name: 26tamashii-diary-essay
 */
 ?>
 <?php get_header(); ?>
-<main id="top" class="l-main p-26tamashii-diary-essay">
+<main id="top" class="l-main">
     <div class="c-article">
-        <section class="p-26tamashii-diary-essay__section">
+        <section class="mb-24 last:mb-0">
             <?php if(has_post_thumbnail()) : ?>
                 <div class="c-article__thumbnail">
                     <?php the_post_thumbnail('full'); ?>
                 </div>
             <?php endif; ?>
-            <h1 class="p-26tamashii-diary-essay__title"><?php the_title(); ?></h1>
-            <div class="p-26tamashii-diary-essay__description">
+            <h1 class="text-2xl font-semibold mb-[2em] md:text-3xl"><?php the_title(); ?></h1>
+            <div class="mb-[2em] [&_p]:my-[1em] [&_p:first-child]:mt-0 [&_p:last-child]:mb-0">
                 <p>複数の執筆者の方に、<a href="<?php echo esc_url(home_url('/tamashii/')); ?>">『「いまのところまだ存在しているわたしのたましいが……」』</a>を観た日の日記（的なエッセイ）をご寄稿いただきました。</p>
                 <p>批評やレビューではなく、あくまで日記という体をとったエッセイです。その人の日常と分かちがたく結びついた個人的な体験である「観劇」という行為を、個人的な言葉で綴っていただきました。</p>
                 <p>また本公演では観客の方からも広く日記を募集しており、集まった日記は<a href="<?php echo esc_url(home_url('/diary/')); ?>">こちら</a>で紹介しております。とても多くの方にお寄せいただきましたので、どうぞ併せてご覧ください。</p>
             </div>
-            <ul class="p-26tamashii-diary-essay__toc c-white-area">
-                <li class="p-26tamashii-diary-essay__toc-item">
+            <ul class="c-white-area">
+                <li class="list-disc list-inside mb-[0.5em] last:mb-0">
                     <a href="#tomoda">2026年3月13日（金）　友田とんさん（作家・編集者）</a>
                 </li>
-                <li class="p-26tamashii-diary-essay__toc-item">
+                <li class="list-disc list-inside mb-[0.5em] last:mb-0">
                     <a href="#shibuki">2026年3月14日（土）　渋木すずさん（ウォッチャー）</a>
                 </li>
-                <li class="p-26tamashii-diary-essay__toc-item">
+                <li class="list-disc list-inside mb-[0.5em] last:mb-0">
                     <a href="#kiyohara">2026年3月14日（土）　清原惟さん（映画監督・映像作家）</a>
                 </li>
             </ul>
         </section>
-        <article id="tomoda" class="p-26tamashii-diary-essay__section">
-            <h3 class="p-26tamashii-diary-essay__section-title">2026年3月13日（金）　友田とんさん（作家・編集者）</h3>
-            <div class="p-26tamashii-diary-essay__essay-text">
+        <article id="tomoda" class="mb-24 last:mb-0">
+            <h3 class="text-2xl font-bold mb-[1em] md:text-3xl">2026年3月13日（金）　友田とんさん（作家・編集者）</h3>
+            <div class="[&_p]:my-[1em] [&_p:first-child]:mt-0 [&_p:last-child]:mb-0">
                 <p>
                     朝、起きてコーヒーを入れ、朝食の支度をして妻と朝食。目玉焼きに私はトーストで妻はご飯。りんご、ジャム数種。何がきっかけであったか、食後にそのまま食卓に居座って、来月あるトークイベントのことを考える。そこでは制作の方法の話におそらくなる。ただ中身（コンテンツ）を書くのではなく、本やその流通という容れ物もつくってきたこと。中身と容れ物の両方をつくるというよりも、その境目が溶けていること。中身をつくっているはずが容れ物をつくっていたり、つくった中身が容れ物を変形してしまうこと。別にひとりですべてをやりたいと思ってやってきたわけではない。一筋縄ではいかず、出来した状況を踏まえて、一つずつステップを踏んできたらそうなっていた。簡単に中身と容れ物を分けることができない。
                 </p>
@@ -70,23 +70,23 @@ Template Name: 26tamashii-diary-essay
                     日が暮れて外に出て新宿に出る。ごったがえした百貨店でホワイトデーの妻へのお返しを買い求め、電車に乗る。依然として電車は停電の関係で乱れている。事務所に立ち寄り、期限の迫った経理作業をする。帰宅して豚の生姜焼きをつくる。繰り返しつくっているうちに、調味料の量は憶えてしまった。憶えたレシピ通りに作るだけ。でもこれが結構楽しい。食事は芋焼酎のソーダ割りで。今日見たことを妻に話す。どれくらい伝わったかは心許ない。食後、疲れが溜まっていて歯を磨いて寝る。
                 </p>
             </div>
-            <div class="p-26tamashii-diary-essay__profile c-white-area">
-                <div class="p-26tamashii-diary-essay__profile-left">
-                    <figure class="p-26tamashii-diary-essay__profile-image">
+            <div class="mt-8 block md:flex md:justify-between md:items-center c-white-area">
+                <div class="w-full md:w-1/4">
+                    <figure class="">
                         <img src="<?php echo esc_html(get_template_directory_uri()); ?>/assets/images/image_tomoda.jpg" alt="友田とんのプロフィール画像" width="1782" height="2048">
                     </figure>
                 </div>
-                <div class="p-26tamashii-diary-essay__profile-right">
-                    <h4 class="p-26tamashii-diary-essay__profile-name">友田とん（作家・編集者）</h4>
-                    <div class="p-26tamashii-diary-essay__profile-description">
+                <div class="w-full md:w-[70%]">
+                    <h4 class="font-bold mb-[1em]">友田とん（作家・編集者）</h4>
+                    <div class="[&_p]:my-[1em] [&_p:first-child]:mt-0 [&_p:last-child]:mb-0">
                         <p>1978年京都市生まれ。作家、編集者。ひとり出版社・代わりに読む人代表。博士（理学）。著書に『『百年の孤独』を代わりに読む』（ハヤカワ文庫NF）、『ナンセンスな問い』（H.A.B）、『先人は遅れてくる』（代わりに読む人）、『「手に負えない」を編みなおす』（柏書房）などがある。日常の出来事から数学的思考を立ち上げていく小説を試作しています。</p>
                     </div>
                 </div>
             </div>
         </article>
-        <article id="shibuki" class="p-26tamashii-diary-essay__section">
-            <h3 class="p-26tamashii-diary-essay__section-title">2026年3月14日（土）　渋木すずさん（ウォッチャー）</h3>
-            <div class="p-26tamashii-diary-essay__essay-text">
+        <article id="shibuki" class="mb-24 last:mb-0">
+            <h3 class="text-2xl font-bold mb-[1em] md:text-3xl">2026年3月14日（土）　渋木すずさん（ウォッチャー）</h3>
+            <div class="[&_p]:my-[1em] [&_p:first-child]:mt-0 [&_p:last-child]:mb-0">
                 <p>朝起きると、夫が「子どもの様子が少しおかしい」と言ってきた。見てみると鼻水が出ている。体温は37.1℃、悩ましい数字だ。昨日は保育園でおやつを食べなかったらしい。食いしん坊がおやつを食べず、やや微熱で鼻水も出ているとなると、今日の託児は断念した方がいいだろう。子どもは夫に任せて私は円盤に乗る派の公演へ。託児利用ができなくなった旨を制作の方に連絡する。子どもが産まれてこういうことはもう日常になった。</p>
                 <p>電車に乗る。家から劇場まではおよそ1時間。移動の間にまったりとSNSを見られることが半ば癒しのようになっている。戦争のニュースが流れてくる。ここのところ寝る前までずっとニュースを追ってしまっていてうまく寝付けていない。昨日観た乗る派の上演では前列に座ったからか、俳優の圧がすごかった。脚本は事前に読んでいたが、まさに公演直前にこんな情勢になるなんて思いもしなかった。私は上演がこのような情勢の中で行われることを、少し暗い気持ちで受け止めていた。本来目指していた形とは違うメッセージを観客に届けることになるのではないか、それは俳優やスタッフの方々、演出家にとって好ましくないことなのではないか、と。</p>
                 <p>ふと、タイムラインに流れてきたポストが目に入る。寄付を呼びかけるポストだった。そのポストの「自分が贅沢をした分の中の少しの金額を寄付にも使う」「この土日の楽しみの分を少し分ける感じで寄付」という考えがとてもしっくりくる。何かを我慢したり生活を切り詰めて寄付をする考え方より、ちょっと気軽な気がした。思い立って早速ガザで家賃の支払いに困っている人に寄付をする。20ポンド。私は関係者枠で乗る派の公演を観られる。チケットを買った場合は一般で4000円だから、その分を寄付した。「ウォッチャー」という、俳優やスタッフとはまた別の役回りにいて、無償で観劇出来てしまうちょっとした居心地の悪さを、寄付に昇華してしまおう。これからも関係者枠やご招待の観劇の時には寄付をしようと決めて、戦争で沈んでいた気分が少し軽くなる。寄付をしたのは、昨日乗る派の公演を観てからずっと戦争について考えていたことと、このポストとの出会いのおかげだ。そう思えば、きっと今この劇が上演されることには意味がある。</p>
@@ -94,23 +94,23 @@ Template Name: 26tamashii-diary-essay
                 <p>いくつかの感想をメンバーに伝え、観劇に満足して帰る。SNSを見る。タイムラインでは物流への影響が囁かれ始めている。急に戦争が身近になってきた。違う。ずっと近くにあったのに無視し続けてきたのは自分だ。いや、それも違う。選挙には行っていた。「ガザとは何か」も読んだ。平和と反戦を表明し、寄付も時々した。無視していたわけではない。でも何もかもが違う。なんなんだこれは、一体。</p>
                 <p>家に着く。ドアを開けると、子どもが笑いながら、よちよちと私の足元に駆け寄って抱きついて来た。子どもを抱きしめ返す。やわらかい頬にキスして、いつもより少し強めにぎゅっとする。子を寝かしつけた後に、昼に寄付した人の家賃が足りたか気になって見てみると、無事目標金額を達成したようだった。といっても、最後の一押しの寄付は、寄付を呼び掛けていた方々の中の一人がされたようで、金額も少なくはなかった。最後の最後で誰かが少し無理をしないと目標を達成できない。頭が下がる思いと、どうすれば良いのか分からない気持ちでいる。ガザで寄付を受けた方が「皆さんの優しさを決して忘れません」とお礼のメッセージをポストしていた。嬉しいけど、お礼なんて言わなくていい、早く戦争が終わって、全部忘れて過ごせるくらい平和になってほしい、と、自分勝手に思いながら眠りについた。</p>
             </div>
-            <div class="p-26tamashii-diary-essay__profile c-white-area">
-                <div class="p-26tamashii-diary-essay__profile-left">
-                    <figure class="p-26tamashii-diary-essay__profile-image">
+            <div class="mt-8 block md:flex md:justify-between md:items-center c-white-area">
+                <div class="w-full md:w-1/4">
+                    <figure class="">
                         <img src="<?php echo esc_html(get_template_directory_uri()); ?>/assets/images/image_shibuki.jpg" alt="渋木すずのプロフィール画像" width="768" height="1024">
                     </figure>
                 </div>
-                <div class="p-26tamashii-diary-essay__profile-right">
-                    <h4 class="p-26tamashii-diary-essay__profile-name">渋木すず（ウォッチャー）</h4>
-                    <div class="p-26tamashii-diary-essay__profile-description">
+                <div class="w-full md:w-[70%]">
+                    <h4 class="font-bold mb-[1em]">渋木すず（ウォッチャー）</h4>
+                    <div class="[&_p]:my-[1em] [&_p:first-child]:mt-0 [&_p:last-child]:mb-0">
                         <p>1990年広島県生まれ。会社員。エッセイを書く。「ちょっとしたパーティー(@A_little_party)」という名前で餅つきや同人誌作り等々に勤しんでいる。演劇プロジェクト「円盤に乗る派」にウォッチャーとして参加中。<br>note：<a href="https://note.com/suzu_shibuki" target="_blank">https://note.com/suzu_shibuki</a></p>
                     </div>
                 </div>
             </div>
         </article>
-        <article id="kiyohara" class="p-26tamashii-diary-essay__section">
-            <h3 class="p-26tamashii-diary-essay__section-title">2026年3月14日（土）　清原惟さん（映画監督・映像作家）</h3>
-            <div class="p-26tamashii-diary-essay__essay-text">
+        <article id="kiyohara" class="mb-24 last:mb-0">
+            <h3 class="text-2xl font-bold mb-[1em] md:text-3xl">2026年3月14日（土）　清原惟さん（映画監督・映像作家）</h3>
+            <div class="[&_p]:my-[1em] [&_p:first-child]:mt-0 [&_p:last-child]:mb-0">
                 <p>部屋にある観葉植物から、細長いツタのようなものが伸びていた。背の低い肉厚な葉っぱのなかから、一本だけすん、と長く出ていて不思議だ。花が咲くのかもしれない。</p>
                 <p>外へ出ると、日差しは暖かいけど、風が少し冷たい。服装が今日の気温にあっているのか肌で捉えてみると、かなりちょうどよかった。円盤に乗る派の「いまのところまだ存在しているわたしのたましいが……」を観るために吉祥寺へと向かう。電車の中で、大切な依頼メールを２通送る。書き直してはメールアプリを一回閉じて保存。送る踏ん切りがつかなくて、何度も眺めているうちに、なぜだかすでに相手に送られているように思えてきた。まだ送られていないメールを読んでいるあの人たちを、頭に思い描いている。</p>
                 <p>「いまのところまだ存在しているわたしのたましいが……」の舞台は、ひんやりしていた。温度も匂いも奥行きもない世界で、質量を持った人たちが話している。割り当てられた不自然さを持って動くその姿のなかに、妙に人間臭さを感じて愛おしい。「たましい」という個人を定義するもっとも根源的なものを、軽々しく他人に扱われてしまう世界観において、この人間臭さというものが、観ている上での手がかりになるような気がした。</p>
@@ -119,23 +119,23 @@ Template Name: 26tamashii-diary-essay
                 <p>西荻窪でパートナーと合流して、いつも行くお店へ。季節を舌で知ることの驚きが毎回ある。近くに住む友人も合流して話していると、ゆらゆら帝国のアルバム「3×3×3」が流れてくる。このアルバムは、初めて聴いた高校生の時からたびたび聴き直していて、たくさんの時間が刻み込まれている。だから懐かしさを感じることはあっても、過去の時間に戻されることなく、常に現在形で聴くことができる。</p>
                 <p>帰宅してから忘れないうちに日記を書こうとしてメモアプリを開くと、「8月20日運動会」と書かれたメモがあった。見覚えのないメモ。少し怖いけれど、消さないでおくことにした。</p>
             </div>
-            <div class="p-26tamashii-diary-essay__profile c-white-area">
-                <div class="p-26tamashii-diary-essay__profile-left">
-                    <figure class="p-26tamashii-diary-essay__profile-image">
+            <div class="mt-8 block md:flex md:justify-between md:items-center c-white-area">
+                <div class="w-full md:w-1/4">
+                    <figure class="">
                         <img src="<?php echo esc_html(get_template_directory_uri()); ?>/assets/images/image_kiyohara.jpg" alt="清原惟のプロフィール画像" width="1974" height="1314">
                     </figure>
                 </div>
-                <div class="p-26tamashii-diary-essay__profile-right">
-                    <h4 class="p-26tamashii-diary-essay__profile-name">清原惟（映画監督・映像作家）</h4>
-                    <div class="p-26tamashii-diary-essay__profile-description">
+                <div class="w-full md:w-[70%]">
+                    <h4 class="font-bold mb-[1em]">清原惟（映画監督・映像作家）</h4>
+                    <div class="[&_p]:my-[1em] [&_p:first-child]:mt-0 [&_p:last-child]:mb-0">
                         <p>清原惟（きよはらゆい）<br>映画監督、映像作家。17歳のときはじめて友人と映画をつくってから今まで、映画や映像をつくりつづけている。監督作『わたしたちの家』と『すべての夜を思いだす』がそれぞれベルリン国際映画祭フォーラム部門をはじめとした様々な国際映画祭で上映される。また、最新作の『A Window of Memories』が山形国際ドキュメンタリー映画祭2025で上映された。ほかの活動として、土地やひとびとの記憶について、リサーチを元にした映像作品を制作している。</p>
                     </div>
                 </div>
             </div>
         </article>
-        <section class="p-26tamashii-diary-essay__section p-26tamashii-card">
-            <div class="p-26tamashii-card__left">
-                <div class="p-26tamashii-card__image">
+        <section class="mb-24 last:mb-0 block md:flex md:gap-8 md:items-start">
+            <div class="w-full mb-4 shrink-0 md:w-1/2 md:mb-0">
+                <div class="[&_img]:m-0">
                     <?php
                         if(has_post_thumbnail( 478 )) {
                             echo get_the_post_thumbnail( 478, 'large' );
@@ -143,15 +143,15 @@ Template Name: 26tamashii-diary-essay
                     ?>
                 </div>
             </div>
-            <div class="p-26tamashii-card__right">
-                <h2 class="p-26tamashii-card__title">「いまのところまだ存在しているわたしのたましいが……」</h2>
-                <dl class="p-26tamashii-card__info">
-                    <dt class="p-26tamashii-card__info-term c-heading-black-background">会期</dt>
-                    <dd class="p-26tamashii-card__info-description">2026年3月12日（木）～15日（日）</dd>
-                    <dt class="p-26tamashii-card__info-term c-heading-black-background">会場</dt>
-                    <dd class="p-26tamashii-card__info-description">吉祥寺シアター（東京都武蔵野市）</dd>
+            <div>
+                <h2 class="text-xl mb-4!">「いまのところまだ存在しているわたしのたましいが……」</h2>
+                <dl class="text-base">
+                    <dt class="mb-2 c-heading--black">会期</dt>
+                    <dd class="mb-4">2026年3月12日（木）～15日（日）</dd>
+                    <dt class="mb-2 c-heading--black">会場</dt>
+                    <dd class="mb-4">吉祥寺シアター（東京都武蔵野市）</dd>
                 </dl>
-                <a href="<?php echo esc_url(home_url('/tamashii/')); ?>" class="c-button p-26tamashii-card__button">公演詳細</a>
+                <a href="<?php echo esc_url(home_url('/tamashii/')); ?>" class="c-button text-base block w-fit mx-auto md:inline-block md:w-auto md:mx-0">公演詳細</a>
             </div>
         </section>
     </div>

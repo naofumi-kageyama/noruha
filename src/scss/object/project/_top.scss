@@ -1,0 +1,44 @@
+@use "foundation/global" as *;
+.p-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: $font_size_xs;
+    @include mq(md) {
+        display: block;
+    }
+    &__section {
+        height: calc(100vh - $header_height);
+        overflow-y: scroll;
+        /* IE, Edge 対応 */
+        -ms-overflow-style: none;
+        /* Firefox 対応 */
+        scrollbar-width: none;
+        /* Chrome, Safari 対応 */
+        &::-webkit-scrollbar {
+            display:none;
+        }
+        @include mq(md) {
+            overflow-y: visible;
+            height: auto;
+        }
+    }
+    &__left {
+        width: 30rem;
+        border-right: $black 1px solid;
+        @include mq(md) {
+            width: 100%;
+            border-right: none;
+        }
+    }
+    &__right {
+        width: calc(100vw - 30rem);
+        @include mq(md) {
+            width: 100%;
+        }
+    }
+    &__copyright {
+        text-align: center;
+        font-size: $font_size_sm;
+        padding: 0.5rem 0;
+    }
+}

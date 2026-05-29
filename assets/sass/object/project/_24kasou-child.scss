@@ -1,8 +1,0 @@
-@use "../../foundation/mixin" as mix;
-@use "../../foundation/variable" as var;
-@use "../../foundation/breakpoint" as br;
-.p-24kasou-child {
-    &__section {
-        @include mix.margin_between(100px);
-    }
-}

@@ -1,0 +1,7 @@
+@use "foundation/global" as *;
+.p-works-info-venue {
+    &__detail {
+        margin-top: 1em;
+        font-size: $font_size_base;
+    }
+}

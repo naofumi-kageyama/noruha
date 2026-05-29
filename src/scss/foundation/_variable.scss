@@ -1,0 +1,38 @@
+/*=== breakpoint ===*/
+$breakpoint_laptop: 'screen and (max-width: 1024px)';
+$breakpoint_tab: 'screen and (max-width: 768px)';
+$breakpoint_sp: 'screen and (max-width: 640px)';
+
+/*=== color ===*/
+$font_color: #333;
+$black: #000;
+$white: #fff;
+$gray: #d6d6d6;
+$yellow: #f2e170;
+$color_main: $gray;
+
+/*=== font size ===*/
+$font_size_3xl: 2rem;
+$font_size_2xl: 1.75rem;
+$font_size_xl: 1.5rem;
+$font_size_lg: 1.25rem;
+$font_size_base: 1.125rem;
+$font_size_sm: 1rem;
+$font_size_xs: 0.875rem;
+$font_size_baseain: $font_size_base;
+$font_size_smp: $font_size_sm;
+
+/*=== font weight ===*/
+$font_weight_main: 400;
+
+/*=== line_height ===*/
+$line_height_main: 1.7;
+
+/*=== font ===*/
+$font_main: 'Noto Sans', 'Noto Sans CJK JP', 'Noto Sans CJK JP Subset', sans-serif;
+
+/*=== content width ===*/
+$content_width_main: 56rem;
+
+/*=== header height ===*/
+$header_height: 7.5rem;

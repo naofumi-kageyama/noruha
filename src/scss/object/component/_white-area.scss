@@ -1,0 +1,19 @@
+@use "foundation/global" as *;
+.c-white-area {
+    padding: 2rem 3rem;
+    background-color: $white;
+    border-radius: 10px;
+    border: 1px solid;
+    @include mq(md) {
+        padding: 2rem 1.5rem;
+    }
+    &--with-close-button {
+        position: relative;
+    }
+    &__close-button {
+        @include close_button;
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+    }
+}

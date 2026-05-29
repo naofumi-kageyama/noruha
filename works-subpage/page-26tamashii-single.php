@@ -4,7 +4,7 @@ Template Name: 26tamashii-single
 */
 ?>
 <?php get_header(); ?>
-<main class="l-main p-26tamashii-single">
+<main class="l-main">
     <?php if (have_posts()): ?>
     <?php while (have_posts()) : the_post(); ?>
         <article class="c-article">
@@ -22,9 +22,9 @@ Template Name: 26tamashii-single
     <?php else: ?>
         <p>投稿がありません。</p>
     <?php endif; ?>
-    <section class="p-26tamashii-single__card p-26tamashii-card">
-        <div class="p-26tamashii-card__left">
-            <div class="p-26tamashii-card__image">
+    <section class="mt-16 block md:flex md:gap-8 md:items-start">
+        <div class="w-full mb-4 shrink-0 md:w-1/2 md:mb-0">
+            <div class="[&_img]:m-0">
                 <?php
                     if(has_post_thumbnail( 478 )) {
                         echo get_the_post_thumbnail( 478, 'large' );
@@ -32,15 +32,15 @@ Template Name: 26tamashii-single
                 ?>
             </div>
         </div>
-        <div class="p-26tamashii-card__right">
-            <h2 class="p-26tamashii-card__title">「いまのところまだ存在しているわたしのたましいが……」</h2>
-            <dl class="p-26tamashii-card__info">
-                <dt class="p-26tamashii-card__info-term c-heading-black-background">会期</dt>
-                <dd class="p-26tamashii-card__info-description">2026年3月12日（木）～15日（日）</dd>
-                <dt class="p-26tamashii-card__info-term c-heading-black-background">会場</dt>
-                <dd class="p-26tamashii-card__info-description">吉祥寺シアター（東京都武蔵野市）</dd>
+        <div>
+            <h2 class="text-xl mb-4!">「いまのところまだ存在しているわたしのたましいが……」</h2>
+            <dl class="text-base">
+                <dt class="mb-2 c-heading--black">会期</dt>
+                <dd class="mb-4">2026年3月12日（木）～15日（日）</dd>
+                <dt class="mb-2 c-heading--black">会場</dt>
+                <dd class="mb-4">吉祥寺シアター（東京都武蔵野市）</dd>
             </dl>
-            <a href="<?php echo esc_url(home_url('/tamashii/')); ?>" class="c-button p-26tamashii-card__button">公演詳細</a>
+            <a href="<?php echo esc_url(home_url('/tamashii/')); ?>" class="c-button text-base block w-fit mx-auto md:inline-block md:w-auto md:mx-0">公演詳細</a>
         </div>
     </section>
 </main>

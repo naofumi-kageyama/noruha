@@ -1,0 +1,17 @@
+@use "foundation/global" as *;
+.c-button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 1px solid;
+    border-radius: 9999px;
+    line-height: 1;
+    transition: .2s;
+    &[href] {
+        text-decoration: none;
+        &:hover {
+            background-color: $font_color;
+            color: $white;
+            border-color: $font_color;
+        }
+    }
+}

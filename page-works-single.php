@@ -26,6 +26,10 @@ Template Name: works-single
             'template' => '23kofuku'
         ],
         [
+            'slug' => 'moral',
+            'template' => '22moral'
+        ],
+        [
             'slug' => 'kasou',
             'template' => '22kasou'
         ],
@@ -48,15 +52,15 @@ Template Name: works-single
                         </figure>
                         <div class="p-works-main-visual__title-container">
                             <h1 class="p-works-main-visual__title"><?php the_title(); ?></h1>
-                            <p class="p-works-main-visual__subtitle"><?php echo esc_html(get_field('subtitle')); ?></p>
+                            <p class="p-works-main-visual__subtitle"><?php echo get_field('subtitle'); ?></p>
                         </div>
                         <div class="p-works-main-visual__info-wrapper">
                             <div class="p-works-main-visual__info-container">
-                                <h3 class="p-works-main-visual__info-heading c-heading-black-background">会期</h3>
+                                <h3 class="p-works-main-visual__info-heading c-heading--black">会期</h3>
                                 <p class="p-works-main-visual__info-text next-detail-text"><?php echo esc_html(get_field('date')); ?></p>
                             </div>
                             <div class="p-works-main-visual__info-container">
-                            <h3 class="p-works-main-visual__info-heading c-heading-black-background">会場</h3>
+                            <h3 class="p-works-main-visual__info-heading c-heading--black">会場</h3>
                                 <p class="p-works-main-visual__info-text"><?php echo esc_html(get_field('venue')); ?></p>
                             </div>
                         </div>

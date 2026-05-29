@@ -1,0 +1,44 @@
+{
+  "name": "noruha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp",
+    "production": "gulp production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.28.3",
+    "@babel/preset-env": "^7.27.2",
+    "@tailwindcss/postcss": "^4.3.0",
+    "autoprefixer": "^10.4.19",
+    "browser-sync": "^3.0.4",
+    "cssnano": "^7.1.9",
+    "gulp": "^5.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-changed": "^5.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^9.1.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svgmin": "^4.1.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-webp": "^5.0.0",
+    "gulp-zip": "^6.1.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "sass": "^1.89.1",
+    "tailwindcss": "^4.3.0"
+  },
+  "dependencies": {
+    "esbuild": "^0.27.2"
+  }
+}

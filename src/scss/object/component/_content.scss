@@ -1,0 +1,75 @@
+@use "foundation/global" as *;
+.c-content {
+    h1 {
+        @include h1;
+        &+ * {
+            margin-top: 0!important;
+        }
+    }
+    h2 {
+        @include h2;
+        &+ * {
+            margin-top: 0!important;
+        }
+        &:first-child {
+            margin-top: 0!important;
+        }
+    }
+    h3 {
+        @include h3;
+        &+ * {
+            margin-top: 0!important;
+        }
+        &:first-child {
+            margin-top: 0!important;
+        }
+    }
+    p {
+        @include margin_between(1em);
+        &.has-small-font-size {
+            font-size: $font_size_base!important;
+            @include mq(md) {
+                font-size: $font_size_sm!important;
+            }
+        }
+    }
+    .wp-block-image {
+        margin: 2em 0;
+        img {
+            width: auto;
+            max-width: 100%;
+        }
+    }
+    blockquote {
+        margin-block-start: 2em;
+        margin-block-end: 2em;
+        margin-inline-start: 2rem;
+        margin-inline-end: 2rem;
+        @include mq(sm) {
+            margin-inline-start: 1rem;
+            margin-inline-end: 1rem;
+        }
+        p {
+            margin-bottom: 0.5em;
+        }
+        cite {
+            font-size: $font_size_base;
+            text-align: right;
+            @include mq(md) {
+                font-size: $font_size_sm;
+            }
+        }
+    }
+    ul {
+        li {
+            list-style: disc;
+            list-style-position: inside;
+        }
+    }
+    ol {
+        li {
+            list-style: decimal;
+            list-style-position: inside;
+        }
+    }
+}

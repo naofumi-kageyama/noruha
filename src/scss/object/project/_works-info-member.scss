@@ -1,0 +1,66 @@
+@use "foundation/global" as *;
+.p-works-info-member {
+    &__list-container {
+        margin-bottom: 1em;
+    }
+    &__list {
+        margin-bottom: 1em;
+    }
+    &__terms-container {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        @include margin_between(0.5em);
+    }
+    &__terms {
+        margin-right: 1em;
+    }
+    &__description {
+        flex-grow: 1;
+    }
+    &__name {
+        width: fit-content;
+        margin-top: .25em;
+    }
+    &__profile-container {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        max-width: 100%; //長い英字が折り返しされない問題への対策
+        margin-top: 0.5rem;
+    }
+    &__organizer-item {
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__organizer-terms {
+        margin-right: 1em;
+        white-space: nowrap;
+    }
+    &__organizer-description {
+        flex-grow: 1;
+    }
+    &__organizer-others {
+        margin-top: 1em;
+    }
+    &__logo-pc,
+    &__logo-sp {
+        img {
+            display: inline-block;
+            width: unset;
+        }
+    }
+    &__logo-pc {
+        margin-top: 1em;
+        @include mq(sm) {
+            display: none;
+        }
+    }
+    &__logo-sp {
+        margin-top: 1em;
+        display: none;
+        @include mq(sm) {
+            display: block;
+        }
+    }
+}

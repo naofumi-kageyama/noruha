@@ -1,0 +1,42 @@
+@use "foundation/global" as *;
+.p-works-main-visual {
+    &__main-visual {
+        width: 95%;
+        max-width: 27rem;
+        margin: 0 auto 2rem;
+        &--horizontal {
+            max-width: none;
+        }
+        figcaption {
+            margin-top: .5em;
+            text-align: right;
+            font-size: $font_size_sm;
+            @include mq(sm) {
+                font-size: $font_size_xs;
+            }
+        }
+    }
+    &__title-container {
+        border-top: $black 1px solid;
+        border-bottom: $black 1px solid;
+        padding: calc($font_size_3xl / 2) 0;
+        text-align: center;
+    }
+    &__title {
+        font-size: $font_size_3xl;
+        font-weight: 600;
+        @include mq(sm) {
+            font-size: $font_size_xl;
+        }
+    }
+    &__info-wrapper {
+        padding: 1em 0;
+        border-bottom: $black 1px solid;
+    }
+    &__info-container{
+        @include margin_between(1em);
+    }
+    &__additional {
+        margin-top: 2em;
+    }
+}

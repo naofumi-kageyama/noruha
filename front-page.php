@@ -32,19 +32,19 @@
                         </div>
                         <div class="p-top-next-section__description-container">
                             <div class="p-top-next-section__description-section">
-                                <h4 class="p-top-next-section__description-heading c-heading-black-background">会期</h4>
+                                <h4 class="p-top-next-section__description-heading c-heading--black">会期</h4>
                                 <div class="p-top-next-section__description-text-container">
                                     <p class="p-top-next-section__date"><?php echo esc_html(get_field('date')); ?></p>
                                 </div>
                             </div>
                             <div class="p-top-next-section__description-section">
-                                <h4 class="p-top-next-section__description-heading c-heading-black-background">会場</h4>
+                                <h4 class="p-top-next-section__description-heading c-heading--black">会場</h4>
                                 <div class="p-top-next-section__description-text-container">
                                     <p class="p-top-next-section__venue-name"><?php echo esc_html(get_field('venue')); ?></p>
                                 </div>
                             </div>
                             <div class="p-top-next-section__description-section">
-                                <h4 class="p-top-next-section__description-heading c-heading-black-background">人々</h4>
+                                <h4 class="p-top-next-section__description-heading c-heading--black">人々</h4>
                                 <div class="p-top-next-section__description-text-container">
                                     <dl class="p-top-next-section__people-list">
                                         <dt class="p-top-next-section__people-term">戯曲・演出</dt>
@@ -107,7 +107,7 @@
             </div>
             <div class="p-top-main-section__section">
                 <h2 class="p-top-main-section__section-heading">円盤に乗る派について</h2>
-                <div class="p-top-main-section__section-content p-top-main-section__about-content c-rich-text">
+                <div class="p-top-main-section__section-content p-top-main-section__about-content c-content">
                     <p>円盤に乗る派は複数の作家・表現者が一緒にフラットにいられるための時間、あるべきところにいられるような場所を作るプロジェクトとして、2018年にスタートしました。軸になるのはカゲヤマ気象台による上演作品ですが、様々なプログラムや冊子の発行、シンポジウムなどを並行して行います。<br />ここで試みられるのは匿名／顕名が平等になる場所です。誰でも発信が可能であり、大きな民衆の声が響き渡る世界の中で、小さな声が守られる場所はとても貴重です。さまざまな声が飛び交ううるさい場所を逃れて、そこであればしっかりものを見、考え、落ち着くことのできるという場所を確保します。それは演劇にまつわるあらゆる要素を、生活とダイレクトに接続するということでもあります。このプロジェクトを通じて、種々の、色んな意味で「実際に活用できる」アイディアを提唱します。ここを訪れた観客たちが各々の生活の中で、それらを実践し、少しでもより生きやすくなることができればと思います。<br />いつか現れる円盤に乗るということに、強い目的も思想もありません。それはただ「円盤に乗ってみた」という事実が残るだけです。他の人に何ら影響を与えることもなく、大きな社会にとって何の関係もありません。しかし「円盤に乗った人」と「乗らなかった人」は明らかに何かが違ってしまったはずであり、あくまで個人的なその変化に興味を持つ人々、誰にも気づかれない秘密を抱えたい人間たちこそ、「円盤に乗る派」と呼べるでしょう。
                     </p>
                     <p><a href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/files/NORUHA_archive_book.pdf" target="blank">アーカイブブック『NORUHA 2018-2020』</a></p>
@@ -135,8 +135,8 @@
                                         class="p-top-main-section__member-image--on" alt="カゲヤマ気象台の写真" />
                                 </div>
                                 <h3 class="p-top-main-section__member-heading">カゲヤマ気象台</h3>
-                                <div class="p-top-main-section__member-description c-rich-text js-member-open-target">
-                                    <p>1988年静岡県浜松市生まれ。早稲田大学第一文学部卒。演劇プロジェクト《円盤に乗る派》代表。劇作・演出・音響デザインを手がける。2015年よりセゾン文化財団セゾン・フェローに選出。『シティⅢ』で第17回AAF戯曲賞大賞受賞。近年の上演作品に『仮想的な失調』（《東京芸術祭2024》プログラム）など。共同アトリエ／コミュニティである《円盤に乗る場》を2021年より運営中。</span></p>
+                                <div class="p-top-main-section__member-description c-content js-member-open-target">
+                                    <p>劇作家・演出家。1988年静岡県浜松市生まれ。演劇プロジェクト《円盤に乗る派》代表。2015年よりセゾン文化財団セゾン・フェローに選出。『シティⅢ』で第17回AAF戯曲賞大賞受賞。代表的な作品に『仮想的な失調』（《東京芸術祭 2024》プログラム）、『「いまのところまだ存在しているわたしのたましいが……」』（2026）など。共同アトリエ／コミュニティである《円盤に乗る場》を2021年より運営中。</p>
                                 </div>
                             </div>
                             <div class="p-top-main-section__member-container js-member-open-container">
@@ -149,7 +149,7 @@
                                         class="p-top-main-section__member-image--on" alt="日和下駄の写真" />
                                 </div>
                                 <h3 class="p-top-main-section__member-heading">日和下駄</h3>
-                                <div class="p-top-main-section__member-description c-rich-text js-member-open-target">
+                                <div class="p-top-main-section__member-description c-content js-member-open-target">
                                     <p>1995年鳥取県生まれ。2019年より円盤に乗る派に参加。以降のすべての作品に出演。特技は料理、木登り、整理整頓、人を褒めること。人が集まって美味しいご飯を食べることが好き。下駄と美味しんぼに詳しい。</p>
                                 </div>
                             </div>
@@ -165,7 +165,7 @@
                                         class="p-top-main-section__member-image--on" alt="畠山峻の写真" />
                                 </div>
                                 <h3 class="p-top-main-section__member-heading">畠山峻</h3>
-                                <div class="p-top-main-section__member-description c-rich-text js-member-open-target">
+                                <div class="p-top-main-section__member-description c-content js-member-open-target">
                                     <p>1987年北海道札幌市生まれ。舞台芸術学院演劇部本科卒。俳優としてブルーノプロデュース、20歳の国、亜人間都市などの作品に出演。カゲヤマ気象台の作品では『おはようクラブ』『野生のカフカ＠おいしいカレー』『流刑地エウロパ』などに出演。演劇ユニットpeople太では演出をしています。<br /><a href="http://people-futoshi.blogspot.com/" target="blank">http://people-futoshi.blogspot.com/</a></p>
                                 </div>
                             </div>
@@ -179,7 +179,7 @@
                                         class="p-top-main-section__member-image--on" alt="渋木すずの写真" />
                                 </div>
                                 <h3 class="p-top-main-section__member-heading">渋木すず</h3>
-                                <div class="p-top-main-section__member-description c-rich-text js-member-open-target">
+                                <div class="p-top-main-section__member-description c-content js-member-open-target">
                                     <p>1990年広島県生まれ。会社員。エッセイを書く。「ちょっとしたパーティー(@A_little_party)」という名前で餅つきや同人誌作り等々に勤しんでいる。<br />
                                     note: <a href="https://note.com/suzu_shibuki" target="blank">https://note.com/suzu_shibuki</a></p>
                                     <p>円盤に乗る派への参加に寄せて/渋木すず: <a href="https://note.com/noruha/n/n05f26a4f098d" target="blank">https://note.com/noruha/n/n05f26a4f098d</a></p>
@@ -187,11 +187,11 @@
                             </div>
                         </div>
                     </div>
-                    <p class="p-top-main-section__members-image-credit js-member-open-next-element">Photography byArata Mino</p>
+                    <p class="p-top-main-section__members-image-credit js-member-open-next-element">Photography by Arata Mino</p>
                 </div>
             </div>
         </div>
+        <p class="p-top__copyright">&copy; <?php echo date('Y'); ?> noruha</p>
     </section>
 </main>
-
 <?php get_footer(); ?>

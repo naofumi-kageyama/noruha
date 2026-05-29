@@ -40,7 +40,7 @@ Template Name: 22mdumbwaiter-movie
                     <p classs="moral-info">
                         2024年5月3日（金・祝）～5月4日（土・祝）<br>
                         会場：おぐセンター　2階<br>
-                        詳細：<a href="https://noruha.net/thedumbwaiter/">https://noruha.net/thedumbwaiter/</a><br>
+                        詳細：<a href="<?php echo esc_html(home_url('/thedumbwaiter/')); ?>">https://noruha.net/thedumbwaiter/</a><br>
                         <br>
                         撮影・編集：宮﨑輝
                     </p>

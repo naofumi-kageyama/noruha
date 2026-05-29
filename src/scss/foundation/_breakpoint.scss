@@ -1,0 +1,14 @@
+@use "variable" as *;
+@use 'sass:map';
+
+$breakpoint: (
+  sm: $breakpoint_sp,
+  md: $breakpoint_tab,
+  lg: $breakpoint_laptop
+);
+
+@mixin mq($bp) {
+  @media #{map.get($breakpoint, $bp)} {
+    @content;
+  }
+}

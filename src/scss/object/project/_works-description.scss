@@ -1,0 +1,14 @@
+@use "foundation/global" as *;
+.p-works-description {
+    &__copy {
+        margin-bottom: 3rem;
+        font-size: $font_size_xl;
+        font-weight: 600;
+        @include mq(sm) {
+            font-size: $font_size_lg;
+        }
+    }
+    &__additional {
+        margin-top: 2em;
+    }
+}

@@ -1,0 +1,13 @@
+@use "foundation/global" as *;
+.c-article {
+    &__title {
+        @include h1;
+    }
+    &__thumbnail {
+        margin-bottom: 1em;
+        img {
+            margin: 0;
+            width: 100%;
+        }
+    }
+}

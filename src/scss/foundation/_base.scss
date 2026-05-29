@@ -1,0 +1,29 @@
+@use "foundation/global" as *;
+body {
+    font-family: $font_main;
+    background-color: $gray;
+    color: $font_color;
+    font-size: $font_size_baseain;
+    font-weight: $font_weight_main;
+    line-height: $line_height_main;
+    word-wrap: break-word;
+    &:not(.home) {
+        .grecaptcha-badge {
+            visibility: hidden;
+        }
+    }
+    @include mq(sm) {
+        font-size: $font_size_smp;
+    }
+}
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+a {
+    text-decoration: underline;
+}
+dt {
+    font-weight: $font_weight_main;
+}

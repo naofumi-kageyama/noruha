@@ -87,16 +87,16 @@ Template Name: 26tamashii-diary
             $ogp_image = $ogp['image'] ?? '';
             $ogp_alt   = $ogp['image.alt'] ?? '';
             ?>
-            <li class="p-26tamashii-diary__item c-white-area">
-                <h3 class="p-26tamashii-diary__item-title"><?php echo htmlspecialchars($name, ENT_QUOTES, 'UTF-8'); ?>さん</h3>
-                <a class="p-26tamashii-diary__item-link" href="<?php echo esc_url($url); ?>" target="_blank"><?php echo htmlspecialchars($url, ENT_QUOTES, 'UTF-8'); ?></a>
+            <li class="mb-[2em] last:mb-0 c-white-area">
+                <h3 class="mb-[0.5em]"><?php echo htmlspecialchars($name, ENT_QUOTES, 'UTF-8'); ?>さん</h3>
+                <a class="block text-sm" href="<?php echo esc_url($url); ?>" target="_blank"><?php echo htmlspecialchars($url, ENT_QUOTES, 'UTF-8'); ?></a>
                 <?php if ( !empty($ogp_image) ) : ?>
-                    <figure class="p-26tamashii-diary__item-image">
-                        <img src="<?php echo esc_url($ogp_image); ?>" alt="<?php echo esc_attr($ogp_alt); ?>">
+                    <figure class="relative block aspect-video w-full max-w-[570px] h-auto mx-auto mt-8">
+                        <img src="<?php echo esc_url($ogp_image); ?>" alt="<?php echo esc_attr($ogp_alt); ?>" class="w-full h-full object-cover m-0 rounded-[2cqw]">
                         <?php if ( !empty($ogp_title) ) : ?>
-                            <figcaption><?php echo esc_html($ogp_title); ?></figcaption>
+                            <figcaption class="absolute bottom-[1em] right-[1em] ml-[1em] py-[0.5em] px-[2em] bg-black/60 text-white text-sm"><?php echo esc_html($ogp_title); ?></figcaption>
                         <?php endif; ?>
-                        <a href="<?php echo esc_url($url); ?>" target="_blank"></a>
+                        <a href="<?php echo esc_url($url); ?>" target="_blank" class="block w-full h-full absolute top-0 left-0"></a>
                     </figure>
                 <?php endif; ?>
             </li>
@@ -105,37 +105,37 @@ Template Name: 26tamashii-diary
     }
 ?>
 
-<main id="top" class="l-main p-26tamashii-diary">
+<main id="top" class="l-main">
     <div class="c-article">
-        <section class="p-26tamashii-diary__section">
+        <section class="mb-24 last:mb-0">
             <?php if(has_post_thumbnail()) : ?>
                 <div class="c-article__thumbnail">
                     <?php the_post_thumbnail('full'); ?>
                 </div>
             <?php endif; ?>
-            <h1 class="p-26tamashii-diary__title"><?php the_title(); ?></h1>
-            <div class="p-26tamashii-diary__description">
+            <h1 class="text-2xl font-semibold mb-[2em] md:text-3xl"><?php the_title(); ?></h1>
+            <div class="mb-[2em] [&_p]:my-[1em] [&_p:first-child]:mt-0 [&_p:last-child]:mb-0">
                 <p>円盤に乗る派の公演<a href="<?php echo esc_url(home_url('/tamashii/')); ?>">『「いまのところまだ存在しているわたしのたましいが……」』</a>では、ご来場くださったみなさんから<a href="<?php echo esc_url(home_url('/submit-diary/')); ?>">">観劇した日の日記を募集</a>いたしました。たくさんのご応募、誠にありがとうございました。</p>
                 <p>お寄せいただいた日記を一覧にして紹介いたします。いただいた日記からは、あの日劇場に集まったみなさんの生活や思考の軌跡をたどることができます。これを読むみなさんも、あの時期をどのように過ごしていたか、あるいは今どのように日々を送っているか、ふと立ち止まって思いを馳せてみるきっかけもなるかもしれません。</p>
             </div>
-            <ul class="p-26tamashii-diary__toc c-white-area">
-                <li class="p-26tamashii-diary__toc-item">
+            <ul class="c-white-area">
+                <li class="list-disc list-inside mb-[0.5em] last:mb-0">
                     <a href="#diary1">2026年3月12日（木）</a>
                 </li>
-                <li class="p-26tamashii-diary__toc-item">
+                <li class="list-disc list-inside mb-[0.5em] last:mb-0">
                     <a href="#diary2">2026年3月13日（金）</a>
                 </li>
-                <li class="p-26tamashii-diary__toc-item">
+                <li class="list-disc list-inside mb-[0.5em] last:mb-0">
                     <a href="#diary3">2026年3月14日（土）</a>
                 </li>
-                <li class="p-26tamashii-diary__toc-item">
+                <li class="list-disc list-inside mb-[0.5em] last:mb-0">
                     <a href="#diary4">2026年3月15日（日）</a>
                 </li>
             </ul>
         </section>
-        <section id="diary1" class="p-26tamashii-diary__section">
-            <h2 class="p-26tamashii-diary__section-title">2026年3月12日（木）</h2>
-            <ul class="p-26tamashii-diary__list">
+        <section id="diary1" class="mb-24 last:mb-0">
+            <h2 class="text-2xl font-bold mb-[1em]">2026年3月12日（木）</h2>
+            <ul class="">
                 <?php
                     $diaries = [
                         [
@@ -160,9 +160,9 @@ Template Name: 26tamashii-diary
                 ?>
             </ul>
         </section>
-        <section id="diary2" class="p-26tamashii-diary__section">
-            <h2 class="p-26tamashii-diary__section-title">2026年3月13日（金）</h2>
-            <ul class="p-26tamashii-diary__list">
+        <section id="diary2" class="mb-24 last:mb-0">
+            <h2 class="text-2xl font-bold mb-[1em]">2026年3月13日（金）</h2>
+            <ul class="">
                 <?php
                     $diaries = [
                         [
@@ -179,9 +179,9 @@ Template Name: 26tamashii-diary
                 ?>
             </ul>
         </section>
-        <section id="diary3" class="p-26tamashii-diary__section">
-            <h2 class="p-26tamashii-diary__section-title">2026年3月14日（土）</h2>
-            <ul class="p-26tamashii-diary__list">
+        <section id="diary3" class="mb-24 last:mb-0">
+            <h2 class="text-2xl font-bold mb-[1em]">2026年3月14日（土）</h2>
+            <ul class="">
                 <?php
                     $diaries = [
                         [
@@ -246,9 +246,9 @@ Template Name: 26tamashii-diary
                 ?>
             </ul>
         </section>
-        <section id="diary4" class="p-26tamashii-diary__section">
-            <h2 class="p-26tamashii-diary__section-title">2026年3月15日（日）</h2>
-            <ul class="p-26tamashii-diary__list">
+        <section id="diary4" class="mb-24 last:mb-0">
+            <h2 class="text-2xl font-bold mb-[1em]">2026年3月15日（日）</h2>
+            <ul class="">
                 <?php
                     $diaries = [
                         [
@@ -265,9 +265,9 @@ Template Name: 26tamashii-diary
                 ?>
             </ul>
         </section>
-        <section class="p-26tamashii-diary__section p-26tamashii-card">
-        <div class="p-26tamashii-card__left">
-            <div class="p-26tamashii-card__image">
+        <section class="mb-24 last:mb-0 block md:flex md:gap-8 md:items-start">
+        <div class="w-full mb-4 shrink-0 md:w-1/2 md:mb-0">
+            <div class="[&_img]:m-0">
                 <?php
                     if(has_post_thumbnail( 478 )) {
                         echo get_the_post_thumbnail( 478, 'large' );
@@ -275,15 +275,15 @@ Template Name: 26tamashii-diary
                 ?>
             </div>
         </div>
-        <div class="p-26tamashii-card__right">
-            <h2 class="p-26tamashii-card__title">「いまのところまだ存在しているわたしのたましいが……」</h2>
-            <dl class="p-26tamashii-card__info">
-                <dt class="p-26tamashii-card__info-term c-heading-black-background">会期</dt>
-                <dd class="p-26tamashii-card__info-description">2026年3月12日（木）～15日（日）</dd>
-                <dt class="p-26tamashii-card__info-term c-heading-black-background">会場</dt>
-                <dd class="p-26tamashii-card__info-description">吉祥寺シアター（東京都武蔵野市）</dd>
+        <div>
+            <h2 class="text-xl mb-4!">「いまのところまだ存在しているわたしのたましいが……」</h2>
+            <dl class="text-base">
+                <dt class="mb-2 c-heading--black">会期</dt>
+                <dd class="mb-4">2026年3月12日（木）～15日（日）</dd>
+                <dt class="mb-2 c-heading--black">会場</dt>
+                <dd class="mb-4">吉祥寺シアター（東京都武蔵野市）</dd>
             </dl>
-            <a href="<?php echo esc_url(home_url('/tamashii/')); ?>" class="c-button p-26tamashii-card__button">公演詳細</a>
+            <a href="<?php echo esc_url(home_url('/tamashii/')); ?>" class="c-button text-base block w-fit mx-auto md:inline-block md:w-auto md:mx-0">公演詳細</a>
         </div>
     </section>
     </div>

@@ -1,0 +1,91 @@
+@use "foundation/global" as *;
+.p-top-main-section {
+    padding-bottom: 12.5rem;
+    &__copy-container {
+        padding: 3rem 0;
+        overflow: hidden;
+    }
+    &__copy {
+        font-weight: 600;
+        font-size: $font_size_base;
+    }
+    &__main-visual-container {
+        padding-bottom: 1em;
+    }
+    &__main-visual {
+        figcaption {
+            width: fit-content;
+            margin: 1em 2em 0 auto;
+        }
+    }
+    &__section-heading {
+        padding: 1rem 0;
+        border-top: $black 1px solid;
+        border-bottom: $black 1px solid;
+        font-size: $font_size_base;
+        font-weight: 700;
+        text-align: center;
+    }
+    &__section-content {
+        padding: 1.25rem;
+        font-weight: 700;
+    }
+    &__members-content {
+        font-weight: 400;
+    }
+    &__members-column-wrapper {
+        margin-bottom: 9.5rem;
+        padding-top: 3.75rem;
+        display: flex;
+        justify-content: space-around;
+        @include mq(md) {
+            display: block;
+        }
+    }
+    &__members-column {
+        width: 33.33%;
+        @include mq(md) {
+            width: 100%;
+            margin: 0 auto;
+            &:first-of-type {
+                margin-bottom: 5rem;
+            }
+        }
+    }
+    &__member-container {
+        position: relative;
+        margin-bottom: 5rem;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    &__member-image-container {
+        cursor: pointer;
+        .p-top-main-section__member-image--on {
+            display: none;
+        }
+        &:hover {
+            .p-top-main-section__member-image {
+                &--on {
+                    display: block;
+                }
+                &--off {
+                    display: none;
+                }
+            }
+        }
+    }
+    &__member-heading {
+        margin: 1em 0;
+        font-size: $font_size_base;
+        text-align: center;
+    }
+    &__member-description {
+        position: absolute;
+    }
+    &__members-image-credit {
+        font-family: "gtwalsheim-l";
+        font-size: $font_size_base;
+        text-align: center;
+    }
+}

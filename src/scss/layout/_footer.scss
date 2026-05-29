@@ -1,0 +1,82 @@
+// @use "../foundation/mixin" as mix;
+// @use "../foundation/variable" as var;
+// @use "../foundation/breakpoint" as br;
+@use "foundation/global" as *;
+.l-footer {
+    &__copyright {
+        text-align: center;
+        font-size: $font_size_sm;
+        padding: 0.5rem 0;
+    }
+    &__form-container {
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+    }
+    &__form-inner {
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+        @include mq(sm) {
+            width: 80%;
+        }
+    }
+    &__close-button {
+        @include close_button;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateY(calc(-100% - 0.75rem));
+    }
+    &__form {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        .wpcf7-spinner {
+            display: block;
+        }
+        &.invalid .wpcf7-response-output {
+            display: none;
+        }
+        &.sent p {
+            display: none;
+        }
+        @include mq(sm) {
+            display: block;
+        }
+    }
+    &__input {
+        width: 30rem;
+        height: 2.5rem;
+        font-size: $font_size_2xl;
+        padding-left: 1.25rem;
+        border: 1px solid $gray;
+        border-radius: 0.5em;
+        background-color: $white;
+        @include mq(md) {
+            width: 18.75rem;
+        }
+        @include mq(sm) {
+            width: 100%;
+            font-size: $font_size_xl;
+        }
+    }
+    &__submit {
+        width: 7.5rem;
+        height: 2.5rem;
+        padding: 0 0.75rem;
+        background-color: $black;
+        border-radius: 0.5em;
+        color: $white;
+        font-size: $font_size_base;
+        font-family: "gtwalsheim";
+        text-align: center;
+        @include mq(md) {
+            width: 6.25rem;
+        }
+        @include mq(sm) {
+            width: 25%;
+            margin-top: 1rem;
+        }
+    }
+}
