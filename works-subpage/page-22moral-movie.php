@@ -8,7 +8,6 @@ Template Name: 22moral-movie
 
 
 <section class="global-wrapper">
-    <?php get_template_part('template-parts/nav'); ?>
 
     <div class="contents-wrapper">
         <?php if (have_posts()): ?>
@@ -307,7 +306,7 @@ Template Name: 22moral-movie
             </div>
 
                 <?php else:  ?>
-                    <img class="passImg" src="<?php echo get_template_directory_uri(); ?>/dist/images/moral-movie.webp"/>
+                    <img class="passImg" src="<?php echo get_template_directory_uri(); ?>/dist/images/moral-movie.webp" loading="lazy" decoding="async"/>
                     <?php echo get_the_password_form(); ?>
                 <?php endif;  ?>
             </article>

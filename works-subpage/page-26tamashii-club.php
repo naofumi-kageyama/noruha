@@ -7,7 +7,7 @@ Template Name: 26tamashii-club
 <main class="l-main p-works c-article">
     <h1 class="c-article__title">乗る派クラブ#2「♨︎」1日限定オープン!</h1>
     <div>
-        <img src="<?php echo esc_attr(get_template_directory_uri() . '/dist/images/image_tamashii-club.webp'); ?>" alt="いまのところまだ存在しているわたしのたましいが繰り返しこだまする空間が……" width="1080" height="1080">
+        <img src="<?php echo esc_attr(get_template_directory_uri() . '/dist/images/image_tamashii-club.webp'); ?>" alt="いまのところまだ存在しているわたしのたましいが繰り返しこだまする空間が……" width="1080" height="1080" loading="lazy" decoding="async">
     </div>
     <div class="c-content">
         <div class="mt-16">
@@ -46,7 +46,7 @@ Template Name: 26tamashii-club
                     <p class="text-base">《円盤に乗る派》から派生して立ち上げられた企画チーム。創作チームとは異なる視点で多様な企画を行うことで、演劇公演を単なる作品発表の場から、ここに集う様々な人たちのための《場所》へと展開させることを目指す。</p>
                 </div>
                 <div>
-                    <div class="w-40 ml-auto md:w-48"><img src="<?php echo esc_attr(get_template_directory_uri() . '/dist/images/logo_club.webp'); ?>" alt="乗る派クラブ" width="400" height="196"></div>
+                    <div class="w-40 ml-auto md:w-48"><img src="<?php echo esc_attr(get_template_directory_uri() . '/dist/images/logo_club.webp'); ?>" alt="乗る派クラブ" width="400" height="196" loading="lazy" decoding="async"></div>
                 </div>
             </div>
         </section>
@@ -58,14 +58,14 @@ Template Name: 26tamashii-club
             <p>カゲヤマ気象台さんの戯曲では、しばしば「幽霊」についての話や「ひとが死んでしまう」という出来事があったり（しかし死んだ後も登場していたり）、現在は不在であるはずのものが存在を放つことがあります。<br>カゲヤマさんのテキストからは、ディストピアSFや現代の都市生活の空虚さが漂う世界観を感じますが、実際の上演ではそれを身体を晒して発話し、血肉化して現前させる役者の身体があることで、空虚でダウナーで絶望的だが、しかし生き抜くことはできるという前向きな気持ち、「健康」に至る一種の療法があるように感じます。</p>
             <p>音のフィードバックには、かつて存在していた音をパックに詰めて、本来であればすぐ消えてしまうものを少しでも永く持続させたいという欲望が変形して発生してしまうような奇妙さがあります。<br>今回は金曜日の昼の回の後、つまり上演後の空間そのものを鳴らすことで、この演劇を宿した空間の声を一緒に聴けたらと思っています。</p>
             <figure class="w-4/5 mx-auto">
-                <img src="<?php echo esc_attr(get_template_directory_uri()); ?>/dist/images/image_speaker.webp" width="1200" height="900">
+                <img src="<?php echo esc_attr(get_template_directory_uri()); ?>/dist/images/image_speaker.webp" width="1200" height="900" loading="lazy" decoding="async">
                 <figcaption class="text-sm mt-[1em]">画像は、コンピューターに欠かせないCPUの製造に使われるシリコンウェハに振動スピーカーとコンタクトマイクをつけ、自律的にハウリングを発生させる装置です。♨︎では3体が吉祥寺シアターに登場します。</figcaption>
             </figure>
             <div class="mt-16">
                 <h3>増田義基（Yoshiki Masuda）</h3>
                 <p>音響実践家 / サウンド・プラクティショナー<br>1996年栃木県生。東京藝術大学音楽環境創造科卒業後、演劇や映像作品、インスタレーション等のサウンドデザイン・作曲・PA・システム開発などを行う。<br>「かさねぎリストバンド」主宰。主な作品に「絶滅種の側から」「とてもとても大きな音が鳴らせるピンポン」「国歌斉唱」「ビオトープ探して」など。<br>昨年関わった作品に、植村真「夢の街」、オル太「Eternal Labor」、布施砂丘彦「まがとき」など。<br><a href="https://yoshikimasuda.com" target="_blank" ref="noreferrer noopener">https://yoshikimasuda.com</a></p>
                 <div class="mt-8">
-                    <img src="<?php echo esc_attr(get_template_directory_uri() . '/dist/images/image_masuda.webp'); ?>" alt="増田義基のプロフィール画像" width="1200" height="800">
+                    <img src="<?php echo esc_attr(get_template_directory_uri() . '/dist/images/image_masuda.webp'); ?>" alt="増田義基のプロフィール画像" width="1200" height="800" loading="lazy" decoding="async">
                 </div>
             </div>
         </section>

@@ -17,24 +17,30 @@
         }
     }
     &__title-container {
-        border-top: $black 1px solid;
-        border-bottom: $black 1px solid;
+        border-top: #000000 1px solid;
+        border-bottom: #000000 1px solid;
         padding: calc($font_size_3xl / 2) 0;
         text-align: center;
     }
     &__title {
         font-size: $font_size_3xl;
-        font-weight: 600;
+        font-weight: 700;
         @include mq(sm) {
             font-size: $font_size_xl;
         }
     }
     &__info-wrapper {
         padding: 1em 0;
-        border-bottom: $black 1px solid;
+        border-bottom: #000000 1px solid;
     }
     &__info-container{
-        @include margin_between(1em);
+        margin: 1em 0;
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
     &__additional {
         margin-top: 2em;

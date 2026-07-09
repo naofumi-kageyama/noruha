@@ -230,7 +230,7 @@ Template Name: 26tamashii-rekishi-3
         </header>
 
         <figure>
-          <img class="eyecatch" src="/wp-content/themes/noruha2022/dist/images/image_rekishi-eyecatch-Hatakeyama.webp" alt="畠山峻">
+          <img class="eyecatch" src="/wp-content/themes/noruha2022/dist/images/image_rekishi-eyecatch-Hatakeyama.webp" alt="畠山峻" loading="lazy" decoding="async">
           <figcaption class="eyecatch-credit">撮影：濱田晋</figcaption>
         </figure>
 

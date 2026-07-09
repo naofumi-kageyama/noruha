@@ -22,7 +22,6 @@
         }
     }
     &__close-button {
-        @include close_button;
         position: absolute;
         top: 0;
         right: 0;
@@ -52,7 +51,7 @@
         padding-left: 1.25rem;
         border: 1px solid $gray;
         border-radius: 0.5em;
-        background-color: $white;
+        background-color: #ffffff;
         @include mq(md) {
             width: 18.75rem;
         }
@@ -65,9 +64,9 @@
         width: 7.5rem;
         height: 2.5rem;
         padding: 0 0.75rem;
-        background-color: $black;
+        background-color: #000000;
         border-radius: 0.5em;
-        color: $white;
+        color: #ffffff;
         font-size: $font_size_base;
         font-family: "gtwalsheim";
         text-align: center;

@@ -1,7 +1,7 @@
 <section class="p-works__section">
   <div class="p-works-description">
     <p class="p-works-description__copy">いつでも、また乗れるように</p>
-    <div class="p-works-description__text c-content next-description">
+    <div class="p-works-description__text c-content">
       <p>2025年、発足から7年を迎える演劇プロジェクト「円盤に乗る派」。代表・カゲヤマ気象台とメンバーによって作られてきたこれまでの作品を、観客（ファン）がふたたび眺め、遊ぶイベントを開催します。映像を観る、戯曲を発話する、短歌をつくる、関連する本を読む――毎日違うプログラムを4日間にわたり開催します。あなたの「乗る派」を再創造してみてください。</p>
       <p>「新プロジェクト「乗る派クラブ」について」カゲヤマ気象台（2025.2.28）<br /><a href="<?php echo esc_html(home_url('/club-1/article01/')); ?>">https://noruha.net/club-1/article01/</a></p>
       <p>&nbsp;</p>

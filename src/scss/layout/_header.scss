@@ -9,7 +9,7 @@
         width: 100vw;
         height: $header_height;
         background-color: $gray;
-        border-bottom: $black 1px solid;
+        border-bottom: #000000 1px solid;
         z-index: 100;
         @include mq(md) {
             position: absolute;

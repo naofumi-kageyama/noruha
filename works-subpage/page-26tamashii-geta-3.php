@@ -229,7 +229,7 @@ Template Name: 26tamashii-rekishi-2
         </header>
 
         <figure>
-          <img class="eyecatch" src="/wp-content/themes/noruha2022/dist/images/image_rekishi-eyecatch-Yamamoto.webp" alt="山本ジャスティン伊等">
+          <img class="eyecatch" src="/wp-content/themes/noruha2022/dist/images/image_rekishi-eyecatch-Yamamoto.webp" alt="山本ジャスティン伊等" loading="lazy" decoding="async">
           <figcaption class="eyecatch-credit">撮影：濱田晋</figcaption>
         </figure>
 

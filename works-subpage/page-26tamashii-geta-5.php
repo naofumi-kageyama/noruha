@@ -228,7 +228,7 @@ Template Name: 26tamashii-rekishi-4
                 </header>
 
                 <figure>
-                    <img class="eyecatch" src="/wp-content/themes/noruha2022/dist/images/image_rekishi-eyecatch-HukasawaYokota.webp" alt="深澤しほ、横田僚平">
+                    <img class="eyecatch" src="/wp-content/themes/noruha2022/dist/images/image_rekishi-eyecatch-HukasawaYokota.webp" alt="深澤しほ、横田僚平" loading="lazy" decoding="async">
                     <figcaption class="eyecatch-credit">撮影：濱田晋</figcaption>
                 </figure>
 

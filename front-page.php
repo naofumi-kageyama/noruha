@@ -21,7 +21,7 @@
                                     <?php the_post_thumbnail('full'); ?>
                                 </a>
                             <?php else : ?>
-                                <img src="<?php echo get_template_directory_uri(); ?>/dist/images/image_coming-soon.webp" alt="coming soon" width="1080" height="1080">
+                                <img src="<?php echo get_template_directory_uri(); ?>/dist/images/image_coming-soon.webp" alt="coming soon" width="1080" height="1080" loading="lazy" decoding="async">
                             <?php endif; ?>
                         </div>
                         <div class="p-top-next-section__title-container">
@@ -89,6 +89,7 @@
                                 alt="<?php echo esc_html($image['alt']); ?>"
                                 width="<?php echo esc_attr($image['sizes'][ 'large-width' ]); ?>"
                                 height="<?php echo esc_attr($image['sizes'][ 'large-height' ]); ?>"
+                                loading="lazy" decoding="async"
                             >
                             <?php if(get_field('caption')) : ?>
                             <figcaption><?php echo esc_html(get_field('caption')); ?></figcaption>
@@ -110,9 +111,8 @@
                 <div class="p-top-main-section__section-content p-top-main-section__about-content c-content">
                     <p>円盤に乗る派は複数の作家・表現者が一緒にフラットにいられるための時間、あるべきところにいられるような場所を作るプロジェクトとして、2018年にスタートしました。軸になるのはカゲヤマ気象台による上演作品ですが、様々なプログラムや冊子の発行、シンポジウムなどを並行して行います。<br />ここで試みられるのは匿名／顕名が平等になる場所です。誰でも発信が可能であり、大きな民衆の声が響き渡る世界の中で、小さな声が守られる場所はとても貴重です。さまざまな声が飛び交ううるさい場所を逃れて、そこであればしっかりものを見、考え、落ち着くことのできるという場所を確保します。それは演劇にまつわるあらゆる要素を、生活とダイレクトに接続するということでもあります。このプロジェクトを通じて、種々の、色んな意味で「実際に活用できる」アイディアを提唱します。ここを訪れた観客たちが各々の生活の中で、それらを実践し、少しでもより生きやすくなることができればと思います。<br />いつか現れる円盤に乗るということに、強い目的も思想もありません。それはただ「円盤に乗ってみた」という事実が残るだけです。他の人に何ら影響を与えることもなく、大きな社会にとって何の関係もありません。しかし「円盤に乗った人」と「乗らなかった人」は明らかに何かが違ってしまったはずであり、あくまで個人的なその変化に興味を持つ人々、誰にも気づかれない秘密を抱えたい人間たちこそ、「円盤に乗る派」と呼べるでしょう。
                     </p>
-                    <p><a href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/files/NORUHA_archive_book.pdf" target="blank">アーカイブブック『NORUHA 2018-2020』</a></p>
                     <p>演劇とよりシームレスにつながるためのコミュニティ・共同アトリエ「円盤に乗る場」<br /><a href="https://noruba.net/" target="_blank" rel="noopener">https://noruba.net/</a></p>
-                    <p>Twitter : <a href="https://twitter.com/emban_noruha" target="blank">@emban_noruha</a><br />Instagram : <a href="https://www.instagram.com/emban_noruha/" target="blank">@emban_noruha</a><br />YouTube : <a href="https://www.youtube.com/channel/UCOCe3oRyYEwCSH1l4PaEBJA" target="blank">https://www.youtube.com/channel/UCOCe3oRyYEwCSH1l4PaEBJA</a><br />mail : info@noruha.net</p>
+                    <a href="<?php echo esc_url(home_url('/about/')); ?>" class="c-button p-top-main-section__button">more</a>
                 </div>
             </div>
             <div class="p-top-main-section__section">
@@ -121,7 +121,7 @@
                     <div class="p-top-main-section__members-image">
                         <img width="2000" height="1334"
                             src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/images/image_members.webp"
-                            alt="円盤に乗る派のメンバー写真"  />
+                            alt="円盤に乗る派のメンバー写真" loading="lazy" decoding="async" />
                     </div>
                     <div class="p-top-main-section__members-column-wrapper js-member-open-column-wrapper">
                         <div class="p-top-main-section__members-column js-member-open-column">
@@ -129,28 +129,30 @@
                                 <div class="p-top-main-section__member-image-container js-member-open-button">
                                     <img width="720" height="480"
                                         src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/images/image_kageyama_off.webp"
-                                        class="p-top-main-section__member-image--off" alt="カゲヤマ気象台の写真" />
+                                        class="p-top-main-section__member-image--off" alt="カゲヤマ気象台の写真" loading="lazy" decoding="async" />
                                     <img width="720" height="480"
                                         src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/images/image_kageyama_on.webp"
-                                        class="p-top-main-section__member-image--on" alt="カゲヤマ気象台の写真" />
+                                        class="p-top-main-section__member-image--on" alt="カゲヤマ気象台の写真" loading="lazy" decoding="async" />
                                 </div>
                                 <h3 class="p-top-main-section__member-heading">カゲヤマ気象台</h3>
                                 <div class="p-top-main-section__member-description c-content js-member-open-target">
                                     <p>劇作家・演出家。1988年静岡県浜松市生まれ。演劇プロジェクト《円盤に乗る派》代表。2015年よりセゾン文化財団セゾン・フェローに選出。『シティⅢ』で第17回AAF戯曲賞大賞受賞。代表的な作品に『仮想的な失調』（《東京芸術祭 2024》プログラム）、『「いまのところまだ存在しているわたしのたましいが……」』（2026）など。共同アトリエ／コミュニティである《円盤に乗る場》を2021年より運営中。</p>
+                                    <a href="<?php echo esc_url(home_url('/about/#kageyama')); ?>" class="c-button p-top-main-section__button">more</a>
                                 </div>
                             </div>
                             <div class="p-top-main-section__member-container js-member-open-container">
                                 <div class="p-top-main-section__member-image-container js-member-open-button">
                                     <img width="720" height="480"
                                         src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/images/image_geta_off.webp"
-                                        class="p-top-main-section__member-image--off" alt="日和下駄の写真" />
+                                        class="p-top-main-section__member-image--off" alt="日和下駄の写真" loading="lazy" decoding="async" />
                                     <img width="720" height="480"
                                         src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/images/image_geta_on.webp"
-                                        class="p-top-main-section__member-image--on" alt="日和下駄の写真" />
+                                        class="p-top-main-section__member-image--on" alt="日和下駄の写真" loading="lazy" decoding="async" />
                                 </div>
                                 <h3 class="p-top-main-section__member-heading">日和下駄</h3>
                                 <div class="p-top-main-section__member-description c-content js-member-open-target">
                                     <p>1995年鳥取県生まれ。2019年より円盤に乗る派に参加。以降のすべての作品に出演。特技は料理、木登り、整理整頓、人を褒めること。人が集まって美味しいご飯を食べることが好き。下駄と美味しんぼに詳しい。</p>
+                                    <a href="<?php echo esc_url(home_url('/about/#geta')); ?>" class="c-button p-top-main-section__button">more</a>
                                 </div>
                             </div>
                         </div>
@@ -159,30 +161,32 @@
                                 <div class="p-top-main-section__member-image-container js-member-open-button">
                                     <img width="720" height="480"
                                         src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/images/image_hatakeyama_off.webp"
-                                        class="p-top-main-section__member-image--off" alt="畠山峻の写真" />
+                                        class="p-top-main-section__member-image--off" alt="畠山峻の写真" loading="lazy" decoding="async" />
                                     <img width="720" height="480"
                                         src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/images/image_hatakeyama_on.webp"
-                                        class="p-top-main-section__member-image--on" alt="畠山峻の写真" />
+                                        class="p-top-main-section__member-image--on" alt="畠山峻の写真" loading="lazy" decoding="async" />
                                 </div>
                                 <h3 class="p-top-main-section__member-heading">畠山峻</h3>
                                 <div class="p-top-main-section__member-description c-content js-member-open-target">
                                     <p>1987年北海道札幌市生まれ。舞台芸術学院演劇部本科卒。俳優としてブルーノプロデュース、20歳の国、亜人間都市などの作品に出演。カゲヤマ気象台の作品では『おはようクラブ』『野生のカフカ＠おいしいカレー』『流刑地エウロパ』などに出演。演劇ユニットpeople太では演出をしています。<br /><a href="http://people-futoshi.blogspot.com/" target="blank">http://people-futoshi.blogspot.com/</a></p>
+                                    <a href="<?php echo esc_url(home_url('/about/#hatakeyama')); ?>" class="c-button p-top-main-section__button">more</a>
                                 </div>
                             </div>
                             <div class="p-top-main-section__member-container js-member-open-container">
                                 <div class="p-top-main-section__member-image-container js-member-open-button">
                                     <img width="1000" height="667"
                                         src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/images/image_shibuki_off.webp"
-                                        class="p-top-main-section__member-image--off" alt="渋木すずの写真" />
+                                        class="p-top-main-section__member-image--off" alt="渋木すずの写真" loading="lazy" decoding="async" />
                                     <img width="1000" height="667"
                                         src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/images/image_shibuki_on.webp"
-                                        class="p-top-main-section__member-image--on" alt="渋木すずの写真" />
+                                        class="p-top-main-section__member-image--on" alt="渋木すずの写真" loading="lazy" decoding="async" />
                                 </div>
                                 <h3 class="p-top-main-section__member-heading">渋木すず</h3>
                                 <div class="p-top-main-section__member-description c-content js-member-open-target">
                                     <p>1990年広島県生まれ。会社員。エッセイを書く。「ちょっとしたパーティー(@A_little_party)」という名前で餅つきや同人誌作り等々に勤しんでいる。<br />
                                     note: <a href="https://note.com/suzu_shibuki" target="blank">https://note.com/suzu_shibuki</a></p>
                                     <p>円盤に乗る派への参加に寄せて/渋木すず: <a href="https://note.com/noruha/n/n05f26a4f098d" target="blank">https://note.com/noruha/n/n05f26a4f098d</a></p>
+                                    <a href="<?php echo esc_url(home_url('/about/#shibuki')); ?>" class="c-button p-top-main-section__button">more</a>
                                 </div>
                             </div>
                         </div>

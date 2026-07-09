@@ -1,5 +1,5 @@
 @use "foundation/global" as *;
-.js-form-container {    
+.js-form-container {
     opacity: 0;
 }
 .js-member-open-target {
@@ -25,5 +25,11 @@
     &.is-open {
         visibility: visible;
         opacity: 1;
+    }
+}
+.js-about-target {
+    display: none;
+    &.is-show {
+        display: block;
     }
 }

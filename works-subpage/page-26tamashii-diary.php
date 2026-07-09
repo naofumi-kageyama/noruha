@@ -5,100 +5,18 @@ Template Name: 26tamashii-diary
 ?>
 <?php get_header(); ?>
 <?php
-    function fetchOgpData($url, $cacheTime = 3600) {
-        $cacheDir = __DIR__ . '/cache';
-
-        // キャッシュディレクトリが存在しない場合は作成する
-        if (!is_dir($cacheDir)) {
-            mkdir($cacheDir, 0755, true);
-        }
-
-        // URLから一意のファイル名を生成 (URLの長さを揃えて安全に扱うためにmd5ハッシュ化)
-        $cacheFile = $cacheDir . '/ogp_' . md5($url) . '.json';
-
-        // 1. キャッシュが存在し、かつ有効期限内（デフォルト1時間）であればそれを返す
-        if (file_exists($cacheFile) && (time() - filemtime($cacheFile)) < $cacheTime) {
-            $cachedData = file_get_contents($cacheFile);
-            if ($cachedData !== false) {
-                $parsedData = json_decode($cachedData, true);
-                if (is_array($parsedData)) {
-                    return $parsedData;
-                }
-            }
-        }
-        $ch = curl_init($url);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true); // リダイレクトを追従
-
-        // ▼ココを変更（DiscordのBotのフリをする）
-        curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (compatible; Discordbot/2.0; +https://discordapp.com)');
-
-        $html = curl_exec($ch);
-        curl_close($ch);
-
-        if (!$html) return [];
-
-        libxml_use_internal_errors(true);
-        $dom = new DOMDocument();
-        $dom->loadHTML('<?xml encoding="UTF-8">' . $html);
-        libxml_clear_errors();
-
-        $xpath = new DOMXPath($dom);
-        $ogpMetaTags = $xpath->query('//meta[starts-with(@property, "og:")]');
-
-        $ogpData = [];
-        foreach ($ogpMetaTags as $tag) {
-            if (!($tag instanceof DOMElement)) continue;
-            $property = str_replace('og:', '', $tag->getAttribute('property'));
-            $ogpData[$property] = $tag->getAttribute('content');
-        }
-
-        if (!empty($ogpData)) {
-            file_put_contents($cacheFile, json_encode($ogpData, JSON_UNESCAPED_UNICODE));
-        }
-
-        return $ogpData;
-    }
-
-    /**
-     * 日記リストのHTMLを表示する関数
-     *
-     * @param array $diaries 日記データの配列
-     */
-    function display_diary_list($diaries) {
+    function display_diary_list(array $diaries) {
         if (empty($diaries) || !is_array($diaries)) {
             return;
         }
-        ?>
-        <?php
-            foreach ($diaries as $diary) :
+        foreach ($diaries as $diary) :
             $name = $diary['name'] ?? '無名';
             $url  = $diary['url'] ?? '';
-
             if (empty($url)) continue;
-
-            // x.com を 外部サービス(fxtwitter.com) に置換してフェッチする
-            // ※元のコメントに合わせて fxtwitter.com を使用
-            $fetch_url = str_replace('x.com', 'fxtwitter.com', $url);
-            $ogp = fetchOgpData($fetch_url);
-
-            // ?? 演算子を使って、左側が無い場合は右側を採用する
-            $ogp_title = $ogp['title'] ?? '';
-            $ogp_image = $ogp['image'] ?? '';
-            $ogp_alt   = $ogp['image.alt'] ?? '';
             ?>
-            <li class="mb-[2em] last:mb-0 c-white-area">
+            <li class="mb-[2em] last:mb-0 c-white-area" data-ogp-url="<?php echo esc_attr($url); ?>">
                 <h3 class="mb-[0.5em]"><?php echo htmlspecialchars($name, ENT_QUOTES, 'UTF-8'); ?>さん</h3>
                 <a class="block text-sm" href="<?php echo esc_url($url); ?>" target="_blank"><?php echo htmlspecialchars($url, ENT_QUOTES, 'UTF-8'); ?></a>
-                <?php if ( !empty($ogp_image) ) : ?>
-                    <figure class="relative block aspect-video w-full max-w-[570px] h-auto mx-auto mt-8">
-                        <img src="<?php echo esc_url($ogp_image); ?>" alt="<?php echo esc_attr($ogp_alt); ?>" class="w-full h-full object-cover m-0 rounded-[2cqw]">
-                        <?php if ( !empty($ogp_title) ) : ?>
-                            <figcaption class="absolute bottom-[1em] right-[1em] ml-[1em] py-[0.5em] px-[2em] bg-black/60 text-white text-sm"><?php echo esc_html($ogp_title); ?></figcaption>
-                        <?php endif; ?>
-                        <a href="<?php echo esc_url($url); ?>" target="_blank" class="block w-full h-full absolute top-0 left-0"></a>
-                    </figure>
-                <?php endif; ?>
             </li>
             <?php
         endforeach;
@@ -113,7 +31,7 @@ Template Name: 26tamashii-diary
                     <?php the_post_thumbnail('full'); ?>
                 </div>
             <?php endif; ?>
-            <h1 class="text-2xl font-semibold mb-[2em] md:text-3xl"><?php the_title(); ?></h1>
+            <h1 class="c-article__title"><?php the_title(); ?></h1>
             <div class="mb-[2em] [&_p]:my-[1em] [&_p:first-child]:mt-0 [&_p:last-child]:mb-0">
                 <p>円盤に乗る派の公演<a href="<?php echo esc_url(home_url('/tamashii/')); ?>">『「いまのところまだ存在しているわたしのたましいが……」』</a>では、ご来場くださったみなさんから<a href="<?php echo esc_url(home_url('/submit-diary/')); ?>">">観劇した日の日記を募集</a>いたしました。たくさんのご応募、誠にありがとうございました。</p>
                 <p>お寄せいただいた日記を一覧にして紹介いたします。いただいた日記からは、あの日劇場に集まったみなさんの生活や思考の軌跡をたどることができます。これを読むみなさんも、あの時期をどのように過ごしていたか、あるいは今どのように日々を送っているか、ふと立ち止まって思いを馳せてみるきっかけもなるかもしれません。</p>
@@ -134,7 +52,7 @@ Template Name: 26tamashii-diary
             </ul>
         </section>
         <section id="diary1" class="mb-24 last:mb-0">
-            <h2 class="text-2xl font-bold mb-[1em]">2026年3月12日（木）</h2>
+            <h2 class="c-heading--h2">2026年3月12日（木）</h2>
             <ul class="">
                 <?php
                     $diaries = [
@@ -161,7 +79,7 @@ Template Name: 26tamashii-diary
             </ul>
         </section>
         <section id="diary2" class="mb-24 last:mb-0">
-            <h2 class="text-2xl font-bold mb-[1em]">2026年3月13日（金）</h2>
+            <h2 class="c-heading--h2">2026年3月13日（金）</h2>
             <ul class="">
                 <?php
                     $diaries = [
@@ -180,7 +98,7 @@ Template Name: 26tamashii-diary
             </ul>
         </section>
         <section id="diary3" class="mb-24 last:mb-0">
-            <h2 class="text-2xl font-bold mb-[1em]">2026年3月14日（土）</h2>
+            <h2 class="c-heading--h2">2026年3月14日（土）</h2>
             <ul class="">
                 <?php
                     $diaries = [
@@ -247,7 +165,7 @@ Template Name: 26tamashii-diary
             </ul>
         </section>
         <section id="diary4" class="mb-24 last:mb-0">
-            <h2 class="text-2xl font-bold mb-[1em]">2026年3月15日（日）</h2>
+            <h2 class="c-heading--h2">2026年3月15日（日）</h2>
             <ul class="">
                 <?php
                     $diaries = [

@@ -228,7 +228,7 @@ Template Name: 26tamashii-rekishi-5
                 </header>
 
                 <figure>
-                    <img class="eyecatch" src="/wp-content/themes/noruha2022/dist/images/image_rekishi-eyecatch-Watanabe.webp" alt="渡邊まな実">
+                    <img class="eyecatch" src="/wp-content/themes/noruha2022/dist/images/image_rekishi-eyecatch-Watanabe.webp" alt="渡邊まな実" loading="lazy" decoding="async">
                     <figcaption class="eyecatch-credit">撮影：濱田晋</figcaption>
                 </figure>
 

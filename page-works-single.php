@@ -47,7 +47,7 @@ Template Name: works-single
                                 <?php the_post_thumbnail('full'); ?>
                                 <figcaption><?php echo get_field('caption'); ?></figcaption>
                             <?php else : ?>
-                                <img src="<?php echo get_template_directory_uri(); ?>/dist/images/image_coming-soon.webp" alt="coming soon" width="1080" height="1080">
+                                <img src="<?php echo get_template_directory_uri(); ?>/dist/images/image_coming-soon.webp" alt="coming soon" width="1080" height="1080" loading="lazy" decoding="async">
                             <?php endif; ?>
                         </figure>
                         <div class="p-works-main-visual__title-container">

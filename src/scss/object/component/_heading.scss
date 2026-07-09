@@ -1,21 +1,43 @@
 @use "foundation/global" as *;
 .c-heading {
   &--h1 {
-    @include h1;
+    font-size: $font_size_3xl;
+    font-weight: 700;
+    margin-bottom: 2em;
+    padding: 0.5em 0;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    @include mq(md) {
+        font-size: $font_size_xl;
+    }
   }
   &--h2 {
-    @include h2;
+    font-size: $font_size_xl;
+    font-weight: 700;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    padding-left: 0.6em;
+    border-left: 4px solid #000000;
+    @include mq(md) {
+        font-size: $font_size_lg;
+    }
   }
   &--h3 {
-    @include h3;
+    font-size: $font_size_lg;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    @include mq(md) {
+        font-size: $font_size_base;
+    }
   }
   &--black {
     width: fit-content;
     line-height: 1;
     padding: 0.25rem;
-    background-color: $black;
+    background-color: #000000;
     color: $gray;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 1em;
   }
 }

@@ -3,7 +3,7 @@
     &__copy {
         margin-bottom: 3rem;
         font-size: $font_size_xl;
-        font-weight: 600;
+        font-weight: 500;
         @include mq(sm) {
             font-size: $font_size_lg;
         }

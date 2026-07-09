@@ -7,13 +7,13 @@ Template Name: 24kasou-child
 <main class="l-main">
     <?php if (have_posts()): ?>
     <?php while (have_posts()) : the_post(); ?>
-        <section class="my-[100px] first:mt-0 last:mb-0">
+        <section class="c-article">
             <?php if(has_post_thumbnail()) : ?>
-                <div class="mb-[80px]">
+                <div class="c-article__thumbnail">
                     <?php the_post_thumbnail(); ?>
                 </div>
             <?php endif; ?>
-            <h1 class="text-2xl mb-[50px] md:text-3xl">
+            <h1 class="c-article__title">
                 <?php echo get_the_title(); ?>
             </h1>
             <article class="mb-[80px] c-content">
@@ -31,6 +31,7 @@ Template Name: 24kasou-child
                                 alt="<?php echo esc_html($image['alt']); ?>"
                                 width="<?php echo esc_attr($image['sizes'][ 'large-width' ]); ?>"
                                 height="<?php echo esc_attr($image['sizes'][ 'large-height' ]); ?>"
+                                loading="lazy" decoding="async"
                             >
                         </div>
                         <?php

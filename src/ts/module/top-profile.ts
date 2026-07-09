@@ -2,41 +2,39 @@ const gap = 60;
 const moveSpeed = 500;
 const fadeSpeed = 200;
 
-function siblingIndex(el: HTMLElement): number {
-    return el.parentElement ? Array.from(el.parentElement.children).indexOf(el) : -1;
-}
-
-function animateMarginTop(els: HTMLElement[], value: string, duration: number, callback?: () => void): void {
-    if (els.length === 0) {
-        callback?.();
-        return;
-    }
-    let completed = 0;
-    els.forEach(el => {
-        el.style.transition = `margin-top ${duration}ms`;
-        el.style.marginTop = value;
-        const handler = (e: TransitionEvent) => {
-            if (e.target === el && e.propertyName === 'margin-top') {
+function animate(el: HTMLElement, cssProp: string, styleProp: 'marginTop' | 'opacity', value: string, duration: number): Promise<void> {
+    return new Promise(resolve => {
+        el.style.transition = `${cssProp} ${duration}ms`;
+        el.style[styleProp] = value;
+        el.addEventListener('transitionend', function handler(e: TransitionEvent) {
+            if (e.target === el && e.propertyName === cssProp) {
                 el.removeEventListener('transitionend', handler);
-                if (++completed === els.length) callback?.();
+                resolve();
             }
-        };
-        el.addEventListener('transitionend', handler);
+        });
     });
 }
 
-function animateOpacity(el: HTMLElement, value: string, duration: number, callback?: () => void): void {
-    el.style.transition = `opacity ${duration}ms`;
-    el.style.opacity = value;
-    if (callback) {
-        const handler = (e: TransitionEvent) => {
-            if (e.target === el && e.propertyName === 'opacity') {
-                el.removeEventListener('transitionend', handler);
-                callback();
-            }
-        };
-        el.addEventListener('transitionend', handler);
-    }
+function animateMarginTop(els: HTMLElement[], value: string, duration: number): Promise<void> {
+    return Promise.all(els.map(el => animate(el, 'margin-top', 'marginTop', value, duration))).then(() => undefined);
+}
+
+function animateOpacity(el: HTMLElement, value: string, duration: number): Promise<void> {
+    return animate(el, 'opacity', 'opacity', value, duration);
+}
+
+async function open(description: HTMLElement, moveTargets: HTMLElement[], moveTo: number): Promise<void> {
+    await animateMarginTop(moveTargets, `${moveTo}px`, moveSpeed);
+    description.classList.add('is-open');
+    description.style.visibility = 'visible';
+    await animateOpacity(description, '1', fadeSpeed);
+}
+
+async function close(description: HTMLElement, moveTargets: HTMLElement[], originalGap: string): Promise<void> {
+    description.classList.remove('is-open');
+    await animateOpacity(description, '0', fadeSpeed);
+    description.style.visibility = 'hidden';
+    await animateMarginTop(moveTargets, originalGap, moveSpeed);
 }
 
 document.querySelectorAll<HTMLElement>('.js-member-open-button').forEach(button => {
@@ -46,63 +44,30 @@ document.querySelectorAll<HTMLElement>('.js-member-open-button').forEach(button 
         const description = memberContainer.querySelector<HTMLElement>('.js-member-open-target');
         if (!description) return;
 
-        const height = description.offsetHeight;
-        const moveTo = height + gap;
-
         const nextMember = memberContainer.nextElementSibling as HTMLElement | null;
         const memberColumn = button.closest<HTMLElement>('.js-member-open-column');
         const nextColumn = memberColumn?.nextElementSibling as HTMLElement | null;
-        const memberIndex = siblingIndex(memberContainer);
-        const columnIndex = memberColumn ? siblingIndex(memberColumn) : -1;
+        const columnWrapper = button.closest<HTMLElement>('.js-member-open-column-wrapper');
+        const isMobile = window.matchMedia('(max-width: 768px)').matches;
 
-        let moveTargets: HTMLElement[] = [];
-        let originalGap = '0px';
+        let moveTargets: HTMLElement[];
+        let originalGap: string;
 
-        if (window.matchMedia('(max-width: 768px)').matches) {
-            if (memberIndex === 0) {
-                originalGap = getComputedStyle(memberContainer).marginBottom;
-                if (nextMember) moveTargets = [nextMember];
-            } else if (memberIndex === 1 && columnIndex === 0) {
-                originalGap = memberColumn ? getComputedStyle(memberColumn).marginBottom : '0px';
-                if (nextColumn) moveTargets = [nextColumn];
-            } else if (memberIndex === 1 && columnIndex === 1) {
-                const columnWrapper = button.closest<HTMLElement>('.js-member-open-column-wrapper');
-                originalGap = columnWrapper ? getComputedStyle(columnWrapper).marginBottom : '0px';
-                moveTargets = Array.from(document.querySelectorAll<HTMLElement>('.js-member-open-next-element'));
-            }
+        if (nextMember) {
+            moveTargets = [nextMember];
+            originalGap = getComputedStyle(memberContainer).marginBottom;
+        } else if (isMobile && nextColumn) {
+            moveTargets = [nextColumn];
+            originalGap = memberColumn ? getComputedStyle(memberColumn).marginBottom : '0px';
         } else {
-            if (memberIndex === 0) {
-                originalGap = getComputedStyle(memberContainer).marginBottom;
-                if (nextMember) moveTargets = [nextMember];
-            } else {
-                const columnWrapper = button.closest<HTMLElement>('.js-member-open-column-wrapper');
-                originalGap = columnWrapper ? getComputedStyle(columnWrapper).marginBottom : '0px';
-                moveTargets = Array.from(document.querySelectorAll<HTMLElement>('.js-member-open-next-element'));
-            }
-        }
-
-        function openAnimation() {
-            description!.classList.add('is-open');
-            description!.style.visibility = 'visible';
-            animateOpacity(description!, '1', fadeSpeed);
-        }
-
-        function open() {
-            animateMarginTop(moveTargets, `${moveTo}px`, moveSpeed, openAnimation);
-        }
-
-        function close() {
-            description!.classList.remove('is-open');
-            animateOpacity(description!, '0', fadeSpeed, () => {
-                description!.style.visibility = 'hidden';
-                animateMarginTop(moveTargets, originalGap, moveSpeed);
-            });
+            moveTargets = Array.from(document.querySelectorAll<HTMLElement>('.js-member-open-next-element'));
+            originalGap = columnWrapper ? getComputedStyle(columnWrapper).marginBottom : '0px';
         }
 
         if (description.classList.contains('is-open')) {
-            close();
+            close(description, moveTargets, originalGap);
         } else {
-            open();
+            open(description, moveTargets, description.offsetHeight + gap);
         }
     });
 });

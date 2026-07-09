@@ -1,7 +1,7 @@
 <section class="p-works__section">
   <div class="p-works-description">
     <p class="p-works-description__copy">地下室に指示を待つ殺し屋が二人。傍には料理昇降機（ダム・ウェイター）。 不条理演劇の金字塔に《円盤に乗る派》が挑む！</p>
-    <div class="p-works-description__text c-content next-description">
+    <div class="p-works-description__text c-content">
       <p>2023年に開催された『NEO表現まつり』での発表から続く、「俳優のふるまいをそのまま作品にする」ことをテーマにした《円盤に乗る派》の一連の企画。その最新作は、俳優・日和下駄の演技論をそのまま創作プロセスに転用して制作する『料理昇降機』！　演出家不在の不条理劇が果たしてどのようなものになるか、どうぞご期待ください。</p>
       <p>本作品の参加企画、「NEO表現サテライト」についてはこちらをご覧ください<br /><a href="https://noruba.net/neo-hyogen-satellite/" target="_blank" rel="noopener">https://noruba.net/neo-hyogen-satellite/</a></p>
       <p><del>※本公演は、公演関係者から複数の新型コロナウイルス陽性者が確認されたため中止となりました。ご購入済みのお客様への返金対応につきましては、個別にご案内致します。（2024.3.29）</del><br />※振替日程（5/3～4）での開催が決定いたしました。（2024.4.5）</p>

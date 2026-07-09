@@ -1,12 +1,20 @@
 @use "foundation/global" as *;
 .p-top-main-section {
     padding-bottom: 12.5rem;
+    &__button {
+        margin: 2rem auto 0;
+        &.c-button {
+            display: block;
+            max-width: 250px;
+            text-align: center;
+        }
+    }
     &__copy-container {
         padding: 3rem 0;
         overflow: hidden;
     }
     &__copy {
-        font-weight: 600;
+        font-weight: 500;
         font-size: $font_size_base;
     }
     &__main-visual-container {
@@ -20,8 +28,8 @@
     }
     &__section-heading {
         padding: 1rem 0;
-        border-top: $black 1px solid;
-        border-bottom: $black 1px solid;
+        border-top: #000000 1px solid;
+        border-bottom: #000000 1px solid;
         font-size: $font_size_base;
         font-weight: 700;
         text-align: center;

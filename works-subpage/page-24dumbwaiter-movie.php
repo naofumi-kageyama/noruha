@@ -7,7 +7,6 @@ Template Name: 22mdumbwaiter-movie
 <?php get_header(); ?>
 
 <section class="global-wrapper">
-    <?php get_template_part('template-parts/nav'); ?>
 
     <div class="contents-wrapper">
         <?php if (have_posts()): ?>
@@ -45,7 +44,7 @@ Template Name: 22mdumbwaiter-movie
                         撮影・編集：宮﨑輝
                     </p>
                 <?php else:  ?>
-                    <img class="passImg" src="<?php echo get_template_directory_uri(); ?>/dist/images/image_dumbwaiter.webp"/>
+                    <img class="passImg" src="<?php echo get_template_directory_uri(); ?>/dist/images/image_dumbwaiter.webp" loading="lazy" decoding="async"/>
                     <?php echo get_the_password_form(); ?>
                 <?php endif;  ?>
             </article>

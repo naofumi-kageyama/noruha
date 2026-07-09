@@ -1,10 +1,22 @@
 @use "foundation/global" as *;
 .p-works {
     &__section {
-        @include margin_between(3rem);
+        margin: 3rem 0;
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
     &__info-section {
-        @include margin_between(3rem);
+        margin: 3rem 0;
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
     &__additional-content {
         margin-top: 2em;

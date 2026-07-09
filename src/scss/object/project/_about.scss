@@ -1,0 +1,51 @@
+@use "foundation/global" as *;
+.p-about {
+    &__image {
+        margin-bottom: 4rem;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        margin-top: 8rem;
+        @include mq(md) {
+            justify-content: flex-start;
+            gap: 1rem 2rem;
+            flex-wrap: wrap;
+        }
+    }
+    &__item {
+        @include mq(md) {
+            button {
+                width: 150px;
+            }
+        }
+    }
+    &__section {
+        margin-top: 4rem;
+    }
+    &__section-image {
+        margin-bottom: 2rem;
+        max-width: 560px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__sns-list {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+    &__sns-item {
+        height: 30px;
+        a {
+            display: block;
+            height: 100%;
+            width: auto;
+            img {
+                width: auto;
+                height: 100%;
+            }
+        }
+    }
+}

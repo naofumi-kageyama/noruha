@@ -3,7 +3,7 @@ body {
     font-family: $font_main;
     background-color: $gray;
     color: $font_color;
-    font-size: $font_size_baseain;
+    font-size: $font_size_base;
     font-weight: $font_weight_main;
     line-height: $line_height_main;
     word-wrap: break-word;
@@ -13,7 +13,7 @@ body {
         }
     }
     @include mq(sm) {
-        font-size: $font_size_smp;
+        font-size: $font_size_sm;
     }
 }
 img {

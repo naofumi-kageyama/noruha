@@ -1,10 +1,18 @@
 @use "foundation/global" as *;
 .c-article {
     &__title {
-        @include h1;
+        font-size: $font_size_3xl;
+        font-weight: 700;
+        margin-bottom: 2em;
+        padding: 0.5em 0;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        @include mq(md) {
+            font-size: $font_size_xl;
+        }
     }
     &__thumbnail {
-        margin-bottom: 1em;
+        margin-bottom: 2rem;
         img {
             margin: 0;
             width: 100%;

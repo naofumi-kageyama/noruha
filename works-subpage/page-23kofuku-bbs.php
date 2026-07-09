@@ -261,7 +261,7 @@ Template Name: 23-kofuku-bbs
             </div>
             <div class="head__image-wrap">
                 <figure class="head__image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/dist/images/image_agora.webp" alt="こまばアゴラ劇場の写真">
+                    <img src="<?php echo get_template_directory_uri(); ?>/dist/images/image_agora.webp" alt="こまばアゴラ劇場の写真" loading="lazy" decoding="async">
                     <figcaption>こまばアゴラ劇場の写真（当時）</figcaption>
                 </figure>
             </div>

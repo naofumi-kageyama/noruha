@@ -1,25 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-
-    //webフォントの非同期読み込み
-    (window as any).WebFontConfig = {
-        custom: {
-            families: ['Noto Sans CJK JP Subset'],
-            urls: ['/wp-content/themes/noruha2022/assets/fonts/noto-fonts/noto.css'],
-        },
-        active() {
-            sessionStorage.fonts = 'true';
-        },
-    };
-
-    (() => {
-        const wf = document.createElement('script');
-        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
-        wf.type = 'text/javascript';
-        wf.async = true;
-        const s = document.getElementsByTagName('script')[0];
-        s.parentNode?.insertBefore(wf, s);
-    })();
-
     //アンカーリンククリック時スクロール
     document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', e => {

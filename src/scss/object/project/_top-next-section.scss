@@ -1,6 +1,6 @@
 @use "foundation/global" as *;
 .p-top-next-section {
-    background-color: $white;
+    background-color: #ffffff;
     padding-bottom: 12.5rem;
     @include mq(md) {
         padding-bottom: 3.5rem;
@@ -8,7 +8,7 @@
     &__heading {
         height: 2.5rem;
         line-height: 2.5rem;
-        border-bottom: $black 1px solid;
+        border-bottom: #000000 1px solid;
         font-family: "gtwalsheim";
         font-weight: 300;
         font-size: $font_size_xl;
@@ -22,8 +22,8 @@
         }
     }
     &__title-container {
-        border-top: $black 1px solid;
-        border-bottom: $black 1px solid;
+        border-top: #000000 1px solid;
+        border-bottom: #000000 1px solid;
         padding: 0.75rem 2.5%;
         text-align: center;
     }
@@ -41,7 +41,13 @@
         padding: 1.25rem 2.5%;
     }
     &__description-section {
-        @include margin_between(1em);
+        margin: 1em 0;
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
     &__venue-name {
         margin-bottom: 1em;
@@ -53,8 +59,8 @@
     &__button {
         display: block;
         padding: 0.5rem 0;
-        border-top: $black 1px solid;
-        border-bottom: $black 1px solid;
+        border-top: #000000 1px solid;
+        border-bottom: #000000 1px solid;
         font-size: $font_size_lg;
         text-align: center;
         text-decoration: none;

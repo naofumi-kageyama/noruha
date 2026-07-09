@@ -33,7 +33,7 @@ Template Name: works-archive
 ?>
 <?php get_header(); ?>
 <main class="l-main p-works-archive">
-    <h1 class="p-works-archive__heading"><?php the_title(); ?></h1>
+    <h1 class="c-heading--h1"><?php the_title(); ?></h1>
     <?php if (have_posts()): ?>
         <?php while (have_posts()): the_post(); ?>
             <?php
@@ -73,7 +73,7 @@ Template Name: works-archive
                                             <?php if (has_post_thumbnail()) : ?>
                                                 <?php the_post_thumbnail('full'); ?>
                                             <?php else : ?>
-                                                <img src="<?php echo get_template_directory_uri(); ?>/dist/images/image_coming-soon.webp" alt="coming soon" width="1080" height="1080">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/dist/images/image_coming-soon.webp" alt="coming soon" width="1080" height="1080" loading="lazy" decoding="async">
                                             <?php endif; ?>
                                         </a>
                                     <?php else : ?>
@@ -81,7 +81,7 @@ Template Name: works-archive
                                             <?php if (has_post_thumbnail()) : ?>
                                                 <?php the_post_thumbnail('full'); ?>
                                             <?php else : ?>
-                                                <img src="<?php echo get_template_directory_uri(); ?>/dist/images/image_coming-soon.webp" alt="coming soon" width="1080" height="1080">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/dist/images/image_coming-soon.webp" alt="coming soon" width="1080" height="1080" loading="lazy" decoding="async">
                                             <?php endif; ?>
                                         </div>
                                     <?php endif; ?>

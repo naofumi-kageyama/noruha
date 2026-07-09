@@ -2,9 +2,9 @@
 @use 'sass:map';
 
 $breakpoint: (
-  sm: $breakpoint_sp,
-  md: $breakpoint_tab,
-  lg: $breakpoint_laptop
+  sm: $breakpoint_sm,
+  md: $breakpoint_md,
+  lg: $breakpoint_lg
 );
 
 @mixin mq($bp) {

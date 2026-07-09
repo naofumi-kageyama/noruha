@@ -1,15 +1,18 @@
 @use "foundation/global" as *;
 .p-works-archive {
-    &__heading {
-        @include h1;
-    }
     &__item {
         display: flex;
         gap: 2rem;
-        @include margin_between(6.5rem);
+        margin: 6.5rem 0;
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
         @include mq(md) {
             display: block;
-            @include margin_between(4rem);
+            margin: 0 4rem;
         }
     }
     &__item-left {
@@ -28,7 +31,7 @@
         }
     }
     &__item-heading {
-        font-weight: 600;
+        font-weight: 700;
     }
     &__item-subtitle {
         font-size: $font_size_sm;
@@ -37,7 +40,13 @@
         }
     }
     &__info-container {
-        @include margin_between(1em);
+        margin: 1em 0;
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
 }

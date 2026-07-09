@@ -14,7 +14,7 @@
 <section class="p-works__section">
   <div class="p-works-description">
     <p class="p-works-description__copy">絶望、分断、戦争の時代を前に、われわれの「たましい」と「<ruby>業<rt>ごう</rt></ruby>」をめぐる物語が再生される……虚ろに</p>
-    <div class="p-works-description__text c-content next-description">
+    <div class="p-works-description__text c-content">
       <p>円盤に乗る派の新作『「いまのところまだ存在しているわたしのたましいが……」』では、リヒャルト・ワーグナーの楽劇『トリスタンとイゾルデ』を「たましい」と「業（ごう）」をめぐる近未来の物語として変奏する。世界観の背景にあるのは資本主義と排外主義、そしてその結実としての戦争だ。絶望の時代の空気を通奏低音のように響かせながら、その中でも誰かのたましいと繋がることの可能性を問いかける。</p>
       <p>『トリスタンとイゾルデ』はケルト民話をルーツとしているが、現代の目にはその物語はいびつで、奇妙なものに映る。ワーグナーが芸術の根拠と見ていた「民衆」の存在などはもはや信じることもできない。しかしその奇異な物語は、独特なありかたで我々に印象を残す。それはあたかも現代のメディア環境に散逸した、目的も文脈も不明なデータの残骸（誰かの撮ったどこかの写真、目的もわからなくなった音源や画像、失敗によって生まれてしまった数秒の映像……）が持つ不気味な懐かしさに似ている。ここには正しさも善悪もなく、何かしらの感情を動員しようという意図も、承認を得たいという欲求も欠いている。</p>
       <p>物語は虚ろに語られてこそ現代において再生されるだろう。この時代では何が語られようとも、そこには絶望の影がある。決して埋まらない分断があり、不条理としか言えない戦争がある。他者に声は届かない。虚ろな物語はしかしこの環境の中で確かに再生され、孤高の存在論を示すだろう。</p>
@@ -24,7 +24,7 @@
 <div id="club" class="p-works__info-section c-white-area c-content">
   <h2>乗る派クラブ#2「♨︎」1日限定オープン!</h2>
   <div class="w-3/4 mx-auto">
-    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/images/image_tamashii-club.webp" alt="いまのところまだ存在しているわたしのたましいが繰り返しこだまする空間が……" width="1080" height="1080">
+    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/images/image_tamashii-club.webp" alt="いまのところまだ存在しているわたしのたましいが繰り返しこだまする空間が……" width="1080" height="1080" loading="lazy" decoding="async">
   </div>
   <p>創作チームとは異なる視点で多様な企画を行うことで、演劇公演を単なる作品発表の場から、ここに集う様々な人たちのための《場所》へと展開させることを目指す《乗る派クラブ》。今回はサウンド・プラクティショナー（音響実践家）の増田義基さんをお招きし、『「いまのところまだ存在しているわたしのたましいが……」』の上演されていない劇場空間を"間借り"して一日限りのサウンドシアターを開演します。</p>
   <p>
@@ -43,7 +43,7 @@
     <p class="text-xs">※《乗る派クラブ》ロゴ入りオリジナルグッズをプレゼント（先着予約順・数量限定）</p>
   </p>
   <a href="<?php echo esc_html(home_url('/club/')); ?>" class="c-button block w-fit mt-8 mx-auto">詳細はこちら</a>
-  <div class="w-40 mt-4 ml-auto md:w-48"><img src="<?php echo esc_url(get_template_directory_uri()); ?>//dist/images/logo_club.webp" alt="乗る派クラブ" width="400" height="196"></div>
+  <div class="w-40 mt-4 ml-auto md:w-48"><img src="<?php echo esc_url(get_template_directory_uri()); ?>//dist/images/logo_club.webp" alt="乗る派クラブ" width="400" height="196" loading="lazy" decoding="async"></div>
 </div>
 <section class="p-works__section">
   <div class="p-works__info-section p-works-info-member">
@@ -56,7 +56,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">カゲヤマ気象台*</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>1988年静岡県浜松市生まれ。早稲田大学第一文学部卒。演劇プロジェクト《円盤に乗る派》代表。劇作・演出・音響デザインを手がける。2015年よりセゾン文化財団セゾン・フェローに選出。『シティⅢ』で第17回AAF戯曲賞大賞受賞。近年の上演作品に『仮想的な失調』（《東京芸術祭 2024》プログラム）など。共同アトリエ／コミュニティである《円盤に乗る場》を2021年より運営中。</p>
                 </div>
@@ -70,7 +70,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">畠山峻*（PEOPLE太）</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>1987年生まれ 北海道出身。舞台芸術学院演劇部本科58期卒。<br />円盤に乗る派プロジェクトメンバー。俳優としてお布団、生西康典、亜人間都市などの作品に出演。個人演劇ユニットPEOPLE太（ピープルフトシ）としてもゆるやかに活動中。</p>
                 </div>
@@ -79,7 +79,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">日和下駄*</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>1995年鳥取県生まれ。2019年より円盤に乗る派に参加。以降のすべての作品に出演。特技は料理、木登り、整理整頓、人を褒めること。人が集まって美味しいご飯を食べることが好き。下駄と美味しんぼに詳しい。</p>
                 </div>
@@ -88,7 +88,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">深澤しほ</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>1990年生まれ。映画美学校アクターズコース5期修了後、2016年から2025年まで演劇カンパニーヌトミックのメンバーとして活動。<br />過去の出演団体に、フィラメント、小野彩加　中澤陽　スペースノットブランク、ブルーエゴナク、ワワフラミンゴ、松田正隆、玉田企画など。</p>
                 </div>
@@ -97,7 +97,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">横田僚平</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>1987年大阪府生まれ兵庫県育ちみずがめ座。アキ・カウリスマキ、足袋ソックス、たらこが好き。昨年の参加作品に、秋の隕石2025東京オープニングプログラム『現実の別の姿／別の現実の姿』、ムニ『始まりの終わり』、オフィスマウンテン『トリオの踊り』など。</p>
                 </div>
@@ -106,7 +106,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">渡邊まな実</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>1993生まれ。東京造形大学造形学部デザイン学科卒。フリーランスの俳優として活動している。近年の出演作にチェルフィッチュ『リビングルームのメタモルフォーシス』、ムニ『始まりの終わり』、山本政志監督『DUDE』など。</p>
                 </div>
@@ -120,7 +120,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">灰街令</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>作曲家。Windows95と同年生まれ。2020年に国立音楽大学大学院修士課程を修了。音が音楽として現象する、または音楽が音へと還元される瞬間の時間や記憶の経験に関心を持ち、「断片性／潜在性」を特徴とする作曲活動を行っている。<br />ウェブサイト: <a href="https://reihaimachi.wordpress.com/" target="_blank" rel="nofollow noopener noreferrer">https://reihaimachi.wordpress.com/</a></p>
                 </div>
@@ -134,7 +134,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">ミヤオウ</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>1995年神奈川県生まれ。グラフィックアーティスト。<br />空間について、主に3DCGやドローイング、音楽を制作している。 存在する空間や奥の見えない空間への想像、空間に居る者の心のなかで生起する複数の感情や思考について制作をもって探究している。</p>
                 </div>
@@ -156,7 +156,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">吉田一弥（DEZAR inc.）</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>1988年京都市生まれ。吉本有輝子氏に師事。<br />京都大学在学中よりアトリエ劇研の運営に携わるのと並行して国内外でパフォーミングアーツの照明デザインを手がける。近年は国際芸術祭「あいち2025」、横浜国際舞台芸術ミーティング2023など国際舞台芸術祭・ミーティングでのコーディネートも担当している。<br />主なデザイン作品に、ポスト舞踏派「魔笛」(振付・演出 笠井叡/2025.7神戸文化ホール)、Apichatpong Weerasethakul “A Conversation with the Sun(VR)”<br />(2025.1 One Bangkok, Thailandほか)、贅沢貧乏「おわるのをまっている」(脚本・演出 山田由梨/ 2024.12 シアタートラム)など。2024年度日本照明家協会賞奨励賞、2020年度同新人賞受賞。</p>
                 </div>
@@ -170,7 +170,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">櫻内憧海（お布団）</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>1992年生まれ お布団所属</p>
                   <p>学生時代から都内小劇場を中心に舞台音響家として活動。</p>
@@ -187,7 +187,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">永瀬泰生（隣屋）</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>衣装家。演劇をつくる団体『隣屋』所属。生活の中にある習慣や行為、空間といった【環境と身体の関係】をテーマに舞台衣装を製作。衣装によって身体を拡張したり、環境そのものを衣装にすることで、環境と身体を介在するエネルギーの双方向性に目を向け、衣装を通して“普段もそこにあるのに見えにくい人間の有り様“を探る。近年は仮面作りWSや特定の土地をテーマにした衣装展示なども発表している。</p>
                 </div>
@@ -201,7 +201,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">中西隆雄</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>⼤分県出⾝。2006年より舞台監督として活動。</p>
                   <p>フリースペースから⼩劇場、⼤劇場、野外など場所を問わず、ストレートプレイ、ミュージカル、ダンス、ロボット演劇など、performing arts の枠内にて国内外で活動。</p>
@@ -216,7 +216,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">村尾雄太</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>グラフィック・デザイナー。1990年生まれ。アート、ファッション、音楽などの領域に関わるグラフィックデザインやブックデザイン、ウェブデザインのプロジェクトに携わる一方、2017年よりデザインスタジオwellのメンバーとしても活動を行う。<br /><a href="https://yutamurao.com/" target="_blank" rel="nofollow noopener noreferrer">yutamurao.com</a></p>
                 </div>
@@ -238,7 +238,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">渋木すず*</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>1990年広島県生まれ。会社員。エッセイを書く。「ちょっとしたパーティー(@A_little_party)」という名前で餅つきや同人誌作り等々に勤しんでいる。<br />note: <a href="https://note.com/suzu_shibuki" target="_blank" rel="nofollow noopener noreferrer">https://note.com/suzu_shibuki</a></p>
                 </div>
@@ -252,7 +252,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">山本ジャスティン伊等（Dr. Holiday Laboratory）</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>1995年生まれ。カリフォルニア州サンタモニカ出身。劇作家、演出家、批評家、Dr. Holiday Laboratory 主宰。<br />2021年、サミュエル・ベケット作品における修辞学の研究で、早稲田大学大学院文学研究科表象メディア論コース修了。<br />主な舞台作品に『脱獄計画（仮）』（2023年、こまばアゴラ劇場）、『想像の犠牲』（2024年-2025年、ロームシアター京都ノースホール／吉祥寺シアター）など。<br />近年は他ジャンルの引用やオマージュを用いながら、メタ的な構造を多重に構築し、劇中の役とそれを演じる俳優の関係にある政治性を主題とする演劇作品を発表している。<br />2024年、主宰するDr. Holiday Laboratoryにて「ロームシアター京都×京都芸術センター Ｕ35創造支援プログラム“KIPPU”」採択。2025年、批評家の山﨑健太氏が主宰する批評紙『紙背』のプログラム「紙背フェロー」採択、2024年9月〜12月にかけて舞台時評掲載。<br />その他の仕事として、チェルフィッチュ『宇宙船イン・ビトゥイーン号の窓』（2023年〜）で演出助手、『ユリイカ』へのエッセイ掲載（2025年10月）、リイド社のweb漫画雑誌『トーチweb』でエッセイ連載「ひまの演出論」（2023年〜）など。</p>
                 </div>
@@ -277,7 +277,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">中條玲</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>長崎県出身。舞台芸術においてパフォーマーとアートマネージャーの両軸で活動し、上演に対する異なる距離感からの言語化や作品理解を通して、クリエーションへのフィードバックを実践する。傍ら、日記／テキストの執筆、植物の預かり、味覚や嗅覚を出発点に「接触」の捉え直しを実践する調理／食事を用いたプロジェクト（culinary art）を展開。2022年から2024年頃まで、こまばアゴラ劇場制作部での勤務、PARAスタッフとして演劇部門の企画・運営を担当。バストリオ、con-cen／consonant centreのメンバー。<br />cv : <a href="https://chujorei.com" target="_blank" rel="nofollow noopener noreferrer">https://chujorei.com</a></p>
                 </div>
@@ -299,12 +299,14 @@
         <p>
           <img
             loading="lazy"
+            decoding="async"
             src="<?php echo esc_html(get_template_directory_uri()); ?>/dist/images/logo_geibun.webp"
             alt="芸術文化振興基金助成事業"
             width="81"
             height="60"
           />　<img
             loading="lazy"
+            decoding="async"
             src="<?php echo esc_html(get_template_directory_uri()); ?>/dist/images/logo_saison.webp"
           />
         </p>
@@ -313,6 +315,7 @@
         <p>
           <img
             loading="lazy"
+            decoding="async"
             src="<?php echo esc_html(get_template_directory_uri()); ?>/dist/images/logo_geibun.webp"
             alt="芸術文化振興基金助成事業"
             width="81"
@@ -322,6 +325,7 @@
         <p>
           <img
             loading="lazy"
+            decoding="async"
             src="<?php echo esc_html(get_template_directory_uri()); ?>/dist/images/logo_saison.webp"
             alt=""
           />
@@ -366,6 +370,7 @@
       <p>
         <img
           loading="lazy"
+          decoding="async"
           src="<?php echo esc_html(get_template_directory_uri()); ?>/dist/images/logo_kichijoji.webp"
           alt="KICHIJOJI THEATRE 吉祥寺シアター"
           width="200" height="52" />

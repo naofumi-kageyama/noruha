@@ -1,6 +1,5 @@
-@use "breakpoint" as *;
-@use "variable" as *;
-@mixin close_button {
+@use "foundation/global" as *;
+.c-close-button {
     width: 1.5rem;
     height: 1.5rem;
     cursor: pointer;

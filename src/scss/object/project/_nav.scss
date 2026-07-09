@@ -3,9 +3,9 @@
     display: flex;
     justify-content: space-between;
     height: 2.5rem;
-    border-bottom: $black 1px solid;
+    border-bottom: #000000 1px solid;
     @include mq(md) {
-        border-top: $black 1px solid;
+        border-top: #000000 1px solid;
     }
     &__item {
         flex: 1;

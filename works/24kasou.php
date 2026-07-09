@@ -1,70 +1,69 @@
 <section class="p-works__section">
   <div class="p-works-description">
     <p class="p-works-description__copy">演劇のアップデートを追求し続ける《円盤に乗る派》の代表作、待望の再演！　能『船弁慶』、狂言『名取川』のふたつの古典をベースに、現代のアイデンティティを問い直す。</p>
-    <div class="p-works-description__text c-content next-description">
+    <div class="p-works-description__text c-content">
       <p><strong>幽霊、自我の喪失、顔の見えない誰かの欲望……すべてが仮想的な時代における、物語の“失調”</strong></p>
       <p>『仮想的な失調』は2022年に初演され、大好評を博した《円盤に乗る派》の代表作。<br />物語の下敷きとなっているのは二つの古典作品だ。ひとつは、自分の名前すら忘れてしまう坊主を主人公とした狂言「名取川」。もうひとつは、源義経の西国落ちを題材にとり、義経の愛妾・静御前とかつての敵・平知盛の怨霊を一人二役で演じる能「船弁慶」。常に複数のSNSを使い分け、様々なアイデンティティを駆使する現代の生活に向けて、これらの物語の新たな語り直しを試みる。</p>
     </div>
   </div>
-  <div class="p-works__additional-content c-white-area">
-    <h2 class="text-xl font-semibold mb-[0.5em] md:text-2xl">関連記事</h2>
+  <div class="p-works__additional-content c-white-area c-content">
+    <h2>関連記事</h2>
     <ul>
-
-      <li class="my-[1em] first:mt-0 last:mb-0">
+      <li class="my-[1em] first:mt-0 last:mb-0 list-none!">
         <h4 class="font-semibold">インタビュー</h4>
         <ul class="">
 
-          <li class="my-[0.5em] first:mt-0 last:mb-0 list-disc list-inside">
+          <li class="my-[0.5em] first:mt-0 last:mb-0">
             <a href="<?php echo esc_url(home_url('/kasou2024/interview01/')); ?>">『仮想的な失調』インタビュー｜畠山峻</a>
           </li>
 
-          <li class="my-[0.5em] first:mt-0 last:mb-0 list-disc list-inside">
+          <li class="my-[0.5em] first:mt-0 last:mb-0">
             <a href="<?php echo esc_url(home_url('/kasou2024/interview02/')); ?>">『仮想的な失調』インタビュー｜カゲヤマ気象台</a>
           </li>
 
-          <li class="my-[0.5em] first:mt-0 last:mb-0 list-disc list-inside">
+          <li class="my-[0.5em] first:mt-0 last:mb-0">
             <a href="<?php echo esc_url(home_url('/kasou2024/interview03/')); ?>">『仮想的な失調』インタビュー｜蜂巣もも</a>
           </li>
 
-          <li class="my-[0.5em] first:mt-0 last:mb-0 list-disc list-inside">
+          <li class="my-[0.5em] first:mt-0 last:mb-0">
             <a href="<?php echo esc_url(home_url('/kasou2024/interview04/')); ?>">『仮想的な失調』インタビュー｜日和下駄</a>
           </li>
 
-          <li class="my-[0.5em] first:mt-0 last:mb-0 list-disc list-inside">
+          <li class="my-[0.5em] first:mt-0 last:mb-0">
             <a href="<?php echo esc_url(home_url('/kasou2024/interview05/')); ?>">『仮想的な失調』インタビュー｜辻村優子</a>
           </li>
 
-          <li class="my-[0.5em] first:mt-0 last:mb-0 list-disc list-inside">
+          <li class="my-[0.5em] first:mt-0 last:mb-0">
             <a href="<?php echo esc_url(home_url('/kasou2024/interview06/')); ?>">『仮想的な失調』インタビュー｜橋本清</a>
           </li>
 
-          <li class="my-[0.5em] first:mt-0 last:mb-0 list-disc list-inside">
+          <li class="my-[0.5em] first:mt-0 last:mb-0">
             <a href="<?php echo esc_url(home_url('/kasou2024/interview07/')); ?>">『仮想的な失調』インタビュー｜鶴田理紗</a>
           </li>
 
         </ul>
       </li>
 
-      <li class="my-[1em] first:mt-0 last:mb-0">
+      <li class="my-[1em] first:mt-0 last:mb-0 list-none!">
         <h4 class="font-semibold">批評</h4>
         <ul class="">
 
-          <li class="my-[0.5em] first:mt-0 last:mb-0 list-disc list-inside">
+          <li class="my-[0.5em] first:mt-0 last:mb-0">
             <a href="<?php echo esc_url(home_url('/kasou2024/review01/')); ?>">ズレが生み出すチル―円盤に乗る派『仮想的な失調』｜前原拓也</a>
           </li>
 
         </ul>
       </li>
 
-      <li class="my-[1em] first:mt-0 last:mb-0">
+      <li class="my-[1em] first:mt-0 last:mb-0 list-none!">
         <h4 class="font-semibold">エッセイ</h4>
         <ul class="">
 
-          <li class="my-[0.5em] first:mt-0 last:mb-0 list-disc list-inside">
+          <li class="my-[0.5em] first:mt-0 last:mb-0">
             <a href="<?php echo esc_url(home_url('/kasou2024/essay01-2/')); ?>">「仮想的な失調」について｜松田正隆（劇作家・演出家）</a>
           </li>
 
-          <li class="my-[0.5em] first:mt-0 last:mb-0 list-disc list-inside">
+          <li class="my-[0.5em] first:mt-0 last:mb-0">
             <a href="<?php echo esc_url(home_url('/kasou2024/essay02/')); ?>">「どちらでもない」私（あなた）の身体｜草野なつか（映画作家）</a>
           </li>
 
@@ -85,7 +84,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">カゲヤマ気象台*</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>1988年静岡県浜松市生まれ。早稲田大学第一文学部卒。 2008年に演劇プロジェクト「sons wo:」を設立。劇作・演出・音響デザインを手がける。</p>
                   <p>2018年より「円盤に乗る派」に改名。2013年、『野良猫の首輪』でフェスティバル/トーキョー13公募プログラムに参加。2015年度よりセゾン文化財団セゾン・フェロー。2017年に『シティIII』で第17回AAF戯曲賞大賞受賞。2021年より共同アトリエ「円盤に乗る場」を運営。</p>
@@ -95,7 +94,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">蜂巣もも（グループ・野原）</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>戯曲が要求する極限的な身体を引き出すことで、圧縮された「生の記憶」と観客が出会う場所を演出。</p>
                   <p>1989年生まれ。京都出身。2013年からより多くの劇作家、俳優に出会うため上京し、青年団演出部に所属。 また、庭師ジル・クレマンが『動いている庭』で提唱する新しい環境観に感銘を受け、「グループ・野原」を立ち上げる。</p>
@@ -111,7 +110,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">カゲヤマ気象台*</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>1988年静岡県浜松市生まれ。早稲田大学第一文学部卒。 2008年に演劇プロジェクト「sons wo:」を設立。劇作・演出・音響デザインを手がける。</p>
                   <p>2018年より「円盤に乗る派」に改名。2013年、『野良猫の首輪』でフェスティバル/トーキョー13公募プログラムに参加。2015年度よりセゾン文化財団セゾン・フェロー。2017年に『シティIII』で第17回AAF戯曲賞大賞受賞。2021年より共同アトリエ「円盤に乗る場」を運営。</p>
@@ -126,7 +125,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">辻村優子</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>1985年生まれ 静岡県出身<br />新国立劇場演劇研修所三期終了。</p>
                   <p>柔軟性の高い身体性と声で大劇場から小劇場まで幅広く出演。俳優としての活動にとどまらず、ワークショップファシリテーターとしても活動中。七夕の短冊や手紙など身近な題材を使ったプログラムは、幅広い層に人気がある。最近では演技ともみほぐしの共通点に着目した『パフォーマンスもまれ処』や、美術モデルの経験から立ち上げたワークショップ『ポーズを着る』を展開。</p>
@@ -136,7 +135,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">鶴田理紗（白昼夢）</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>俳優。劇団「白昼夢」所属。白昼夢を中心とした演劇作品に出演しながら、近年は映像作品への出演や美術家との共同制作など幅広く活動。自身が主宰するユニット「私は少し静かにしてるね」では、俳優の経験から得た演劇的な思考を通して、映像やインスタレーションの作品を制作している。2023年より人形劇団「デフ・パペットシアター・ひとみ」のサポートアーティストとしても活動中。</p>
                 </div>
@@ -145,7 +144,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">橋本清（ブルーノプロデュース／y/n）</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>1988年生まれ。演出家／俳優。日本大学芸術学部演劇学科演出コース卒業。</p>
                   <p>2007年、ブルーノプロデュースを立ち上げ。2012〜15年、坂あがりスカラシップ対象者。近年の演出作品に青年団リンク キュイ『景観の邪魔』（2019）、青年団若手自主企画 櫻内企画『マッチ売りの少女』（2020）。これまでに生西康典、小田尚稔、田中功起、得地弘基、ミヤギフトシ、和田華子等の作品に出演。2019年からは批評家・ドラマトゥルクの山﨑健太とともにy/nとして舞台作品を発表。</p>
@@ -155,7 +154,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">畠山峻*（PEOPLE太）</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>1987年生まれ 北海道出身。舞台芸術学院演劇部本科58期卒。</p>
                   <p>円盤に乗る派プロジェクトメンバー。俳優としてブルーノプロデュース、20歳の国、亜人間都市などの作品に出演。個人演劇ユニットPEOPLE太（ピープルフトシ）としてもゆるやかに活動中。</p>
@@ -165,7 +164,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">日和下駄*</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>1995年鳥取県生まれ。2019年より円盤に乗る派に参加。以降のすべての作品に出演。特技は料理、木登り、整理整頓、人を褒めること。人が集まって美味しいご飯を食べることが好き。下駄と美味しんぼに詳しい。</p>
                 </div>
@@ -179,7 +178,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">渡邊織音（グループ・野原）</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>1986年東京生まれ。建築構造設計・舞台美術家。</p>
                   <p>早稲田大学創造理工学部建築学科卒。</p>
@@ -194,7 +193,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">堀尾理沙</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>1999年千葉県生まれ。早稲田大学大学院創造理工研究科建築学専攻に在籍。小林恵吾研究室にて建築デザインを学んでいる。</p>
                   <p>人が持つ感覚や感情を追い、空間設計を通じて身体の内面にアプローチする方法を探っている。</p>
@@ -209,7 +208,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">鈴木健介</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>鈴木健介（すずきけんすけ）</p>
                   <p>2000年劇団青年団美術部に入団。2001年よりこまばアゴラ劇場勤務。</p>
@@ -227,7 +226,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">吉田一弥</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>1988 年京都市生まれ。吉本有輝子氏に師事。</p>
                   <p>京都大学在学中より小劇場を中心としてパフォーミングアーツの照明デザインを手がける。</p>
@@ -252,7 +251,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">櫻内憧海（お布団）</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>1992年生まれ お布団所属</p>
                   <p>学生時代から都内小劇場を中心に舞台音響家として活動。</p>
@@ -269,7 +268,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">永瀬泰生（隣屋）</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>大阪出身。衣裳家・俳優として活動。演劇をつくる団体「隣屋」所属。</p>
                   <p>国内外カンパニーの衣裳デザイン・製作・アシスタントなど。</p>
@@ -286,7 +285,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">中西隆雄</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>⼤分県出⾝。2006年より舞台監督として活動。</p>
                   <p>フリースペースから⼩劇場、⼤劇場、野外など場所を問わず、ストレートプレイ、ミュージカル、ダンス、ロボット演劇など、performing arts の枠内にて国内外で活動.</p>
@@ -301,7 +300,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">三毛あんり「面前の天使2」</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>古典を手掛かりにしながら、内面化した同時代の無意識を想像上の「自画像」として描こうと試みる。最終的には愛に収束していく。デロリ石/センシュアルストーン。切株派。独楽が気になる。魚座。</p>
                 </div>
@@ -315,7 +314,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">村尾雄太</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>グラフィック・デザイナー。1990年生まれ。アート、ファッション、音楽などの領域に関わるグラフィックデザインやブックデザイン、ウェブデザインのプロジェクトに携わる一方、2017年よりデザインスタジオwellのメンバーとしても活動を行う。<br /><a href="https://yutamurao.com/" target="_blank" rel="noopener">yutamurao.com</a></p>
                 </div>
@@ -329,7 +328,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">濱田晋</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>濱田 晋 写真家</p>
                   <p>ポートレイト、取材、ドキュメンタリーの分野で撮影を行う。また2022年より思考実践「HAMADA ARCHITECTS:トレードマーク:」を始動。フリーペーパーの発行、プロトタイプ製作、お茶飲み、物々交換など、様々な手段を横断し既存の社会システムへの対抗を始めている。<br /><a href="https://www.shinhamada.com/" target="_blank" rel="noopener">shinhamada.com</a><br />@shinhamadastudio</p>
@@ -352,7 +351,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">渋木すず*</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>1990年広島県生まれ。会社員。エッセイを書く。「ちょっとしたパーティー(@A_little_party)」という名前で餅つきや同人誌作り等々に勤しんでいる。<br />note: <a href="https://note.com/suzu_shibuki/" target="_blank" rel="noopener">https://note.com/suzu_shibuki</a></p>
                 </div>
@@ -366,7 +365,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">呉宮百合香</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>パリ第8大学にて芸術学修士取得後、早稲田大学文学研究科博士後期課程単位取得満期退学。ダンスを中心に、国内外の媒体に公演評や論考を執筆するほか、コーディネーター／ドラマトゥルクとして多数の公演や展示、フェスティバルに携わる。</p>
                   <p>近年の参加企画に、新人Hソケリッサ！「路上の身体祭典H！」、川口隆夫『バラ色ダンス 純粋性愛批判』、LAND FES「TOKYO DANCE AR」、ヨコハマダンスコレクション「ダンコレマガジン」など。</p>
@@ -379,7 +378,7 @@
             <div class="p-works-info-member__container js-open-profile-container js-open-profile-child">
               <p class="p-works-info-member__name js-open-profile-button">日和下駄*</p>
               <div class="p-works-info-member__profile-container c-white-area js-open-profile-target">
-                <button class="c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
+                <button class="c-close-button c-white-area__close-button js-open-profile-button"><span class="u-visually-hidden">close</span></button>
                 <div class="p-works-info-member__profile c-content">
                   <p>1995年鳥取県生まれ。2019年より円盤に乗る派に参加。以降のすべての作品に出演。特技は料理、木登り、整理整頓、人を褒めること。人が集まって美味しいご飯を食べることが好き。下駄と美味しんぼに詳しい。</p>
                 </div>
@@ -428,24 +427,28 @@
         <p>
           <img
             loading="lazy"
+            decoding="async"
             src="<?php echo esc_html(get_template_directory_uri()); ?>/dist/images/logo_tokyo-festival.webp"
             alt=""
             width="50"
             height="51"
           />　<img
             loading="lazy"
+            decoding="async"
             src="<?php echo esc_html(get_template_directory_uri()); ?>/dist/images/logo_tokyo-metropolitan-theatre.webp"
             alt=""
             width="130"
             height="30"
           />　<img
             loading="lazy"
+            decoding="async"
             src="<?php echo esc_html(get_template_directory_uri()); ?>/dist/images/logo_act.webp"
             alt=""
             width="58"
             height="30"
           />　<img
             loading="lazy"
+            decoding="async"
             src="<?php echo esc_html(get_template_directory_uri()); ?>/dist/images/logo_tokyo.webp"
             alt=""
             width="118"
@@ -455,18 +458,21 @@
         <p>
           <img
             loading="lazy"
+            decoding="async"
             src="<?php echo esc_html(get_template_directory_uri()); ?>/dist/images/logo_nihonhaku.webp"
             alt=""
             width="88"
             height="30"
           />　<img
             loading="lazy"
+            decoding="async"
             src="<?php echo esc_html(get_template_directory_uri()); ?>/dist/images/logo_asahi.webp"
             alt=""
             width="132"
             height="30"
           />　<img
             loading="lazy"
+            decoding="async"
             src="<?php echo esc_html(get_template_directory_uri()); ?>/dist/images/logo_saison.webp"
             alt=""
             width="300"
@@ -478,24 +484,28 @@
         <p>
           <img
             loading="lazy"
+            decoding="async"
             src="<?php echo esc_html(get_template_directory_uri()); ?>/dist/images/logo_tokyo-festival.webp"
             alt=""
             width="39"
             height="40"
           />　<img
             loading="lazy"
+            decoding="async"
             src="<?php echo esc_html(get_template_directory_uri()); ?>/dist/images/logo_tokyo-metropolitan-theatre.webp"
             alt=""
             width="87"
             height="20"
           />　<img
             loading="lazy"
+            decoding="async"
             src="<?php echo esc_html(get_template_directory_uri()); ?>/dist/images/logo_act.webp"
             alt=""
             width="39"
             height="20"
           />　<img
             loading="lazy"
+            decoding="async"
             src="<?php echo esc_html(get_template_directory_uri()); ?>/dist/images/logo_tokyo.webp"
             alt=""
             width="79"
@@ -505,18 +515,21 @@
         <p>
           <img
             loading="lazy"
+            decoding="async"
             src="<?php echo esc_html(get_template_directory_uri()); ?>/dist/images/logo_nihonhaku.webp"
             alt=""
             width="59"
             height="20"
           />　<img
             loading="lazy"
+            decoding="async"
             src="<?php echo esc_html(get_template_directory_uri()); ?>/dist/images/logo_asahi.webp"
             alt=""
             width="88"
             height="20"
           />　<img
             loading="lazy"
+            decoding="async"
             src="<?php echo esc_html(get_template_directory_uri()); ?>/dist/images/logo_saison.webp"
             alt=""
             width="265"
@@ -548,15 +561,56 @@
   <div id="ticket" class="p-works__info-section p-works-info-ticket">
     <h2 class="p-works__info-section-heading c-heading--black">チケット</h2>
     <div class="p-works-info-ticket__content c-content js-set-attr-size">
-      <p><strong>東京芸術劇場ボックスオフィス （休館日を除く10:00～19:00）</strong><br />電話：0570-010-296　窓口：東京芸術劇場1階<br />WEB：<a href="https://www.geigeki.jp/t/" target="_blank" rel="noopener">https://www.geigeki.jp/t/</a> （24時間受付 ※メンテナンス時間を除く）</p>
-      <p><strong>チケットぴあ（Pコード：527-964）</strong><br /><a href="https://w.pia.jp/t/tokyo-festival-noruha/" target="_blank" rel="noopener">https://w.pia.jp/t/tokyo-festival-noruha/</a></p>
-      <p><strong>イープラス<br /></strong><a href="https://eplus.jp/noruha_tokyofes2024/" target="_blank" rel="noopener">https://eplus.jp/noruha_tokyofes2024/</a></p>
-      <p><span style="font-size: 10pt;">※未就学児入場不可。</span><br /><span style="font-size: 10pt;">※18歳以下、29歳以下チケットは枚数限定・前売のみ・入場時に要証明書提示。</span><br /><span style="font-size: 10pt;">※車いすでのご鑑賞、障害者割引、ヒアリングループ（磁気ループ）、ポータブル字幕機、音声ガイドをご希望のお客様は、ご購入前に東京芸術劇場ボックスオフィスにお問い合わせください。（詳細：東京芸術劇場 web サイト 鑑賞のサポート <a href="https://geigeki.jp/access/support.html" target="_blank" rel="noopener">https://geigeki.jp/access/support.html</a>）</span><br /><span style="font-size: 10pt;">※やむを得ぬ事情により、記載内容・公演情報などに変更が生じる場合がございます。</span><br /><span style="font-size: 10pt;">※公演中止の場合を除き、ご予約・ご購入いただきましたチケットのキャンセル・変更は承れません。</span><br /><span style="font-size: 10pt;">※ご来場前に必ず「東京芸術祭 2024」特設サイト内の注意事項と本公演の最新情報をご確認ください。<a href="https://tokyo-festival.jp/2024/" target="_blank" rel="noopener">https://tokyo-festival.jp/2024/</a></span></p>
-      <p><strong><span style="font-size: 10pt;">ご来場の皆様へ</span></strong><br /><span style="font-size: 10pt;">本作には下記の表現・場面が含まれます。ご観劇の際にはあらかじめご了承ください。</span><br /><span style="font-size: 10pt;">・身体的な暴力行為を暗示する表現</span><br /><span style="font-size: 10pt;">・自死を想起させる表現</span><br /><span style="font-size: 10pt;">・火薬式クラッカーの使用</span><br /><span style="font-size: 10pt;">・煙を伴う喫煙の場面</span></p>
-      <p><span style="font-size: 10pt;">鑑賞サポート</span><br /><span style="font-size: 10pt;">■ 日本語音声ガイド（9月21日（土）14:00公演／要予約）</span><br /><span style="font-size: 10pt;">■ 日本語ポータブル字幕機（9月22日（日・祝）14:00公演／要予約）</span><br /><span style="font-size: 10pt;">■ 英語オープン字幕（全公演で舞台上に英語字幕が表示されます）</span><br /><span style="font-size: 10pt;">■ ヒアリングループ（磁気ループ／全日程）</span></p>
-      <p><img loading="lazy" src="<?php echo esc_html(get_template_directory_uri()); ?>/dist/images/logo_hearing-loop.webp" alt="" width="100" height="81" /></p>
-      <p><span style="font-size: 10pt;">託児サービス</span><br /><span style="font-size: 10pt;">■ 劇場内の一時託児をご利用いただけます。</span><br /><span style="font-size: 10pt;">（生後3ヶ月～小学校入学前／有料・定員制／土日祝を除く希望日1週間前迄に要申込）</span><br /><span style="font-size: 10pt;">ご予約受付・お問合せ：株式会社ミラクス　ミラクスシッター</span><br /><span style="font-size: 10pt;">TEL：0120-415-306（平日9:00～17:00）</span></p>
-      <p><span style="font-size: 10pt;">■ 託児型ワークショップ ：東京芸術祭2024『こどもあそびシアター』</span><br /><span style="font-size: 10pt;">（4歳〜小学生／有料・定員制／こどものアート体験支援型託児）</span><br /><span style="font-size: 10pt;">9月20日（金）〜28日（土）※各公演時間に合わせて実施予定<br /><a href="https://tokyo-festival.jp/2024/program/kodomo_asobi_theater/" target="_blank" rel="noopener">https://tokyo-festival.jp/2024/program/kodomo_asobi_theater/</a><br /></span></p>
+      <p>
+        <strong>東京芸術劇場ボックスオフィス （休館日を除く10:00～19:00）</strong><br />
+        電話：0570-010-296　窓口：東京芸術劇場1階<br />
+        WEB：<a href="https://www.geigeki.jp/t/" target="_blank" rel="noopener">https://www.geigeki.jp/t/</a> （24時間受付 ※メンテナンス時間を除く）
+      </p>
+      <p>
+        <strong>チケットぴあ（Pコード：527-964）</strong><br />
+        <a href="https://w.pia.jp/t/tokyo-festival-noruha/" target="_blank" rel="noopener">https://w.pia.jp/t/tokyo-festival-noruha/</a>
+      </p>
+      <p>
+        <strong>イープラス<br /></strong>
+        <a href="https://eplus.jp/noruha_tokyofes2024/" target="_blank" rel="noopener">https://eplus.jp/noruha_tokyofes2024/</a>
+      </p>
+      <p class="text-sm">
+        ※未就学児入場不可。<br />
+        ※18歳以下、29歳以下チケットは枚数限定・前売のみ・入場時に要証明書提示。<br />
+        ※車いすでのご鑑賞、障害者割引、ヒアリングループ（磁気ループ）、ポータブル字幕機、音声ガイドをご希望のお客様は、ご購入前に東京芸術劇場ボックスオフィスにお問い合わせください。（詳細：東京芸術劇場 web サイト 鑑賞のサポート <a href="https://geigeki.jp/access/support.html" target="_blank" rel="noopener">https://geigeki.jp/access/support.html</a>）<br />
+        ※やむを得ぬ事情により、記載内容・公演情報などに変更が生じる場合がございます。<br />
+        ※公演中止の場合を除き、ご予約・ご購入いただきましたチケットのキャンセル・変更は承れません。<br />
+        ※ご来場前に必ず「東京芸術祭 2024」特設サイト内の注意事項と本公演の最新情報をご確認ください。<a href="https://tokyo-festival.jp/2024/" target="_blank" rel="noopener">https://tokyo-festival.jp/2024/</a>
+      </p>
+      <p class="text-sm">
+        <strong>ご来場の皆様へ</strong><br />
+        本作には下記の表現・場面が含まれます。ご観劇の際にはあらかじめご了承ください。<br />
+        ・身体的な暴力行為を暗示する表現<br />
+        ・自死を想起させる表現<br />
+        ・火薬式クラッカーの使用<br />
+        ・煙を伴う喫煙の場面
+      </p>
+      <p class="text-sm">
+        <strong>鑑賞サポート</strong><br />
+        ■ 日本語音声ガイド（9月21日（土）14:00公演／要予約）<br />
+        ■ 日本語ポータブル字幕機（9月22日（日・祝）14:00公演／要予約）<br />
+        ■ 英語オープン字幕（全公演で舞台上に英語字幕が表示されます）<br />
+        ■ ヒアリングループ（磁気ループ／全日程）
+      </p>
+      <p><img loading="lazy" decoding="async" src="<?php echo esc_html(get_template_directory_uri()); ?>/dist/images/logo_hearing-loop.webp" alt="" width="100" height="81" /></p>
+      <p class="text-sm">
+        <strong>託児サービス</strong><br />
+        ■ 劇場内の一時託児をご利用いただけます。<br />
+        （生後3ヶ月～小学校入学前／有料・定員制／土日祝を除く希望日1週間前迄に要申込）<br />
+        ご予約受付・お問合せ：株式会社ミラクス　ミラクスシッター<br />
+        TEL：0120-415-306（平日9:00～17:00）
+      </p>
+      <p class="text-sm">
+        ■ 託児型ワークショップ ：東京芸術祭2024『こどもあそびシアター』<br />
+        （4歳〜小学生／有料・定員制／こどものアート体験支援型託児）<br />
+        9月20日（金）〜28日（土）※各公演時間に合わせて実施予定<br />
+        <a href="https://tokyo-festival.jp/2024/program/kodomo_asobi_theater/" target="_blank" rel="noopener">https://tokyo-festival.jp/2024/program/kodomo_asobi_theater/</a><br />
+      </p>
     </div>
   </div>
   <div class="p-works__info-section p-works-info-venue">
@@ -569,33 +623,33 @@
       <p>JR・東京メトロ・東武東上線・西武池袋線 池袋駅西口より徒歩2分（駅地下通路2b出口 直結）</p>
     </div>
   </div>
-  <div class="p-works__info-section c-white-area">
+  <div class="p-works__info-section c-white-area c-content">
     <p class="text-base">寄り道して帰ろう</p>
-    <h3 class="font-semibold mb-[1em]">円盤に乗る派『仮想的な失調』感想会</h3>
+    <h2 class="mt-0!">円盤に乗る派『仮想的な失調』感想会</h2>
     <div>
       <div class="my-[1em] first:mt-0 last:mb-0">
         <h4 class="before:content-['◆']">開催概要</h4>
-        <div class="">
-          <p class="my-[1em] first:mt-0 last:mb-0">
+        <div>
+          <p>
             円盤に乗る派『仮想的な失調』の終演後に、感想会を開催します。東京芸術祭事務局がホストとなり、お話しします。<br>
             観劇の感想を話してもよし、集まった人の話を聞いてもよし、公演コラボメニューを味わうもよしです。
           </p>
-          <p class="my-[1em] first:mt-0 last:mb-0">
+          <p>
             今年の東京芸術祭のテーマは『トランジット・ナウ～寄り道しよう、舞台の世界へ～』。ぜひ、お帰りの前にゆるっと寄り道してみてください。
           </p>
         </div>
       </div>
       <div class="my-[1em] first:mt-0 last:mb-0">
         <h4 class="before:content-['◆']">開催回</h4>
-        <div class="">
-          <p class="my-[1em] first:mt-0 last:mb-0">
+        <div>
+          <p>
             9月
             19日(木) 19:00（20:30終演予定）<br>
             20日(金) 14:00（15:30終演予定）<br>
             21日(土) 19:00（20:30終演予定）　※14:00の回は開催なし<br>
             22日(日･祝) 14:00（15:30終演予定）
           </p>
-          <p class="my-[1em] first:mt-0 last:mb-0">
+          <p>
             準備ができ次第開始／最大1時間ほど／途中参加・退出OK<br>
             雨天中止の可能性あり
           </p>
@@ -603,18 +657,18 @@
       </div>
       <div class="my-[1em] first:mt-0 last:mb-0">
         <h4 class="before:content-['◆']">会場</h4>
-        <div class="">
-          <p class="my-[1em] first:mt-0 last:mb-0">
+        <div>
+          <p>
             東京芸術劇場 劇場前広場<br>
             「東京芸術祭ひろば - トランジット キッチン」
           </p>
           <h5>= menu =</h5>
           <ul>
-            <li class="list-disc list-inside last-of-type:list-none">コラボかき氷（円盤に乗る派、木ノ下歌舞伎）</li>
-            <li class="list-disc list-inside last-of-type:list-none">コラボバゲットサンド（チェルフィッチュ）</li>
-            <li class="list-disc list-inside last-of-type:list-none">世界のバゲットサンド</li>
-            <li class="list-disc list-inside last-of-type:list-none">コーヒー／アルコール 他 ドリンク</li>
-            <li class="list-disc list-inside last-of-type:list-none">（キッチンカーの営業時間は21時まで）</li>
+            <li class="last-of-type:list-none">コラボかき氷（円盤に乗る派、木ノ下歌舞伎）</li>
+            <li class="last-of-type:list-none">コラボバゲットサンド（チェルフィッチュ）</li>
+            <li class="last-of-type:list-none">世界のバゲットサンド</li>
+            <li class="last-of-type:list-none">コーヒー／アルコール 他 ドリンク</li>
+            <li class="last-of-type:list-none">（キッチンカーの営業時間は21時まで）</li>
           </ul>
         </div>
       </div>
