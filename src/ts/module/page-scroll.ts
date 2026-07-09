@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!targetEl) return;
             e.preventDefault();
             const targetTop = targetEl.getBoundingClientRect().top + window.scrollY;
-            const header = document.querySelector<HTMLElement>('.js-header-height');
+            const header = document.querySelector<HTMLElement>('.js-header');
             const headerHeight = header?.offsetHeight ?? 0;
             window.scrollTo({ top: targetTop - headerHeight, behavior: 'smooth' });
         });

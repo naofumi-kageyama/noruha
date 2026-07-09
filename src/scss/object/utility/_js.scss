@@ -33,3 +33,22 @@
         display: block;
     }
 }
+.js-nav {
+    max-height: 0;
+    &.is-open {
+        max-height: 15rem;
+    }
+}
+.js-nav-toggle {
+    &.is-open {
+        .l-header__toggle-line--top {
+            transform: translateY(8px) rotate(45deg);
+        }
+        .l-header__toggle-line--middle {
+            opacity: 0;
+        }
+        .l-header__toggle-line--bottom {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    }
+}

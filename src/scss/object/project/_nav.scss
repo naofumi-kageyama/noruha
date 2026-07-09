@@ -5,7 +5,7 @@
     height: 2.5rem;
     border-bottom: #000000 1px solid;
     @include mq(md) {
-        border-top: #000000 1px solid;
+        display: none;
     }
     &__item {
         flex: 1;
