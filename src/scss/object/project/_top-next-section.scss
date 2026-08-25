@@ -27,15 +27,16 @@
         padding: 0.75rem 2.5%;
         text-align: center;
     }
+    &__title-header {
+        font-size: $font_size_base;
+    }
     &__title {
         font-size: $font_size_xl;
         font-weight: 700;
         text-align: center;
     }
     &__subtitle {
-        margin-top: 0.5em;
-        font-size: $font_size_xl;
-        font-family: 'gtwalsheim';
+        font-size: $font_size_base;
     }
     &__description-container {
         padding: 1.25rem 2.5%;

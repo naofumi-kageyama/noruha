@@ -1,5 +1,6 @@
 import './module/page-scroll';
 import './module/modal';
+import './module/lightbox';
 import './module/nav';
 import './module/header';
 import './module/profile';

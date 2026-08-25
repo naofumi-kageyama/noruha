@@ -1,5 +1,5 @@
 @import "tailwindcss/theme";
-@import "tailwindcss/utilities";
+@import "tailwindcss/utilities" important;
 
 /* WordPress が自動付与する .size-full との競合を回避 */
 .size-full {
@@ -14,4 +14,11 @@
   --text-xl:   1.5rem;
   --text-2xl:  1.75rem;
   --text-3xl:  2rem;
+  --text-xs--line-height:   1.7;
+  --text-sm--line-height:   1.7;
+  --text-base--line-height: 1.7;
+  --text-lg--line-height:   1.7;
+  --text-xl--line-height:   1.7;
+  --text-2xl--line-height:  1.7;
+  --text-3xl--line-height:  1.7;
 }

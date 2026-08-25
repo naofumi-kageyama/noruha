@@ -6,7 +6,7 @@
             <?php
                 $args = array(
                     'post_type'      => 'page',
-                    'pagename'       => 'tamashii',
+                    'pagename'       => 'the-ghost-is-here',
                     'posts_per_page' => 1,
                 );
 
@@ -25,8 +25,11 @@
                             <?php endif; ?>
                         </div>
                         <div class="p-top-next-section__title-container">
+                            <?php if (get_field('header')): ?>
+                                <p class="p-top-next-section__title-header"><?php echo get_field('header'); ?></p>
+                            <?php endif; ?>
                             <h3 class="p-top-next-section__title"><?php echo get_the_title(); ?></h3>
-                            <?php if (!empty(get_field('subtitle'))) : ?>
+                            <?php if (get_field('subtitle')) : ?>
                                 <p class="p-top-next-section__subtitle"><?php echo get_field('subtitle'); ?></p>
                             <?php endif; ?>
                         </div>
@@ -47,16 +50,19 @@
                                 <h4 class="p-top-next-section__description-heading c-heading--black">人々</h4>
                                 <div class="p-top-next-section__description-text-container">
                                     <dl class="p-top-next-section__people-list">
-                                        <dt class="p-top-next-section__people-term">戯曲・演出</dt>
+                                        <dt class="p-top-next-section__people-term">演出</dt>
                                         <dd class="p-top-next-section__people-description">カゲヤマ気象台*</dd>
                                     </dl>
                                     <dl class="p-top-next-section__people-list">
                                         <dt class="p-top-next-section__people-term">出演</dt>
-                                        <dd class="p-top-next-section__people-description">畠山峻*（PEOPLE太）<br />
-                                            日和下駄*<br />
-                                            深澤しほ<br />
-                                            横田僚平<br />
-                                            渡邊まな実</dd>
+                                        <dd class="p-top-next-section__people-description">
+                                            キヨスヨネスク（humunus）<br>
+                                            瀧腰教寛<br>
+                                            畠山峻*（PEOPLE太）<br>
+                                            日和下駄*<br>
+                                            深澤しほ<br>
+                                            油井文寧（Dr. Holiday Laboratory）
+                                        </dd>
                                     </dl>
                                 </div>
                             </div>
@@ -109,9 +115,8 @@
             <div class="p-top-main-section__section">
                 <h2 class="p-top-main-section__section-heading">円盤に乗る派について</h2>
                 <div class="p-top-main-section__section-content p-top-main-section__about-content c-content">
-                    <p>円盤に乗る派は複数の作家・表現者が一緒にフラットにいられるための時間、あるべきところにいられるような場所を作るプロジェクトとして、2018年にスタートしました。軸になるのはカゲヤマ気象台による上演作品ですが、様々なプログラムや冊子の発行、シンポジウムなどを並行して行います。<br />ここで試みられるのは匿名／顕名が平等になる場所です。誰でも発信が可能であり、大きな民衆の声が響き渡る世界の中で、小さな声が守られる場所はとても貴重です。さまざまな声が飛び交ううるさい場所を逃れて、そこであればしっかりものを見、考え、落ち着くことのできるという場所を確保します。それは演劇にまつわるあらゆる要素を、生活とダイレクトに接続するということでもあります。このプロジェクトを通じて、種々の、色んな意味で「実際に活用できる」アイディアを提唱します。ここを訪れた観客たちが各々の生活の中で、それらを実践し、少しでもより生きやすくなることができればと思います。<br />いつか現れる円盤に乗るということに、強い目的も思想もありません。それはただ「円盤に乗ってみた」という事実が残るだけです。他の人に何ら影響を与えることもなく、大きな社会にとって何の関係もありません。しかし「円盤に乗った人」と「乗らなかった人」は明らかに何かが違ってしまったはずであり、あくまで個人的なその変化に興味を持つ人々、誰にも気づかれない秘密を抱えたい人間たちこそ、「円盤に乗る派」と呼べるでしょう。
+                    <p>円盤に乗る派は複数の作家・表現者が一緒にフラットにいられるための時間、あるべきところにいられるような場所を作るプロジェクトとして、2018年にスタートしました。軸になるのはカゲヤマ気象台による上演作品ですが、様々なプログラムや冊子の発行、シンポジウムなどを並行して行います。<br>ここで試みられるのは匿名／顕名が平等になる場所です。誰でも発信が可能であり、大きな民衆の声が響き渡る世界の中で、小さな声が守られる場所はとても貴重です。さまざまな声が飛び交ううるさい場所を逃れて、そこであればしっかりものを見、考え、落ち着くことのできるという場所を確保します。それは演劇にまつわるあらゆる要素を、生活とダイレクトに接続するということでもあります。このプロジェクトを通じて、種々の、色んな意味で「実際に活用できる」アイディアを提唱します。ここを訪れた観客たちが各々の生活の中で、それらを実践し、少しでもより生きやすくなることができればと思います。<br>いつか現れる円盤に乗るということに、強い目的も思想もありません。それはただ「円盤に乗ってみた」という事実が残るだけです。他の人に何ら影響を与えることもなく、大きな社会にとって何の関係もありません。しかし「円盤に乗った人」と「乗らなかった人」は明らかに何かが違ってしまったはずであり、あくまで個人的なその変化に興味を持つ人々、誰にも気づかれない秘密を抱えたい人間たちこそ、「円盤に乗る派」と呼べるでしょう。
                     </p>
-                    <p>演劇とよりシームレスにつながるためのコミュニティ・共同アトリエ「円盤に乗る場」<br /><a href="https://noruba.net/" target="_blank" rel="noopener">https://noruba.net/</a></p>
                     <a href="<?php echo esc_url(home_url('/about/')); ?>" class="c-button p-top-main-section__button">more</a>
                 </div>
             </div>
@@ -168,7 +173,7 @@
                                 </div>
                                 <h3 class="p-top-main-section__member-heading">畠山峻</h3>
                                 <div class="p-top-main-section__member-description c-content js-member-open-target">
-                                    <p>1987年北海道札幌市生まれ。舞台芸術学院演劇部本科卒。俳優としてブルーノプロデュース、20歳の国、亜人間都市などの作品に出演。カゲヤマ気象台の作品では『おはようクラブ』『野生のカフカ＠おいしいカレー』『流刑地エウロパ』などに出演。演劇ユニットpeople太では演出をしています。<br /><a href="http://people-futoshi.blogspot.com/" target="blank">http://people-futoshi.blogspot.com/</a></p>
+                                    <p>1987年北海道札幌市生まれ。舞台芸術学院演劇部本科卒。俳優としてブルーノプロデュース、20歳の国、亜人間都市などの作品に出演。カゲヤマ気象台の作品では『おはようクラブ』『野生のカフカ＠おいしいカレー』『流刑地エウロパ』などに出演。演劇ユニットpeople太では演出をしています。<br><a href="http://people-futoshi.blogspot.com/" target="blank">http://people-futoshi.blogspot.com/</a></p>
                                     <a href="<?php echo esc_url(home_url('/about/#hatakeyama')); ?>" class="c-button p-top-main-section__button">more</a>
                                 </div>
                             </div>
@@ -183,7 +188,7 @@
                                 </div>
                                 <h3 class="p-top-main-section__member-heading">渋木すず</h3>
                                 <div class="p-top-main-section__member-description c-content js-member-open-target">
-                                    <p>1990年広島県生まれ。会社員。エッセイを書く。「ちょっとしたパーティー(@A_little_party)」という名前で餅つきや同人誌作り等々に勤しんでいる。<br />
+                                    <p>1990年広島県生まれ。会社員。エッセイを書く。「ちょっとしたパーティー(@A_little_party)」という名前で餅つきや同人誌作り等々に勤しんでいる。<br>
                                     note: <a href="https://note.com/suzu_shibuki" target="blank">https://note.com/suzu_shibuki</a></p>
                                     <p>円盤に乗る派への参加に寄せて/渋木すず: <a href="https://note.com/noruha/n/n05f26a4f098d" target="blank">https://note.com/noruha/n/n05f26a4f098d</a></p>
                                     <a href="<?php echo esc_url(home_url('/about/#shibuki')); ?>" class="c-button p-top-main-section__button">more</a>

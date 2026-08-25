@@ -1,8 +1,5 @@
 @use "foundation/global" as *;
 .p-works-info-member {
-    &__list-container {
-        margin-bottom: 1em;
-    }
     &__list {
         margin-bottom: 1em;
     }
@@ -35,6 +32,12 @@
         max-width: 100%; //長い英字が折り返しされない問題への対策
         margin-top: 0.5rem;
     }
+    &__remarks {
+        font-size: 90%;
+    }
+    &__organizer-list-container {
+        margin-top: 2em;
+    }
     &__organizer-item {
         display: flex;
         justify-content: flex-start;
@@ -47,23 +50,22 @@
         flex-grow: 1;
     }
     &__organizer-others {
-        margin-top: 1em;
+        margin-top: 2em;
     }
     &__logo-pc,
     &__logo-sp {
+        margin-top: 2em;
         img {
             display: inline-block;
             width: unset;
         }
     }
     &__logo-pc {
-        margin-top: 1em;
         @include mq(sm) {
             display: none;
         }
     }
     &__logo-sp {
-        margin-top: 1em;
         display: none;
         @include mq(sm) {
             display: block;

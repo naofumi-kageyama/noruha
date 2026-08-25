@@ -41,10 +41,9 @@ Template Name: works-archive
                     'post_type' => 'page',
                     'meta_query'=> array(
                         array(
-                            'key'     => 'mainvisual',
-                            'value'   => '',
-                            'compare' => '!='
-                        )
+                            'key'   => '_wp_page_template',
+                            'value' => 'page-works-single.php',
+                        ),
                     ),
                     'post__not_in'=> array(
                         140,
@@ -61,7 +60,7 @@ Template Name: works-archive
                     <?php
                         while($query->have_posts()) :
                             $query->the_post();
-                            if ($query->current_post == 0) continue;
+                            if ($query->current_post == 0) continue; //最新の一件を除外
 
                             $key = array_search(get_the_ID(), array_column($exerpt_url, 'id'));
                             $url = ($key !== false) ? $exerpt_url[$key]['url'] : esc_url(get_the_permalink());

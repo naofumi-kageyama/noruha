@@ -16,11 +16,22 @@
             }
         }
     }
+    &__lightbox-trigger {
+        display: block;
+        width: 100%;
+        padding: 0;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
     &__title-container {
         border-top: #000000 1px solid;
         border-bottom: #000000 1px solid;
         padding: calc($font_size_3xl / 2) 0;
         text-align: center;
+    }
+    &__title-header {
+        font-size: $font_size_lg;
     }
     &__title {
         font-size: $font_size_3xl;
