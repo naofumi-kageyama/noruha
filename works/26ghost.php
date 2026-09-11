@@ -1,3 +1,9 @@
+<section class="p-works__additional-content c-white-area">
+  <h3 class="font-semibold mt-0 mb-[0.5em]">最新情報</h3>
+  <ul>
+    <li class="list-disc list-inside mb-[0.5em] last:mb-0">最新情報</li>
+  </ul>
+</section>
 <section class="p-works__section">
   <div class="p-works-description">
     <p class="p-works-description__copy">「……それはまァ、いろいろいうけど、けっきょく今の世の中のうごきは、すべて商品価値というものに解消していくわけでしょう、そういうもののなかに、はまりこんじゃった幽霊だな。つまり、実体のない純粋な商品のことですよ。……じつにナンセンスな世界だが、これが現実でね。」*</p>
