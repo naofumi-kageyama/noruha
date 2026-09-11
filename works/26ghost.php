@@ -360,7 +360,7 @@
       <div class="c-white-area">
         <h3 class="text-sm md:text-base">◉託児サービスについて</h3>
         <p class="text-xs md:text-sm">9月26日（土）14:00の回は、託児サービスを実施いたします。<br>ご利用の方は事前にお申込みください。</p>
-        <p class="text-xs md:text-sm">お申込み：<a href="https://www.heartfulsitters.com/" target="_blank" rel="nofollow noopener noreferrer">https://forms.gle/1hGX8VBFZ5mtBS626</a><br>申込締切：9月19日（土）23:59まで<br>時間：開演30分前から終演30分後まで<br>料金：無料（キャンセル料 無料）<br>対象年齢：生後3ヵ月から小学生まで<br>会場：森下スタジオ（公演会場と同じ建物内です）</p>
+        <p class="text-xs md:text-sm">お申込み：<a href="https://forms.gle/1hGX8VBFZ5mtBS626" target="_blank" rel="nofollow noopener noreferrer">https://forms.gle/1hGX8VBFZ5mtBS626</a><br>申込締切：9月19日（土）23:59まで<br>時間：開演30分前から終演30分後まで<br>料金：無料（キャンセル料 無料）<br>対象年齢：生後3ヵ月から小学生まで<br>会場：森下スタジオ（公演会場と同じ建物内です）</p>
         <p class="text-xs md:text-sm">託児サービス委託事業者：ハートフルシッターズ<br>WEB：<a href="https://www.heartfulsitters.com/" target="_blank" rel="nofollow noopener noreferrer">https://www.heartfulsitters.com/</a></p>
       </div>
     </div>
