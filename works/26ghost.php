@@ -1,7 +1,7 @@
 <section class="p-works__additional-content c-white-area">
   <h3 class="font-semibold mt-0 mb-[0.5em]">最新情報</h3>
   <ul>
-    <li class="list-disc list-inside mb-[0.5em] last:mb-0">最新情報</li>
+    <li class="list-disc list-inside mb-[0.5em] last:mb-0"><a href="<?php echo esc_url(home_url('/the-ghost-is-here/club/')); ?>">乗る派クラブは〈旅行〉代理店をつくりたい！　一緒に夢を叶える仲間を募集します！</a>のページを公開しました。(2026.9.12)</li>
   </ul>
 </section>
 <section class="p-works__section">
@@ -351,8 +351,8 @@
     <h2 class="p-works__info-section-heading c-heading--black">日時</h2>
     <div class="p-works-info-timetable__content c-content">
       <p>
-        2026年9月<br>23日（水・祝）　19:00<br>24日（木）　14:00・19:00<br>25日（金）　14:00・19:00<br>26日（土）　14:00★</p>
-      <p><small>受付開始・開場は開演の30分前<br>★託児サービスあり（要事前申込）</small></p>
+        2026年9月<br>23日（水・祝）　19:00<br>24日（木）　14:00・19:00<br>25日（金）　14:00・19:00<br>26日（土）　14:00★✈</p>
+      <p><small>受付開始・開場は開演の30分前<br>★託児サービスあり（要事前申込）<br>✈終演後<a href="<?php echo esc_url(home_url('/the-ghost-is-here/club/')); ?>">乗る派クラブ</a>開催</small></p>
     </div>
   </div>
   <div class="p-works__info-section p-works-info-price">
