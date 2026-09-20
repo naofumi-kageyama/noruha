@@ -1,7 +1,10 @@
 <section class="p-works__additional-content c-white-area">
   <h3 class="font-semibold mt-0 mb-[0.5em]">最新情報</h3>
   <ul>
+    <li class="list-disc list-inside mb-[0.5em] last:mb-0">演出・カゲヤマ気象台による<a href="<?php echo esc_url(home_url('https://note.com/kageyamakisho/n/n5615721f01ef')); ?>" target="_blank" rel="noreferer noopener">『幽霊はここにいる』の楽しみかた</a>を公開しました。(2026.9.20)</li>
+    <li class="list-disc list-inside mb-[0.5em] last:mb-0">山本ジャスティン伊等さんによる<a href="<?php echo esc_url(home_url('/the-ghost-is-here/article01/')); ?>">稽古場レポート</a>を公開しました。(2026.9.17)</li>
     <li class="list-disc list-inside mb-[0.5em] last:mb-0"><a href="<?php echo esc_url(home_url('/the-ghost-is-here/club/')); ?>">乗る派クラブは〈旅行〉代理店をつくりたい！　一緒に夢を叶える仲間を募集します！</a>のページを公開しました。(2026.9.12)</li>
+    <li class="list-disc list-inside mb-[0.5em] last:mb-0">カゲヤマ気象台（演出）、日和下駄（出演）、中條玲（制作）の3名によるポッドキャストを公開しました。<a href="https://open.spotify.com/episode/6SwTRZplNHQ48rgslt5xbd?si=gRSrya3EQgSdXI3Wpu0jmA" target="_blank" rel="noreferer noopener">【開幕直前トーク】資本主義を眼差す演劇の〈運動〉について</a>(2026.9.11)</li>
   </ul>
 </section>
 <section class="p-works__section">
@@ -352,7 +355,8 @@
     <div class="p-works-info-timetable__content c-content">
       <p>
         2026年9月<br>23日（水・祝）　19:00<br>24日（木）　14:00・19:00<br>25日（金）　14:00・19:00<br>26日（土）　14:00★✈</p>
-      <p><small>受付開始・開場は開演の30分前<br>★託児サービスあり（要事前申込）<br>✈終演後<a href="<?php echo esc_url(home_url('/the-ghost-is-here/club/')); ?>">乗る派クラブ</a>開催</small></p>
+      <p><small>受付開始・開場は開演の30分前<br>上演時間：約140分（途中休憩あり）</small></p>
+      <p><small>★託児サービスあり（要事前申込）<br>✈終演後<a href="<?php echo esc_url(home_url('/the-ghost-is-here/club/')); ?>">乗る派クラブ</a>開催</small></p>
     </div>
   </div>
   <div class="p-works__info-section p-works-info-price">
