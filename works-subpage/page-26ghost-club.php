@@ -62,7 +62,7 @@ Template Name: 26ghost-club
                     <small>*参加確定後に、指定の銀行口座へ振り込みにてお支払いいただきます<br>*参加費は、「春の観劇パックキャンペーン（仮）」実施にあたって必要な資材の購入等に使用します<br>*4月の新作公演の観劇代金は、乗る派クラブで負担します<br>*参加にあたっての交通費は自己負担になります</small>
                 </p>
                 <h3>【エントリー】</h3>
-                <p>後日公開の応募フォームより、必要事項を記入の上、エントリーしてください</p>
+                <p>応募フォーム：<a href="https://docs.google.com/forms/d/e/1FAIpQLSd52P94wpyybykF1AdBwK6vXD0ZPBc4OejvXuY96CPedJ5EvA/viewform" target="_blank" rel="noreferer noopener">https://docs.google.com/forms/d/e/1FAIpQLSd52P94wpyybykF1AdBwK6vXD0ZPBc4OejvXuY96CPedJ5EvA/viewform</a></p>
                 <ul>
                     <li>氏名</li>
                     <li>年齢</li>
