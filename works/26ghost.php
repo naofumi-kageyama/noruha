@@ -1,6 +1,7 @@
 <section class="p-works__additional-content c-white-area">
   <h3 class="font-semibold mt-0 mb-[0.5em]">最新情報</h3>
   <ul>
+    <li class="list-disc list-inside mb-[0.5em] last:mb-0"><a href="<?php echo esc_url(home_url('/the-ghost-is-here/club/')); ?>">「乗る派クラブ」ページ</a>に説明会の動画、Q&Aを追加しました。(2026.10.9)</li>
     <li class="list-disc list-inside mb-[0.5em] last:mb-0">批評家・仲山ひふみさんによるコラム<a href="<?php echo esc_url(home_url('/the-ghost-is-here/article02/')); ?>">「人間の終わりの終わりとその弁証法（円盤に乗る派による安部公房『幽霊はここにいる』の上演に寄せて）」</a>を公開しました。(2026.9.22)</li>
     <li class="list-disc list-inside mb-[0.5em] last:mb-0">演出・カゲヤマ気象台によるnote<a href="https://note.com/kageyamakisho/n/n5615721f01ef" target="_blank" rel="noreferer noopener">「『幽霊はここにいる』の楽しみかた」</a>を公開しました。(2026.9.20)</li>
     <li class="list-disc list-inside mb-[0.5em] last:mb-0">山本ジャスティン伊等さんによる<a href="<?php echo esc_url(home_url('/the-ghost-is-here/article01/')); ?>">稽古場レポート</a>を公開しました。(2026.9.17)</li>
