@@ -47,10 +47,43 @@ Template Name: works-single
                 <section class="p-works__section">
                     <div class="p-works-main-visual">
                         <figure class="p-works-main-visual__main-visual<?php if(get_field('horizontal')) echo " p-works-main-visual__main-visual--horizontal"; ?>">
+                            <?php
+                                $photo_ids = array_filter(array(
+                                    get_field('photo_1', false, false),
+                                    get_field('photo_2', false, false),
+                                    get_field('photo_3', false, false),
+                                    get_field('photo_4', false, false),
+                                ));
+                            ?>
                             <?php if(has_post_thumbnail()) : ?>
-                                <button type="button" class="p-works-main-visual__lightbox-trigger js-lightbox-trigger">
-                                    <?php the_post_thumbnail('full', ['class' => 'js-lightbox-source']); ?>
-                                </button>
+                                <?php if (!empty($photo_ids)) : ?>
+                                    <?php
+                                        $thumbnail_id = get_post_thumbnail_id();
+                                        $slide_ids = array_merge($photo_ids, array($thumbnail_id));
+                                    ?>
+                                    <div class="c-slideshow js-slideshow">
+                                        <div class="c-slideshow__track">
+                                            <?php foreach ($slide_ids as $index => $slide_id) : ?>
+                                                <div class="c-slideshow__slide js-slideshow-slide<?php if ($index === 0) echo ' is-active'; ?>">
+                                                    <button type="button" class="c-slideshow__lightbox-trigger js-lightbox-trigger">
+                                                        <img class="js-lightbox-source" src="<?php echo esc_url(wp_get_attachment_image_url($slide_id, 'full')); ?>" alt="<?php echo esc_attr(get_post_meta($slide_id, '_wp_attachment_image_alt', true)); ?>" decoding="async">
+                                                    </button>
+                                                </div>
+                                            <?php endforeach; ?>
+                                            <button type="button" class="c-slideshow__arrow c-slideshow__arrow--prev js-slideshow-prev" aria-label="前の写真"></button>
+                                            <button type="button" class="c-slideshow__arrow c-slideshow__arrow--next js-slideshow-next" aria-label="次の写真"></button>
+                                        </div>
+                                        <div class="c-slideshow__dots">
+                                            <?php foreach ($slide_ids as $index => $slide_id) : ?>
+                                                <button type="button" class="c-slideshow__dot js-slideshow-dot<?php if ($index === 0) echo ' is-active'; ?>" aria-label="<?php echo $index + 1; ?>枚目の写真"></button>
+                                            <?php endforeach; ?>
+                                        </div>
+                                    </div>
+                                <?php else : ?>
+                                    <button type="button" class="p-works-main-visual__lightbox-trigger js-lightbox-trigger">
+                                        <?php the_post_thumbnail('full', ['class' => 'js-lightbox-source']); ?>
+                                    </button>
+                                <?php endif; ?>
                                 <figcaption><?php echo nl2br(esc_html(get_field('caption'))); ?></figcaption>
                             <?php else : ?>
                                 <img src="<?php echo get_template_directory_uri(); ?>/dist/images/image_coming-soon.webp" alt="coming soon" width="1080" height="1080" loading="lazy" decoding="async">

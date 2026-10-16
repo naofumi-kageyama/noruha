@@ -17,13 +17,15 @@
         cursor: pointer;
     }
     &__image {
-        position: relative;
+        position: absolute;
+        top: 50%;
+        left: 50%;
         display: block;
         width: auto;
         max-width: 90vw;
         max-height: 90vh;
-        margin: 5vh auto 0;
         object-fit: contain;
+        transform: translate(-50%, -50%);
     }
     &__close-button {
         position: absolute;

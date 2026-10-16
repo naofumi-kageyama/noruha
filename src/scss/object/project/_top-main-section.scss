@@ -19,6 +19,19 @@
     &__copy {
         font-weight: 500;
         font-size: $font_size_base;
+        width: max-content;
+        padding-left: 100%;
+        white-space: nowrap;
+        animation: marquee 15s linear infinite;
+        @media (prefers-reduced-motion: reduce) {
+            animation: none;
+            width: auto;
+            padding-left: 0;
+            white-space: normal;
+        }
+        @include mq(md) {
+            animation-duration: 10s;
+        }
     }
     &__main-visual-container {
         padding-bottom: 1em;
@@ -26,7 +39,12 @@
     &__main-visual {
         figcaption {
             width: fit-content;
-            margin: 1em 2em 0 auto;
+            padding: 0 2em;
+            margin: 1em 0 0 auto;
+            line-break: anywhere;
+            @include mq(md) {
+                padding: 0 1em;
+            }
         }
     }
     &__section-heading {
@@ -98,5 +116,10 @@
         font-family: "gtwalsheim-l";
         font-size: $font_size_base;
         text-align: center;
+    }
+}
+@keyframes marquee {
+    to {
+        transform: translateX(-100%);
     }
 }

@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const lightbox = document.querySelector<HTMLElement>('.js-lightbox');
             const lightboxImage = lightbox?.querySelector<HTMLImageElement>('.js-lightbox-image');
             if (!sourceImage || !lightbox || !lightboxImage) return;
-            lightboxImage.src = sourceImage.currentSrc || sourceImage.src;
+            // currentSrcは表示サイズに合わせた縮小版になるため、元サイズのsrcを使う
+            lightboxImage.src = sourceImage.src;
             lightboxImage.alt = sourceImage.alt;
             lightbox.classList.add('is-open');
         });

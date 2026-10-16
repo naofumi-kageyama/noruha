@@ -5,6 +5,7 @@ import './module/nav';
 import './module/header';
 import './module/profile';
 import './module/set-attr-size';
+import './module/slideshow';
 
 document.addEventListener('DOMContentLoaded', () => {
   if (document.body.classList.contains('home') || document.body.classList.contains('front-page')) {

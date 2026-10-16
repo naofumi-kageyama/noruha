@@ -81,30 +81,70 @@
     <section class="p-top__section p-top__right">
         <div class="p-top__section-inner p-top-main-section">
             <?php get_template_part('template-parts/nav'); ?>
-            <div class="p-top-main-section__copy-container js-marquee">
+            <div class="p-top-main-section__copy-container">
                 <p class="p-top-main-section__copy">人間のかたちをして生きていくとき大事なのは、いつでも円盤に乗れるようにしておくことだ。</p>
             </div>
             <?php
-                $image = get_field('image');
-                if(!empty($image)) :
-                    ?>
-                    <div class="p-top-main-section__main-visual-container">
-                        <figure class="p-top-main-section__main-visual">
-                            <img
-                                src="<?php echo esc_url($image['url']); ?>"
-                                alt="<?php echo esc_html($image['alt']); ?>"
-                                width="<?php echo esc_attr($image['sizes'][ 'large-width' ]); ?>"
-                                height="<?php echo esc_attr($image['sizes'][ 'large-height' ]); ?>"
-                                loading="lazy" decoding="async"
-                            >
-                            <?php if(get_field('caption')) : ?>
-                            <figcaption><?php echo esc_html(get_field('caption')); ?></figcaption>
-                            <?php endif; ?>
-                        </figure>
-                    </div>
-                    <?php
-                endif;
+                $slides = array(
+                    array(
+                        'file'    => 'image_top_01.webp',
+                        'alt'     => '『幽霊はここにいる』の舞台写真',
+                        'caption' => '『幽霊はここにいる』(2026)　撮影：濱田晋',
+                        'url'     => home_url('/the-ghost-is-here/'),
+                    ),
+                    array(
+                        'file'    => 'image_top_02.webp',
+                        'alt'     => '『「いまのところまだ存在しているわたしのたましいが……」』の舞台写真',
+                        'caption' => '『「いまのところまだ存在しているわたしのたましいが……」』(2026)　撮影：濱田晋',
+                        'url'     => home_url('/tamashii/'),
+                    ),
+                    array(
+                        'file'    => 'image_top_03.webp',
+                        'alt'     => '『仮想的な失調』の舞台写真',
+                        'caption' => '『仮想的な失調』(2024)　撮影：濱田晋',
+                        'url'     => home_url('/kasou2024/'),
+                    ),
+                    array(
+                        'file'    => 'image_top_04.webp',
+                        'alt'     => '『幸福な島の夜』の舞台写真',
+                        'caption' => '『幸福な島の夜』(2023)　撮影：濱田晋',
+                        'url'     => home_url('/kofuku/'),
+                    ),
+                );
             ?>
+            <div class="p-top-main-section__main-visual-container">
+                <figure class="p-top-main-section__main-visual c-slideshow js-slideshow">
+                    <div class="c-slideshow__track">
+                        <?php foreach ($slides as $index => $slide) : ?>
+                            <div class="c-slideshow__slide js-slideshow-slide<?php if ($index === 0) echo ' is-active'; ?>">
+                                <?php if (!empty($slide['url'])) : ?>
+                                    <a class="c-slideshow__link" href="<?php echo esc_url($slide['url']); ?>">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/dist/images/<?php echo $slide['file']; ?>" alt="<?php echo esc_attr($slide['alt']); ?>" decoding="async">
+                                    </a>
+                                <?php else : ?>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/dist/images/<?php echo $slide['file']; ?>" alt="<?php echo esc_attr($slide['alt']); ?>" decoding="async">
+                                <?php endif; ?>
+                            </div>
+                        <?php endforeach; ?>
+                        <?php if (count($slides) > 1) : ?>
+                            <button type="button" class="c-slideshow__arrow c-slideshow__arrow--prev js-slideshow-prev" aria-label="前の写真"></button>
+                            <button type="button" class="c-slideshow__arrow c-slideshow__arrow--next js-slideshow-next" aria-label="次の写真"></button>
+                        <?php endif; ?>
+                    </div>
+                    <?php if (count($slides) > 1) : ?>
+                        <div class="c-slideshow__dots">
+                            <?php foreach ($slides as $index => $slide) : ?>
+                                <button type="button" class="c-slideshow__dot js-slideshow-dot<?php if ($index === 0) echo ' is-active'; ?>" aria-label="<?php echo $index + 1; ?>枚目の写真"></button>
+                            <?php endforeach; ?>
+                        </div>
+                    <?php endif; ?>
+                    <figcaption>
+                        <?php foreach ($slides as $index => $slide) : ?>
+                            <span class="c-slideshow__caption js-slideshow-caption<?php if ($index === 0) echo ' is-active'; ?>"><?php echo esc_html($slide['caption']); ?></span>
+                        <?php endforeach; ?>
+                    </figcaption>
+                </figure>
+            </div>
             <div id="declaration" class="p-top-main-section__section">
                 <h2 class="p-top-main-section__section-heading">円盤に乗る派宣言</h2>
                 <div class="p-top-main-section__section-content">
