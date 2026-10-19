@@ -46,7 +46,7 @@ Template Name: works-single
             <?php while (have_posts()): the_post(); ?>
                 <section class="p-works__section">
                     <div class="p-works-main-visual">
-                        <figure class="p-works-main-visual__main-visual<?php if(get_field('horizontal')) echo " p-works-main-visual__main-visual--horizontal"; ?>">
+                        <figure class="p-works-main-visual__image-container">
                             <?php
                                 $photo_ids = array_filter(array(
                                     get_field('photo_1', false, false),
@@ -54,6 +54,9 @@ Template Name: works-single
                                     get_field('photo_3', false, false),
                                     get_field('photo_4', false, false),
                                 ));
+
+                                $thumbnail_class = 'p-works-main-visual__main-visual';
+                                if (get_field('horizontal')) $thumbnail_class .= ' p-works-main-visual__main-visual--horizontal';
                             ?>
                             <?php if(has_post_thumbnail()) : ?>
                                 <?php if (!empty($photo_ids)) : ?>
@@ -66,7 +69,7 @@ Template Name: works-single
                                             <?php foreach ($slide_ids as $index => $slide_id) : ?>
                                                 <div class="c-slideshow__slide js-slideshow-slide<?php if ($index === 0) echo ' is-active'; ?>">
                                                     <button type="button" class="c-slideshow__lightbox-trigger js-lightbox-trigger">
-                                                        <img class="js-lightbox-source" src="<?php echo esc_url(wp_get_attachment_image_url($slide_id, 'full')); ?>" alt="<?php echo esc_attr(get_post_meta($slide_id, '_wp_attachment_image_alt', true)); ?>" decoding="async">
+                                                        <img class="<?php if ($slide_id === $thumbnail_id) echo $thumbnail_class . ' '; ?>js-lightbox-source" src="<?php echo esc_url(wp_get_attachment_image_url($slide_id, 'full')); ?>" alt="<?php echo esc_attr(get_post_meta($slide_id, '_wp_attachment_image_alt', true)); ?>" decoding="async">
                                                     </button>
                                                 </div>
                                             <?php endforeach; ?>
@@ -81,7 +84,7 @@ Template Name: works-single
                                     </div>
                                 <?php else : ?>
                                     <button type="button" class="p-works-main-visual__lightbox-trigger js-lightbox-trigger">
-                                        <?php the_post_thumbnail('full', ['class' => 'js-lightbox-source']); ?>
+                                        <?php the_post_thumbnail('full', ['class' => $thumbnail_class . ' js-lightbox-source']); ?>
                                     </button>
                                 <?php endif; ?>
                                 <figcaption><?php echo nl2br(esc_html(get_field('caption'))); ?></figcaption>

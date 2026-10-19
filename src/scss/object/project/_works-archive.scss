@@ -28,13 +28,19 @@
     }
     &__item-heading-container {
         margin-bottom: 1.5em;
+    }
+    &__item-title-header {
+        font-size: $font_size_sm;
+        @include mq(md) {
+            font-size: $font_size_xs;
+        }
+    }
+    &__item-title {
+        font-weight: 700;
         font-size: $font_size_xl;
         @include mq(md) {
             font-size: $font_size_lg;
         }
-    }
-    &__item-heading {
-        font-weight: 700;
     }
     &__item-subtitle {
         font-size: $font_size_sm;

@@ -107,7 +107,10 @@ Template Name: works-archive
                                     </div>
                                     <div class="p-works-archive__item-info">
                                         <div class="p-works-archive__item-heading-container">
-                                            <h3 class="p-works-archive__item-heading"><?php the_title(); ?></h3>
+                                            <?php if (get_field('header')): ?>
+                                                <p class="p-works-archive__item-title-header"><?php echo get_field('header'); ?></p>
+                                            <?php endif; ?>
+                                            <h3 class="p-works-archive__item-title"><?php the_title(); ?></h3>
                                             <?php if(!empty(get_field('subtitle'))) : ?>
                                                 <p class="p-works-archive__item-subtitle"><?php echo get_field('subtitle'); ?></p>
                                             <?php endif; ?>
