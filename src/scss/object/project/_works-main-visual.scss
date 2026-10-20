@@ -4,6 +4,9 @@
         width: 100%;
         margin: 0 auto 2rem;
         padding: 0 2rem;
+        @include mq(md) {
+            padding: 0;
+        }
         figcaption {
             margin-top: .5em;
             text-align: right;
