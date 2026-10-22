@@ -69,7 +69,13 @@ Template Name: works-single
                                             <?php foreach ($slide_ids as $index => $slide_id) : ?>
                                                 <div class="c-slideshow__slide js-slideshow-slide<?php if ($index === 0) echo ' is-active'; ?>">
                                                     <button type="button" class="c-slideshow__lightbox-trigger js-lightbox-trigger">
-                                                        <img class="<?php if ($slide_id === $thumbnail_id) echo $thumbnail_class . ' '; ?>js-lightbox-source" src="<?php echo esc_url(wp_get_attachment_image_url($slide_id, 'full')); ?>" alt="<?php echo esc_attr(get_post_meta($slide_id, '_wp_attachment_image_alt', true)); ?>" decoding="async">
+                                                        <?php
+                                                            echo wp_get_attachment_image($slide_id, 'full', false, array(
+                                                                'class'    => ($slide_id === $thumbnail_id ? $thumbnail_class . ' ' : '') . 'js-lightbox-source',
+                                                                'decoding' => 'async',
+                                                                'loading'  => $index > 0 ? 'lazy' : false,
+                                                            ));
+                                                        ?>
                                                     </button>
                                                 </div>
                                             <?php endforeach; ?>

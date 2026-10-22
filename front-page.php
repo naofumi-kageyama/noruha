@@ -87,28 +87,36 @@
             <?php
                 $slides = array(
                     array(
-                        'file'    => 'image_top_01.webp',
-                        'alt'     => '『幽霊はここにいる』の舞台写真',
-                        'caption' => '『幽霊はここにいる』(2026)　撮影：濱田晋',
-                        'url'     => home_url('/the-ghost-is-here/'),
+                        'file_750'  => 'image_top_01_750px.webp',
+                        'file_1200' => 'image_top_01_1200px.webp',
+                        'file_2000' => 'image_top_01.webp',
+                        'alt'       => '『幽霊はここにいる』の舞台写真',
+                        'caption'   => '『幽霊はここにいる』(2026)　撮影：濱田晋',
+                        'url'       => home_url('/the-ghost-is-here/'),
                     ),
                     array(
-                        'file'    => 'image_top_02.webp',
-                        'alt'     => '『「いまのところまだ存在しているわたしのたましいが……」』の舞台写真',
-                        'caption' => '『「いまのところまだ存在しているわたしのたましいが……」』(2026)　撮影：濱田晋',
-                        'url'     => home_url('/tamashii/'),
+                        'file_750'  => 'image_top_02_750px.webp',
+                        'file_1200' => 'image_top_02_1200px.webp',
+                        'file_2000' => 'image_top_02.webp',
+                        'alt'       => '『「いまのところまだ存在しているわたしのたましいが……」』の舞台写真',
+                        'caption'   => '『「いまのところまだ存在しているわたしのたましいが……」』(2026)　撮影：濱田晋',
+                        'url'       => home_url('/tamashii/'),
                     ),
                     array(
-                        'file'    => 'image_top_03.webp',
-                        'alt'     => '『仮想的な失調』の舞台写真',
-                        'caption' => '『仮想的な失調』(2024)　撮影：濱田晋',
-                        'url'     => home_url('/kasou2024/'),
+                        'file_750'  => 'image_top_03_750px.webp',
+                        'file_1200' => 'image_top_03_1200px.webp',
+                        'file_2000' => 'image_top_03.webp',
+                        'alt'       => '『仮想的な失調』の舞台写真',
+                        'caption'   => '『仮想的な失調』(2024)　撮影：濱田晋',
+                        'url'       => home_url('/kasou2024/'),
                     ),
                     array(
-                        'file'    => 'image_top_04.webp',
-                        'alt'     => '『幸福な島の夜』の舞台写真',
-                        'caption' => '『幸福な島の夜』(2023)　撮影：濱田晋',
-                        'url'     => home_url('/kofuku/'),
+                        'file_750'  => 'image_top_04_750px.webp',
+                        'file_1200' => 'image_top_04_1200px.webp',
+                        'file_2000' => 'image_top_04.webp',
+                        'alt'       => '『幸福な島の夜』の舞台写真',
+                        'caption'   => '『幸福な島の夜』(2023)　撮影：濱田晋',
+                        'url'       => home_url('/kofuku/'),
                     ),
                 );
             ?>
@@ -119,10 +127,22 @@
                             <div class="c-slideshow__slide js-slideshow-slide<?php if ($index === 0) echo ' is-active'; ?>">
                                 <?php if (!empty($slide['url'])) : ?>
                                     <a class="c-slideshow__link" href="<?php echo esc_url($slide['url']); ?>">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/dist/images/<?php echo $slide['file']; ?>" alt="<?php echo esc_attr($slide['alt']); ?>" decoding="async">
+                                        <img width="2000" height="1333"
+                                            src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/images/<?php echo $slide['file_2000']; ?>"
+                                            srcset="<?php echo esc_url(get_template_directory_uri()); ?>/dist/images/<?php echo $slide['file_750']; ?> 750w,
+                                                    <?php echo esc_url(get_template_directory_uri()); ?>/dist/images/<?php echo $slide['file_1200']; ?> 1200w,
+                                                    <?php echo esc_url(get_template_directory_uri()); ?>/dist/images/<?php echo $slide['file_2000']; ?> 2000w"
+                                            sizes="<?php echo $index > 0 ? 'auto, 100vw' : '100vw'; ?>"
+                                            alt="<?php echo esc_attr($slide['alt']); ?>"<?php if ($index > 0) echo ' loading="lazy"'; ?> decoding="async">
                                     </a>
                                 <?php else : ?>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/dist/images/<?php echo $slide['file']; ?>" alt="<?php echo esc_attr($slide['alt']); ?>" decoding="async">
+                                    <img width="2000" height="1333"
+                                        src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/images/<?php echo $slide['file_2000']; ?>"
+                                        srcset="<?php echo esc_url(get_template_directory_uri()); ?>/dist/images/<?php echo $slide['file_750']; ?> 750w,
+                                                <?php echo esc_url(get_template_directory_uri()); ?>/dist/images/<?php echo $slide['file_1200']; ?> 1200w,
+                                                <?php echo esc_url(get_template_directory_uri()); ?>/dist/images/<?php echo $slide['file_2000']; ?> 2000w"
+                                        sizes="<?php echo $index > 0 ? 'auto, 100vw' : '100vw'; ?>"
+                                        alt="<?php echo esc_attr($slide['alt']); ?>"<?php if ($index > 0) echo ' loading="lazy"'; ?> decoding="async">
                                 <?php endif; ?>
                             </div>
                         <?php endforeach; ?>
@@ -166,6 +186,10 @@
                     <div class="p-top-main-section__members-image">
                         <img width="2000" height="1334"
                             src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/images/image_members.webp"
+                            srcset="<?php echo esc_url(get_template_directory_uri()); ?>/dist/images/image_members_750px.webp 750w,
+                                    <?php echo esc_url(get_template_directory_uri()); ?>/dist/images/image_members_1200px.webp 1200w,
+                                    <?php echo esc_url(get_template_directory_uri()); ?>/dist/images/image_members.webp 2000w"
+                            sizes="auto, 100vw"
                             alt="円盤に乗る派のメンバー写真" loading="lazy" decoding="async" />
                     </div>
                     <div class="p-top-main-section__members-column-wrapper js-member-open-column-wrapper">
