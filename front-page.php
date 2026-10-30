@@ -18,7 +18,7 @@
                         <div class="p-top-next-section__main-visual">
                             <?php if (has_post_thumbnail()) : ?>
                                 <a href="<?php echo esc_url(get_the_permalink()); ?>">
-                                    <?php the_post_thumbnail('full'); ?>
+                                    <?php the_post_thumbnail('large'); ?>
                                 </a>
                             <?php else : ?>
                                 <img src="<?php echo get_template_directory_uri(); ?>/dist/images/image_coming-soon.webp" alt="coming soon" width="1080" height="1080" loading="lazy" decoding="async">

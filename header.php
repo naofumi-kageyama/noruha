@@ -15,7 +15,7 @@
         <div class="l-header__logo-container js-header">
             <?php if(is_home() || is_front_page()) echo '<h1 class="l-header__h1">'; ?>
                 <a class="l-header__logo" href="<?php echo esc_url( home_url() ); ?>">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/images/logo_noruha.webp" alt="円盤に乗る派 NORUHA" loading="lazy" decoding="async" width="800" height="418">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/images/logo_noruha.webp" alt="円盤に乗る派 NORUHA" decoding="async" width="800" height="418">
                 </a>
             <?php if(is_home() || is_front_page()) echo '</h1>'; ?>
             <button type="button" class="l-header__toggle js-nav-toggle">
